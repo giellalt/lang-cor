@@ -1,0 +1,75 @@
+! ============================================================ !
+! Program to translate text from KK to the Single Written form !
+! ============================================================ !
+
+! The program translates from Kernewek Kemmyn to the Single 
+! Written Form. While waiting for that form, it translates to KD.
+
+
+
+echo << The definitions >>
+
+define Vow      [ a | e | i | o | u | y |
+                  á | é | í | ó | ú | ý |
+                  A | E | I | O | U | Y |
+                  Á | É | Í | Ó | U | Ý | 
+                  â | Ä ] ;
+define FrontVow [ e | i | y | E | I | Y |
+                  é | í | ý | É | Í | Ý ] ;
+define BackVow  [ a | o | u | A | O | Y |
+                  á | ó | ú | Á | Ó | Ú ] ;
+define LightVow [ a | e | i | o | u | y |
+                  A | E | I | O | U | Y ] ;
+             
+define Cns [ b | c | d | f | g | h | j | k | l | m | 
+             n | p | q | r | s | t | v | w | x | z |
+             B | C | D | F | G | H | J | K | L | M |
+             N | P | Q | R | S | T | V | W | X | Z ] ;
+
+define Syll Cns* Vow+ Cns* ;
+
+
+
+echo << Rules >>
+
+define wh       h w -> w h , H w -> W h , H W -> W H ;
+define kw       k -> q , K -> Q || _ [ w | W ] ;
+define k2c      k -> c ,     K -> C || [.#.|Vow] _ [ BackVow | l | r ] ;
+define kk2ck    k k -> c k , K K -> C K ;
+define ks2x     k s -> x ,   K S -> X ;
+define LSyllCns l l -> l , L L -> L , m m -> m , M M -> M ,
+                n n -> n , N N -> N , r r -> r , R R -> R || Syll LightVow _ .#. , _ Cns ;
+define VghV     g h -> h || Vow _ Vow ;
+define oe2o     o e -> o ; ! Subject to restrictions!!
+define ssh      s -> 0 || [S|s] _ h ;
+
+define lexical {kemmeres} -> {kemeres} ,
+{dehow} -> {dyhow} ,
+{bownans} -> {bewnans} , 
+{bywnans} -> {bewnans} , 
+{whoer} -> {whor} ,
+{goer} -> {gor} ,
+{noeth} -> {noth} 
+;
+
+
+
+
+echo << Compiling... >>
+
+read regex [ wh
+.o. kw
+.o. k2c
+.o. kk2ck
+.o. ks2x
+.o. LSyllCns 
+!.o. yacc 
+.o. VghV
+.o. oe2o
+.o. ssh
+.o. lexical
+] ;
+
+invert net ;
+
+!save ../bin/kk2swf.fst ;
