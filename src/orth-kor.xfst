@@ -6,7 +6,6 @@
 ! Written Form. While waiting for that form, it translates to KD.
 
 
-
 echo << The definitions >>
 
 define Vow      [ a | e | i | o | u | y |
@@ -40,12 +39,11 @@ define ks2x     k s -> x ,   K S -> X ;
 define LSyllCns l l -> l , L L -> L , m m -> m , M M -> M ,
                 n n -> n , N N -> N , r r -> r , R R -> R || Syll LightVow _ .#. , _ Cns ;
 define VghV     g h -> h || Vow _ Vow ;
-define oe2o     o e -> o ; ! Subject to restrictions!!
+define oe2o     o e -> o o ; !|| leftrestr _ rightrestr ; ! Subject to restrictions!!
 define ssh      s -> 0 || [S|s] _ h ;
 
 define lexical {kemmeres} -> {kemeres} ,
 {dehow} -> {dyhow} ,
-{bownans} -> {bewnans} , 
 {bywnans} -> {bewnans} , 
 {whoer} -> {whor} ,
 {goer} -> {gor} ,
