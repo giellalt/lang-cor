@@ -32,22 +32,27 @@ define Syll Cns* Vow+ Cns* ;
 echo << Rules >>
 
 define wh       h w -> w h , H w -> W h , H W -> W H ;
-define kw       k -> q , K -> Q || _ [ w | W ] ;
-define k2c      k -> c ,     K -> C || [.#.|Vow] _ [ BackVow | l | r ] ;
+define kw       k -> c , K -> C || _ [ w | W ] ;
+define k2c      k -> c ,     K -> C ||  _ [ BackVow | l | r ] ;
 define kk2ck    k k -> c k , K K -> C K ;
 define ks2x     k s -> x ,   K S -> X ;
 define LSyllCns l l -> l , L L -> L , m m -> m , M M -> M ,
                 n n -> n , N N -> N , r r -> r , R R -> R || Syll LightVow _ .#. , _ Cns ;
-define VghV     g h -> h || Vow _ Vow ;
+define VghV     g h -> h || Vow _ Vow ;!#, Vow _ .#. ;
+#define RghV     r g h -> r r , l g h -> l l || Vow  _ Vow ;
 define oe2o     o e -> o o ; !|| leftrestr _ rightrestr ; ! Subject to restrictions!!
 define ssh      s -> 0 || [S|s] _ h ;
+define thdel  t h -> ’ || Syll Vow _ .#. ;
+
+
 
 define lexical {kemmeres} -> {kemeres} ,
 {dehow} -> {dyhow} ,
 {bywnans} -> {bewnans} , 
 {whoer} -> {whor} ,
 {goer} -> {gor} ,
-{noeth} -> {noth} 
+{noeth} -> {noth} ,
+{Sesar} -> {Cæsar}
 ;
 
 
@@ -57,14 +62,16 @@ echo << Compiling... >>
 
 read regex [ wh
 .o. kw
-.o. k2c
+!.o. k2c
 .o. kk2ck
 .o. ks2x
 .o. LSyllCns 
 !.o. yacc 
 .o. VghV
-.o. oe2o
+!.o. rghV
+!.o. oe2o
 .o. ssh
+.o. thdel
 .o. lexical
 ] ;
 
