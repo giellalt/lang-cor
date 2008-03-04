@@ -1,2 +1,2 @@
-LEXICON NOUNSUF
-# ;
+LEXICON m
++N+Msc: # ;

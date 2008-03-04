@@ -3,6 +3,7 @@ Multichar_Symbols
 ! POS
 +N +V +A 
 +Adv +CC +CS +Interj +Pron +Num
+1+ 2+ 3+ 4+ 5+
 
 ! Verbal MSP
 +Prs +Fut +Prt +Prf 
@@ -20,22 +21,26 @@ Multichar_Symbols
 +Com +Cns +Tra +Ter
 +Ord
 +PxSg1 +PxSg2 +PxSg3 +PxPl1 +PxPl2 +PxPl3
-
+%^S %^A %^P %^M
 
 ! Key lexicon
 
 LEXICON Root
 
-Noun ;
-Verb ;
-Adjective ;
-Adverb ;
-Conjunction ;
-Subjunction ;
-Interjection ;
-Numeral ;
-Pronoun ;
-Postposition ;
-Punctuation ;
+1+:    Noun ;
+2+:%^S Noun ;
+3+:%^A Noun ;
+4+:%^P Noun ;
+5+:%^M Noun ;
+!Verb ;
+!Adjective ;
+!Adverb ;
+!Conjunction ;
+!Subjunction ;
+!Interjection ;
+!Numeral ;
+!Pronoun ;
+!Postposition ;
+!Punctuation ;
 
 
