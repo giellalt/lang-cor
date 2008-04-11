@@ -95,20 +95,15 @@ kor.save: ../bin/kor.save
 	@xfst < ../../tmp/kor-save-script
 	@rm -f ../../tmp/kor-save-script
 
+
 # The first goal is to build kor-lex.save
 # This goal depends on a bunch of lexicon files
-
 kor-lex.save: ../bin/kor-lex.save
 ../bin/kor-lex.save: kor-lex.txt noun-kor-morph.txt noun-kor-lex.txt 
-#        adj-kor-lex.txt \
-#	adv-kor-lex.txt verb-kor-lex.txt pron-kor-lex.txt punct-kor-lex.txt \
-#	pp-kor-lex.txt
 	@echo
 	@echo "*** Building kor-lex.save ***" ;
 	@echo
 	printf "compile-source kor-lex.txt noun-kor-morph.txt noun-kor-lex.txt \n\
-#	adj-kor-lex.txt verb-kor-lex.txt verb-kor-morph.txt pron-kor-lex.txt \
-#	adv-kor-lex.txt pp-kor-lex.txt punct-kor-lex.txt \n\
 	save-source ../bin/kor-lex.save \n\
 	quit \n" > ../../tmp/kor-lex-save-script
 	@lexc < ../../tmp/kor-lex-save-script
@@ -131,4 +126,14 @@ xfst-kor.bin: ../bin/xfst-kor.bin
 clean:
 	@rm -f ../bin/*.bin ../bin/*.fst ../bin/*.save
 
+
+
+
+
+#        adj-kor-lex.txt \
+#	adv-kor-lex.txt verb-kor-lex.txt pron-kor-lex.txt punct-kor-lex.txt \
+#	pp-kor-lex.txt
+
+#	adj-kor-lex.txt verb-kor-lex.txt verb-kor-morph.txt pron-kor-lex.txt \
+#	adv-kor-lex.txt pp-kor-lex.txt punct-kor-lex.txt \n\
 
