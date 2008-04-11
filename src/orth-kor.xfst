@@ -32,7 +32,7 @@ define Syll Cns* Vow+ Cns* ;
 echo << Rules >>
 
 define wh       h w -> w h , H w -> W h , H W -> W H ;
-define kw       k -> c , K -> C || _ [ w | W ] ;
+define kw       k -> q , K -> Q || _ [ w | W ] ;
 define k2c      k -> c ,     K -> C ||  _ [ BackVow | l | r ] ;
 define kk2ck    k k -> c k , K K -> C K ;
 define ks2x     k s -> x ,   K S -> X ;
@@ -49,10 +49,13 @@ define thdel  t h -> ’ || Syll Vow _ .#. ;
 define lexical {kemmeres} -> {kemeres} ,
 {dehow} -> {dyhow} ,
 {bywnans} -> {bewnans} , 
-{whoer} -> {whor} ,
+{hwoer} -> {hwor} ,
 {goer} -> {gor} ,
 {noeth} -> {noth} ,
-{Sesar} -> {Cæsar}
+{troen} -> {tron},
+{koen} -> {kon},
+{Sesar} -> {Cæsar},
+{sita} -> {cita}
 ;
 
 
