@@ -14,13 +14,8 @@ Multichar_Symbols
 
 ! Nominal MSP
 +Sg +Pl
-+Nom +Acc +Gen +Abl +Dat +Abe 
-+Adc 
-+Ins +Apr +Ine +Ill +Ela +Egr
-+Prl +Apr
-+Com +Cns +Tra +Ter
++Nom +Acc +Gen 
 +Ord
-+PxSg1 +PxSg2 +PxSg3 +PxPl1 +PxPl2 +PxPl3
 %^S %^A %^P %^M
 %>
 
