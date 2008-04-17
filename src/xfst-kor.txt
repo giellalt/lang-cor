@@ -7,7 +7,7 @@ echo << We define our definitions >>
 # ^P = 4 = hard mutation
 # ^M = 5 = mixed mutation
 
-define Dummy [ %^S | %^A | %^P | %^M ] ;
+define Dummy [ %^S | %^A | %^P | %^M | %> ] ;
 #define Vow a e i o u y ;
 #define Cns b c d f g h j k l m n p q r s t v w x z ;
 #define Sgm [ Vow | Cns ] ;

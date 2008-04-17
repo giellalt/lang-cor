@@ -22,6 +22,7 @@ Multichar_Symbols
 +Ord
 +PxSg1 +PxSg2 +PxSg3 +PxPl1 +PxPl2 +PxPl3
 %^S %^A %^P %^M
+%>
 
 ! Key lexicon
 
