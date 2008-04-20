@@ -1,0 +1,67 @@
+!!!First-aid documentation for the Cornish analyser project
+
+
+You may work on the central computer (victorio) or on your own Mac or Linux.
+
+
+
+!!victorio
+
+If you do the former, open a terminal window, and write (substitute trond for your own name)
+
+{{ssh trond@victorio.uit.no}}
+
+!!If you work on your local machine:
+
+
+!!Local machine or victorio:
+
+Pro/con factors deciding whether to work on victorio or on own machine:
+
+* pro victorio:
+** All tools are there (locally you must install them)
+** The shell is UTF-8
+* con victorio:
+** The learning curve for emacs is a bit steep, But well, you can use nano.
+* pro local (if it is macintosh or linux):
+** If you do not know emacs or vim, you may use SubEthaEdit (mac)
+** or gedit (Linux) locally. And you may work online.
+* Windows?
+** You may edit files on Windows (see chapter on TortoiseCVS on the giellatekno documentation page) but running the analyser  is difficult.
+
+!!After having logged in
+
+ (or opened terminal locally, if you work locally on mac or linux)
+
+
+# You want the latest version of the tools. Write: {{cvs co st}}
+# If there are files from st/kor/src/ listed in the long list of files,
+  you want to __compile__ yourself new binary (program) files. Go to the 
+  Cornish source catalogue ({{cd st/kor/src}} and write {{make}}.
+# Now, if there are no error messages, you have a Cornish analyser, 
+  in the neighbouring folder st/kor/bin.
+  Its name is {{kor.fst}} (for analysis) and {{ikor.fst}} (for generation).
+  You may use it with the following command
+  (before you use it it might be wise to go one catalogue up:
+  ({{cd ..}}), In this way, your working catalogue is kor, which is 
+  convenient.).  Then, write {{lookup -flags mbTT -utf8 bin/kor.fst}}.Then 
+  you may write in .e.g. {{grogys}} or some mutated form of it.
+
+
+
+
+!!To edit the texts:
+
+open the files:
+
+* kor-lex.txt
+** containing tags and common morphology
+* noun-kor-lex.txt
+** containing noun roots	
+* noun-kor-morph.txt
+** containing noun morphology
+* xfst-kor.txt	
+** containing phonological rules	
+	
+Every time you have changed the source files you must compile again.	
+
