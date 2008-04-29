@@ -1,3 +1,21 @@
 LEXICON m
+!<<<<<<< noun-kor-morph.txt
++N+Msc: Number ;
+
+LEXICON f
++N+Fem  Number ;
+
+LEXICON maff
++N+Msc:%^V Number ;
+
+LEXICON faff
++N+Fem:%^V Number ;
+
+LEXICON Number
++Pl:yon@U.PL.YON@ # ;
++Pl:ow@U.PL.OW@ # ;
+
+!=======
 +N+Msc+Sg: # ;
 +N+Msc+Pl:%>en # ;
+!>>>>>>> 1.3
