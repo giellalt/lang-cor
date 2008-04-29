@@ -1,21 +1,48 @@
+! Cornish noun morphology
+
+! Masculine stem classes
+! ======================
+
 LEXICON m
-!<<<<<<< noun-kor-morph.txt
-+N+Msc: Number ;
++N+Msc: sg ;
++N+Msc: owpl ;
+
+LEXICON m-yow
++N+Msc:    sg ;
++N+Msc:    yowpl ;
+
+LEXICON m-aff-yon
++N+Msc:    sg ;
++N+Msc:%^V yonpl ;
+
+LEXICON m-pltantum
++N+Msc+PLT:   # ;
+
+! Feminine stem classes
+! =====================
 
 LEXICON f
-+N+Fem  Number ;
-
-LEXICON maff
-+N+Msc:%^V Number ;
++N+Fem:  sg ;
++N+Fem:  yowpl ;
 
 LEXICON faff
-+N+Fem:%^V Number ;
++N+Fem:    sg ;
++N+Fem:%^V yonpl ;
 
-LEXICON Number
-+Pl:yon@U.PL.YON@ # ;
-+Pl:ow@U.PL.OW@ # ;
 
-!=======
-+N+Msc+Sg: # ;
-+N+Msc+Pl:%>en # ;
-!>>>>>>> 1.3
+! Number lexica
+! =============
+
+LEXICON sg
++Sg: # ;
+
+LEXICON yonpl
++Pl:yon # ;
+
+LEXICON owpl
++Pl:ow # ;
+
+LEXICON yowpl
++Pl:yow # ;
+
+

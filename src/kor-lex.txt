@@ -13,19 +13,15 @@ Multichar_Symbols
 +Pos +Neg +ConNeg
 
 ! Nominal MSP
-+Sg +Pl
++Sg +Pl +PLT
 +Nom +Acc +Gen 
 +Ord
-!<<<<<<< kor-lex.txt
-!+PxSg1 +PxSg2 +PxSg3 +PxPl1 +PxPl2 +PxPl3
-!%^S %^A %^P %^M %^V
-!+Msc +Fem
-!=======
+
++Msc +Fem
+
 %^S %^A %^P %^M %^V
 %>
-@U.PL.OW@
-@U.PL.YON@
-!>>>>>>> 1.4
+
 
 ! Key lexicon
 

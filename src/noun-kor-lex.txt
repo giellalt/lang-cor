@@ -1,4 +1,24 @@
 LEXICON Noun 
 
-grogys:gwrogys@U.PL.OW@ m "belt" ;
-mab@U.PL.YON@ maff "son" ;
+! Masculines
+! ==========
+
+! ow plural
+grogys:gwrogys m-yow      "belt" ;
+arghans        m-pltantum "money" ;
+
+! Root vowel change
+mab            m-aff-yon "son" ;
+
+
+! Feminines
+! =========
+
+! ow plural
+abases f "abbess" ;
+
+! yow plural
+
+! yon plural
+
+
