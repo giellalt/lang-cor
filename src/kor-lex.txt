@@ -16,8 +16,16 @@ Multichar_Symbols
 +Sg +Pl
 +Nom +Acc +Gen 
 +Ord
-%^S %^A %^P %^M
+!<<<<<<< kor-lex.txt
+!+PxSg1 +PxSg2 +PxSg3 +PxPl1 +PxPl2 +PxPl3
+!%^S %^A %^P %^M %^V
+!+Msc +Fem
+!=======
+%^S %^A %^P %^M %^V
 %>
+@U.PL.OW@
+@U.PL.YON@
+!>>>>>>> 1.4
 
 ! Key lexicon
 
