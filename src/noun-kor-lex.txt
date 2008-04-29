@@ -1,3 +1,4 @@
 LEXICON Noun 
 
-grogys:gwrogys m "belt" ;
+grogys:gwrogys@U.PL.OW@ m "belt" ;
+mab@U.PL.YON@ maff "son" ;
