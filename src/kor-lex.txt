@@ -19,7 +19,7 @@ Multichar_Symbols
 
 +Msc +Fem
 
-%^S %^A %^P %^M %^V
+%^S %^A %^P %^M %^V %^E
 %>
 
 

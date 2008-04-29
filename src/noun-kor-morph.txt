@@ -11,9 +11,28 @@ LEXICON m-yow
 +N+Msc:    sg ;
 +N+Msc:    yowpl ;
 
+LEXICON m-ys
++N+Msc:    sg ;
++N+Msc:    yspl ;
+
+LEXICON m-yon
++N+Msc:    sg ;
++N+Msc:    yonpl ;
+
 LEXICON m-aff-yon
 +N+Msc:    sg ;
-+N+Msc:%^V yonpl ;
++N+Msc:    yonpl ;
+
+LEXICON m-aff-i
++N+Msc:    sg  ;
++N+Msc:%^V ipl ;
+
+LEXICON m-ag
++N+Msc:%^E sg ;
++N+Msc:     yonpl ;
+
+LEXICON m-sgtantum
++N+Msc:       # ;
 
 LEXICON m-pltantum
 +N+Msc+PLT:   # ;
@@ -45,4 +64,8 @@ LEXICON owpl
 LEXICON yowpl
 +Pl:yow # ;
 
+LEXICON ipl 
++PL:i   # ;
 
+LEXICON yspl
++PL:ys  # ;

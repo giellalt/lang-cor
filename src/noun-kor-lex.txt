@@ -1,15 +1,56 @@
 LEXICON Noun 
 
-! Masculines
+! Masculine
 ! ==========
 
-! ow plural
-grogys:gwrogys m-yow      "belt" ;
-arghans        m-pltantum "money" ;
+! ow plural. All -(y)ans nouns are here even though the dictionary lists no plurals for them (Brown, p. 30)
+abatti         m          "abbey"    ;
+abes           m          "abbot"    ;
+adhyskans      m          "education"  ;
+afinans        m          "decoration" ;
+aghskrif:aghskriv m       "pedigree" ;
+ahwer          m          "sorrow"   ; !no plural listed
+akont          m          "account" ;
+akontyans      m          "reckoning" ;
+akord          m          "accord" ; !no plural listed
+
+!yow plural
+aber           m-yow      "river mouth" ;
+grogys:gwrogys m-yow      "belt"     ;
+acheson        m-yow      "reason"   ;
+
+!ys plural
+acheson        m-ys       "reason"   ;
+adamant        m-ys       "diamond"  ;
+akont          m-ys       "account"  ;
+
+!yon plural
+akontydh       m-yon      "accountant" ;
+
+!-(y)er agent nouns
+aghskrifer:aghskrifor m-ag "genealogist" ;
+
+! Duals
+! abrans       m          "eyebrow" This needs to be done later on
 
 ! Root vowel change
+! =======
+
+! yon plural
+
 mab            m-aff-yon "son" ;
 
+! i plural
+
+!abostol        m-aff-i    "apostle"  ; not working yet
+
+!Singularia tantum
+adhvetter      m-sgtantum "ripeness"   ;
+Afrikan        m-sgtantum "African"    ;
+agha           m-sgtantum "dread"      ;
+
+!Pluralia tantum
+arghans        m-pltantum "money" ;
 
 ! Feminines
 ! =========

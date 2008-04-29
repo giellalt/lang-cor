@@ -7,8 +7,9 @@ echo << We define our definitions >>
 ! ^P = 4 = hard mutation
 ! ^M = 5 = mixed mutation
 ! ^V = vowel affection
+! ^E = triggers o to e in agent suffix
 
-define Dummy [ %^S | %^A | %^P | %^M | %^V | %> ] ;
+define Dummy [ %^S | %^A | %^P | %^M | %^V | %^E | %> ] ;
 define Vow   [ a | e |  i | o | u | y ] ;
 define Cns   [ b | c | d | f | g | h | j | k | l | m | n | p | q | r | s | 
                t | v | w | x | z ] ;
@@ -41,6 +42,10 @@ define DummyDeletion [ Dummy -> 0 ] ;
 define VowelAffection [ a -> e, e -> y, o -> e || _ [ Sgm | Dummy ]*
 %^V ] ;
 
+define Devoicing [ v -> f || _ .#. ] ;
+
+define OtoE [ o -> e || _ [ r %^E ] ] ;
+
 echo << We compile >>
 
 read regex [ identity
@@ -54,5 +59,7 @@ read regex [ identity
 .o. prov
 .o. mixed
 .o. VowelAffection
+.o. Devoicing
+.o. OtoE
 .o. DummyDeletion 
 ] ;
