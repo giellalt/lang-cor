@@ -13,6 +13,7 @@ ahwer          m          "sorrow"   ; !no plural listed
 akont          m          "account" ;
 akontyans      m          "reckoning" ;
 akord          m          "accord" ; !no plural listed
+akordyans      m          "agreement" ;
 
 !yow plural
 aber           m-yow      "river mouth" ;
@@ -43,6 +44,8 @@ mab            m-aff-yon "son" ;
 ! i plural
 
 !abostol        m-aff-i    "apostle"  ; not working yet
+
+
 
 !Singularia tantum
 adhvetter      m-sgtantum "ripeness"   ;
