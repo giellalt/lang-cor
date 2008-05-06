@@ -20,18 +20,15 @@ Multichar_Symbols
 +Msc +Fem
 
 %^S %^A %^P %^M %^V %^E
-%>
+%> %^D
 
 
 ! Key lexicon
 
 LEXICON Root
 
-1+:    Noun ;
-2+:%^S Noun ;
-3+:%^A Noun ;
-4+:%^P Noun ;
-5+:%^M Noun ;
+    Noun ;
+
 !Verb ;
 !Adjective ;
 !Adverb ;

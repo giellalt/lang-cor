@@ -28,14 +28,14 @@ LEXICON m-aff-i
 +N+Msc:%^V ipl ;
 
 LEXICON m-ag
-+N+Msc:%^E sg ;
++N+Msc:%^E  sg ;
 +N+Msc:     yonpl ;
 
 LEXICON m-sgtantum
-+N+Msc:       # ;
++N+Msc:       mutation ;
 
 LEXICON m-pltantum
-+N+Msc+PLT:   # ;
++N+Msc+PLT:   mutation ;
 
 ! Feminine stem classes
 ! =====================
@@ -53,19 +53,29 @@ LEXICON faff
 ! =============
 
 LEXICON sg
-+Sg: # ;
++Sg: mutation ;
 
 LEXICON yonpl
-+Pl:yon # ;
++Pl:yon mutation ;
 
 LEXICON owpl
-+Pl:ow # ;
++Pl:ow mutation ;
 
 LEXICON yowpl
-+Pl:yow # ;
++Pl:yow mutation ;
 
 LEXICON ipl 
-+PL:i   # ;
++PL:i   mutation ;
 
 LEXICON yspl
-+PL:ys  # ;
++PL:ys  mutation ;
+
+! Mutation lexicon
+! ================
+
+LEXICON mutation 
+:%^D        #        ;
++S:%^S  #        ;
++M:%^M  #        ;
++P:%^P  #        ;
++A:%^A  #        ;

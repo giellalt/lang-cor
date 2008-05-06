@@ -8,8 +8,9 @@ echo << We define our definitions >>
 ! ^M = 5 = mixed mutation
 ! ^V = vowel affection
 ! ^E = triggers o to e in agent suffix
+! ^D = no mutation dummy for immutable words
 
-define Dummy [ %^S | %^A | %^P | %^M | %^V | %^E | %> ] ;
+define Dummy [ %^S | %^A | %^P | %^M | %^V | %^E | %> | %^D ] ;
 define Vow   [ a | e |  i | o | u | y ] ;
 define Cns   [ b | c | d | f | g | h | j | k | l | m | n | p | q | r | s | 
                t | v | w | x | z ] ;
@@ -19,36 +20,42 @@ echo << We define our rules >>
 
 define identity [ g -> g || .#. _ ] ;
 
-define gsoft [ g -> 0 || .#. %^S _ [a|e|i|l|r|w|y] ] ;
+define gsoft [ g -> 0 || .#. _ [a|e|i|l|r|w|y] [ Sgm ]* %^S ] ;
 
-define gmixed [ g -> h || .#. %^M _ [a|e|i|w|y] ] ;
+define gmixed [ g -> h || .#. _ [a|e|i|w|y] [Sgm]* %^M ] ;
 
 define softmut [ p -> b , t -> d , k -> g , 
                  b -> v , d -> d h , 
-                 m -> v , c h -> j || .#. %^S _ ] ;
+                 m -> v , c h -> j || .#. _ [Sgm]* %^S ] ;
 
-define gwsimplification [ w -> 0 || .#. (Dummy - %^S) g _ (r) [o|u] ] ;
+define gwsimplification [ w -> 0 || .#. g _ (r) [o|u] [Sgm]* (Dummy - %^S) ] ;
 
-define aspmut [ p -> f, t -> t h || .#. %^A _ ] ;
+define aspmut [ p -> f, t -> t h || .#. _ [Sgm]* %^A ] ;
 
-define kaspmut [ k -> h || .#. %^A _ ~[l|r] ] ;
+define kaspmut [ k -> h || .#. _ ~[l|r] [Sgm]* %^A ] ;
 
-define prov [ b -> p, d -> t, g -> k || .#. %^P _ ] ;
+define prov [ b -> p, d -> t, g -> k || .#. _ [Sgm ]* %^P ] ;
 
-define mixed [ b -> f, d -> t, m -> f || .#. %^M _ ] ;
+define mixed [ b -> f, d -> t, m -> f || .#. _ [Sgm ]* %^M ] ;
 
 define DummyDeletion [ Dummy -> 0 ] ;
 
-define VowelAffection [ a -> e, e -> y, o -> e || _ [ Sgm | Dummy ]*
+define VowelAffection [ a -> e, e -> y, o -> e || _ [ Sgm ]*
 %^V ] ;
 
 define Devoicing [ v -> f || _ .#. ] ;
 
 define OtoE [ o -> e || _ [ r %^E ] ] ;
 
+define Nonmutation [ a -> a, e -> e, o -> o, y -> y, u -> u, i -> i, f -> f,
+                     h -> h, j -> j, l -> l, n -> n, r -> r, s -> s, 
+                     v -> v, w -> w || .#. _ [Sgm]* [ ~[%^A|%^S|%^M|%^P] ] ] ;
+
 echo << We compile >>
 
-read regex [ identity
+read regex [ 
+Nonmutation
+.o. identity
 .o. gsoft
 .o. gmixed
 #.o. gtohw
