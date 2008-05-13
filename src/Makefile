@@ -46,7 +46,7 @@ kor.fst: ../bin/kor.fst
 	@echo
 	@echo "*** Building kor.fst ***" ;
 	@echo
-	@printf "read regex  [[@\"../bin/tag-delete.fst\"] .o. [[@\"../bin/kor.save\"] .o. \
+	@printf "read regex  [[@\"../bin/tag-delete.fst\"] .o. [@\"../bin/kor.save\"] .o. \
 	[@\"../bin/caseconv.fst\"]] ; \n\
 	save stack ../bin/kor.fst \n\
 	quit \n" > ../../tmp/kor-fst-script
