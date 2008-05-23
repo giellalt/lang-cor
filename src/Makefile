@@ -6,8 +6,14 @@
 # This is a preliminary file that builds a kor parser based upon
 # xfst and not twolc.
 
-#XFST = xfst -utf8
-#LEXC = lexc -utf8
+
+XFST = xfst -utf8
+LEXC = lexc -utf8
+
+ifeq (victorio.uit.no, $(shell hostname))
+XFST = /opt/sami/xerox/c-fsm/ix86-linux2.6-gcc3.4/bin/fst -utf8
+LEXC = /opt/sami/xerox/bin/lexc -utf8
+endif
 
 # Here we build a converter from KK to SWF. Not done.
 
