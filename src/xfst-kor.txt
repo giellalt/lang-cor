@@ -51,6 +51,8 @@ define Nonmutation [ a -> a, e -> e, o -> o, y -> y, u -> u, i -> i, f -> f,
                      h -> h, j -> j, l -> l, n -> n, r -> r, s -> s, 
                      v -> v, w -> w || .#. _ [Sgm]* [ ~[%^A|%^S|%^M|%^P] ] ] ;
 
+define VowelInitMut [%^A|%^S|%^M|%^P] -> 0 || .#. Vow Sgm+ _ ;
+
 echo << We compile >>
 
 read regex [ 
