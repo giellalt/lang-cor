@@ -2,10 +2,11 @@
 
 ! Masculine stem classes
 ! ======================
-
-LEXICON m
-+N+Msc: sg ;
-+N+Msc: owpl ;
+! The nouns get tags (to the left of :, i.e. in the upper representation
+! and the suffixes are found to the left of the colon
+LEXICON m 
++N+Msc: sg ; ! no suffix, of course
++N+Msc: owpl ; ! no suffix yet, see LEXICON owpl below
 
 LEXICON m-yow
 +N+Msc:    sg ;
@@ -25,14 +26,14 @@ LEXICON m-aff-yon
 
 LEXICON m-aff-i
 +N+Msc:    sg  ;
-+N+Msc:%^V ipl ;
++N+Msc:%^V ipl ; ! Trigger to signal MPh rule
 
 LEXICON m-ag
-+N+Msc:%^E  sg ;
++N+Msc:%^E  sg ; ! ditto
 +N+Msc:     yonpl ;
 
 LEXICON m-sgtantum
-+N+Msc:       mutation ;
++N+Msc:  mutation ;
 
 LEXICON m-pltantum
 +N+Msc+PLT:   mutation ;
@@ -48,15 +49,18 @@ LEXICON faff
 +N+Fem:    sg ;
 +N+Fem:%^V yonpl ;
 
+! Nest step: 
+! Here we add suffixes. These may be common to several stem classes
+! and are therefore pointed to in a different layer (this one)
 
 ! Number lexica
 ! =============
 
 LEXICON sg
-+Sg: mutation ;
++Sg: mutation ; ! No suffix here, only tag.
 
 LEXICON yonpl
-+Pl:yon mutation ;
++Pl:yon mutation ; ! Plural is yon, and there is mutation to come.
 
 LEXICON owpl
 +Pl:ow mutation ;
@@ -72,6 +76,10 @@ LEXICON yspl
 
 ! Mutation lexicon
 ! ================
+
+! This is the final lexicon. Here, no suffix is added, only some marks.
+! they will be deleted, but after having triggered rules in xfst-kor.txt.
+! The # symbol marks the end of the word string ( Root ... # )
 
 LEXICON mutation 
 :%^D        #        ;

@@ -1,6 +1,14 @@
 ! Cornish grammar file
 
+
+! This is the file for the morphophonological rules.
+
+! We keep a verbose style, at each point we tell what we will do.
+! That is the echo commands.
+
 echo << We define our definitions >>
+
+! Here, we have left some documentation for curious readers:
 
 ! ^S = 2 = soft mutation
 ! ^A = 3 = breathed mutation
@@ -10,19 +18,29 @@ echo << We define our definitions >>
 ! ^E = triggers o to e in agent suffix
 ! ^D = no mutation dummy for immutable words
 
+! These triggers are given a name, so that we can delete them when
+! they have done their job.
+
 define Dummy [ %^S | %^A | %^P | %^M | %^V | %^E | %> | %^D ] ;
 define Vow   [ a | e |  i | o | u | y ] ;
 define Cns   [ b | c | d | f | g | h | j | k | l | m | n | p | q | r | s | 
                t | v | w | x | z ] ;
 define Sgm   [ Vow | Cns ] ;
 
+! Here the action begins.
+
 echo << We define our rules >>
 
 define identity [ g -> g || .#. _ ] ;
 
+! If we encounter a final %^S symbol, we delete an initial g
+
 define gsoft [ g -> 0 || .#. _ [a|e|i|l|r|w|y] [ Sgm ]* %^S ] ;
 
+! etc.
 define gmixed [ g -> h || .#. _ [a|e|i|w|y] [Sgm]* %^M ] ;
+
+! Here, we generalise.
 
 define softmut [ p -> b , t -> d , k -> g , 
                  b -> v , d -> d h , 
@@ -38,7 +56,6 @@ define prov [ b -> p, d -> t, g -> k || .#. _ [Sgm ]* %^P ] ;
 
 define mixed [ b -> f, d -> t, m -> f || .#. _ [Sgm ]* %^M ] ;
 
-define DummyDeletion [ Dummy -> 0 ] ;
 
 define VowelAffection [ a -> e, e -> y, o -> e || _ [ Sgm ]*
 %^V ] ;
@@ -53,7 +70,17 @@ define Nonmutation [ a -> a, e -> e, o -> o, y -> y, u -> u, i -> i, f -> f,
 
 define VowelInitMut [%^A|%^S|%^M|%^P] -> 0 || .#. Vow Sgm+ _ ;
 
-echo << We compile >>
+
+! The triggers have done their work
+! The order of rules here is not crucial, crucial is the order below:
+! But it is a good idea to have the same rule here as well.
+! Dummydeletion comes last:
+
+define DummyDeletion [ Dummy -> 0 ] ;
+
+! Then we compile:
+
+echo << We compile it all >>
 
 read regex [ 
 Nonmutation

@@ -1,3 +1,6 @@
+! Cornish morphology
+
+! First, we declare multicharacter symbols
 Multichar_Symbols
 
 ! POS
@@ -20,16 +23,21 @@ Multichar_Symbols
 
 +Msc +Fem
 
+! Diacritical marks, to trigger 
+! morphophonological rules.
+! The "%" symbol literalises the next symbol
 %^S %^A %^P %^M %^V %^E
 %> %^D
 
 
 ! Key lexicon
+! ===========
 
+! This is the start lexicon.
 LEXICON Root
 
-    Noun ;
-
+    Noun ; ! The only POS as for now, go to
+           ! noun-kor-lex.txt for next step.
 !Verb ;
 !Adjective ;
 !Adverb ;
