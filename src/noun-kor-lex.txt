@@ -24,7 +24,7 @@ akont          m          "account" ;
 akontyans      m          "reckoning" ;
 akord          m          "accord" ; !no plural listed
 akordyans      m          "agreement" ;
-
+akwityans      m          "receipt" ;
 !yow plural
 aber           m-yow      "river mouth" ;
 grogys:gwrogys m-yow      "belt"     ;
