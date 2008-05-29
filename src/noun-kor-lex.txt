@@ -63,7 +63,9 @@ Afrikan        m-sgtantum "African"    ;
 agha           m-sgtantum "dread"      ;
 
 !Pluralia tantum
-arghans        m-pltantum "money" ;
+arghans        m-pltantum "money" ; !MF
+mona           m-pltantum "money" ; !NW
+! mona is here as illustration, should get a new continuation lex
 
 ! Feminines
 ! =========
