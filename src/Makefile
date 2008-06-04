@@ -7,13 +7,14 @@
 # xfst and not twolc.
 
 
-XFST = xfst -utf8
-LEXC = lexc -utf8
-
 ifeq (victorio.uit.no, $(shell hostname))
 XFST = /opt/sami/xerox/c-fsm/ix86-linux2.6-gcc3.4/bin/fst -utf8
 LEXC = /opt/sami/xerox/bin/lexc -utf8
 endif
+
+XFST = xfst -utf8
+LEXC = lexc -utf8
+
 
 # Here we build a converter from KK to SWF. Not done.
 
@@ -114,8 +115,8 @@ kor-lex.save: ../bin/kor-lex.save
 	quit \n" > ../../tmp/kor-lex-save-script
 	@lexc < ../../tmp/kor-lex-save-script
 	rm -f ../../tmp/kor-lex-save-script
-	
-	
+
+
 # This goal is to make a tag-deletion fst
 
 tag-delete.fst: ../bin/tag-delete.fst
@@ -128,7 +129,7 @@ tag-delete.fst: ../bin/tag-delete.fst
 	quit \n" > ../../tmp/tag-delete-script
 	@xfst -utf8 < ../../tmp/tag-delete-script
 	@rm -f ../../tmp/tag-delete-script
-	
+
 
 # The second goal is to build xfst-kor.bin
 # This goal depends on xfst-kor.txt
