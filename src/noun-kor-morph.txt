@@ -60,7 +60,7 @@ LEXICON sg
 +Sg: mutation ; ! No suffix here, only tag.
 
 LEXICON yonpl
-+Pl:yon mutation ; ! Plural is yon, and there is mutation to come.
++Pl:%^Vyon mutation ; ! Plural is yon, and there is mutation to come.
 
 LEXICON owpl
 +Pl:ow mutation ;
