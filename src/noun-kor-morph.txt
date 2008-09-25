@@ -4,6 +4,7 @@
 ! ======================
 ! The nouns get tags (to the left of :, i.e. in the upper representation
 ! and the suffixes are found to the left of the colon
+
 LEXICON m 
 +N+Msc: sg ; ! no suffix, of course
 +N+Msc: owpl ; ! no suffix yet, see LEXICON owpl below
@@ -12,9 +13,20 @@ LEXICON m-yow
 +N+Msc:    sg ;
 +N+Msc:    yowpl ;
 
+
 LEXICON m-ys
 +N+Msc:    sg ;
 +N+Msc:    yspl ;
+
+LEXICON m-es
++N+Msc:    sg ;
++N+Msc:    espl ;
+
+LEXICON m-s
++N+Msc:    sg ;
++N+Msc:    spl ;
+
+
 
 LEXICON m-yon
 +N+Msc:    sg ;
@@ -26,7 +38,7 @@ LEXICON m-aff-yon
 
 LEXICON m-aff-i
 +N+Msc:    sg  ;
-+N+Msc:%^V ipl ; ! Trigger to signal MPh rule
++N+Msc:    ipl ; ! Need no trigger to signal MPh rule
 
 LEXICON m-ag
 +N+Msc:%^E  sg ; ! ditto
@@ -60,19 +72,26 @@ LEXICON sg
 +Sg: mutation ; ! No suffix here, only tag.
 
 LEXICON yonpl
-+Pl:%^Vyon mutation ; ! Plural is yon, and there is mutation to come.
++Pl:%^V%>yon mutation ; ! Plural is yon, and there is mutation to come.
 
 LEXICON owpl
-+Pl:ow mutation ;
++Pl:%>ow mutation ;
 
 LEXICON yowpl
-+Pl:yow mutation ;
++Pl:%>yow mutation ;
 
 LEXICON ipl 
-+PL:i   mutation ;
++PL:%>i   mutation ;
 
 LEXICON yspl
-+PL:ys  mutation ;
++PL:%>ys  mutation ;
+
+LEXICON espl
++PL:%>es  mutation ;
+
+LEXICON spl
++PL:%>s  mutation ;
+
 
 ! Mutation lexicon
 ! ================
@@ -81,9 +100,13 @@ LEXICON yspl
 ! they will be deleted, but after having triggered rules in xfst-kor.txt.
 ! The # symbol marks the end of the word string ( Root ... # )
 
+! The mutations are here given tags and multi-char symbols.
+! The symbols are deleted by DummyDeletion in xfst-kor.txt.
+
 LEXICON mutation 
-:%^D        #        ;
-+S:%^S  #        ;
-+M:%^M  #        ;
-+P:%^P  #        ;
-+A:%^A  #        ;
+  :%^D  #        ; ! baseform
++S:%^S  #        ; ! soft, lenition
++M:%^M  #        ; ! mixed
++P:%^P  #        ; ! provexion
++A:%^A  #        ; ! aspiration
+

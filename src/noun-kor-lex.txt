@@ -12,23 +12,40 @@ LEXICON Noun
 ! The morphology is then handeled in noun-kor-morph.txt
 
 ! Here the noun types begin:
+! ==========================
 
-! ow plural. All -(y)ans nouns are here even though the dictionary lists no plurals for them (Brown, p. 30)
+! ow plural
+! --------
+!All -(y)ans nouns are here even though the dictionary lists no plurals for them (Brown, p. 30)
 abatti         m          "abbey"    ;
 abes           m          "abbot"    ;
 adhyskans      m          "education"  ;
 afinans        m          "decoration" ;
-aghskrif:aghskriv m       "pedigree" ;
+aghskrif       m          "pedigree" ;
 ahwer          m          "sorrow"   ; !no plural listed
 akont          m          "account" ;
 akontyans      m          "reckoning" ;
 akord          m          "accord" ; !no plural listed
 akordyans      m          "agreement" ;
 akwityans      m          "receipt" ;
+babi		   m		  "baby" ;
+bagas		   m		  "group" ;
+bagas-gwari	   m 		  "play group" ;
+bagasik		   m		  "batch" ; 
+berrskrif      m          "summary" ;
+mammskrif      m          "original text" ;
+
+
 !yow plural
+!----------
 aber           m-yow      "river mouth" ;
-grogys:gwrogys m-yow      "belt"     ;
+grogys 		   m-yow      "belt"     ;
+gwrogys        m-yow      "belt"     ;
 acheson        m-yow      "reason"   ;
+bal			   m-yow	  "mine"     ;
+balyer		   m-yow      "barrel"   ;
+begel          m-yow      "navel, hillock" ;
+begh           m-yow      "load"     ;
 
 !ys plural
 acheson        m-ys       "reason"   ;
@@ -38,8 +55,30 @@ akont          m-ys       "account"  ;
 !yon plural
 akontydh       m-yon      "accountant" ;
 
+
 !-(y)er agent nouns
 aghskrifer:aghskrifor m-ag "genealogist" ;
+bleujenner:bleujennor m-ag "florist" ;
+begyer:begyor         m-ag "beggar" ;
+
+
+! -es plural
+! ---------
+
+baban         m-es "baby" ; 
+badh		  m-es "boar" ;
+
+! -s plural
+
+bacheler      m-s  "bachelor" ;
+balyer        m-s  "balyers" ;
+banana        m-s  "banana" ;
+begyer        m-s  "beggar" ;
+
+! balek-wörter
+
+balek:bale3k m ;
+
 
 ! Duals
 ! abrans       m          "eyebrow" This needs to be done later on
@@ -49,11 +88,11 @@ aghskrifer:aghskrifor m-ag "genealogist" ;
 
 ! yon plural
 
-mab            m-aff-yon "son" ;
+mab:ma4b            m-yon "son" ;
 
 ! i plural
 
-!abostol        m-aff-i    "apostle"  ; not working yet
+abostol:abo4sto4l        m-aff-i    "apostle"  ; !not working yet
 
 
 
@@ -61,6 +100,10 @@ mab            m-aff-yon "son" ;
 adhvetter      m-sgtantum "ripeness"   ;
 Afrikan        m-sgtantum "African"    ;
 agha           m-sgtantum "dread"      ;
+badh		   m-sgtantum "bath"       ;
+backen		   m-sgtantum "bacon"      ;
+blam		   m-sgtantum "blame"      ;
+blas           m-sgtantum "taste, smell" ;
 
 !Pluralia tantum
 arghans        m-pltantum "money" ; !MF

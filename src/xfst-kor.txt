@@ -1,4 +1,4 @@
-! Cornish grammar file
+! Cornish morph-phon grammar file
 
 
 ! This is the file for the morphophonological rules.
@@ -21,15 +21,21 @@ echo << We define our definitions >>
 ! These triggers are given a name, so that we can delete them when
 ! they have done their job.
 
-define Dummy [ %^S | %^A | %^P | %^M | %^V | %^E | %> | %^D ] ;
-define Vow   [ a | e |  i | o | u | y ] ;
+define Dummy [ %^S | %^A | %^P | %^M | %^V | %^E | %> | %^D | %^UML ] ;
+
+define Vow   [ a  | e  | i | o | u | y |
+               e3 | a4 | o4 ] ;
 define Cns   [ b | c | d | f | g | h | j | k | l | m | n | p | q | r | s | 
                t | v | w | x | z ] ;
-define Sgm   [ Vow | Cns ] ;
+define Symbols [ %- ] ;
+               
+define Sgm   [ Vow | Cns | Dummy | Symbols | Archi ] ;
 
 ! Here the action begins.
 
 echo << We define our rules >>
+
+echo << ... first the mutations >>
 
 define identity [ g -> g || .#. _ ] ;
 
@@ -56,25 +62,37 @@ define prov [ b -> p, d -> t, g -> k || .#. _ [Sgm ]* %^P ] ;
 
 define mixed [ b -> f, d -> t, m -> f || .#. _ [Sgm ]* %^M ] ;
 
-
-define VowelAffection [ a -> e, e -> y, o -> e || _ [ Sgm ]*
-%^V ] ;
-
-define Devoicing [ v -> f || _ .#. ] ;
-
-define OtoE [ o -> e || _ [ r %^E ] ] ;
+!define cluster [ w -> 0 || g _ r [Sgm]* [%^D|%^P]];
 
 define Nonmutation [ a -> a, e -> e, o -> o, y -> y, u -> u, i -> i, f -> f,
                      h -> h, j -> j, l -> l, n -> n, r -> r, s -> s, 
                      v -> v, w -> w || .#. _ [Sgm]* [ ~[%^A|%^S|%^M|%^P] ] ] ;
 
-define VowelInitMut [%^A|%^S|%^M|%^P] -> 0 || .#. Vow Sgm+ _ ;
 
+
+echo << ... then the rest >>
+
+define VowelAffection [ a -> e, e -> y, o -> e || _ [ Sgm ]* %^V ] ;
+
+define OtoE           [ o -> e || _ [ r %^E ] ] ;
+
+define Devoicing [ v -> f || _ .#. ] ;
+
+define LightSuffixEK e3 -> o || _ Cns %> o w ;
+
+define AuslautHerdung f -> v , t -> d , p -> b , k -> g || _(Dummy) %> Vow ;
+
+define Umlaut a4 -> e , o4 -> e || _ Sgm* [ %> | %^UML ] ; 
+! Always Uml if affix. Then Uml if no affix, but when %^UML mark
 
 ! The triggers have done their work
 ! The order of rules here is not crucial, crucial is the order below:
 ! But it is a good idea to have the same rule here as well.
 ! Dummydeletion comes last:
+
+echo << We tidy up our dummys >>
+
+define ArchiPhonemes         e3 -> e , a4 -> a , o4 -> o ;
 
 define DummyDeletion [ Dummy -> 0 ] ;
 
@@ -82,12 +100,10 @@ define DummyDeletion [ Dummy -> 0 ] ;
 
 echo << We compile it all >>
 
-read regex [ 
-Nonmutation
+read regex [ Nonmutation
 .o. identity
 .o. gsoft
 .o. gmixed
-#.o. gtohw
 .o. softmut 
 .o. gwsimplification
 .o. aspmut 
@@ -95,7 +111,11 @@ Nonmutation
 .o. prov
 .o. mixed
 .o. VowelAffection
-.o. Devoicing
 .o. OtoE
+.o. Devoicing
+.o. LightSuffixEK
+.o. AuslautHerdung
+.o. Umlaut
+.o. ArchiPhonemes
 .o. DummyDeletion 
 ] ;
