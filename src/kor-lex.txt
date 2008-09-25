@@ -29,9 +29,13 @@ Multichar_Symbols
 
 %^S %^A %^P %^M %^V %^E
 %> %^D
+%^UML
 
 ! Archiphonemes
- e3
+ e3    ! e to o in plural
+ a4 o4 !Umlaut phonemes, changing to e
+
+
 
 
 ! Key lexicon

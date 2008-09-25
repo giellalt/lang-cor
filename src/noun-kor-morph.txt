@@ -32,9 +32,9 @@ LEXICON m-yon
 +N+Msc:    sg ;
 +N+Msc:    yonpl ;
 
-LEXICON m-aff-yon
-+N+Msc:    sg ;
-+N+Msc:    yonpl ;
+!LEXICON m-aff-yon
+!+N+Msc:    sg ;
+!+N+Msc:    yonpl ;
 
 LEXICON m-aff-i
 +N+Msc:    sg  ;
@@ -57,9 +57,9 @@ LEXICON f
 +N+Fem:  sg ;
 +N+Fem:  yowpl ;
 
-LEXICON faff
-+N+Fem:    sg ;
-+N+Fem:%^V yonpl ;
+!LEXICON faff
+!+N+Fem:    sg ;
+!+N+Fem:%^V yonpl ;
 
 ! Nest step: 
 ! Here we add suffixes. These may be common to several stem classes
@@ -72,7 +72,8 @@ LEXICON sg
 +Sg: mutation ; ! No suffix here, only tag.
 
 LEXICON yonpl
-+Pl:%^V%>yon mutation ; ! Plural is yon, and there is mutation to come.
++Pl:%>yon mutation ; ! Plural is yon, and there is mutation to come.
+!+Pl:%^V%>yon mutation ; ! Plural is yon, and there is mutation to come.
 
 LEXICON owpl
 +Pl:%>ow mutation ;

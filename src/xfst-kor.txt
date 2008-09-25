@@ -82,7 +82,7 @@ define LightSuffixEK e3 -> o || _ Cns %> o w ;
 
 define AuslautHerdung f -> v , t -> d , p -> b , k -> g || _(Dummy) %> Vow ;
 
-define Umlaut a4 -> e , o4 -> e || _ Sgm* [ %> | %^UML ] ; 
+define Umlaut a4 -> e , o4 -> e || _ Sgm* [ %> y o n | %^UML ] ; 
 ! Always Uml if affix. Then Uml if no affix, but when %^UML mark
 
 ! The triggers have done their work
