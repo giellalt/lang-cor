@@ -16,6 +16,21 @@ XFST = xfst -utf8
 LEXC = lexc -utf8
 
 
+SRCS =  kor-lex.txt \
+		adv-kor-lex.txt \
+		noun-kor-lex.txt \
+		noun-kor-morph.txt \
+		pp-kor-lex.txt \
+		cc-kor-lex.txt \
+        verb-kor-lex.txt \
+        verb-kor-morph.txt \
+		cs-kor-lex.txt
+#        adj-kor-lex.txt \
+#        adj-kor-morph.txt \
+#		pron-kor-lex.txt \
+#		punct-kor-lex.txt \
+
+
 # Here we build a converter from KK to SWF. Not done.
 
 orth-kor.fst: ../bin/orth-kor.fst
@@ -106,11 +121,11 @@ kor.save: ../bin/kor.save
 # The first goal is to build kor-lex.save
 # This goal depends on a bunch of lexicon files
 kor-lex.save: ../bin/kor-lex.save
-../bin/kor-lex.save: kor-lex.txt noun-kor-morph.txt noun-kor-lex.txt 
+../bin/kor-lex.save: $(SRCS) 
 	@echo
 	@echo "*** Building kor-lex.save ***" ;
 	@echo
-	printf "compile-source kor-lex.txt noun-kor-morph.txt noun-kor-lex.txt \n\
+	printf "compile-source $(SRCS) \n\
 	save-source ../bin/kor-lex.save \n\
 	quit \n" > ../../tmp/kor-lex-save-script
 	@lexc < ../../tmp/kor-lex-save-script

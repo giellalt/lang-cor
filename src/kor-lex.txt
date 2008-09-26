@@ -5,7 +5,7 @@ Multichar_Symbols
 
 ! POS
 +N +V +A 
-+Adv +CC +CS +Interj +Pron +Num
++Adv +CC +CS +Interj +Pron +Num +Pr
 1+ 2+ 3+ 4+ 5+
 +S +M +P +A
 
@@ -44,17 +44,16 @@ Multichar_Symbols
 ! This is the start lexicon.
 LEXICON Root
 
-    Noun ; ! The only POS as for now, go to
-           ! noun-kor-lex.txt for next step.
-!Verb ;
+Adverb ;
+Noun ;
+Preposition ;
+Conjunction ;
+Subjunction ;
+Verb ;
 !Adjective ;
-!Adverb ;
-!Conjunction ;
-!Subjunction ;
 !Interjection ;
 !Numeral ;
 !Pronoun ;
-!Postposition ;
 !Punctuation ;
 
 

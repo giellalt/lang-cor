@@ -1,5 +1,14 @@
-LEXICON PP ! These are the indeclieable ones 
-+Po: #;
+! Cornish prepositions
 
-LEXICON Postposition
- PP ;
+LEXICON pp
++Pr: # ;
+
+LEXICON Preposition
+
+a pp "of, from" ; 
+a-barth pp "for the sake of, beside, in the name of, along with" ;
+a-dhann pp "from under, from beneath" ;
+a-dhiworth pp "from" ; 
+tann pp "by" ; 
+
+

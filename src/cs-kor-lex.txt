@@ -2,4 +2,23 @@ LEXICON CS
 +CS: #;
 
 LEXICON Subjunction
-den CS ;
+ages   CS "than" ;
+awos  CS "because, though, for the sake of, in spite of" ; 
+drefenn  CS "because, on account of" ;
+erna  CS "till, until" ;
+ernag  CS "till, until" ;
+es   CS "than" ;
+ha  CS "and (before consonants), while, then, and so" ;
+hedra  CS "while, as long as" ;
+ma  CS "so that" ;
+ma’s   CS "unless" ;
+maga   CS "as" ;
+mar   CS "if, if only" ;
+mar’s   CS "unless" ;
+mara   CS "if" ;
+maras   CS "if" ;
+marnas  CS "unless, except, save" ;
+mars   CS "if" ;
+may   CS "so that" ;
+mayth   CS "so that (before vowels)" ;
+ytho  CS "therefore, then, so, well then, in that case" ; 

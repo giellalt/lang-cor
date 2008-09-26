@@ -1,5 +1,7 @@
-LECIXON CC ;
+LEXICON CC 
 +CC: #;
 
-LEXICON Conjunction ;
-ja CC ;
+LEXICON Conjunction 
+mes   CC "but" ;
+and, CC "while, then, and so" ;
+hag  CC "and (before vowels)" ;
