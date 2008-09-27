@@ -17,16 +17,16 @@ LEXC = lexc -utf8
 
 
 SRCS =  kor-lex.txt \
-		adv-kor-lex.txt \
-		noun-kor-lex.txt \
-		noun-kor-morph.txt \
-		pp-kor-lex.txt \
-		cc-kor-lex.txt \
+	adv-kor-lex.txt \
+	noun-kor-lex.txt \
+	noun-kor-morph.txt \
+	pp-kor-lex.txt \
+	cc-kor-lex.txt \
+        adj-kor-lex.txt \
+        adj-kor-morph.txt \
         verb-kor-lex.txt \
         verb-kor-morph.txt \
-		cs-kor-lex.txt
-#        adj-kor-lex.txt \
-#        adj-kor-morph.txt \
+	cs-kor-lex.txt
 #		pron-kor-lex.txt \
 #		punct-kor-lex.txt \
 
