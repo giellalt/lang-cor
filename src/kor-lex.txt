@@ -54,6 +54,6 @@ Adjective ;
 !Interjection ;
 !Numeral ;
 !Pronoun ;
-!Punctuation ;
+Punctuation ;
 
 

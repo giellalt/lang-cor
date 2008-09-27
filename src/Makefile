@@ -26,9 +26,9 @@ SRCS =  kor-lex.txt \
         adj-kor-morph.txt \
         verb-kor-lex.txt \
         verb-kor-morph.txt \
-	cs-kor-lex.txt
+	cs-kor-lex.txt \
+	punct-kor-lex.txt \
 #		pron-kor-lex.txt \
-#		punct-kor-lex.txt \
 
 
 # Here we build a converter from KK to SWF. Not done.

@@ -57,9 +57,14 @@ LEXICON f
 +N+Fem:  sg ;
 +N+Fem:  yowpl ;
 
+LEXICON f-ow
++N+Fem:  sg ;
++N+Fem:  owpl ;
+
 !LEXICON faff
 !+N+Fem:    sg ;
 !+N+Fem:%^V yonpl ;
+
 
 ! Nest step: 
 ! Here we add suffixes. These may be common to several stem classes
