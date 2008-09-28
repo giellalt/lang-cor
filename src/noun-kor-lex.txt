@@ -591,7 +591,6 @@ tysk          f             "sheaf, mass (heap) " ;
 tysken          f             "sheaf, bunch " ;
 ughvarhas          f             "hypermarket " ;
 unnros          f             "unicycle" ;
-verb          f             "verb. " ;
 yalgh          f             "purse." ;
 Yedhowes          f             "Jewess. " ;
 yeth          f             "language, way of speaking. " ;
