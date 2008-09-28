@@ -1,3 +1,4 @@
+<<<<<<< .mine
 ! ================= !
 ! Verbal morphology 
 ! ================= !
@@ -10,7 +11,15 @@
 ! Auxiliaries
 ! -----------
 
-
+LEXICON COPULA
++Inf:besa # ;
++Ind+Prs+1Sg:esov # ;
++Ind+Prs+2Sg:esos # ;
++Ind+Prs+3Sg:yw # ;
++Ind+Prs+1Pl:eson # ;
++Ind+Prs+2Pl:esough # ;
++Ind+Prs+3Pl:esons # ;
++Ind+Prt:esa # ;
 
 ! Regular verbs
 ! -------------
@@ -126,6 +135,7 @@ LEXICON sbjimpf
 +2Pl:%>ewgh     # ;
 +3Pl:%>ens      # ;
 +Impers:%>ys     # ;
+
 
 
 
