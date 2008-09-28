@@ -103,6 +103,26 @@ LIST NOMINALHEAD = N Num Pers Refl Recipr Interr ;
 
 
 
+# Mutation sets
+
+# SMUT = 2 = soft mutation
+# AMUT = 3 = breathed mutation
+# PMUT = 4 = hard mutation
+# MMUT = 5 = mixed mutation
+
+LIST SMUT = "a" "a-ban" "a-dhann" "a-dhia" "ass" "dell" "dew" "diw" "dha" "dhe" "erna" "fatell" "hedra" "hwi" "kettel" "malbew" "mar" "mil" "na" "namna" "ny" "pan" "pana" "pur" "re" "seul" "ty" "war" "y" "yn-dann" "yn unn"  ;
+LIST AMUT = "ow" "hy" "aga" "tri" "teyr" "dy'" ;
+LIST PMUT = "owth" "ow" "mar" "mars" "mara" "maras" "a" ;
+LIST MMUT = "kyn" "maga" "may" "ple" "p'eur" "py" "'th" "y" "yn" ;
+
+LIST MUTTAG = Smut Amut Mmut Pmut ;
+
+# This assumes, the mutation sets are lexically triggered.
+# In order to have grammatical categories here, we must use other notations.
+# sieh 142 und 146, ist 146 in prinzip richtig?
+# possessor possessed 
+# where possessed is a lenited noun?
+
 # Boundary sets
 
 SET S-BOUNDARY = CS | Interr | (";") | BOS  | EOS ;
@@ -121,16 +141,27 @@ SET WORDMARK = WORD | MARK ;
 
 SECTION
 
+
 # Selecting mutated forms
 
-SELECT:PrSmut Smut IF (-1 ("a" Pr)) ;
+SELECT:PrSmut Smut IF (-1 SMUT) ;
+
+SELECT:PossSmut Smut IF (-1C N)(0 N);
+
 
 # Removed non-selected mutated forms
 
-SELECT:GenSmut Smut IF (-1C N)(0 N);
+# The idea is:
+# First we select the appropriate mutated forms (rules above)
+# In that operation, the form without a mut-tag is removed.
+# If the mut-less reading is left, it means no mut-rule has hit.
+# We then remove all the reading with mut tags and are left 
+# with the mutless one.
+# Now, whether this works as intended needs to be checked.
+# One weakness is that the rule as formulated now will not hit
+# when there is homonymy betw N and other POS.
 
-
-REMOVE:DelSmut Smut ; 
+REMOVE:DelMUT MUTTAG IF (0C N) ;
 
 
 
