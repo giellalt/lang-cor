@@ -149,7 +149,9 @@ mona           m-pltantum "money" ; !NW
 ! Masculines
 ! ==========
 
-! m-yow
+! ----- !
+! m-yow !
+! ----- !
 
 aber      m-yow  "river mouth"  ;
 anken      m-yow  "misery"  ;
@@ -408,9 +410,11 @@ uskitter      m-yow  "velocity"  ;
 ! Feminines 
 ! =========
 
-! f with ow plural
+! ================ !
+! f with ow plural !
+! ================ !
 
-abases f "abbess" ;
+abases         f            "abbess" ;
 tagel          f             "constriction, choker" ;
 taklen          f             "item" ;
 talgel          f             "pantry, buttery, store-cellar " ;
@@ -591,6 +595,7 @@ tysk          f             "sheaf, mass (heap) " ;
 tysken          f             "sheaf, bunch " ;
 ughvarhas          f             "hypermarket " ;
 unnros          f             "unicycle" ;
+verb          f             "verb. " ;
 yalgh          f             "purse." ;
 Yedhowes          f             "Jewess. " ;
 yeth          f             "language, way of speaking. " ;
@@ -600,3 +605,9 @@ ynjinores          f             "engineer. " ;
 ynys          f             "island, isolated place." ;
 yslan          f             "rick-yard, mowhay." ;
 
+
+! ===== !
+! f-yow !
+! ===== !
+
+rol       f-yow     "roll, list" ;
