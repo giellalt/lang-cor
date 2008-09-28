@@ -1,2 +1,135 @@
-LEXICON vb
-+Inf: # ;
+! ================= !
+! Verbal morphology 
+! ================= !
+
+
+! The declension classes
+! ======================
+
+
+! Auxiliaries
+! -----------
+
+
+
+! Regular verbs
+! -------------
+
+
+LEXICON vb ! regular verbs
++V+Inf:       # ;
++V+Ind+Prs:   indpres ;
++V+Ind+Prt:   indpret ;
++V+Ind+Ipf:   indimpf ;
++V+Ind+Plf:   pluperf ;
++V+Sbj+Prs:%^CD   sbjpres ;
++V+Sbj+Prt:%^CD   sbjimpf ;
+
+LEXICON vb-y ! verbs with -yn etc. ipf
++V+Inf:           # ;
++V+Ind+Prs:       indpres ;
++V+Ind+Prt:       indpret ;
++V+Ind+Ipf:       indimpf-y ; ! special y form
++V+Ind+Plf:       pluperf ;
++V+Sbj+Prs:%^CD   sbjpres ;
++V+Sbj+Prt:%^CD   sbjimpf ;
+
+LEXICON ERHI
++V+Inf:%^V%>i # ;
++V+Ind+Prs:       indpres1sg ;
++V+Ind+Prs:%^V    indpresrest ;
++V+Ind+Prt:       indpret ;
++V+Ind+Ipf:       indimpf ;
++V+Ind+Plf:       pluperf ;
++V+Sbj+Prs:%^CD   sbjpres ;
++V+Sbj+Prt:%^CD   sbjimpf ;
+
+LEXICON TAVA
++V+Inf:       # ;
++V+Ind+Prs:   indpres ;
++V+Ind+Prt:   indpret ;
++V+Ind+Ipf:   indimpf ;
++V+Ind+Plf:   pluperf ;
++V+Sbj+Prs:%^CD   sbjpres ;
++V+Sbj+Prt:%^CD   sbjimpf ;
+
+
+! The verbal continuation lexica
+! ==============================
+
+LEXICON indpres
+ indpres1sg ;
+ indpresrest ;
+
+LEXICON indpres1sg
++1Sg:%>av     # ;
+
+LEXICON indpresrest
++2Sg:%>ydh    # ;
++3Sg:%^TRUNC  # ;
++1Pl:%>yn     # ;
++2Pl:%>owgh   # ;
++3Pl:%>ons    # ;
++Impers:%>ir  # ;
+
+LEXICON indpret
++1Sg:%>is        # ;
++2Sg:%>sys       # ;
++3Sg:%>as        # ;
++1Pl:%>syn       # ;
++2Pl:%>sowgh     # ;
++3Pl:%>sons      # ;
++Impers:%>as     # ;
+
+LEXICON indimpf
++1Sg:%>en     # ;
++2Sg:%>es     # ;
++3Sg:%>a      # ;
++1Pl:%>en     # ;
++2Pl:%>ewgh   # ;
++3Pl:%>ens    # ;
++Impers:%>ys  # ;
+
+LEXICON indimpf-y
++1Sg:%>yn     # ;
++2Sg:%>ys     # ;
++3Sg:%>i      # ;
++1Pl:%>yn     # ;
++2Pl:%>ewgh   # ;
++3Pl:%>ens    # ;
++Impers:%>ys  # ;
+
+LEXICON pluperf
++1Sg:%>sen     # ;
++2Sg:%>ses     # ;
++3Sg:%>sa     # ;
++1Pl:%>sen     # ;
++2Pl:%>sewgh     # ;
++3Pl:%>sens     # ;
++Impers:%>sys  # ;
+
+
+LEXICON sbjpres
++1Sg:%>iv        # ;
++2Sg:%>i         # ;
++3Sg:%>o         # ;
++1Pl:%>syn       # ;
++2Pl:%>sowgh     # ;
++3Pl:%>sons      # ;
++Impers:%>as     # ;
+
+LEXICON sbjimpf
++1Sg:%>en        # ;
++2Sg:%>es         # ;
++3Sg:%>a         # ;
++1Pl:%>en       # ;
++2Pl:%>ewgh     # ;
++3Pl:%>ens      # ;
++Impers:%>ys     # ;
+
+
+
+
+
+
+
