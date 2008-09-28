@@ -110,9 +110,9 @@ LEXICON spl
 ! The symbols are deleted by DummyDeletion in xfst-kor.txt.
 
 LEXICON mutation 
-  :%^D  #        ; ! baseform
-+S:%^S  #        ; ! soft, lenition
-+M:%^M  #        ; ! mixed
-+P:%^P  #        ; ! provexion
-+A:%^A  #        ; ! aspiration
+     :%^D  #        ; ! baseform
++Smut:%^S  #        ; ! soft, lenition
++Mmut:%^M  #        ; ! mixed
++Pmut:%^P  #        ; ! provexion
++Amut:%^A  #        ; ! aspiration
 
