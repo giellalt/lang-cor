@@ -4,6 +4,7 @@ Personal ;
 Demonstrative ;
 Determinative ;
 Possessive ;
+Suffixed ;
 
 LEXICON Personal
 my+Pron+Pers+Nom+1Sg:my # ;
@@ -14,12 +15,29 @@ ev+Pron+Pers+Msc+Nom+3Sg:ev # ;
 ev+Pron+Pers+Msc+Acc+3Sg:'n # ;
 hi+Pron+Pers+Fem+Nom+3Sg:hi # ;
 hi+Pron+Pers+Fem+Acc+3Sg:'s # ;
-ni+Pron+Pers+Nom+3Sg:ni # ;
-ni+Pron+Pers+Acc+3Sg:'gan # ;
-hwi+Pron+Pers+Nom+3Sg:hwi # ;
-hwi+Pron+Pers+Acc+3Sg:'gas # ;
-i+Pron+Pers+Nom+3Sg:i # ;
-i+Pron+Pers+Acc+3Sg:'s # ;
+ni+Pron+Pers+Nom+1Pl:ni # ;
+ni+Pron+Pers+Acc+1Pl:'gan # ;
+hwi+Pron+Pers+Nom+2Pl:hwi # ;
+hwi+Pron+Pers+Acc+2Pl:'gas # ;
+i+Pron+Pers+Nom+3Pl:i # ;
+i+Pron+Pers+Acc+3Pl:'s # ;
+
+LEXICON Suffixed
+my+Pron+Pers+Suff+1Sg:vy # ;
+my+Pron+Pers+Suff+Emph+1Sg:evy # ;
+ty+Pron+Pers+Suff+2Sg:jy # ;
+ty+Pron+Pers+Suff+Emph+2Sg:tejy # ;
+ev+Pron+Pers+Msc+Suff+3Sg:ev # ;
+ev+Pron+Pers+Msc+Suff+3Sg:e # ;
+ev+Pron+Pers+Msc+Suff+Emph+3Sg:eev # ;
+hi+Pron+Pers+Fem+Suff+3Sg:hi # ;
+hi+Pron+Pers+Fem+Suff+Emph+3Sg:hyhi # ;
+ni+Pron+Pers+Suff+1Pl:ni # ;
+ni+Pron+Pers+Suff+Emph+1Pl:nyni # ;
+hwi+Pron+Pers+Suff+Emph+2Pl:hwi # ;
+hwi+Pron+Pers+Suff+Emph+2Pl:hwyhwi # ;
+i+Pron+Pers+Suff+3Pl:i # ;
+i+Pron+Pers+Suff+Emph+3Pl:ynsi # ;
 
 
 LEXICON Demonstrative
