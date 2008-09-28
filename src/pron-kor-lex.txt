@@ -3,33 +3,46 @@ LEXICON Pronoun
 Personal ;
 Demonstrative ;
 Determinative ;
-Reflexive ;
 Possessive ;
 
 LEXICON Personal
-jy+Pron+Pers+Acc+2Sg:jy # ;
+my+Pron+Pers+Nom+1Sg:my # ;
+my+Pron+Pers+Nom+1Sg:'m # ;
+ty+Pron+Pers+Nom+2Sg:ty # ;
+ty+Pron+Pers+Acc+2Sg:'th # ;
 ev+Pron+Pers+Msc+Nom+3Sg:ev # ;
-hi+Pron+Pers+Fem+Acc+3Sg:hi # ;
-ev+Pron+Pers+Msc+Gen+3Sg:y # ;
-hi+Pron+Pers+Fem+Gen+3Sg:hy # ;
+ev+Pron+Pers+Msc+Acc+3Sg:'n # ;
+hi+Pron+Pers+Fem+Nom+3Sg:hi # ;
+hi+Pron+Pers+Fem+Acc+3Sg:'s # ;
+ni+Pron+Pers+Nom+3Sg:ni # ;
+ni+Pron+Pers+Acc+3Sg:'gan # ;
+hwi+Pron+Pers+Nom+3Sg:hwi # ;
+hwi+Pron+Pers+Acc+3Sg:'gas # ;
+i+Pron+Pers+Nom+3Sg:i # ;
+i+Pron+Pers+Acc+3Sg:'s # ;
+
 
 LEXICON Demonstrative
 ma+Dem:ma # "this" ;
-hemm+Dem+Msc+Sg:hemm # "this" ;
-hemma+Dem+Msc+Sg:hemma # "this one" ;
-hamm+Dem+Fem+Sg:hamm # "this" ;
-hamma+Dem+Fem+Sg:hamma # "this one" ;
+na+Dem:na # "that" ;
+hemm+Dem+Msc+Sg:hemm # "this one (masc.)" ;
+hemma+Dem+Msc+Sg:hemma # "this one (masc.)" ;
+henn+Dem+Msc+Sg:henn # "that one (masc.)" ;
+henna+Dem+Msc+Sg:henna # "that one (masc.)" ;
+homm+Dem+Fem+Sg:homm # "this one (fem.)" ;
+homma+Dem+Fem+Sg:homma # "this one (fem.)" ;
+honn+Dem+Fem+Sg:honn # "that one (fem.)" ;
+honna+Dem+Fem+Sg:honna # "that one (fem.)" ;
+
 
 LEXICON Determinative
 an+Det+Def:an # ;
 
-LEXICON Reflexive
-# ;
-
 LEXICON Possessive 
-am+Pron+Poss+1Sg:am # ;
+ow+Pron+Poss+1Sg:ow # ;
 dha+Pron+Poss+2Sg:dha # ;
-a+Pron+Poss+3Sg:a # ;
+y+Pron+Poss+Msc+3Sg:y # ;
+hy+Pron+Poss+Fem+3Sg:hy # ;
 agan+Pron+Poss+1Pl:agan # ;
 agas+Pron+Poss+2Pl:agas # ;
 aga+Pron+Poss+3Pl:aga # ;
