@@ -2,13 +2,34 @@ LEXICON Pronoun
 
 Personal ;
 Demonstrative ;
+Determinative ;
 Reflexive ;
+Possessive ;
 
 LEXICON Personal
-K ;
+jy+Pron+Pers+Acc+2Sg:jy # ;
+ev+Pron+Pers+Msc+Nom+3Sg:ev # ;
+hi+Pron+Pers+Fem+Acc+3Sg:hi # ;
+ev+Pron+Pers+Msc+Gen+3Sg:y # ;
+hi+Pron+Pers+Fem+Gen+3Sg:hy # ;
 
 LEXICON Demonstrative
-K ;
+ma+Dem:ma # "this" ;
+hemm+Dem+Msc+Sg:hemm # "this" ;
+hemma+Dem+Msc+Sg:hemma # "this one" ;
+hamm+Dem+Fem+Sg:hamm # "this" ;
+hamma+Dem+Fem+Sg:hamma # "this one" ;
+
+LEXICON Determinative
+an+Det+Def:an # ;
 
 LEXICON Reflexive
-K ;
+# ;
+
+LEXICON Possessive 
+am+Pron+Poss+1Sg:am # ;
+dha+Pron+Poss+2Sg:dha # ;
+a+Pron+Poss+3Sg:a # ;
+agan+Pron+Poss+1Pl:agan # ;
+agas+Pron+Poss+2Pl:agas # ;
+aga+Pron+Poss+3Pl:aga # ;
