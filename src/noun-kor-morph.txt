@@ -55,11 +55,11 @@ LEXICON m-pltantum
 
 LEXICON f
 +N+Fem:  sg ;
-+N+Fem:  yowpl ;
-
-LEXICON f-ow
-+N+Fem:  sg ;
 +N+Fem:  owpl ;
+
+LEXICON f-yow
++N+Fem:  sg ;
++N+Fem:  yowpl ;
 
 !LEXICON faff
 !+N+Fem:    sg ;
