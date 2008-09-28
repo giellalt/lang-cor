@@ -3,12 +3,31 @@
 LEXICON pp
 +Pr: # ;
 
+LEXICON pp-pron
++Pr:          # ; ! bare form
++Pr+1Sg:ov    # ;
++Pr+2Sg:os    # ;
++Pr+Msc+3Sg:o # ;
++Pr+Fem+3Sg:i # ;
++Pr+1Pl:on    # ;
++Pr+2Pl:owgh  # ;
++Pr+3Pl:a     # ;
+
 LEXICON Preposition
 
-a pp "of, from" ; 
-a-barth pp "for the sake of, beside, in the name of, along with" ;
-a-dhann pp "from under, from beneath" ;
+a          pp "of, from" ; 
+a-barth    pp "for the sake of, beside, in the name of, along with" ;
+a-dhann    pp-pron "from under, from beneath" ;
 a-dhiworth pp "from" ; 
-tann pp "by" ; 
-
+dhe        pp "to, for, at" ;
+dhedh      pp-pron "to" ;
+derag      pp-pron "before" ;
+dhiworth   pp "from" ;
+erbynn     pp "against" ;
+gans       pp "with, by" ;
+orth       pp "at, by" ;
+rag        pp "for, to, in order to" ;
+tann       pp "by" ; 
+yn         pp "in" ;
+yn-dann    pp-pron "under" ;
 
