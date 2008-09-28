@@ -89,7 +89,6 @@ define ConsonantDoublingII d h -> t h , h -> g h ,
                            h e -> h a h a , j -> c h || _ (Vow) %^CD ;
 
 
-<<<<<<< .mine
 define LightStemVow  Vow -> 0 || _ (Dummy) [ %^TRUNC | %> Vow ] ;
  ! a r h a %^V %^TRUNC .#. ->  a r h %^V %^TRUNC .#.
 
@@ -97,16 +96,6 @@ define LightStemVow  Vow -> 0 || _ (Dummy) [ %^TRUNC | %> Vow ] ;
 define NoFinalH   h -> g h ||  [Vow|l|r] _ Dummy* .#. ;                             
  ! a r h  %^V %^TRUNC .#. -> a r g h %^V %^TRUNC .#.
 
-=======
-define LightStemVow  Vow -> 0 || _ (Dummy) [ %^TRUNC | %> Vow ] ;
- ! a r h a %^V %^TRUNC .#. ->  a r h %^V %^TRUNC .#.
-
-
-define NoFinalH   h -> g h ||  [Vow|l|r] _ Dummy* .#. ,, 
-				  g h -> h ||  [Vow|l|r] _ %> [Vow|l|r] ;                          
- ! a r h  %^V %^TRUNC .#. -> a r g h %^V %^TRUNC .#.
-
->>>>>>> .r20929
 echo << ... then the rest >>
 
 define VowelAffection [ a -> e, e -> y, o -> e || _ Sgm* %^V ] ;
