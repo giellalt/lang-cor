@@ -10,11 +10,12 @@ Multichar_Symbols
 +S +M +P +A
 
 ! Verbal MSP
-+Prs +Fut +Prt +Prf 
-+Ind +Imp +Cond +Opt
++Prs +Fut +Prt +Prf +Ipf +Plf
++Ind +Imp +Cond +Opt +Sbj
 +Sg1 +Sg2 +Sg3 +Pl1 +Pl2 +Pl3
 +Inf
 +Pos +Neg +ConNeg
++1Sg +2Sg +3Sg +1Pl +2Pl +3Pl
 
 ! Nominal MSP
 +Sg +Pl +PLT
@@ -29,7 +30,7 @@ Multichar_Symbols
 
 %^S %^A %^P %^M %^V %^E
 %> %^D
-%^UML
+%^UML %^CD %^TRUNC
 
 ! Archiphonemes
  e3    ! e to o in plural
