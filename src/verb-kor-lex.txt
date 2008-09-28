@@ -1,5 +1,12 @@
 LEXICON Verb
 
+! Auxiliaries and exceptions
+
+besa+V:  COPULA ;
+ 
+
+! The lexicon starts here
+
 kriba         vb        "split fragments." ; 
 loilba         vb        "lubricate" ; 
 louba         vb        "lubricate." ; 
