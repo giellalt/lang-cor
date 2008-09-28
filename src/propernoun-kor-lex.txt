@@ -1,0 +1,6 @@
+! ==================== !
+! Cornish proper nouns !
+! ==================== !
+
+LEXICON Propernoun
+Kernow prop ;
