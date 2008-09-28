@@ -22,6 +22,9 @@ Multichar_Symbols
 +Nom +Acc +Gen 
 +Ord
 
+!Pronominal MSP
++Suff +Emph
+
 +Msc +Fem
 
 ! Diacritical marks, to trigger 
