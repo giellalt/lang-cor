@@ -3,4 +3,6 @@
 ! ==================== !
 
 LEXICON Propernoun
+Jenefer prop ;
+Lowe prop ;
 Kernow prop ;
