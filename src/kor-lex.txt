@@ -47,6 +47,7 @@ LEXICON Root
 
 Adverb ;
 Noun ;
+Propernoun ;
 Preposition ;
 Conjunction ;
 Subjunction ;
@@ -54,7 +55,7 @@ Verb ;
 Adjective ;
 !Interjection ;
 !Numeral ;
-!Pronoun ;
+Pronoun ;
 Punctuation ;
 
 
