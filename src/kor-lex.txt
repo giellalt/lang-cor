@@ -18,7 +18,7 @@ Multichar_Symbols
 +1Sg +2Sg +3Sg +1Pl +2Pl +3Pl
 
 ! Nominal MSP
-+Sg +Pl +PLT
++Sg +Pl +P
 +Nom +Acc +Gen 
 +Ord
 
