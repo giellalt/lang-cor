@@ -36,7 +36,7 @@ SRCS =  kor-lex.txt \
 # Here we build a converter from KK to SWF. Not done.
 
 orth-kor.fst: ../bin/orth-kor.fst
-../bin/orth-kor.fst: orth-kor.xfst ikor.fst
+../bin/orth-kor.fst: orth-kor.xfst ikor.fst tok.fst
 	@echo
 	@echo "*** Building orth-kor.fst ***" ;
 	@echo
@@ -66,12 +66,11 @@ ikor.fst: ../bin/ikor.fst
 # This goal is to build the final analyser. It depends on all the files.
 
 kor.fst: ../bin/kor.fst
-../bin/kor.fst: ../bin/kor.save ../bin/caseconv.fst ../bin/tag-delete.fst
+../bin/kor.fst: ../bin/kor.save ../bin/caseconv.fst
 	@echo
 	@echo "*** Building kor.fst ***" ;
 	@echo
-	@printf "read regex  [[@\"../bin/tag-delete.fst\"] .o. [@\"../bin/kor.save\"] .o. \
-	[@\"../bin/caseconv.fst\"]] ; \n\
+	@printf "read regex  [[@\"../bin/kor.save\"] .o. [@\"../bin/caseconv.fst\"]] ; \n\
 	save stack ../bin/kor.fst \n\
 	quit \n" > ../../tmp/kor-fst-script
 	@xfst < ../../tmp/kor-fst-script
@@ -136,16 +135,16 @@ kor-lex.save: ../bin/kor-lex.save
 
 # This goal is to make a tag-deletion fst
 
-tag-delete.fst: ../bin/tag-delete.fst
-../bin/tag-delete.fst: tag-delete.regex
-	@echo
-	@echo "*** Building tag-delete.fst ***" ;
-	@echo
-	@printf "read regex < tag-delete.regex \n\
-	save stack ../bin/tag-delete.fst \n\
-	quit \n" > ../../tmp/tag-delete-script
-	@xfst -utf8 < ../../tmp/tag-delete-script
-	@rm -f ../../tmp/tag-delete-script
+#tag-delete.fst: ../bin/tag-delete.fst
+#../bin/tag-delete.fst: tag-delete.regex
+#	@echo
+#	@echo "*** Building tag-delete.fst ***" ;
+#	@echo
+#	@printf "read regex < tag-delete.regex \n\
+#	save stack ../bin/tag-delete.fst \n\
+#	quit \n" > ../../tmp/tag-delete-script
+#	@xfst -utf8 < ../../tmp/tag-delete-script
+#	@rm -f ../../tmp/tag-delete-script
 
 
 # The second goal is to build xfst-kor.bin
