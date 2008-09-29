@@ -6,8 +6,9 @@ Multichar_Symbols
 ! POS
 +N +V +A 
 +Adv +CC +CS +Interj +Pron +Num +Pr
-1+ 2+ 3+ 4+ 5+
-+S +M +P +A
+!1+ 2+ 3+ 4+ 5+          haben wir nicht
++Smut +Mmut +Pmut +Amut !haben wir.
+
 
 ! Verbal MSP
 +Prs +Fut +Prt +Prf +Ipf +Plf
@@ -23,7 +24,7 @@ Multichar_Symbols
 +Ord
 
 !Pronominal MSP
-+Suff +Emph
++Suff +Emph +Indef
 
 +Msc +Fem
 
