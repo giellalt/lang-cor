@@ -55,22 +55,55 @@ define Digit [ %0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9];
 define NumOp [ %- | %+ | %* | %/ | %= | %: ];
 define NumSep [ %. | %, ];
 define NUM [ Digit | NumOp | NumSep]+ & $[Digit] ;
+# =============================================================
+echo >>> some multi-words
+# enclosed by {} since the letters shall be read as separate symbols
+define MWE [
+ {keffrys ha}
+| {kekeffrys ha} 
+| {kehys ha} 
+| {bys pan} 
+| {kyns es} 
+| {kepar ha pan}
+] ;
+
+# marker for multi-words:
+define M1 "<<" ;
+define M2 ">>" ;
+define MWE1 [M1 MWE M2];
 
 # =============================================================
 echo >>> define tokens
-#define Token [ WORD | SYMBOL | INIT ];
-# commenting out NUM in order to allow 7-bit encoding
-# commenting them in again since this is Lule Sámi
-define Token [ WORD | SYMBOL | ABBR | INIT | NUM ];
+define Token [ WORD | SYMBOL | ABBR | INIT | NUM | MWE1 ];
 # =============================================================
-echo >>> longest match--insert a newline after each token
-define TOK1 [ Token @-> ... NL ] ;
-echo >>> map spaces to a newline
-define TOK2 [ [WS]+ @-> NL ];
+echo >>> longest match
+define Bound [ SINGLE | WS | .#. ] ;
 
-# =============================================================
+define TOK1 [
+MWE @-> M1 ... M2 || Bound _ Bound
+.o. Token @-> ... NL
+.o. [M1|M2] -> 0
+];
+echo >>> normalize space
+define TOK0 [ WS+ @-> SP ];
+echo >>> remove spaces
+define WS1 [WS]+ & $[NL] ;
+define TOK2 [ WS1 @-> NL ] ;
+# =========================================================
 echo >>> compose
-read regex [TOK1 .o. TOK2 ];
+read regex [TOK0 .o. TOK1 .o. TOK2 ];
+# absorb the special brackets into the unknown alphabet
+substitute symbol ? for "<<"
+substitute symbol ? for ">>"
+
+# echo >>> longest match--insert a newline after each token
+# define TOK1 [ Token @-> ... NL ] ;
+# echo >>> map spaces to a newline
+# define TOK2 [ [WS]+ @-> NL ];
+# 
+# # =============================================================
+# echo >>> compose
+# read regex [TOK1 .o. TOK2 ];
 invert net
 #save stack tok.fst
  
