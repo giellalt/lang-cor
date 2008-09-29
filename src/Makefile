@@ -36,7 +36,7 @@ SRCS =  kor-lex.txt \
 # Here we build a converter from KK to SWF. Not done.
 
 orth-kor.fst: ../bin/orth-kor.fst
-../bin/orth-kor.fst: orth-kor.xfst ikor.fst tok.fst
+../bin/orth-kor.fst: orth-kor.xfst ../bin/ikor.fst ../bin/tok.fst
 	@echo
 	@echo "*** Building orth-kor.fst ***" ;
 	@echo
