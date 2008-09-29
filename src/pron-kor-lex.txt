@@ -4,6 +4,7 @@ Personal ;
 Demonstrative ;
 Determinative ;
 Possessive ;
+Indefinite;
 Suffixed ;
 
 LEXICON Personal
@@ -64,3 +65,6 @@ hy+Pron+Poss+Fem+3Sg:hy # ;
 agan+Pron+Poss+1Pl:agan # ;
 agas+Pron+Poss+2Pl:agas # ;
 aga+Pron+Poss+3Pl:aga # ;
+
+LEXICON Indefinite
+huni+Pron+Indef+Sg:huni #;
