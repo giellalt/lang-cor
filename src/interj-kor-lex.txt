@@ -1,2 +1,54 @@
 LEXICON Interjection
-aj #;
+a aj "o" # ;
+agh aj "ugh" # ;
+aha aj "aha" # ;
+ass aj "how" # ;
+assa aj "how" # ;
+avond aj "avaunt, begone" # ;
+awotta aj "behold" # ;
+ay aj "hey, hi" # ;
+dar aj "what, eh, why" # ;
+darwar aj "beware" # ;
+ehan aj "alas" # ;
+ellas aj "alas" # ;
+farawel aj "farewell" # ;
+farwel aj "farewell" # ;
+fi aj "fie" # ;
+go aj "woe" # ;
+gwev aj "woe to him" # ;
+ha aj "ha" # ;
+harow aj "help" # ;
+hayl aj "hail" # ;
+hedj aj "stop, halt" # ;
+ho aj "stop, halt" # ;
+hou aj "hello" # ;
+knakk aj "snap" # ;
+mal aj "pest" # ;
+malbew aj "plague take" # ;
+na aj "no" # ;
+ogh aj "oh, alas" # ;
+ott aj "see, behold, lo" # ;
+otta aj "behold" # ;
+ottavy aj "behold me" # ;
+ottajy aj "behold thee" # ;
+ottava aj "behold him" # ;
+ottahi aj "behold her" # ;
+ottani aj "behold us" # ;
+ottahwi aj "behold you" # ;
+ottensi aj "behold them" # ;
+ottensa aj "see there" # ;
+ottomma aj "see here" # ;
+out aj "out, oh" # ;
+pes aj "peace!" # ;
+prouyt aj "(call to cattle)" # ;
+soweth aj "alas" # ;
+tetivali aj "nonsense, tut-tut" # ;
+tru aj "woe" # ;
+wel aj "well" # ;
+ya aj "yes" # ;
+ye aj "yes" # ;
+
+
+
+
+
