@@ -47,12 +47,12 @@ LEXICON MOS
 +Ind+Ipf+Impers:os # ;
 +Ind+Ipf+Impers:es # ;
 
-!+Ind+Prf+1Sg:galsov # ;
-!+Ind+Prf+2Sg:galsos # ;
-!+Ind+Prf+3Sg:gallas # ;
-!+Ind+Prf+1Pl:galson # ;
-!+Ind+Prf+2Pl:galsowgh # ;
-!+Ind+Prf+3Pl:galsons # ;
++Ind+Prf+1Sg:galsov # ;
++Ind+Prf+2Sg:galsos # ;
++Ind+Prf+3Sg:gallas # ;
++Ind+Prf+1Pl:galson # ;
++Ind+Prf+2Pl:galsowgh # ;
++Ind+Prf+3Pl:galsons # ;
 
 +Ind+Plf+1Sg:gylsen # ;
 +Ind+Plf+2Sg:gylses # ;
@@ -77,7 +77,15 @@ LEXICON MOS
 +Sbj+Ipf+3Pl:ellens # ;
 +Sbj+Ipf+Impers:elles # ;
 
++Imperat+2Sg:ke # ;
++Imperat+2Sg:a # ;
++Imperat+3Sg:es # ;
++Imperat+1Pl:deun # ;
++Imperat+2Pl:kewgh # ;
++Imperat+2Pl:ewgh # ;
++Imperat+3Pl:ens # ;
 
++PP: gyllys # ;
 
 LEXICON DOS
 +Inf:dos # ; 
@@ -89,13 +97,68 @@ LEXICON DOS
 +Ind+Prs+3Pl:dons # ;
 +Ind+Prs+Impers:deer # ;
 
++Ind+Prt+1Sg:deuth # ;
++Ind+Prt+2Sg:deuthys # ;
++Ind+Prt+3Sg:deuth # ;
++Ind+Prt+1Pl:deuthen # ;
++Ind+Prt+2Pl:deuthewgh # ;
++Ind+Prt+3Pl:deuthons # ;
++Ind+Prt+Impers:deuthes # ;
+
++Ind+Ipf+1Sg:den # ;
++Ind+Ipf+2Sg:des # ;
++Ind+Ipf+3Sg:do # ;
++Ind+Ipf+1Pl:den # ;
++Ind+Ipf+2Pl:dewgh # ;
++Ind+Ipf+3Pl:dens # ;
++Ind+Ipf+Impers:des # ;
+
++Ind+Prf+1Sg:deuvev # ;
++Ind+Prf+2Sg:deuves # ;
++Ind+Prf+3Sg:deuva # ;
++Ind+Prf+1Pl:deuven # ;
++Ind+Prf+2Pl:deuvewgh # ;
++Ind+Prf+3Pl:deuvons # ;
++Ind+Prf+Impers:deuves # ;
+
++Ind+Plf+1Sg:dothyen # ;
++Ind+Plf+2Sg:dothyes # ;
++Ind+Plf+3Sg:dothya # ;
++Ind+Plf+1Pl:dothyen # ;
++Ind+Plf+2Pl:dothyewgh # ;
++Ind+Plf+3Pl:dothyens # ;
++Ind+Plf+Impers:dothyes # ;
+
++Sbj+Prs+1Sg:dyffiv # ;
++Sbj+Prs+2Sg:dyffi # ;
++Sbj+Prs+3Sg:deffo # ;
++Sbj+Prs+1Pl:dyfyn # ;
++Sbj+Prs+2Pl:dyffowgh # ;
++Sbj+Prs+3Pl:deffons # ;
++Sbj+Prs+Impers:deffer # ;
+
++Sbj+Ipf+1Sg:deffen # ;
++Sbj+Ipf+2Sg:deffes # ;
++Sbj+Ipf+3Sg:deffa # ;
++Sbj+Ipf+1Pl:deffen # ;
++Sbj+Ipf+2Pl:deffewgh # ;
++Sbj+Ipf+3Pl:deffens # ;
++Sbj+Ipf+Impers:deffes # ;
+
++Imperat+2Sg:deus # ;
++Imperat+3Sg:des # ;
++Imperat+1Pl:deun # ;
++Imperat+2Pl:dewgh # ;
++Imperat+3Pl:dens # ;
+
++PP: devedhys # ;
 
 ! Regular verbs
 ! -------------
 
 
 LEXICON vb ! regular verbs
-+V+Inf:       # ; !Die Frage ist, was hier passiert. Es gibt sehr viele Infinitiv-Klassen, die meistens nichts mit dem Rest der Verbalflexion zu tun haben.
++V+Inf:       # ;
 +V+Ind+Prs:   indpres ;
 +V+Ind+Prt:   indpret ;
 +V+Ind+Ipf:   indimpf ;
