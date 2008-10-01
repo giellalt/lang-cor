@@ -2,8 +2,11 @@ LEXICON Verb
 
 ! Auxiliaries and exceptions
 
-besa+V:  COPULA ;
- 
+bos+V:  	COPULA 	"to be" ;
+mos+V: 		MOS   	"go" ; 
+dos+V:  	DOS		"come" ; 
+gul+V: 		GUL 	"do" ;
+mynnes+V:	MYNNES	"want" ;
 
 ! The lexicon starts here
 
