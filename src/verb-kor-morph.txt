@@ -11,21 +11,91 @@
 ! -----------
 
 LEXICON COPULA
-+Inf:besa # ;
++Inf:bos # ;
 +Ind+Prs+1Sg:esov # ;
 +Ind+Prs+2Sg:esos # ;
 +Ind+Prs+3Sg:yw # ;
 +Ind+Prs+1Pl:eson # ;
-+Ind+Prs+2Pl:esough # ;
++Ind+Prs+2Pl:esowgh # ;
 +Ind+Prs+3Pl:esons # ;
 +Ind+Prt:esa # ;
+
+LEXICON MOS
++Inf:mos # ; 
++Ind+Prs+1Sg:av # ;
++Ind+Prs+2Sg:edh # ;
++Ind+Prs+3Sg:a # ;
++Ind+Prs+1Pl:en # ;
++Ind+Prs+2Pl:ewgh # ;
++Ind+Prs+3Pl:ons # ;
++Ind+Prs+Impers:er # ;
+
++Ind+Prt+1Sg:yth # ;
++Ind+Prt+2Sg:ythys # ;
++Ind+Prt+3Sg:eth # ;
++Ind+Prt+1Pl:ethen # ;
++Ind+Prt+2Pl:ethewgh # ;
++Ind+Prt+3Pl:ethons # ;
++Ind+Prt+Impers:es # ;
+
++Ind+Ipf+1Sg:en # ;
++Ind+Ipf+2Sg:es # ;
++Ind+Ipf+3Sg:e # ;
++Ind+Ipf+1Pl:en # ;
++Ind+Ipf+2Pl:ewgh # ;
++Ind+Ipf+3Pl:ens # ;
++Ind+Ipf+Impers:os # ;
++Ind+Ipf+Impers:es # ;
+
+!+Ind+Prf+1Sg:galsov # ;
+!+Ind+Prf+2Sg:galsos # ;
+!+Ind+Prf+3Sg:gallas # ;
+!+Ind+Prf+1Pl:galson # ;
+!+Ind+Prf+2Pl:galsowgh # ;
+!+Ind+Prf+3Pl:galsons # ;
+
++Ind+Plf+1Sg:gylsen # ;
++Ind+Plf+2Sg:gylses # ;
++Ind+Plf+3Sg:galsa # ;
++Ind+Plf+1Pl:gylsen # ;
++Ind+Plf+2Pl:gylsewgh # ;
++Ind+Plf+3Pl:glysens # ;
+
++Sbj+Prs+1Sg:ylliv # ;
++Sbj+Prs+2Sg:ylli # ;
++Sbj+Prs+3Sg:ello # ;
++Sbj+Prs+1Pl:yllyn # ;
++Sbj+Prs+2Pl:yllowgh # ;
++Sbj+Prs+3Pl:ellons # ;
++Sbj+Prs+Impers:eller # ;
+
++Sbj+Ipf+1Sg:ellen # ;
++Sbj+Ipf+2Sg:elles # ;
++Sbj+Ipf+3Sg:ella # ;
++Sbj+Ipf+1Pl:ellen # ;
++Sbj+Ipf+2Pl:ellewgh # ;
++Sbj+Ipf+3Pl:ellens # ;
++Sbj+Ipf+Impers:elles # ;
+
+
+
+LEXICON DOS
++Inf:dos # ; 
++Ind+Prs+1Sg:dov # ;
++Ind+Prs+2Sg:deudh # ;
++Ind+Prs+3Sg:deu # ;
++Ind+Prs+1Pl:deun # ;
++Ind+Prs+2Pl:dewgh # ;
++Ind+Prs+3Pl:dons # ;
++Ind+Prs+Impers:deer # ;
+
 
 ! Regular verbs
 ! -------------
 
 
 LEXICON vb ! regular verbs
-+V+Inf:       # ;
++V+Inf:       # ; !Die Frage ist, was hier passiert. Es gibt sehr viele Infinitiv-Klassen, die meistens nichts mit dem Rest der Verbalflexion zu tun haben.
 +V+Ind+Prs:   indpres ;
 +V+Ind+Prt:   indpret ;
 +V+Ind+Ipf:   indimpf ;
