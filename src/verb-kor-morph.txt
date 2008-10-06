@@ -168,6 +168,13 @@ LEXICON DOS
 
 +PP: devedhys # ;
 
+LEXICON GUL
++Inf:gul # ;
+
+LEXICON MYNNES
++Inf:mynnes # ;
+
+
 ! Regular verbs
 ! -------------
 
