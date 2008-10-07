@@ -125,6 +125,19 @@ LEXICON OJYON
 +Sg:	ojyon #;
 +Pl:	ohen # ;
 
+LEXICON GARLONT
++Sg:	garlont #;
++Pl:	garlons # ;
+
+LEXICON MARCHONT
++Sg:	marchont #;
++Pl:	marchons # ;
+
+LEXICON TULYFANT
++Sg:	tulyfant #;
++Pl:	tulyfans # ;
+
+
 
 ! Mutation lexicon
 ! ================
