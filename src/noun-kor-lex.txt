@@ -11,6 +11,9 @@ LEXICON Noun
 ki+N+Msc:  		KI 	"dog" ;
 den+N+Msc:		DEN "man";
 ojyon+N+Msc: 	OJYON "ox" ;
+garlont+N+Msc:	GARLONT "garland" ;
+marchont+N+Msc:	MARCHONT "merchant" ;
+tulyfant+N+Msc:	TULYFANT "tulip" ;
 
 ! Short overview of the types
 ! Masculines
@@ -24,7 +27,7 @@ ojyon+N+Msc: 	OJYON "ox" ;
 ! m-ens		 = -ens plural 	*not implemented yet*
 ! m-s        = -s plural
 ! m-         = balek-wörter
-! m-dual     = Duals
+! m-dual     = Duals		*not implemented yet*
 ! m-aff      = Root vowel change
 ! m-yon      = yon plural
 ! m-aff-i    = i plural
@@ -108,6 +111,10 @@ bacheler      m-s  "bachelor" ;
 balyer        m-s  "balyers" ;
 banana        m-s  "banana" ;
 begyer        m-s  "beggar" ;
+degre		  m-s  "degree" ;
+gyglet		  m-s  "wanton person" ; 
+popynjay      m-s  "parrot" ;
+
 
 ! balek-wörter
 
