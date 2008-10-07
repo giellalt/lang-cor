@@ -26,7 +26,13 @@ LEXICON m-s
 +N+Msc:    sg ;
 +N+Msc:    spl ;
 
+LEXICON m-yn
++N+Msc:    sg ;
++N+Msc:    ynpl ;
 
+LEXICON m-ens
++N+Msc:    sg ;
++N+Msc:    enspl ;
 
 LEXICON m-yon
 +N+Msc:    sg ;
@@ -92,11 +98,32 @@ LEXICON ipl
 LEXICON yspl
 +PL:%>ys  mutation ;
 
+LEXICON ynpl
++PL:%>yn  mutation ;
+
+LEXICON enspl
++PL:%>ens  mutation ;
+
 LEXICON espl
 +PL:%>es  mutation ;
 
 LEXICON spl
 +PL:%>s  mutation ;
+
+! Irregular plurals
+!==================
+
+LEXICON KI
++Sg:	ki # ;
++Pl:	keun # ;
+
+LEXICON DEN
++Sg:	den #;
++Pl:	tus # ;
+
+LEXICON OJYON
++Sg:	ojyon #;
++Pl:	ohen # ;
 
 
 ! Mutation lexicon
