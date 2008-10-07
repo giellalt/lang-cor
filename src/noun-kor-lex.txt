@@ -6,6 +6,11 @@
 
 LEXICON Noun 
 
+! Exceptions
+
+ki+N+Msc:  		KI 	"dog" ;
+den+N+Msc:		DEN "man";
+ojyon+N+Msc: 	OJYON "ox" ;
 
 ! Short overview of the types
 ! Masculines
@@ -13,8 +18,10 @@ LEXICON Noun
 ! m-yow      = yow plural
 ! m-ys       = ys plural
 ! m-yon      = yon plural
+! m-yn		 = yn plural 	*not implemented yet*
 ! m-ag       = -(y)er agent nouns
 ! m-es       = -es plural
+! m-ens		 = -ens plural 	*not implemented yet*
 ! m-s        = -s plural
 ! m-         = balek-wörter
 ! m-dual     = Duals
@@ -155,7 +162,7 @@ mona           m-pltantum "money" ; !NW
 
 aber      m-yow  "river mouth"  ;
 anken      m-yow  "misery"  ;
-ankor      m-yow  "anchor."  ;
+ankor      m-yow  "anchor"  ;
 apron      m-yow  "[a?pr??nj??] (pl.) apron. "  ;
 arhadow      m-yow  "command"  ;
 aros      m-yow  "poop"  ;
@@ -404,8 +411,28 @@ uhelgowser      m-yow  "loudspeaker "  ;
 uskitter      m-yow  "velocity"  ;
 
 
-   
+! ----- !
+! m-ys  !
+! ----- !
 
+kanel      	m-ys  	"tap"  ;
+mason      	m-ys  	"mason"  ;
+desir      	m-ys  	"desire"  ;
+enor		m-ys 	"honour" ; 	 	
+entent		m-ys	"purpose" ;
+remetant	m-ys	"remain" ;
+sant   		m-ys	"course of a meal" ;
+chalys		m-ys	"chalice" ;
+degre		m-ys	"degree" ;
+ertaj		m-ys	"heritage" ;
+offis		m-ys	"function" ;
+polat		m-ys	"fellow" ;
+rewl		m-ys	"rule" ;
+slod		m-ys	"sledgehammer" ;
+splat		m-ys	"plot of ground" ;
+tid			m-ys	"tide" ;
+trumach		m-ys	"passage by water" ;
+vertu		m-ys	"power" ;
 
 ! Feminines 
 ! =========
