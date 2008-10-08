@@ -11,6 +11,7 @@ LEXICON Personal
 my+Pron+Pers+Nom+1Sg:my # ;
 my+Pron+Pers+Nom+1Sg:'m # ;
 ty+Pron+Pers+Nom+2Sg:ty # ;
+ty+Pron+Pers+Nom+2Sg:ta # ; ! Reduced form XXX
 ty+Pron+Pers+Acc+2Sg:'th # ;
 ev+Pron+Pers+Msc+Nom+3Sg:ev # ;
 ev+Pron+Pers+Msc+Acc+3Sg:'n # ;
