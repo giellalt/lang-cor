@@ -100,7 +100,7 @@ LIST NOMINALHEAD = N Num Pers Refl Recipr Interr ;
 
 # Verb sets
 
-
+SELECT 2Sg IF (0 V)(1 (Pron Pers Nom 2Sg));
 
 
 # Mutation sets
