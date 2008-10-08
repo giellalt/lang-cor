@@ -24,7 +24,7 @@ echo << We define our definitions >>
 ! they have done their job.
 
 define Dummy [ %^S | %^A | %^P | %^M | %^V | %^E | %> | %^D | 
-               %^TRUNC | %^CD | %^UML ] ;
+               %^TRUNC | %^CD | %^UML | %^STDEL ] ;
 
 define Vow   [ a | e | i | o | u | y | e3 | a4 | o4 | 
                A | E | I | O | U | Y ] ;
@@ -97,6 +97,8 @@ define NoFinalH   h -> g h ||  [Vow|l|r] _ Dummy* .#. ,,
  				  g h -> h ||  [Vow|l|r] _ %> [Vow|l|r] ;                             
  ! a r h  %^V %^TRUNC .#. -> a r g h %^V %^TRUNC .#.
 
+define STDEL t -> 0 || _ %> %^STDEL ;
+
 echo << ... then the rest >>
 
 define VowelAffection [ a -> e, e -> y, o -> e || _ Sgm* %^V ] ;
@@ -141,6 +143,7 @@ read regex [ Nonmutation
 .o. ConsonantDoublingII
 .o. LightStemVow
 .o. NoFinalH
+.o. STDEL
 .o. VowelAffection
 .o. OtoE
 .o. LightSuffixEK
