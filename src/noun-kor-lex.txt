@@ -11,9 +11,14 @@ LEXICON Noun
 ki+N+Msc:  		KI 	"dog" ;
 den+N+Msc:		DEN "man";
 ojyon+N+Msc: 	OJYON "ox" ;
-garlont+N+Msc:	GARLONT "garland" ;
-marchont+N+Msc:	MARCHONT "merchant" ;
-tulyfant+N+Msc:	TULYFANT "tulip" ;
+kar+N+Sg:kar        mutation "parent" ;
+kar+N+Pl:kerens     mutation "parents" ;
+
+garlont     GARLONT "garland" ;
+marchont	GARLONT  "merchant" ;
+tulyfant	GARLONT  "tulip" ;
+protestant  GARLONT "protestant" ;
+
 
 ! Short overview of the types
 ! Masculines
@@ -72,7 +77,7 @@ bagas-gwari	   m 		  "play group" ;
 bagasik		   m		  "batch" ; 
 berrskrif      m          "summary" ;
 mammskrif      m          "original text" ;
-
+tas            m          "father" ;
 
 !yow plural
 !----------
