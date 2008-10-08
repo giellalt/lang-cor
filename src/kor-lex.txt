@@ -6,7 +6,6 @@ Multichar_Symbols
 ! POS
 +N +V +A 
 +Adv +CC +CS +Interj +Pron +Num +Pr
-!1+ 2+ 3+ 4+ 5+          haben wir nicht
 +Smut +Mmut +Pmut +Amut !haben wir.
 
 
@@ -14,7 +13,7 @@ Multichar_Symbols
 +Prs +Fut +Prt +Prf +Ipf +Plf
 +Ind +Imp +Cond +Opt +Sbj
 +Sg1 +Sg2 +Sg3 +Pl1 +Pl2 +Pl3
-+Inf
++Inf +Sit ! what is +Sit?
 +Pos +Neg +ConNeg
 +1Sg +2Sg +3Sg +1Pl +2Pl +3Pl
 
@@ -34,7 +33,7 @@ Multichar_Symbols
 
 %^S %^A %^P %^M %^V %^E
 %> %^D
-%^UML %^CD %^TRUNC
+%^UML %^CD %^TRUNC %^STDEL
 
 ! Archiphonemes
  e3    ! e to o in plural
