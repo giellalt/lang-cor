@@ -312,6 +312,44 @@ LEXICON vb ! regular verbs
 +V+Sbj+Prs:%^CD   sbjpres ;
 +V+Sbj+Prt:%^CD   sbjimpf ;
 
+LEXICON vb1
++V+Inf:%>a       # ;
++V+Ind+Prs:   indpres ;
++V+Ind+Prt:   indpret ;
++V+Ind+Ipf:   indimpf ;
++V+Ind+Plf:   pluperf ;
++V+Sbj+Prs:%^CD   sbjpres ;
++V+Sbj+Prt:%^CD   sbjimpf ;
+
+LEXICON vbya
++V+Inf:%>ya       # ;
++V+Ind+Prs:   indpres ;
++V+Ind+Prt:   indpret ;
++V+Ind+Ipf:   indimpf ;
++V+Ind+Plf:   pluperf ;
++V+Sbj+Prs:%^CD   sbjpres ;
++V+Sbj+Prt:%^CD   sbjimpf ;
+
+LEXICON vbhe
++V+Inf:%>e       # ;
++V+Ind+Prs:   indpres ;
++V+Ind+Prt:   indpret ;
++V+Ind+Ipf:   indimpf ;
++V+Ind+Plf:   pluperf ;
++V+Sbj+Prs:%^CD   sbjpres ;
++V+Sbj+Prt:%^CD   sbjimpf ;
+
+LEXICON vbi
++V+Inf:%>i       # ;
++V+Ind+Prs:   indpres ;
++V+Ind+Prt:   indpret ;
++V+Ind+Ipf:   indimpf ;
++V+Ind+Plf:   pluperf ;
++V+Sbj+Prs:%^CD   sbjpres ;
++V+Sbj+Prt:%^CD   sbjimpf ;
+
+
+
 LEXICON vb-y ! verbs with -yn etc. ipf
 +V+Inf:           # ;
 +V+Ind+Prs:       indpres ;
@@ -389,10 +427,10 @@ LEXICON indimpf-y
 LEXICON pluperf
 +1Sg:%>sen     # ;
 +2Sg:%>ses     # ;
-+3Sg:%>sa     # ;
++3Sg:%>sa      # ;
 +1Pl:%>sen     # ;
-+2Pl:%>sewgh     # ;
-+3Pl:%>sens     # ;
++2Pl:%>sewgh   # ;
++3Pl:%>sens    # ;
 +Impers:%>sys  # ;
 
 
