@@ -12,12 +12,19 @@
 
 LEXICON COPULA
 +Inf:bos # ;
++Inf:bones # ;
+
 +Ind+Prs+Sit+1Sg:esov # ;
 +Ind+Prs+Sit+2Sg:esos # ;
 +Ind+Prs+Sit+3Sg:yma # ;
 +Ind+Prs+Sit+1Pl:eson # ;
 +Ind+Prs+Sit+2Pl:esowgh # ;
-+Ind+Prs+Sit+3Pl:esons # ;
++Ind+Prs+Sit+3Pl:ymons # ;
++Ind+Prs+Sit+Impers:eder # ;
+
++Ind+Prs+Rel+3Sg:usi # ;
++Ind+Prs+Rel+3Sg:eus # ;
++Ind+Prs+Rel+3Pl:esons # ;
 
 +Ind+Prs+1Sg:ov # ;
 +Ind+Prs+2Sg:os # ;
@@ -25,6 +32,15 @@ LEXICON COPULA
 +Ind+Prs+1Pl:on # ;
 +Ind+Prs+2Pl:owgh # ;
 +Ind+Prs+3Pl:ons # ;
++Ind+Prs+Impers:or # ;
+
++Ind+Ipf+Sit+1Sg:esen # ;
++Ind+Ipf+Sit+2Sg:eses # ;
++Ind+Ipf+Sit+3Sg:esa # ;
++Ind+Ipf+Sit+1Pl:esen # ;
++Ind+Ipf+Sit+2Pl:esewgh # ;
++Ind+Ipf+Sit+3Pl:esens # ;
++Ind+Ipf+Sit+Impers:eses # ;
 
 +Ind+Ipf+1Sg:en # ;
 +Ind+Ipf+2Sg:es # ;
@@ -32,11 +48,59 @@ LEXICON COPULA
 +Ind+Ipf+1Pl:en # ;
 +Ind+Ipf+2Pl:ewgh # ;
 +Ind+Ipf+3Pl:ens # ;
++Ind+Ipf+Impers:os # ;
 
++Ind+Ipf+Hab+1Sg:bedhen # ;
++Ind+Ipf+Hab+2Sg:bedhes # ;
++Ind+Ipf+Hab+3Sg:bedha # ;
++Ind+Ipf+Hab+1Pl:bedhen # ;
++Ind+Ipf+Hab+2Pl:bedhewgh # ;
++Ind+Ipf+Hab+3Pl:bedhens # ;
++Ind+Ipf+Hab+Impers:bedhes # ;
+
++Ind+Prt+1Sg:beuv # ;
++Ind+Prt+2Sg:beus # ;
++Ind+Prt+3Sg:beu # ;
++Ind+Prt+1Pl:beun # ;
++Ind+Prt+2Pl:bewgh # ;
++Ind+Prt+3Pl:bons # ;
++Ind+Prt+Impers: beus # ;
+
++Ind+Fut+1Sg:bedhav # ;
++Ind+Fut+2Sg:bydhydh # ;
++Ind+Fut+3Sg:bydh # ;
++Ind+Fut+1Pl:bedhons # ;
++Ind+Fut+2Pl:bedhowgh # ;
++Ind+Fut+3Pl:bedhons # ;
++Ind+Fut+Impers:bedher # ;
+
++Sbj+Prs+1Sg:biv # ;
++Sbj+Prs+2Sg:bi # ;
++Sbj+Prs+3Sg:bo # ;
++Sbj+Prs+1Pl:byn # ;
++Sbj+Prs+2Pl:bowgh # ;
++Sbj+Prs+3Pl:bons # ;
++Sbj+Prs+Impers:ber # ;
+
++Sbj+Imp+1Sg:ben # ;
++Sbj+Imp+2Sg:bes # ;
++Sbj+Imp+3Sg:be # ;
++Sbj+Imp+1Pl:ben # ;
++Sbj+Imp+2Pl:bewgh # ;
++Sbj+Imp+3Pl:bens # ;
++Sbj+Imp+Impers:bes # ;
+
++Imperat+2Sg:bydh # ;
++Imperat+3Sg:bedhes # ;
++Imperat+1Pl:bedhen # ;
++Imperat+2Pl:bedhewgh # ;
++Imperat+3Pl:bedhens # ;
 
 
 LEXICON MOS
 +Inf:mos # ; 
++Inf:mones # ; 
+
 +Ind+Prs+1Sg:av # ;
 +Ind+Prs+2Sg:edh # ;
 +Ind+Prs+3Sg:a # ;
@@ -104,6 +168,9 @@ LEXICON MOS
 
 LEXICON DOS
 +Inf:dos # ; 
++Inf:dones #;
++Inf:devones #;
+
 +Ind+Prs+1Sg:dov # ;
 +Ind+Prs+2Sg:deudh # ;
 +Ind+Prs+3Sg:deu # ;
