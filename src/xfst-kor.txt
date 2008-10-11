@@ -23,9 +23,13 @@ echo << We define our definitions >>
 ! These triggers are given a name, so that we can delete them when
 ! they have done their job.
 
-define Dummy [ %^S | %^A | %^P | %^M | %^V | %^E | %> | %^D | 
+define DummySymbols [ %^S | %^A | %^P | %^M | %^V | %^E | %^D | 
                %^TRUNC | %^CD | %^UML | %^STDEL ] ;
 
+define Boundary  %> ;
+
+define Dummy [ DummySymbols | Boundary ] ;
+ 
 define Vow   [ a | e | i | o | u | y | e3 | a4 | o4 | 
                A | E | I | O | U | Y ] ;
 define Cns   [ b | c | d | f | g | h | j | k | l | m | n | p | q | r | s | 
@@ -122,7 +126,7 @@ echo << We tidy up our dummys >>
 
 define ArchiPhonemes         e3 -> e , a4 -> a , o4 -> o ;
 
-define DummyDeletion [ Dummy -> 0 ] ;
+define DummyDeletion [ DummySymbols -> 0 ] ;
 
 ! Then we compile:
 
