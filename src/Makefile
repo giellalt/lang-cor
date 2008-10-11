@@ -196,7 +196,7 @@ wordlist: ../bin/ikor.fst
 	lower-words \n\
 	quit \n" > ../tmp/wordlist-script
 	$(CFST) -f ../tmp/wordlist-script -q > ../tmp/wordlist.txt
-	@rm -f ../tmp/wordlist-script
+	#@rm -f ../tmp/wordlist-script
 
 sorted: wordlist
 	@echo "*** Sorting wordlist ***"
