@@ -176,7 +176,7 @@ hunspellspeller: wordlist
 	# lag fonetiske regler (dette blir språkspesifikt, la denne evt. være tom)
 	cat ../hunspell/phonrules >> ../hunspell/kor.aff
 	cat ../hunspell/dics_tmp.aff >> ../hunspell/kor.aff
-	makealias ../hunspell/kor.dic ../hunspell/kor.aff
+
 
 hsp-conversion: ifst-norm lexc2xspell #$(HSPSRCjava) $(HSPSRCprefix)
 
