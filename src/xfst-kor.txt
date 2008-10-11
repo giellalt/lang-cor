@@ -126,7 +126,8 @@ echo << We tidy up our dummys >>
 
 define ArchiPhonemes         e3 -> e , a4 -> a , o4 -> o ;
 
-define DummyDeletion [ DummySymbols -> 0 ] ;
+define DummyDeletion [ DummySymbols -> 0 ] ;  ! For use for speller generation
+define DummyDeletion [ Dummy -> 0 ] ;         ! For normal use
 
 ! Then we compile:
 
