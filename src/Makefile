@@ -169,10 +169,10 @@ hunspellspeller: wordlist
 	@echo
 	@echo "*** Making $(TARGET) ../hunspell dictionary ***"
 	filter_plx_file ../hunspell/dics ../hunspell/sorted-list.txt
-	echo `wc -l ../hunspell/dics_tmp.dic` > ../hunspell/$(TARGET).dic
-	cat ../hunspell/dics_tmp.dic >> ../hunspell/$(TARGET).dic
+	echo `wc -l ../hunspell/dics_tmp.dic` > ../hunspell/kor.dic
+	cat ../hunspell/dics_tmp.dic >> ../hunspell/kor.dic
 	# lag en fil aff_intro
-	cat ../hunspell/aff_intro > ../hunspell/$(TARGET).aff
+	cat ../hunspell/aff_intro > ../hunspell/kor.aff
 	# lag fonetiske regler (dette blir språkspesifikt, la denne evt. være tom)
 	cat ../hunspell/phonrules >> ../hunspell/kor.aff
 	cat ../hunspell/dics_tmp.aff >> ../hunspell/kor.aff
