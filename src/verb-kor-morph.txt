@@ -237,70 +237,64 @@ LEXICON DOS
 
 LEXICON GUL
 +Inf:gul # ;
++Inf:gwul #;
 
-LEXICON MYNNES !mn just dummy for correction to come
-+Inf:mynnes # ;
-+Ind+Prs+1Sg:mn  # ;
-+Ind+Prs+2Sg:mn  # ;
-+Ind+Prs+3Sg:mynn  mutation ;
-+Ind+Prs+1Pl:mn  # ;
-+Ind+Prs+2Pl:mn  # ;
-+Ind+Prs+3Pl:mn  # ;
-+Ind+Prs+Impers:mn  # ;
++Ind+Prs+1Sg:gwrav # ;
++Ind+Prs+2Sg:gwredh # ;
++Ind+Prs+3Sg:gwra # ;
++Ind+Prs+1Pl:gwren # ;
++Ind+Prs+2Pl:gwrewgh # ;
++Ind+Prs+3Pl:gwrons # ;
++Ind+Prs+Impers:gwrer # ;
 
-+Ind+Prt+1Sg:mn  # ;
-+Ind+Prt+2Sg:mn  # ;
-+Ind+Prt+3Sg:mynn  # ;
-+Ind+Prt+1Pl:mn  # ;
-+Ind+Prt+2Pl:mn  # ;
-+Ind+Prt+3Pl:mn  # ;
-+Ind+Prt+Impers:mn  # ;
++Ind+Prt+1Sg:gwrug # ;
++Ind+Prt+2Sg:gwrussys # ;
++Ind+Prt+3Sg:gwrug # ;
++Ind+Prt+1Pl:gwrussyn # ;
++Ind+Prt+2Pl:gwrussewgh # ;
++Ind+Prt+3Pl:gwrussons # ;
++Ind+Prt+Impers:gwrug # ;
 
-+Ind+Ipf+1Sg:mn  # ;
-+Ind+Ipf+2Sg:mn  # ;
-+Ind+Ipf+3Sg:mynn  # ;
-+Ind+Ipf+1Pl:mn  # ;
-+Ind+Ipf+2Pl:mn  # ;
-+Ind+Ipf+3Pl:mn  # ;
-+Ind+Ipf+Impers:mn  # ;
++Ind+Ipf+1Sg:gwren # ;
++Ind+Ipf+2Sg:gwres # ;
++Ind+Ipf+3Sg:gwre # ;
++Ind+Ipf+1Pl:gwren # ;
++Ind+Ipf+2Pl:gwrewgh # ;
++Ind+Ipf+3Pl:gwrens # ;
++Ind+Ipf+Impers:gwres # ;
 
-+Ind+Prf+1Sg:mn  # ;
-+Ind+Prf+2Sg:mn  # ;
-+Ind+Prf+3Sg:mynn  # ;
-+Ind+Prf+1Pl:mn  # ;
-+Ind+Prf+2Pl:mn  # ;
-+Ind+Prf+3Pl:mn  # ;
-+Ind+Prf+Impers:mn  # ;
++Ind+Plf+1Sg:gwrussen # ;
++Ind+Plf+2Sg:gwrusses # ;
++Ind+Plf+3Sg:gwrussa # ;
++Ind+Plf+1Pl:gwrussen # ;
++Ind+Plf+2Pl:gwrussewgh # ;
++Ind+Plf+3Pl:gwrussens # ;
++Ind+Plf+Impers:gwrussys # ;
 
-+Ind+Plf+1Sg:mn  # ;
-+Ind+Plf+2Sg:mn  # ;
-+Ind+Plf+3Sg:mynn  # ;
-+Ind+Plf+1Pl:mn  # ;
-+Ind+Plf+2Pl:mn  # ;
-+Ind+Plf+3Pl:mn  # ;
-+Ind+Plf+Impers:mn  # ;
++Sbj+Prs+1Sg:gwrylliv # ;
++Sbj+Prs+2Sg:gwrylli # ;
++Sbj+Prs+3Sg:gwrello # ;
++Sbj+Prs+1Pl:gwryllyn # ;
++Sbj+Prs+2Pl:gwryllowgh # ;
++Sbj+Prs+3Pl:gwrellons # ;
++Sbj+Prs+Impers:gwreller # ;
 
-+Sbj+Prs+1Sg:mn  # ;
-+Sbj+Prs+2Sg:mn  # ;
-+Sbj+Prs+3Sg:mynn  # ;
-+Sbj+Prs+1Pl:mn  # ;
-+Sbj+Prs+2Pl:mn  # ;
-+Sbj+Prs+3Pl:mn  # ;
-+Sbj+Prs+Impers:mn  # ;
++Sbj+Ipf+1Sg:gwrellen # ;
++Sbj+Ipf+2Sg:gwrelles # ;
++Sbj+Ipf+3Sg:gwrella # ;
++Sbj+Ipf+1Pl:gwrellen # ;
++Sbj+Ipf+2Pl:gwrellewgh # ;
++Sbj+Ipf+3Pl:gwrellens # ;
++Sbj+Ipf+Impers:gwrellys # ;
 
-+Sbj+Ipf+1Sg:mn  # ;
-+Sbj+Ipf+2Sg:mn  # ;
-+Sbj+Ipf+3Sg:mynn  # ;
-+Sbj+Ipf+1Pl:mn  # ;
-+Sbj+Ipf+2Pl:mn  # ;
-+Sbj+Ipf+3Pl:mn  # ;
-+Sbj+Ipf+Impers:mn  # ;
++Imperat+2Sg:gwra # ;
++Imperat+3Sg:gwres # ;
++Imperat+1Pl:gwren # ;
++Imperat+2Pl:gwrewgh # ;
++Imperat+3Pl:gwrens # ;
 
-+Imperat+2Sg:  # ;
-+Imperat+3Sg:mynn  # ;
-+Imperat+1Pl:  # ;
-+Imperat+2Pl:  # ;
-+Imperat+3Pl:  # ;
++PP: gwrys # ;
+
 
 
 ! Regular verbs
