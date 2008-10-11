@@ -30,16 +30,24 @@ define Boundary  %> ;
 
 define Dummy [ DummySymbols | Boundary ] ;
  
-define Vow   [ a | e | i | o | u | y | e3 | a4 | o4 | 
-               A | E | I | O | U | Y ] ;
+define Vow   [ a | e | i | o | u | e3 | a4 | o4 | 
+               A | E | I | O | U  ] ;
 define Cns   [ b | c | d | f | g | h | j | k | l | m | n | p | q | r | s | 
                B | C | D | F | G | H | J | K | L | M | N | P | Q | R | S | 
                t | v | w | x | z |
                T | V | W | X | Z ] ;
+define Yy [ y | Y ] ;               
+
+! Werden wir <y> nicht auch in der Liste der Vokale brauchen?
+! hmm, ich sehe dein punkt.
+! z.B. in der gh > h-Regel: byghan > byhan. Müssen wir y1 vs. y2 machen?
+! vielleicht 3 gruppen
+! Vow Cns y
+
 
 define Symbols [ %- ] ;
                
-define Sgm   [ Vow | Cns | Dummy | Symbols | Archi ] ;
+define Sgm   [ Vow | Cns | Yy | Dummy | Symbols | Archi ] ;
 
 ! Here the action begins.
 
@@ -47,7 +55,7 @@ echo << We define our rules >>
 
 echo << ... first the mutations >>
 
-define identity [ g -> g , G -> G|| .#. _ ] ;
+define identity [ g -> g , G -> G || .#. _ ] ;
 
 ! If we encounter a final %^S symbol, we delete an initial g
 
@@ -87,13 +95,15 @@ define Nonmutation [ a -> a, e -> e, o -> o, y -> y, u -> u, i -> i, f -> f,
                      v -> v, w -> w || .#. _ [Sgm]* [ ~[%^A|%^S|%^M|%^P] ] ] ;
 
 define ConsonantDoublingI  b -> p p , g -> k k , d -> t t || _ ([l|r]) %>CD ;
+
 define ConsonantDoublingII d h -> t h , h -> g h ,
-                           f -> f f , k -> k k , l -> l l , m -> m m , n -> n n ,
-                           p -> p p , r -> r r , s -> s s , t -> t t , v -> f f ,
+                           f   -> f f , k -> k k , l -> l l , m -> m m , n -> n n ,
+                           p   -> p p , r -> r r , s -> s s , t -> t t , v -> f f ,
                            h e -> h a h a , j -> c h || _ (Vow) %^CD ;
 
 
-define LightStemVow  Vow -> 0 || _ (Dummy) [ %^TRUNC | %> Vow ] ;
+!define LightStemVow  Vow -> 0 || _ (Dummy) [ %^TRUNC | %> Vow ] ;
+define LightStemVow  Vow -> 0 || _ (Dummy)  %^TRUNC ;
  ! a r h a %^V %^TRUNC .#. ->  a r h %^V %^TRUNC .#.
 
 
@@ -138,7 +148,7 @@ read regex [ Nonmutation
 .o. gsoft
 .o. gmixed
 .o. softmut 
-.o. gwsimplification
+!.o. gwsimplification
 .o. aspmut 
 .o. kaspmut 
 .o. prov
