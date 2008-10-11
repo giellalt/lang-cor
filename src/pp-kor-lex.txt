@@ -12,7 +12,18 @@
 LEXICON pp
 +Pr: # ;
 
-LEXICON pp-pron
+LEXICON pp-prona
++Pr:          # ; ! bare form
++Pr+1Sg:av    # ;
++Pr+2Sg:as    # ;
++Pr+Msc+3Sg:o # ;
++Pr+Fem+3Sg:i # ;
++Pr+1Pl:an    # ;
++Pr+2Pl:owgh  # ;
++Pr+3Pl:a     # ;
+
+
+LEXICON pp-prono
 +Pr:          # ; ! bare form
 +Pr+1Sg:ov    # ;
 +Pr+2Sg:os    # ;
@@ -22,21 +33,56 @@ LEXICON pp-pron
 +Pr+2Pl:owgh  # ;
 +Pr+3Pl:a     # ;
 
+LEXICON pp-proni
++Pr:          # ; ! bare form
++Pr+1Sg:iv    # ;
++Pr+2Sg:is    # ;
++Pr+Msc+3Sg:o # ;
++Pr+Fem+3Sg:i # ;
++Pr+1Pl:yn    # ;
++Pr+2Pl:owgh  # ;
++Pr+3Pl:a     # ;
+
+
 LEXICON Preposition
 
 a          pp "of, from" ; 
 a-barth    pp "for the sake of, beside, in the name of, along with" ;
-a-dhann    pp-pron "from under, from beneath" ;
-a-dhyworth pp "from" ; 
+a-berth	   pp "within" ;
+a-der	   pp "without" ;
+a-dhann    pp-prono "from under, from beneath" ;
+a-dherag   pp-prono "before" ;
+a-dhelergh pp "behind";
+a-dhia	   pp "from, since" ;
+a-dhywar   pp "down from" ;
+a-dhyworth pp "from" ;
+a-dryv 	   pp "behind" ; 
+a-dro	   pp "around" ;
+a-nans	   pp "below" ;
+a-rag      pp-prono "before" ;
+a-ugh	   pp "above" ;
+bys		   pp "until, as far as" ;
+der		   pp "through" ;	
 dhe        pp "to, for, at" ;
-dhedh      pp-pron "to" ;
-derag      pp-pron "before" ;
+dhedh      pp-prono "to" ;
+dherag     pp-prono "before" ;
+dhywar	   pp "down from" ;
 dhyworth   pp "from" ;
+drefen	   pp "because of" ;
 erbynn     pp "against" ;
 gans       pp "with, by" ;
-orth       pp "at, by" ;
+heb		   pp "without" ;
+herwydh	   pp "according to" ;
+is		   pp "below, under" ;
+orth       pp-proni "at, by" ;
 rag        pp "for, to, in order to" ;
+re		   pp "by (in oaths)";
+ryb		   pp "beside" ;
 tann       pp "by" ; 
+war		   pp "on" ;
+warbynn	   pp "against" ;
+war-lergh  pp "behind" ;
+wosa	   pp "after" ;
 yn         pp "in" ;
-yn-dann    pp-pron "under" ;
+yn-dann    pp-prono "under" ;
 
