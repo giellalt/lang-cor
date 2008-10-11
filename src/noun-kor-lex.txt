@@ -8,16 +8,16 @@ LEXICON Noun
 
 ! Exceptions
 
-ki+N+Msc:  		KI 	"dog" ;
-den+N+Msc:		DEN "man";
-ojyon+N+Msc: 	OJYON "ox" ;
-kar+N+Sg:kar        mutation "parent" ;
-kar+N+Pl:kerens     mutation "parents" ;
+ki+N+Msc:        KI 	"dog" ;
+den+N+Msc:       DEN "man";
+ojyon+N+Msc:     OJYON "ox" ;
+kar+N+Sg:kar     mutation "parent" ;
+kar+N+Pl:kerens  mutation "parents" ;
 
-garlont     GARLONT "garland" ;
-marchont	GARLONT  "merchant" ;
-tulyfant	GARLONT  "tulip" ;
-protestant  GARLONT "protestant" ;
+garlont          GARLONT "garland" ;
+marchont         GARLONT  "merchant" ;
+tulyfant         GARLONT  "tulip" ;
+protestant       GARLONT "protestant" ;
 
 
 ! Short overview of the types
@@ -26,10 +26,10 @@ protestant  GARLONT "protestant" ;
 ! m-yow      = yow plural
 ! m-ys       = ys plural
 ! m-yon      = yon plural
-! m-yn		 = yn plural 	*not implemented yet*
+! m-yn       = yn plural 	*not implemented yet*
 ! m-ag       = -(y)er agent nouns
 ! m-es       = -es plural
-! m-ens		 = -ens plural 	*not implemented yet*
+! m-ens	      = -ens plural 	*not implemented yet*
 ! m-s        = -s plural
 ! m-         = balek-wörter
 ! m-dual     = Duals		*not implemented yet*
@@ -60,33 +60,34 @@ protestant  GARLONT "protestant" ;
 ! ow plural
 ! --------
 !All -(y)ans nouns are here even though the dictionary lists no plurals for them (Brown, p. 30)
-abatti         m          "abbey"    ;
-abes           m          "abbot"    ;
-adhyskans      m          "education"  ;
-afinans        m          "decoration" ;
-aghskrif       m          "pedigree" ;
-ahwer          m          "sorrow"   ; !no plural listed
-akont          m          "account" ;
-akontyans      m          "reckoning" ;
-akord          m          "accord" ; !no plural listed
-akordyans      m          "agreement" ;
-akwityans      m          "receipt" ;
-babi		   m		  "baby" ;
-bagas		   m		  "group" ;
-bagas-gwari	   m 		  "play group" ;
-bagasik		   m		  "batch" ; 
-berrskrif      m          "summary" ;
-mammskrif      m          "original text" ;
-tas            m          "father" ;
+abatti         m    "abbey"    ;
+abes           m    "abbot"    ;
+adhyskans      m    "education"  ;
+afinans        m    "decoration" ;
+aghskrif       m    "pedigree" ;
+ahwer          m    "sorrow"   ; !no plural listed
+akont          m    "account" ;
+akontyans      m    "reckoning" ;
+akord          m    "accord" ; !no plural listed
+akordyans      m    "agreement" ;
+akwityans      m    "receipt" ;
+babi           m    "baby" ;
+bagas          m    "group" ;
+bagas-gwari    m     "play group" ;
+bagasik	       m    "batch" ; 
+berrskrif      m    "summary" ;
+lyther         m    "letter" ;
+mammskrif      m    "original text" ;
+tas            m    "father" ;
 
 !yow plural
 !----------
 aber           m-yow      "river mouth" ;
-grogys 		   m-yow      "belt"     ;
+grogys 	       m-yow      "belt"     ;
 gwrogys        m-yow      "belt"     ;
 acheson        m-yow      "reason"   ;
-bal			   m-yow	  "mine"     ;
-balyer		   m-yow      "barrel"   ;
+bal            m-yow      "mine"     ;
+balyer         m-yow      "barrel"   ;
 begel          m-yow      "navel, hillock" ;
 begh           m-yow      "load"     ;
 
@@ -108,7 +109,7 @@ begyer+N+Msc:begyor   yonpl "beggar" ; !also m-s
 ! ---------
 
 baban         m-es "baby" ; 
-badh		  m-es "boar" ;
+badh          m-es "boar" ;
 
 ! -s plural
 
@@ -116,8 +117,8 @@ bacheler      m-s  "bachelor" ;
 balyer        m-s  "balyers" ;
 banana        m-s  "banana" ;
 begyer        m-s  "beggar" ;
-degre		  m-s  "degree" ;
-gyglet		  m-s  "wanton person" ; 
+degre         m-s  "degree" ;
+gyglet        m-s  "wanton person" ; 
 popynjay      m-s  "parrot" ;
 
 
@@ -146,9 +147,9 @@ abostol:abo4sto4l        m-aff-i    "apostle"  ; !not working yet
 adhvetter      m-sgtantum "ripeness"   ;
 Afrikan        m-sgtantum "African"    ;
 agha           m-sgtantum "dread"      ;
-badh		   m-sgtantum "bath"       ;
-backen		   m-sgtantum "bacon"      ;
-blam		   m-sgtantum "blame"      ;
+badh           m-sgtantum "bath"       ;
+backen         m-sgtantum "bacon"      ;
+blam           m-sgtantum "blame"      ;
 blas           m-sgtantum "taste, smell" ;
 
 !Pluralia tantum
@@ -172,41 +173,41 @@ mona           m-pltantum "money" ; !NW
 ! m-yow !
 ! ----- !
 
-aber      m-yow  "river mouth"  ;
+aber       m-yow  "river mouth"  ;
 anken      m-yow  "misery"  ;
 ankor      m-yow  "anchor"  ;
 apron      m-yow  "[a?pr??nj??] (pl.) apron. "  ;
-arhadow      m-yow  "command"  ;
-aros      m-yow  "poop"  ;
+arhadow    m-yow  "command"  ;
+aros       m-yow  "poop"  ;
 askus      m-yow  "excuse."  ;
-bal      m-yow  "mine"  ;
-balyer      m-yow  "balyers [?ba?lj?rs] (pl.)"  ;
+bal        m-yow  "mine"  ;
+balyer     m-yow  "balyers [?ba?lj?rs] (pl.)"  ;
 baner      m-yow  "flag"  ;
-bargen      m-yow  "bargain."  ;
+bargen     m-yow  "bargain."  ;
 bason      m-yow  "basonys [ba?z??n?s] (pl.)"  ;
-bay      m-yow  "kiss."  ;
+bay        m-yow  "kiss."  ;
 begel      m-yow  "navel"  ;
-begh      m-yow  "burden"  ;
-ben      m-yow  "stump"  ;
-ber      m-yow  "roasting spit."  ;
+begh       m-yow  "burden"  ;
+ben        m-yow  "stump"  ;
+ber        m-yow  "roasting spit."  ;
 bleus      m-yow  "flour; bleus bleuj "  ;
 bleyn      m-yow  "tip (end)"  ;
 boton      m-yow  "button."  ;
-brastir      m-yow  "continent."  ;
-brys      m-yow  "mind"  ;
-budhyn      m-yow  "meadow."  ;
-chambour      m-yow  "bedroom"  ;
+brastir    m-yow  "continent."  ;
+brys       m-yow  "mind"  ;
+budhyn     m-yow  "meadow."  ;
+chambour   m-yow  "bedroom"  ;
 chanj      m-yow  "change."  ;
-chapel      m-yow  "chapel."  ;
+chapel     m-yow  "chapel."  ;
 charj      m-yow  "service charge."  ;
 chons      m-yow  "chance"  ;
-dasson      m-yow  "echo."  ;
-daswel      m-yow  "review."  ;
+dasson     m-yow  "echo."  ;
+daswel     m-yow  "review."  ;
 delow      m-yow  "statue."  ;
 desin      m-yow  "design"  ;
 devis      m-yow  "device"  ;
-devnydh      m-yow  "material"  ;
-difeythtir      m-yow  "desert."  ;
+devnydh    m-yow  "material"  ;
+difeythtir m-yow  "desert."  ;
 difyk      m-yow  "failure"  ;
 digomposter      m-yow  "irregularity."  ;
 dons      m-yow  "dance; dons-kledha [d?ns ?kl???a] (m.)"  ;
@@ -427,24 +428,24 @@ uskitter      m-yow  "velocity"  ;
 ! m-ys  !
 ! ----- !
 
-kanel      	m-ys  	"tap"  ;
-mason      	m-ys  	"mason"  ;
-desir      	m-ys  	"desire"  ;
-enor		m-ys 	"honour" ; 	 	
-entent		m-ys	"purpose" ;
-remetant	m-ys	"remain" ;
-sant   		m-ys	"course of a meal" ;
-chalys		m-ys	"chalice" ;
-degre		m-ys	"degree" ;
-ertaj		m-ys	"heritage" ;
-offis		m-ys	"function" ;
-polat		m-ys	"fellow" ;
-rewl		m-ys	"rule" ;
-slod		m-ys	"sledgehammer" ;
-splat		m-ys	"plot of ground" ;
-tid			m-ys	"tide" ;
-trumach		m-ys	"passage by water" ;
-vertu		m-ys	"power" ;
+kanel       m-ys  	"tap"  ;
+mason       m-ys  	"mason"  ;
+desir       m-ys  	"desire"  ;
+enor		 m-ys 	"honour" ; 	 	
+entent		 m-ys	"purpose" ;
+remetant	 m-ys	"remain" ;
+sant   		 m-ys	"course of a meal" ;
+chalys		 m-ys	"chalice" ;
+degre		 m-ys	"degree" ;
+ertaj		 m-ys	"heritage" ;
+offis		 m-ys	"function" ;
+polat		 m-ys	"fellow" ;
+rewl		 m-ys	"rule" ;
+slod		 m-ys	"sledgehammer" ;
+splat		 m-ys	"plot of ground" ;
+tid			 m-ys	"tide" ;
+trumach		 m-ys	"passage by water" ;
+vertu		 m-ys	"power" ;
 
 ! Feminines 
 ! =========
@@ -649,4 +650,132 @@ yslan          f             "rick-yard, mowhay." ;
 ! f-yow !
 ! ===== !
 
-rol       f-yow     "roll, list" ;
+aden        f-yow    "binding board of a book"  ;
+als         f-yow    "cliff"  ;
+alter       f-yow    "altar"  ;
+amser       f-yow    "tense (of verb)"  ;
+anwan       f-yow    "anvil"  ;
+argel       f-yow    "retreat, sequestered place"  ;
+arwodh     f-yow    "sign, symbol, emblem, annorial device"  ;
+atalgyst    f-yow    "dustbin, trash can (US), garbage can (US)"  ;
+avon        f-yow    "river"  ;
+awedh       f-yow    "watercourse"  ;
+awel        f-yow    "wind, gale, weather"  ;
+aweyl       f-yow    "gospel"  ;
+batel       f-yow    "battle"  ;
+bis         f-yow    "vice (tool)"  ;
+bleujen     f-yow    "flower, bloom, blossom"  ;
+bool        f-yow    "axe"  ;
+bownder     f-yow    "lane"  ;
+bresel      f-yow    "dispute, striwar"  ;
+breuslys    f-yow    "assize-court, court of law"  ;
+bro         f-yow    "country, land"  ;
+brow        f-yow    "handmill, quern"  ;
+bryv        f-yow    "bleating of sheep"  ;
+bynk        f-yow    "platform, bench"  ;
+byskoon     f-yow    "thimble"  ;
+kadon       f-yow    "chain, bond (link), trace"  ;
+kador       f-yow    "chair, seat"  ;
+kalter      f-yow    "kettle"  ;
+kanel       f-yow    "channel, canal, water-channel, inlet of sea, television channel"  ;
+kansbledhen f-yow    "century, hundred years"  ;
+kantol      f-yow    "spark-plug"  ;
+kasel       f-yow    "arm-pit, aisle underarm (US)"  ;
+kloos       f-yow    "hurdle, fence, crate, trellis, lattice, rack, harrow"  ;
+koloven     f-yow    "column"  ;
+kon         f-yow    "late dinner"  ;
+kow         f-yow    "enclosure, hollow"  ;
+kromlegh    f-yow    "cromlech, megalithic chamber-tomb"  ;
+krows       f-yow    "cross, rood"  ;
+krowseryow  f-yow    "crowseryow"  ;
+kurun       f-yow    "crown"  ;
+kusul       f-yow    "advice, counsel, opinion"  ;
+dama        f-yow    "mother"  ;
+degbledhen  f-yow    "decade"  ;
+dowrlann    f-yow    "waterside"  ;
+dydhweyth   f-yow    "day’s time"  ;
+ehel        f-yow    "axle"  ;
+eglos       f-yow    "church"  ;
+elgeth      f-yow    "chin"  ;
+esker       f-yow    "diwesker [dɪʊˈwɛˑskɛr] (dl"  ;
+eskeul      f-yow    "escalator"  ;
+eskis       f-yow    "shoe"  ;
+eur         f-yow    "time, o’clock"  ;
+fals        f-yow    "scythe"  ;
+fenten      f-yow    "spring (water), fountain, surface well"  ;
+fin         f-yow    "end"  ;
+finwedh     f-yow    "end, limit, cessation"  ;
+fiol        f-yow    "vial, shallow cup"  ;
+fornes      f-yow    "furnace"  ;
+fun         f-yow    "cable, long rope"  ;
+gavel       f-yow    "grasp, hold, capacity"  ;
+geler       f-yow    "bier, coffin"  ;
+goon        f-yow    "downland, unenclosed pasture, moor (upland)"  ;
+gwan        f-yow    "stab, prick, piercing"  ;
+gwarthol    f-yow    "stirrup"  ;
+gwelgyst    f-yow    "video-cassette"  ;
+gwers       f-yow    "gwers meythrin [ˌgwɛrzˈmɛɪθrɪn] nursery-rhyme"  ;
+gweus       f-yow    "diwweus [ˈdiʊwœs] (dl"  ;
+gweyth      f-yow    "occasion (time)"  ;
+hel         f-yow    "hall, parlour"  ;
+hellys      f-yow    "old court"  ;
+kadon       f-yow    "chain, bond (link), trace"  ;
+kador       f-yow    "chair, seat"  ;
+kalter      f-yow    "kettle"  ;
+kanel       f-yow    "channel, canal, water-channel, inlet of sea, television channel"  ;
+kansbledhen f-yow    "century, hundred years"  ;
+kantol      f-yow    "spark-plug"  ;
+kasel       f-yow    "arm-pit, aisle underarm (US)"  ;
+kaskleudh   f-yow    "(pl"  ;
+ker         f-yow    "fort, camp (earthwork), hill-fort"  ;
+keryn       f-yow    "tub, butt (container), open barrel"  ;
+kildro      f-yow    "backward turn, ruse"  ;
+kloos       f-yow    "hurdle, fence, crate, trellis, lattice, rack, harrow"  ;
+kloos-platyow       f-yow    "plate-rack"  ;
+klun        f-yow    "diwglun [ˈdiʊglɪn] (dl"  ;
+kon         f-yow    "late dinner"  ;
+koloven     f-yow    "column"  ;
+kow         f-yow    "enclosure, hollow"  ;
+kromlegh    f-yow    "cromlech, megalithic chamber-tomb"  ;
+krows       f-yow    "cross, rood"  ;
+krowseryow  f-yow    "krowseryow"  ;
+kurun       f-yow    "crown"  ;
+kusul       f-yow    "advice, counsel, opinion"  ;
+kygel       f-yow    "distaff"  ;
+kyst        f-yow    "box (container), chest"  ;
+kysten      f-yow    "small box"  ;
+liv         f-yow    "lunch(eon)."  ;
+lo          f-yow    "spoon, ladle, spatula."  ;
+loor        f-yow    "moon."  ;
+lys         f-yow    "court, hall, palace"  ;
+lo          f-yow    "loyow spoon, ladle, spatula"  ;
+magor       f-yow    "ruin."  ;
+mammvro     f-yow    "motherland."  ;
+mantol      f-yow    "balance, scales (for weighing)."  ;
+medyner     f-yow    "hinge."  ;
+melin       f-yow    "mill."  ;
+milvledhen  f-yow    "millennium."  ;
+mogow       f-yow    "cave."  ;
+nas         f-yow    "nature (character)"  ;
+new         f-yow    "trough, sink"  ;
+ostel       f-yow    "lodging, hostel, hotel"  ;
+penneglos   f-yow    "cathedral"  ;
+pennseythen f-yow    "weekend"  ;
+pennskol    f-yow    "university,"  ;
+penntir   	f-yow    "headland"  ;
+pows        f-yow    "coat, gown, frock, dress "  ;
+ragarwodh  f-yow    "portent "  ;
+rannvro     f-yow    "region "  ;
+raw         f-yow    "strop, bond "  ;
+rol         f-yow    "roll, list"  ;
+rys         f-yow    "ford Rysoghen Oxford"  ;
+sawn        f-yow    "geo, clegully"  ;
+sel         f-yow    "base, foundation "  ;
+seythen     f-yow    "week"  ;
+skol        f-yow    "school"  ;
+stol        f-yow    "stole"  ;
+strolgyst   f-yow    "litter-bin,"  ;
+tiogeth     f-yow    "household"  ;
+treveglos   f-yow    "churchtown, village "  ;
+tro         f-yow    "turn, circuit, twist"  ;
+troweyth    f-yow    "cycle (of motion)"  ;
