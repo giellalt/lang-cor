@@ -187,13 +187,13 @@ hsp-conversion: ifst-norm lexc2xspell #$(HSPSRCjava) $(HSPSRCprefix)
 # The generated word list is sent directly stdout, and then to gzip
 # This is to avoid breaking a 2Gb file size limit in the Xerox tools.
 # THIS COMMAND CAN ONLY BE RUN SUCCESSFULLY ON VICTORIO!
-# It requires the commercial fst tool to be able to print all lower-words.
+# It requires the commercial fst tool to be able to print all upper-words.
 wordlist: ../bin/ikor.fst
 	@echo
 	@echo "*** Building full-form wordlist ***"
 	@echo
 	@printf "load stack < $< \n\
-	lower-words \n\
+	upper-words \n\
 	quit \n" > ../tmp/wordlist-script
 	$(CFST) -f ../tmp/wordlist-script -q > ../tmp/wordlist.txt
 	#@rm -f ../tmp/wordlist-script
