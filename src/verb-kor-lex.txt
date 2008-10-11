@@ -6,7 +6,6 @@ bos+V:  	COPULA 	"to be" ;
 mos+V: 		MOS   	"go" ; 
 dos+V:  	DOS		"come" ; 
 gul+V: 		GUL 	"do" ;
-mynnes+V:	MYNNES	"want" ;
 
 ! The lexicon starts here
 
@@ -47,7 +46,8 @@ godriga         vb        "stay for a short time, visit." ;
 triga         vb        "dwell, sojourn, abide, stay, remain, live (at a place)" ; 
 trevesiga         vb        "settle (on new land)" ; 
 kastiga         vb        "slog, thrash, castigate." ; 
-hirviga         vb        "procrastinate." ; 
+hirviga         vb        "procrastinate." ;
+mynnes 			vb		"want" ; 
 moga         vb        "choke." ; 
 gorharga         vb        "overload." ; 
 karga         vb        "load." ; 
