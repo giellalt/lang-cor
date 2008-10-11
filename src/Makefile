@@ -6,14 +6,14 @@
 # This is a preliminary file that builds a kor parser based upon
 # xfst and not twolc.
 
-XFST = xfst -utf8
-CFST = xfst -utf8
-LEXC = lexc -utf8
+#XFST = xfst -utf8
+#CFST = xfst -utf8
+#LEXC = lexc -utf8
 
 ifeq (victorio.uit.no, $(shell hostname))
 XFST = /opt/sami/xerox/c-fsm/ix86-linux2.6-gcc3.4/bin/fst -utf8
 CFST = /opt/sami/xerox/c-fsm/ix86-linux2.6-gcc3.4/bin/fst -utf8
-LEXC = /opt/sami/xerox/bin/lexc -utf8
+LEXC = /opt/sami/xerox/c-fsm/ix86-linux2.6-gcc3.4/bin/lexc -utf8
 endif
 
 
@@ -61,7 +61,7 @@ ikor.fst: ../bin/ikor.fst
 	invert net \n\
 	save stack ../bin/ikor.fst \n\
 	quit \n" > ../../tmp/ikor-fst-script
-	@xfst < ../../tmp/ikor-fst-script
+	$(XFST) < ../../tmp/ikor-fst-script
 	@rm -f ../../tmp/ikor-fst-script
 
 
@@ -75,7 +75,7 @@ kor.fst: ../bin/kor.fst
 	@printf "read regex  [[@\"../bin/kor.save\"] .o. [@\"../bin/caseconv.fst\"]] ; \n\
 	save stack ../bin/kor.fst \n\
 	quit \n" > ../../tmp/kor-fst-script
-	@xfst < ../../tmp/kor-fst-script
+	$(XFST) < ../../tmp/kor-fst-script
 	@rm -f ../../tmp/kor-fst-script
 
 
@@ -90,7 +90,7 @@ caseconv.fst: ../bin/caseconv.fst
 	@printf "read regex < case.regex \n\
 	save stack ../bin/caseconv.fst \n\
 	quit \n" > ../../tmp/caseconv-script
-	@xfst < ../../tmp/caseconv-script
+	$(XFST) < ../../tmp/caseconv-script
 	@rm -f ../../tmp/caseconv-script
 
 
@@ -104,7 +104,7 @@ tok.fst: ../bin/tok.fst
 	@printf "source tok.txt \n\
 	save stack ../bin/tok.fst \n\
 	quit \n" > ../../tmp/tok-script
-	@xfst < ../../tmp/tok-script
+	$(XFST) < ../../tmp/tok-script
 	@rm -f ../../tmp/tok-script
 
 
@@ -117,7 +117,7 @@ kor.save: ../bin/kor.save
 	[@\"../bin/xfst-kor.bin\"]] ; \n\
 	save stack ../bin/kor.save \n\
 	quit \n" > ../../tmp/kor-save-script
-	@xfst < ../../tmp/kor-save-script
+	$(XFST) < ../../tmp/kor-save-script
 	@rm -f ../../tmp/kor-save-script
 
 
@@ -131,7 +131,7 @@ kor-lex.save: ../bin/kor-lex.save
 	printf "compile-source $(SRCS) \n\
 	save-source ../bin/kor-lex.save \n\
 	quit \n" > ../../tmp/kor-lex-save-script
-	@lexc < ../../tmp/kor-lex-save-script
+	$(LEXC) < ../../tmp/kor-lex-save-script
 	rm -f ../../tmp/kor-lex-save-script
 
 
@@ -145,7 +145,7 @@ kor-lex.save: ../bin/kor-lex.save
 #	@printf "read regex < tag-delete.regex \n\
 #	save stack ../bin/tag-delete.fst \n\
 #	quit \n" > ../../tmp/tag-delete-script
-#	@xfst -utf8 < ../../tmp/tag-delete-script
+#	$(XFST) -utf8 < ../../tmp/tag-delete-script
 #	@rm -f ../../tmp/tag-delete-script
 
 
@@ -160,7 +160,7 @@ xfst-kor.bin: ../bin/xfst-kor.bin
 	@printf "source xfst-kor.txt \n\
 	save stack ../bin/xfst-kor.bin \n\
 	quit \n" > ../../tmp/xfst-kor-script
-	@xfst -utf8 < ../../tmp/xfst-kor-script
+	$(XFST) -utf8 < ../../tmp/xfst-kor-script
 	@rm -f ../../tmp/xfst-kor-script
 
 
@@ -187,13 +187,13 @@ hsp-conversion: ifst-norm lexc2xspell #$(HSPSRCjava) $(HSPSRCprefix)
 # The generated word list is sent directly stdout, and then to gzip
 # This is to avoid breaking a 2Gb file size limit in the Xerox tools.
 # THIS COMMAND CAN ONLY BE RUN SUCCESSFULLY ON VICTORIO!
-# It requires the commercial fst tool to be able to print all lower-words.
+# It requires the commercial fst tool to be able to print all upper-words.
 wordlist: ../bin/ikor.fst
 	@echo
 	@echo "*** Building full-form wordlist ***"
 	@echo
 	@printf "load stack < $< \n\
-	lower-words \n\
+	upper-words \n\
 	quit \n" > ../tmp/wordlist-script
 	$(CFST) -f ../tmp/wordlist-script -q > ../tmp/wordlist.txt
 	#@rm -f ../tmp/wordlist-script
