@@ -43,10 +43,21 @@ LEXICON pp-proni
 +Pr+2Pl:owgh  # ;
 +Pr+3Pl:a     # ;
 
+LEXICON pp-a
++Pr:          # ; ! bare form
++Pr+1Sg:hanav    # ;
++Pr+2Sg:hanas   # ;
++Pr+Msc+3Sg:nodho # ;
++Pr+Fem+3Sg:nedhi # ;
++Pr+1Pl:hanan    # ;
++Pr+2Pl:hanowgh  # ;
++Pr+3Pl:nedha     # ;
+
 
 LEXICON Preposition
 
-a          pp "of, from" ; 
+a          pp-a "of, from" ; 
+avel	   pp-prono "like" ;
 a-barth    pp "for the sake of, beside, in the name of, along with" ;
 a-berth	   pp "within" ;
 a-der	   pp "without" ;
@@ -60,14 +71,15 @@ a-dryv 	   pp "behind" ;
 a-dro	   pp "around" ;
 a-nans	   pp "below" ;
 a-rag      pp-prono "before" ;
-a-ugh	   pp "above" ;
+a-ugh	   pp-prono "above" ;       !alternation between <-gh> and <-h-> missing
 bys		   pp "until, as far as" ;
-der		   pp "through" ;	
+dre: dredh pp-prono "through" ;	
+dres	   pp-prono "over, beyond" ;
 dhe        pp "to, for, at" ;
 dhedh      pp-prono "to" ;
 dherag     pp-prono "before" ;
 dhywar	   pp "down from" ;
-dhyworth   pp "from" ;
+dhyworth   pp-proni "from" ;
 drefen	   pp "because of" ;
 erbynn     pp "against" ;
 gans       pp "with, by" ;
@@ -83,6 +95,7 @@ war		   pp "on" ;
 warbynn	   pp "against" ;
 war-lergh  pp "behind" ;
 wosa	   pp "after" ;
-yn         pp "in" ;
+yn : ynn     pp-prono "in" ;
 yn-dann    pp-prono "under" ;
+yntra : yntredh pp-prono "between" ;
 
