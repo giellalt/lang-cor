@@ -6,14 +6,14 @@
 # This is a preliminary file that builds a kor parser based upon
 # xfst and not twolc.
 
-#XFST = xfst -utf8
-#CFST = xfst -utf8
-#LEXC = lexc -utf8
+XFST = xfst -utf8
+CFST = xfst -utf8
+LEXC = lexc -utf8
 
 ifeq (victorio.uit.no, $(shell hostname))
 XFST = /opt/sami/xerox/c-fsm/ix86-linux2.6-gcc3.4/bin/fst -utf8
 CFST = /opt/sami/xerox/c-fsm/ix86-linux2.6-gcc3.4/bin/fst -utf8
-LEXC = /opt/sami/xerox/c-fsm/ix86-linux2.6-gcc3.4/bin/lexc -utf8
+LEXC = /opt/sami/xerox/bin/lexc -utf8
 endif
 
 
@@ -145,7 +145,7 @@ kor-lex.save: ../bin/kor-lex.save
 #	@printf "read regex < tag-delete.regex \n\
 #	save stack ../bin/tag-delete.fst \n\
 #	quit \n" > ../../tmp/tag-delete-script
-#	$(XFST) -utf8 < ../../tmp/tag-delete-script
+#	@xfst -utf8 < ../../tmp/tag-delete-script
 #	@rm -f ../../tmp/tag-delete-script
 
 
@@ -187,13 +187,13 @@ hsp-conversion: ifst-norm lexc2xspell #$(HSPSRCjava) $(HSPSRCprefix)
 # The generated word list is sent directly stdout, and then to gzip
 # This is to avoid breaking a 2Gb file size limit in the Xerox tools.
 # THIS COMMAND CAN ONLY BE RUN SUCCESSFULLY ON VICTORIO!
-# It requires the commercial fst tool to be able to print all upper-words.
+# It requires the commercial fst tool to be able to print all lower-words.
 wordlist: ../bin/ikor.fst
 	@echo
 	@echo "*** Building full-form wordlist ***"
 	@echo
 	@printf "load stack < $< \n\
-	upper-words \n\
+	lower-words \n\
 	quit \n" > ../tmp/wordlist-script
 	$(CFST) -f ../tmp/wordlist-script -q > ../tmp/wordlist.txt
 	#@rm -f ../tmp/wordlist-script
@@ -201,7 +201,7 @@ wordlist: ../bin/ikor.fst
 sorted: wordlist
 	@echo "*** Sorting wordlist ***"
 	@echo
-	@LC_ALL=C sort -T ../tmp -u -o ../tmp/wordlist.txt > ../hunspell/sorted-list.txt
+	@LC_ALL=C sort -T ../tmp -u -o ../hunspell/sorted-list.txt ../tmp/wordlist.txt
 
 clean:
 	@rm -f ../bin/*.bin ../bin/*.fst ../bin/*.save
