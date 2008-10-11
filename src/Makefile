@@ -6,15 +6,16 @@
 # This is a preliminary file that builds a kor parser based upon
 # xfst and not twolc.
 
-
-# ifeq (victorio.uit.no, $(shell hostname))
-# XFST = /opt/sami/xerox/c-fsm/ix86-linux2.6-gcc3.4/bin/fst -utf8
-# LEXC = /opt/sami/xerox/bin/lexc -utf8
-# endif
-
 XFST = xfst -utf8
 CFST = xfst -utf8
 LEXC = lexc -utf8
+
+ifeq (victorio.uit.no, $(shell hostname))
+XFST = /opt/sami/xerox/c-fsm/ix86-linux2.6-gcc3.4/bin/fst -utf8
+CFST = /opt/sami/xerox/c-fsm/ix86-linux2.6-gcc3.4/bin/fst -utf8
+LEXC = /opt/sami/xerox/bin/lexc -utf8
+endif
+
 
 
 SRCS =  kor-lex.txt \
@@ -194,7 +195,7 @@ wordlist: ../bin/ikor.fst
 	@printf "load stack < $< \n\
 	lower-words \n\
 	quit \n" > ../tmp/wordlist-script
-	$(CFST) -f ../tmp/wordlist-script -q > 
+	$(CFST) -f ../tmp/wordlist-script -q > ../tmp/wordlist.txt
 	@rm -f ../tmp/wordlist-script
 
 sorted: wordlist
