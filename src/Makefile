@@ -13,6 +13,7 @@
 # endif
 
 XFST = xfst -utf8
+CFST = xfst -utf8
 LEXC = lexc -utf8
 
 
@@ -160,6 +161,46 @@ xfst-kor.bin: ../bin/xfst-kor.bin
 	quit \n" > ../../tmp/xfst-kor-script
 	@xfst -utf8 < ../../tmp/xfst-kor-script
 	@rm -f ../../tmp/xfst-kor-script
+
+
+# This target must be built with M4FLAGS=-DHUNSPELL
+hunspellspeller: wordlist
+	@echo
+	@echo "*** Making $(TARGET) ../hunspell dictionary ***"
+	filter_plx_file ../hunspell/dics ../hunspell/sorted-list.txt
+	echo `wc -l ../hunspell/dics_tmp.dic` > ../hunspell/$(TARGET).dic
+	cat ../hunspell/dics_tmp.dic >> ../hunspell/$(TARGET).dic
+	# lag en fil aff_intro
+	cat ../hunspell/aff_intro > ../hunspell/$(TARGET).aff
+	# lag fonetiske regler (dette blir språkspesifikt, la denne evt. være tom)
+	cat ../hunspell/phonrules >> ../hunspell/kor.aff
+	cat ../hunspell/dics_tmp.aff >> ../hunspell/kor.aff
+	makealias ../hunspell/kor.dic ../hunspell/kor.aff
+
+hsp-conversion: ifst-norm lexc2xspell #$(HSPSRCjava) $(HSPSRCprefix)
+
+
+
+
+# Here we make full-form data files
+# The generated word list is sent directly stdout, and then to gzip
+# This is to avoid breaking a 2Gb file size limit in the Xerox tools.
+# THIS COMMAND CAN ONLY BE RUN SUCCESSFULLY ON VICTORIO!
+# It requires the commercial fst tool to be able to print all lower-words.
+wordlist: ../bin/ikor.fst
+	@echo
+	@echo "*** Building full-form wordlist ***"
+	@echo
+	@printf "load stack < $< \n\
+	lower-words \n\
+	quit \n" > ../tmp/wordlist-script
+	$(CFST) -f ../tmp/wordlist-script -q > 
+	@rm -f ../tmp/wordlist-script
+
+sorted: wordlist
+	@echo "*** Sorting wordlist ***"
+	@echo
+	@LC_ALL=C sort -T ../tmp -u -o ../tmp/wordlist.txt > ../hunspell/sorted-list.txt
 
 clean:
 	@rm -f ../bin/*.bin ../bin/*.fst ../bin/*.save
