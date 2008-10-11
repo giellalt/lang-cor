@@ -26,10 +26,10 @@ SRCS =  kor-lex.txt \
 	propernoun-kor-morph.txt \
 	pp-kor-lex.txt \
 	cc-kor-lex.txt \
-        adj-kor-lex.txt \
-        adj-kor-morph.txt \
-        verb-kor-lex.txt \
-        verb-kor-morph.txt \
+    adj-kor-lex.txt \
+    adj-kor-morph.txt \
+    verb-kor-lex.txt \
+    verb-kor-morph.txt \
 	cs-kor-lex.txt \
 	punct-kor-lex.txt \
 	pron-kor-lex.txt 
@@ -48,7 +48,7 @@ orth-kor.fst: ../bin/orth-kor.fst
 	$(XFST) < ../tmp/orth-script
 	@rm -f ../tmp/orth-script
 
-# This is a good start for a Makefile for the forthcoming transducer.
+
 # Here we build the final generator , an inverted transducer of the analyzer.
 # It is dependent upon kor.save
 
@@ -121,7 +121,7 @@ kor.save: ../bin/kor.save
 	@rm -f ../../tmp/kor-save-script
 
 
-# The first goal is to build kor-lex.save
+# The second goal is to build kor-lex.save
 # This goal depends on a bunch of lexicon files
 kor-lex.save: ../bin/kor-lex.save
 ../bin/kor-lex.save: $(SRCS) 
@@ -135,21 +135,8 @@ kor-lex.save: ../bin/kor-lex.save
 	rm -f ../../tmp/kor-lex-save-script
 
 
-# This goal is to make a tag-deletion fst
 
-#tag-delete.fst: ../bin/tag-delete.fst
-#../bin/tag-delete.fst: tag-delete.regex
-#	@echo
-#	@echo "*** Building tag-delete.fst ***" ;
-#	@echo
-#	@printf "read regex < tag-delete.regex \n\
-#	save stack ../bin/tag-delete.fst \n\
-#	quit \n" > ../../tmp/tag-delete-script
-#	@xfst -utf8 < ../../tmp/tag-delete-script
-#	@rm -f ../../tmp/tag-delete-script
-
-
-# The second goal is to build xfst-kor.bin
+# The first goal is to build xfst-kor.bin
 # This goal depends on xfst-kor.txt
 
 xfst-kor.bin: ../bin/xfst-kor.bin
@@ -164,8 +151,27 @@ xfst-kor.bin: ../bin/xfst-kor.bin
 	@rm -f ../../tmp/xfst-kor-script
 
 
+
+# ##################################################### #
+# 														#
+#                    Speller section                    #
+#														#
+# ##################################################### #
+
+# commands to compile:
+#
+# make wordlist
+# make sorted
+# make hunspellspeller
+# cd ../hunspell/
+# hunspell -d ./kor
+# (and enter words)
+# hunspell -d ./kor -l ../corp/kk.news.txt 
+# (and have a look)
+
+
 # This target must be built with M4FLAGS=-DHUNSPELL
-hunspellspeller: wordlist
+hunspellspeller: sorted
 	@echo
 	@echo "*** Making $(TARGET) ../hunspell dictionary ***"
 	filter_plx_file ../hunspell/dics ../hunspell/sorted-list.txt
@@ -188,6 +194,7 @@ hsp-conversion: ifst-norm lexc2xspell #$(HSPSRCjava) $(HSPSRCprefix)
 # This is to avoid breaking a 2Gb file size limit in the Xerox tools.
 # THIS COMMAND CAN ONLY BE RUN SUCCESSFULLY ON VICTORIO!
 # It requires the commercial fst tool to be able to print all upper-words.
+# (note: in sme we did lower-words, but here upper, as we use ikor.fst)
 wordlist: ../bin/ikor.fst
 	@echo
 	@echo "*** Building full-form wordlist ***"
@@ -203,17 +210,19 @@ sorted: wordlist
 	@echo
 	@LC_ALL=C sort -T ../tmp -u -o ../hunspell/sorted-list.txt ../tmp/wordlist.txt
 
+
+
+# ##################################################### #
+# 														#
+#                   Clean target                        #
+#														#
+# ##################################################### #
+
+
 clean:
 	@rm -f ../bin/*.bin ../bin/*.fst ../bin/*.save
 
 
 
 
-
-#        adj-kor-lex.txt \
-#	adv-kor-lex.txt verb-kor-lex.txt pron-kor-lex.txt punct-kor-lex.txt \
-#	pp-kor-lex.txt
-
-#	adj-kor-lex.txt verb-kor-lex.txt verb-kor-morph.txt pron-kor-lex.txt \
-#	adv-kor-lex.txt pp-kor-lex.txt punct-kor-lex.txt \n\
 
