@@ -27,11 +27,11 @@ LEXICON Preposition
 a          pp "of, from" ; 
 a-barth    pp "for the sake of, beside, in the name of, along with" ;
 a-dhann    pp-pron "from under, from beneath" ;
-a-dhiworth pp "from" ; 
+a-dhyworth pp "from" ; 
 dhe        pp "to, for, at" ;
 dhedh      pp-pron "to" ;
 derag      pp-pron "before" ;
-dhiworth   pp "from" ;
+dhyworth   pp "from" ;
 erbynn     pp "against" ;
 gans       pp "with, by" ;
 orth       pp "at, by" ;
