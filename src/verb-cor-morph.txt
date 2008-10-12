@@ -1,0 +1,461 @@
+! ================= !
+! Verbal morphology 
+! ================= !
+
+
+! The declension classes
+! ======================
+
+
+! Auxiliaries
+! -----------
+
+LEXICON COPULA
++Inf:bos # ;
++Inf:bones # ;
+
++Ind+Prs+Sit+1Sg:esov # ;
++Ind+Prs+Sit+2Sg:esos # ;
++Ind+Prs+Sit+3Sg:yma # ;
++Ind+Prs+Sit+1Pl:eson # ;
++Ind+Prs+Sit+2Pl:esowgh # ;
++Ind+Prs+Sit+3Pl:ymons # ;
++Ind+Prs+Sit+Impers:eder # ;
+
++Ind+Prs+Rel+3Sg:usi # ;
++Ind+Prs+Rel+3Sg:eus # ;
++Ind+Prs+Rel+3Pl:esons # ;
+
++Ind+Prs+1Sg:ov # ;
++Ind+Prs+2Sg:os # ;
++Ind+Prs+3Sg:yw # ;
++Ind+Prs+1Pl:on # ;
++Ind+Prs+2Pl:owgh # ;
++Ind+Prs+3Pl:ons # ;
++Ind+Prs+Impers:or # ;
+
++Ind+Ipf+Sit+1Sg:esen # ;
++Ind+Ipf+Sit+2Sg:eses # ;
++Ind+Ipf+Sit+3Sg:esa # ;
++Ind+Ipf+Sit+1Pl:esen # ;
++Ind+Ipf+Sit+2Pl:esewgh # ;
++Ind+Ipf+Sit+3Pl:esens # ;
++Ind+Ipf+Sit+Impers:eses # ;
+
++Ind+Ipf+1Sg:en # ;
++Ind+Ipf+2Sg:es # ;
++Ind+Ipf+3Sg:o # ;
++Ind+Ipf+1Pl:en # ;
++Ind+Ipf+2Pl:ewgh # ;
++Ind+Ipf+3Pl:ens # ;
++Ind+Ipf+Impers:os # ;
+
++Ind+Ipf+Hab+1Sg:bedhen # ;
++Ind+Ipf+Hab+2Sg:bedhes # ;
++Ind+Ipf+Hab+3Sg:bedha # ;
++Ind+Ipf+Hab+1Pl:bedhen # ;
++Ind+Ipf+Hab+2Pl:bedhewgh # ;
++Ind+Ipf+Hab+3Pl:bedhens # ;
++Ind+Ipf+Hab+Impers:bedhes # ;
+
++Ind+Prt+1Sg:beuv # ;
++Ind+Prt+2Sg:beus # ;
++Ind+Prt+3Sg:beu # ;
++Ind+Prt+1Pl:beun # ;
++Ind+Prt+2Pl:bewgh # ;
++Ind+Prt+3Pl:bons # ;
++Ind+Prt+Impers: beus # ;
+
++Ind+Fut+1Sg:bedhav # ;
++Ind+Fut+2Sg:bydhydh # ;
++Ind+Fut+3Sg:bydh # ;
++Ind+Fut+1Pl:bedhons # ;
++Ind+Fut+2Pl:bedhowgh # ;
++Ind+Fut+3Pl:bedhons # ;
++Ind+Fut+Impers:bedher # ;
+
++Sbj+Prs+1Sg:biv # ;
++Sbj+Prs+2Sg:bi # ;
++Sbj+Prs+3Sg:bo # ;
++Sbj+Prs+1Pl:byn # ;
++Sbj+Prs+2Pl:bowgh # ;
++Sbj+Prs+3Pl:bons # ;
++Sbj+Prs+Impers:ber # ;
+
++Sbj+Imp+1Sg:ben # ;
++Sbj+Imp+2Sg:bes # ;
++Sbj+Imp+3Sg:be # ;
++Sbj+Imp+1Pl:ben # ;
++Sbj+Imp+2Pl:bewgh # ;
++Sbj+Imp+3Pl:bens # ;
++Sbj+Imp+Impers:bes # ;
+
++Imperat+2Sg:bydh # ;
++Imperat+3Sg:bedhes # ;
++Imperat+1Pl:bedhen # ;
++Imperat+2Pl:bedhewgh # ;
++Imperat+3Pl:bedhens # ;
+
+
+LEXICON MOS
++Inf:mos # ; 
++Inf:mones # ; 
+
++Ind+Prs+1Sg:av # ;
++Ind+Prs+2Sg:edh # ;
++Ind+Prs+3Sg:a # ;
++Ind+Prs+1Pl:en # ;
++Ind+Prs+2Pl:ewgh # ;
++Ind+Prs+3Pl:ons # ;
++Ind+Prs+Impers:er # ;
+
++Ind+Prt+1Sg:yth # ;
++Ind+Prt+2Sg:ythys # ;
++Ind+Prt+3Sg:eth # ;
++Ind+Prt+1Pl:ethen # ;
++Ind+Prt+2Pl:ethewgh # ;
++Ind+Prt+3Pl:ethons # ;
++Ind+Prt+Impers:es # ;
+
++Ind+Ipf+1Sg:en # ;
++Ind+Ipf+2Sg:es # ;
++Ind+Ipf+3Sg:e # ;
++Ind+Ipf+1Pl:en # ;
++Ind+Ipf+2Pl:ewgh # ;
++Ind+Ipf+3Pl:ens # ;
++Ind+Ipf+Impers:os # ;
++Ind+Ipf+Impers:es # ;
+
++Ind+Prf+1Sg:galsov # ;
++Ind+Prf+2Sg:galsos # ;
++Ind+Prf+3Sg:gallas # ;
++Ind+Prf+1Pl:galson # ;
++Ind+Prf+2Pl:galsowgh # ;
++Ind+Prf+3Pl:galsons # ;
+
++Ind+Plf+1Sg:gylsen # ;
++Ind+Plf+2Sg:gylses # ;
++Ind+Plf+3Sg:galsa # ;
++Ind+Plf+1Pl:gylsen # ;
++Ind+Plf+2Pl:gylsewgh # ;
++Ind+Plf+3Pl:glysens # ;
+
++Sbj+Prs+1Sg:ylliv # ;
++Sbj+Prs+2Sg:ylli # ;
++Sbj+Prs+3Sg:ello # ;
++Sbj+Prs+1Pl:yllyn # ;
++Sbj+Prs+2Pl:yllowgh # ;
++Sbj+Prs+3Pl:ellons # ;
++Sbj+Prs+Impers:eller # ;
+
++Sbj+Ipf+1Sg:ellen # ;
++Sbj+Ipf+2Sg:elles # ;
++Sbj+Ipf+3Sg:ella # ;
++Sbj+Ipf+1Pl:ellen # ;
++Sbj+Ipf+2Pl:ellewgh # ;
++Sbj+Ipf+3Pl:ellens # ;
++Sbj+Ipf+Impers:elles # ;
+
++Imperat+2Sg:ke # ;
++Imperat+2Sg:a # ;
++Imperat+3Sg:es # ;
++Imperat+1Pl:deun # ;
++Imperat+2Pl:kewgh # ;
++Imperat+2Pl:ewgh # ;
++Imperat+3Pl:ens # ;
+
++PP: gyllys # ;
+
+LEXICON DOS
++Inf:dos # ; 
++Inf:dones #;
++Inf:devones #;
+
++Ind+Prs+1Sg:dov # ;
++Ind+Prs+2Sg:deudh # ;
++Ind+Prs+3Sg:deu # ;
++Ind+Prs+1Pl:deun # ;
++Ind+Prs+2Pl:dewgh # ;
++Ind+Prs+3Pl:dons # ;
++Ind+Prs+Impers:deer # ;
+
++Ind+Prt+1Sg:deuth # ;
++Ind+Prt+2Sg:deuthys # ;
++Ind+Prt+3Sg:deuth # ;
++Ind+Prt+1Pl:deuthen # ;
++Ind+Prt+2Pl:deuthewgh # ;
++Ind+Prt+3Pl:deuthons # ;
++Ind+Prt+Impers:deuthes # ;
+
++Ind+Ipf+1Sg:den # ;
++Ind+Ipf+2Sg:des # ;
++Ind+Ipf+3Sg:do # ;
++Ind+Ipf+1Pl:den # ;
++Ind+Ipf+2Pl:dewgh # ;
++Ind+Ipf+3Pl:dens # ;
++Ind+Ipf+Impers:des # ;
+
++Ind+Prf+1Sg:deuvev # ;
++Ind+Prf+2Sg:deuves # ;
++Ind+Prf+3Sg:deuva # ;
++Ind+Prf+1Pl:deuven # ;
++Ind+Prf+2Pl:deuvewgh # ;
++Ind+Prf+3Pl:deuvons # ;
++Ind+Prf+Impers:deuves # ;
+
++Ind+Plf+1Sg:dothyen # ;
++Ind+Plf+2Sg:dothyes # ;
++Ind+Plf+3Sg:dothya # ;
++Ind+Plf+1Pl:dothyen # ;
++Ind+Plf+2Pl:dothyewgh # ;
++Ind+Plf+3Pl:dothyens # ;
++Ind+Plf+Impers:dothyes # ;
+
++Sbj+Prs+1Sg:dyffiv # ;
++Sbj+Prs+2Sg:dyffi # ;
++Sbj+Prs+3Sg:deffo # ;
++Sbj+Prs+1Pl:dyfyn # ;
++Sbj+Prs+2Pl:dyffowgh # ;
++Sbj+Prs+3Pl:deffons # ;
++Sbj+Prs+Impers:deffer # ;
+
++Sbj+Ipf+1Sg:deffen # ;
++Sbj+Ipf+2Sg:deffes # ;
++Sbj+Ipf+3Sg:deffa # ;
++Sbj+Ipf+1Pl:deffen # ;
++Sbj+Ipf+2Pl:deffewgh # ;
++Sbj+Ipf+3Pl:deffens # ;
++Sbj+Ipf+Impers:deffes # ;
+
++Imperat+2Sg:deus # ;
++Imperat+3Sg:des # ;
++Imperat+1Pl:deun # ;
++Imperat+2Pl:dewgh # ;
++Imperat+3Pl:dens # ;
+
++PP: devedhys # ;
+
+LEXICON GUL
+
++Inf:gul # ;
++Inf:gwul # ;
++Inf:gwruthyl # ;
+
++Ind+Prs+1Sg:gwrav # ;
++Ind+Prs+2Sg:gwredh # ;
++Ind+Prs+3Sg:gwra # ;
++Ind+Prs+1Pl:gwren # ;
++Ind+Prs+2Pl:gwrewgh # ;
++Ind+Prs+3Pl:gwrons # ;
++Ind+Prs+Impers:gwrer # ;
+
++Ind+Prt+1Sg:gwrug # ;
++Ind+Prt+2Sg:gwrussys # ;
++Ind+Prt+3Sg:gwrug # ;
++Ind+Prt+1Pl:gwrussyn # ;
++Ind+Prt+2Pl:gwrussewgh # ;
++Ind+Prt+3Pl:gwrussons # ;
++Ind+Prt+Impers:gwrug # ;
+
++Ind+Ipf+1Sg:gwren # ;
++Ind+Ipf+2Sg:gwres # ;
++Ind+Ipf+3Sg:gwre # ;
++Ind+Ipf+1Pl:gwren # ;
++Ind+Ipf+2Pl:gwrewgh # ;
++Ind+Ipf+3Pl:gwrens # ;
++Ind+Ipf+Impers:gwres # ;
+
++Ind+Plf+1Sg:gwrussen # ;
++Ind+Plf+2Sg:gwrusses # ;
++Ind+Plf+3Sg:gwrussa # ;
++Ind+Plf+1Pl:gwrussen # ;
++Ind+Plf+2Pl:gwrussewgh # ;
++Ind+Plf+3Pl:gwrussens # ;
++Ind+Plf+Impers:gwrussys # ;
+
++Sbj+Prs+1Sg:gwrylliv # ;
++Sbj+Prs+2Sg:gwrylli # ;
++Sbj+Prs+3Sg:gwrello # ;
++Sbj+Prs+1Pl:gwryllyn # ;
++Sbj+Prs+2Pl:gwryllowgh # ;
++Sbj+Prs+3Pl:gwrellons # ;
++Sbj+Prs+Impers:gwreller # ;
+
++Sbj+Ipf+1Sg:gwrellen # ;
++Sbj+Ipf+2Sg:gwrelles # ;
++Sbj+Ipf+3Sg:gwrella # ;
++Sbj+Ipf+1Pl:gwrellen # ;
++Sbj+Ipf+2Pl:gwrellewgh # ;
++Sbj+Ipf+3Pl:gwrellens # ;
++Sbj+Ipf+Impers:gwrellys # ;
+
++Imperat+2Sg:gwra # ;
++Imperat+3Sg:gwres # ;
++Imperat+1Pl:gwren # ;
++Imperat+2Pl:gwrewgh # ;
++Imperat+3Pl:gwrens # ;
+
++PP: gwrys # ;
+
+
+
+! Regular verbs
+! -------------
+
+
+LEXICON vb ! regular verbs
++V+Inf:       # ;
++V+Ind+Prs:   indpres ;
++V+Ind+Prt:   indpret ;
++V+Ind+Ipf:   indimpf ;
++V+Ind+Plf:   pluperf ;
++V+Sbj+Prs:%^CD   sbjpres ;
++V+Sbj+Prt:%^CD   sbjimpf ;
+
+LEXICON vb1
++V+Inf:%>a       # ;
++V+Ind+Prs:   indpres ;
++V+Ind+Prt:   indpret ;
++V+Ind+Ipf:   indimpf ;
++V+Ind+Plf:   pluperf ;
++V+Sbj+Prs:%^CD   sbjpres ;
++V+Sbj+Prt:%^CD   sbjimpf ;
+
+LEXICON vbya
++V+Inf:%>ya       # ;
++V+Ind+Prs:   indpres ;
++V+Ind+Prt:   indpret ;
++V+Ind+Ipf:   indimpf ;
++V+Ind+Plf:   pluperf ;
++V+Sbj+Prs:%^CD   sbjpres ;
++V+Sbj+Prt:%^CD   sbjimpf ;
+
+LEXICON vbhe
++V+Inf:%>e       # ;
++V+Ind+Prs:   indpres ;
++V+Ind+Prt:   indpret ;
++V+Ind+Ipf:   indimpf ;
++V+Ind+Plf:   pluperf ;
++V+Sbj+Prs:%^CD   sbjpres ;
++V+Sbj+Prt:%^CD   sbjimpf ;
+
+LEXICON vbi
++V+Inf:%>i       # ;
++V+Ind+Prs:   indpres ;
++V+Ind+Prt:   indpret ;
++V+Ind+Ipf:   indimpf ;
++V+Ind+Plf:   pluperf ;
++V+Sbj+Prs:%^CD   sbjpres ;
++V+Sbj+Prt:%^CD   sbjimpf ;
+
+
+
+LEXICON vb-y ! verbs with -yn etc. ipf
++V+Inf:           # ;
++V+Ind+Prs:       indpres ;
++V+Ind+Prt:       indpret ;
++V+Ind+Ipf:       indimpf-y ; ! special y form
++V+Ind+Plf:       pluperf ;
++V+Sbj+Prs:%^CD   sbjpres ;
++V+Sbj+Prt:%^CD   sbjimpf ;
+
+LEXICON ERHI
++V+Inf:%^V%>i # ;
++V+Ind+Prs:       indpres1sg ;
++V+Ind+Prs:%^V    indpresrest ;
++V+Ind+Prt:       indpret ;
++V+Ind+Ipf:       indimpf ;
++V+Ind+Plf:       pluperf ;
++V+Sbj+Prs:%^CD   sbjpres ;
++V+Sbj+Prt:%^CD   sbjimpf ;
+
+LEXICON TAVA
++V+Inf:       # ;
++V+Ind+Prs:   indpres ;
++V+Ind+Prt:   indpret ;
++V+Ind+Ipf:   indimpf ;
++V+Ind+Plf:   pluperf ;
++V+Sbj+Prs:%^CD   sbjpres ;
++V+Sbj+Prt:%^CD   sbjimpf ;
+
+
+! The verbal continuation lexica
+! ==============================
+
+LEXICON indpres
+ indpres1sg ;
+ indpresrest ;
+
+LEXICON indpres1sg
++1Sg:%>av     # ;
+
+LEXICON indpresrest
++2Sg:%>ydh    # ;
++3Sg:%^TRUNC  # ;
++1Pl:%>yn     # ;
++2Pl:%>owgh   # ;
++3Pl:%>ons    # ;
++Impers:%>ir  # ;
+
+LEXICON indpret
++1Sg:%>is        # ;
++2Sg:%>sys       # ;
++3Sg:%>as        # ;
++1Pl:%>syn       # ;
++2Pl:%>sowgh     # ;
++3Pl:%>sons      # ;
++Impers:%>as     # ;
+
+LEXICON indimpf
++1Sg:%>en     # ;
++2Sg:%>es     # ;
++3Sg:%>a      # ;
++1Pl:%>en     # ;
++2Pl:%>ewgh   # ;
++3Pl:%>ens    # ;
++Impers:%>ys  # ;
+
+LEXICON indimpf-y
++1Sg:%>yn     # ;
++2Sg:%>ys     # ;
++3Sg:%>i      # ;
++1Pl:%>yn     # ;
++2Pl:%>ewgh   # ;
++3Pl:%>ens    # ;
++Impers:%>ys  # ;
+
+LEXICON pluperf
++1Sg:%>sen     # ;
++2Sg:%>ses     # ;
++3Sg:%>sa      # ;
++1Pl:%>sen     # ;
++2Pl:%>sewgh   # ;
++3Pl:%>sens    # ;
++Impers:%>sys  # ;
+
+
+LEXICON sbjpres
++1Sg:%>iv        # ;
++2Sg:%>i         # ;
++3Sg:%>o         # ;
++1Pl:%>syn       # ;
++2Pl:%>sowgh     # ;
++3Pl:%>sons      # ;
++Impers:%>as     # ;
+
+LEXICON sbjimpf
++1Sg:%>en        # ;
++2Sg:%>es         # ;
++3Sg:%>a         # ;
++1Pl:%>en       # ;
++2Pl:%>ewgh     # ;
++3Pl:%>ens      # ;
++Impers:%>ys     # ;
+
+
+
+
+
+
+
+

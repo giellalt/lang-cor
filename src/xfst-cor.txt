@@ -1,0 +1,169 @@
+! Cornish morph-phon grammar file
+
+
+! This is the file for the morphophonological rules.
+
+! We keep a verbose style, at each point we tell what we will do.
+! That is the echo commands.
+
+echo << We define our definitions >>
+
+! Here, we have left some documentation for curious readers:
+
+! ^S = 2 = soft mutation
+! ^A = 3 = breathed mutation
+! ^P = 4 = hard mutation
+! ^M = 5 = mixed mutation
+! ^V = vowel affection
+! ^E = triggers o to e in agent suffix
+! ^D = no mutation dummy for immutable words
+! ^CD = triggers consonant doubling in subjunctive
+
+
+! These triggers are given a name, so that we can delete them when
+! they have done their job.
+
+define DummySymbols [ %^S | %^A | %^P | %^M | %^V | %^E | %^D | 
+               %^TRUNC | %^CD | %^UML | %^STDEL ] ;
+
+define Boundary  %> ;
+
+define Dummy [ DummySymbols | Boundary ] ;
+ 
+define Vow   [ a | e | i | o | u | e3 | a4 | o4 | 
+               A | E | I | O | U  ] ;
+define Cns   [ b | c | d | f | g | h | j | k | l | m | n | p | q | r | s | 
+               B | C | D | F | G | H | J | K | L | M | N | P | Q | R | S | 
+               t | v | w | x | z |
+               T | V | W | X | Z ] ;
+define Yy [ y | Y ] ;               
+
+! Werden wir <y> nicht auch in der Liste der Vokale brauchen?
+! hmm, ich sehe dein punkt.
+! z.B. in der gh > h-Regel: byghan > byhan. Müssen wir y1 vs. y2 machen?
+! vielleicht 3 gruppen
+! Vow Cns y
+
+
+define Symbols [ %- ] ;
+               
+define Sgm   [ Vow | Cns | Yy | Dummy | Symbols | Archi ] ;
+
+! Here the action begins.
+
+echo << We define our rules >>
+
+echo << ... first the mutations >>
+
+define identity [ g -> g , G -> G || .#. _ ] ;
+
+! If we encounter a final %^S symbol, we delete an initial g
+
+define gsoft [ g -> 0 , G -> 0 || .#. _ [a|e|i|l|r|w|y] [ Sgm ]* %^S ] ;
+
+! etc.
+define gmixed [ g -> h , G -> H || .#. _ [a|e|i|w|y] [Sgm]* %^M ] ;
+
+! Here, we generalise.
+
+define softmut [ p -> b , t -> d , k -> g , 
+                 P -> B , T -> D , K -> G ,
+                 b -> v , d -> d h , 
+                 B -> V , D -> D h ,
+                 m -> v , c h -> j ,
+                 M -> V , C h -> J || .#. _ [Sgm]* %^S ] ;
+
+define gwsimplification [ w -> 0 || .#. [g|G] _ (r) [o|u] [Sgm]* (Dummy - %^S) ] ;
+
+define aspmut [ p -> f, P -> F , t -> t h , T -> T h || .#. _ [Sgm]* %^A ] ;
+
+define kaspmut [ k -> h , K -> H || .#. _ ~[l|r] [Sgm]* %^A ] ;
+
+
+echo << then other consonant rules >>
+ 
+define prov [ b -> p , d -> t , g -> k ,
+              B -> P , D -> T , G -> K || .#. _ [Sgm ]* %^P ] ;
+
+define mixed [ b -> f , d -> t , m -> f ,
+               B -> F , D -> T , M -> F || .#. _ [Sgm ]* %^M ] ;
+
+!define cluster [ w -> 0 || g _ r [Sgm]* [%^D|%^P]];
+
+define Nonmutation [ a -> a, e -> e, o -> o, y -> y, u -> u, i -> i, f -> f,
+                     h -> h, j -> j, l -> l, n -> n, r -> r, s -> s, 
+                     v -> v, w -> w || .#. _ [Sgm]* [ ~[%^A|%^S|%^M|%^P] ] ] ;
+
+define ConsonantDoublingI  b -> p p , g -> k k , d -> t t || _ ([l|r]) %>CD ;
+
+define ConsonantDoublingII d h -> t h , h -> g h ,
+                           f   -> f f , k -> k k , l -> l l , m -> m m , n -> n n ,
+                           p   -> p p , r -> r r , s -> s s , t -> t t , v -> f f ,
+                           h e -> h a h a , j -> c h || _ (Vow) %^CD ;
+
+
+!define LightStemVow  Vow -> 0 || _ (Dummy) [ %^TRUNC | %> Vow ] ;
+define LightStemVow  Vow -> 0 || _ (Dummy)  %^TRUNC ;
+ ! a r h a %^V %^TRUNC .#. ->  a r h %^V %^TRUNC .#.
+
+
+define NoFinalH   h -> g h ||  [Vow|l|r] _ Dummy* .#. ,,
+ 				  g h -> h ||  [Vow|l|r] _ %> [Vow|l|r] ;                             
+ ! a r h  %^V %^TRUNC .#. -> a r g h %^V %^TRUNC .#.
+
+define STDEL t -> 0 || _ %> %^STDEL ;
+
+echo << ... then the rest >>
+
+define VowelAffection [ a -> e, e -> y, o -> e || _ Sgm* %^V ] ;
+
+define OtoE           [ o -> e || _ [ r %^E ] ] ;
+  
+  
+define LightSuffixEK e3 -> o || _ Cns %> o w ;
+
+define AuslautHerdung f -> v , t -> d , p -> b , k -> g || _ (Dummy) %> Vow ;
+
+define Umlaut a4 -> e , o4 -> e || _ Sgm* [ %> y o n | %^UML ] ; 
+! Always Uml if affix. Then Uml if no affix, but when %^UML mark
+
+! The triggers have done their work
+! The order of rules here is not crucial, crucial is the order below:
+! But it is a good idea to have the same rule here as well.
+! Dummydeletion comes last:
+
+echo << We tidy up our dummys >>
+
+define ArchiPhonemes         e3 -> e , a4 -> a , o4 -> o ;
+
+define DummyDeletion [ DummySymbols -> 0 ] ;  ! For use for speller generation
+define DummyDeletion [ Dummy -> 0 ] ;         ! For normal use
+
+! Then we compile:
+
+echo << We compile it all >>
+
+read regex [ Nonmutation
+.o. identity
+.o. gsoft
+.o. gmixed
+.o. softmut 
+!.o. gwsimplification
+.o. aspmut 
+.o. kaspmut 
+.o. prov
+.o. mixed
+.o. Nonmutation
+.o. ConsonantDoublingI
+.o. ConsonantDoublingII
+.o. LightStemVow
+.o. NoFinalH
+.o. STDEL
+.o. VowelAffection
+.o. OtoE
+.o. LightSuffixEK
+.o. AuslautHerdung
+.o. Umlaut
+.o. ArchiPhonemes
+.o. DummyDeletion 
+] ;

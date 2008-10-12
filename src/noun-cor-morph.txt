@@ -1,0 +1,148 @@
+! Cornish noun morphology
+
+! Masculine stem classes
+! ======================
+! The nouns get tags (to the left of :, i.e. in the upper representation
+! and the suffixes are found to the left of the colon
+
+LEXICON m 
++N+Msc: sg ; ! no suffix, of course
++N+Msc: owpl ; ! no suffix yet, see LEXICON owpl below
+
+LEXICON m-yow
++N+Msc:    sg ;
++N+Msc:    yowpl ;
+
+
+LEXICON m-ys
++N+Msc:    sg ;
++N+Msc:    yspl ;
+
+LEXICON m-es
++N+Msc:    sg ;
++N+Msc:    espl ;
+
+LEXICON m-s
++N+Msc:    sg ;
++N+Msc:    spl ;
+
+LEXICON m-yn
++N+Msc:    sg ;
++N+Msc:    ynpl ;
+
+LEXICON m-ens
++N+Msc:    sg ;
++N+Msc:    enspl ;
+
+LEXICON m-yon
++N+Msc:    sg ;
++N+Msc:    yonpl ;
+
+!LEXICON m-aff-yon
+!+N+Msc:    sg ;
+!+N+Msc:    yonpl ;
+
+LEXICON m-aff-i
++N+Msc:    sg  ;
++N+Msc:    ipl ; ! Need no trigger to signal MPh rule
+
+LEXICON m-ag
++N+Msc:%^E  sg ; ! ditto
++N+Msc:     yonpl ;
+
+LEXICON m-sgtantum
++N+Msc:  mutation ;
+
+LEXICON m-pltantum
++N+Msc+PLT:   mutation ;
+
+! Feminine stem classes
+! =====================
+
+LEXICON f
++N+Fem:  sg ;
++N+Fem:  owpl ;
+
+LEXICON f-yow
++N+Fem:  sg ;
++N+Fem:  yowpl ;
+
+!LEXICON faff
+!+N+Fem:    sg ;
+!+N+Fem:%^V yonpl ;
+
+
+! Nest step: 
+! Here we add suffixes. These may be common to several stem classes
+! and are therefore pointed to in a different layer (this one)
+
+! Number lexica
+! =============
+
+LEXICON sg
++Sg: mutation ; ! No suffix here, only tag.
+
+LEXICON yonpl
++Pl:%>yon mutation ; ! Plural is yon, and there is mutation to come.
+!+Pl:%^V%>yon mutation ; ! Plural is yon, and there is mutation to come.
+
+LEXICON owpl
++Pl:%>ow mutation ;
+
+LEXICON yowpl
++Pl:%>yow mutation ;
+
+LEXICON ipl 
++PL:%>i   mutation ;
+
+LEXICON yspl
++PL:%>ys  mutation ;
+
+LEXICON ynpl
++PL:%>yn  mutation ;
+
+LEXICON enspl
++PL:%>ens  mutation ;
+
+LEXICON espl
++PL:%>es  mutation ;
+
+LEXICON spl
++PL:%>s  mutation ;
+
+! Irregular plurals
+!==================
+
+LEXICON KI
++Sg:	ki # ;
++Pl:	keun # ;
+
+LEXICON DEN
++Sg:	den #;
++Pl:	tus # ;
+
+LEXICON OJYON
++Sg:	ojyon #;
++Pl:	ohen # ;
+
+LEXICON GARLONT
++N+Sg:           mutation ; ! or #?
++N+Pl:%>%^STDELs mutation ; ! or #?
+
+! Mutation lexicon
+! ================
+
+! This is the final lexicon. Here, no suffix is added, only some marks.
+! they will be deleted, but after having triggered rules in xfst-kor.txt.
+! The # symbol marks the end of the word string ( Root ... # )
+
+! The mutations are here given tags and multi-char symbols.
+! The symbols are deleted by DummyDeletion in xfst-kor.txt.
+
+LEXICON mutation 
+     :%^D  #        ; ! baseform
++Smut:%^S  #        ; ! soft, lenition
++Mmut:%^M  #        ; ! mixed
++Pmut:%^P  #        ; ! provexion
++Amut:%^A  #        ; ! aspiration
+
