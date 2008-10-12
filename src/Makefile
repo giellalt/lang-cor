@@ -1,9 +1,9 @@
-# This is a makefile that builds the kor morphological parser
+# This is a makefile that builds the cor morphological parser
 # *****************************************************************
-# This is a dummy file. kor refers to the name of the language, xxx to the 
+# This is a dummy file. cor refers to the name of the language, xxx to the 
 # ISO code of the language, for use in file names.
 
-# This is a preliminary file that builds a kor parser based upon
+# This is a preliminary file that builds a cor parser based upon
 # xfst and not twolc.
 
 XFST = xfst -utf8
@@ -18,29 +18,29 @@ endif
 
 
 
-SRCS =  kor-lex.txt \
-	adv-kor-lex.txt \
-	noun-kor-lex.txt \
-	noun-kor-morph.txt \
-	propernoun-kor-lex.txt \
-	propernoun-kor-morph.txt \
-	pp-kor-lex.txt \
-	cc-kor-lex.txt \
-    adj-kor-lex.txt \
-    adj-kor-morph.txt \
-    verb-kor-lex.txt \
-    verb-kor-morph.txt \
-	cs-kor-lex.txt \
-	punct-kor-lex.txt \
-	pron-kor-lex.txt 
+SRCS =  cor-lex.txt \
+	adv-cor-lex.txt \
+	noun-cor-lex.txt \
+	noun-cor-morph.txt \
+	propernoun-cor-lex.txt \
+	propernoun-cor-morph.txt \
+	pp-cor-lex.txt \
+	cc-cor-lex.txt \
+    adj-cor-lex.txt \
+    adj-cor-morph.txt \
+    verb-cor-lex.txt \
+    verb-cor-morph.txt \
+	cs-cor-lex.txt \
+	punct-cor-lex.txt \
+	pron-cor-lex.txt 
 
 
 # Here we build a converter from KK to SWF. Not done.
 
-orth-kor.fst: ../bin/orth-kor.fst
-../bin/orth-kor.fst: orth-kor.xfst ../bin/ikor.fst ../bin/tok.fst
+orth-cor.fst: ../bin/orth-cor.fst
+../bin/orth-cor.fst: orth-cor.xfst ../bin/icor.fst ../bin/tok.fst
 	@echo
-	@echo "*** Building orth-kor.fst ***" ;
+	@echo "*** Building orth-cor.fst ***" ;
 	@echo
 	@printf "source $< \n\
 	save stack $@ \n\
@@ -50,33 +50,33 @@ orth-kor.fst: ../bin/orth-kor.fst
 
 
 # Here we build the final generator , an inverted transducer of the analyzer.
-# It is dependent upon kor.save
+# It is dependent upon cor.save
 
-ikor.fst: ../bin/ikor.fst
-../bin/ikor.fst: ../bin/kor.fst
+icor.fst: ../bin/icor.fst
+../bin/icor.fst: ../bin/cor.fst
 	@echo
-	@echo "*** Building the inverse ikor.fst ***"
+	@echo "*** Building the inverse icor.fst ***"
 	@echo
-	@printf "load ../bin/kor.save \n\
+	@printf "load ../bin/cor.save \n\
 	invert net \n\
-	save stack ../bin/ikor.fst \n\
-	quit \n" > ../../tmp/ikor-fst-script
-	$(XFST) < ../../tmp/ikor-fst-script
-	@rm -f ../../tmp/ikor-fst-script
+	save stack ../bin/icor.fst \n\
+	quit \n" > ../../tmp/icor-fst-script
+	$(XFST) < ../../tmp/icor-fst-script
+	@rm -f ../../tmp/icor-fst-script
 
 
 # This goal is to build the final analyser. It depends on all the files.
 
-kor.fst: ../bin/kor.fst
-../bin/kor.fst: ../bin/kor.save ../bin/caseconv.fst
+cor.fst: ../bin/cor.fst
+../bin/cor.fst: ../bin/cor.save ../bin/caseconv.fst
 	@echo
-	@echo "*** Building kor.fst ***" ;
+	@echo "*** Building cor.fst ***" ;
 	@echo
-	@printf "read regex  [[@\"../bin/kor.save\"] .o. [@\"../bin/caseconv.fst\"]] ; \n\
-	save stack ../bin/kor.fst \n\
-	quit \n" > ../../tmp/kor-fst-script
-	$(XFST) < ../../tmp/kor-fst-script
-	@rm -f ../../tmp/kor-fst-script
+	@printf "read regex  [[@\"../bin/cor.save\"] .o. [@\"../bin/caseconv.fst\"]] ; \n\
+	save stack ../bin/cor.fst \n\
+	quit \n" > ../../tmp/cor-fst-script
+	$(XFST) < ../../tmp/cor-fst-script
+	@rm -f ../../tmp/cor-fst-script
 
 
 # The second goal is to build the caseconv.fst file
@@ -108,47 +108,47 @@ tok.fst: ../bin/tok.fst
 	@rm -f ../../tmp/tok-script
 
 
-kor.save: ../bin/kor.save
-../bin/kor.save: ../bin/xfst-kor.bin ../bin/kor-lex.save
+cor.save: ../bin/cor.save
+../bin/cor.save: ../bin/xfst-cor.bin ../bin/cor-lex.save
 	@echo
-	@echo "*** Building the parser kor.save ***"
+	@echo "*** Building the parser cor.save ***"
 	@echo
-	@printf "read regex [[@\"../bin/kor-lex.save\"] .o. \
-	[@\"../bin/xfst-kor.bin\"]] ; \n\
-	save stack ../bin/kor.save \n\
-	quit \n" > ../../tmp/kor-save-script
-	$(XFST) < ../../tmp/kor-save-script
-	@rm -f ../../tmp/kor-save-script
+	@printf "read regex [[@\"../bin/cor-lex.save\"] .o. \
+	[@\"../bin/xfst-cor.bin\"]] ; \n\
+	save stack ../bin/cor.save \n\
+	quit \n" > ../../tmp/cor-save-script
+	$(XFST) < ../../tmp/cor-save-script
+	@rm -f ../../tmp/cor-save-script
 
 
-# The second goal is to build kor-lex.save
+# The second goal is to build cor-lex.save
 # This goal depends on a bunch of lexicon files
-kor-lex.save: ../bin/kor-lex.save
-../bin/kor-lex.save: $(SRCS) 
+cor-lex.save: ../bin/cor-lex.save
+../bin/cor-lex.save: $(SRCS) 
 	@echo
-	@echo "*** Building kor-lex.save ***" ;
+	@echo "*** Building cor-lex.save ***" ;
 	@echo
 	printf "compile-source $(SRCS) \n\
-	save-source ../bin/kor-lex.save \n\
-	quit \n" > ../../tmp/kor-lex-save-script
-	$(LEXC) < ../../tmp/kor-lex-save-script
-	rm -f ../../tmp/kor-lex-save-script
+	save-source ../bin/cor-lex.save \n\
+	quit \n" > ../../tmp/cor-lex-save-script
+	$(LEXC) < ../../tmp/cor-lex-save-script
+	rm -f ../../tmp/cor-lex-save-script
 
 
 
-# The first goal is to build xfst-kor.bin
-# This goal depends on xfst-kor.txt
+# The first goal is to build xfst-cor.bin
+# This goal depends on xfst-cor.txt
 
-xfst-kor.bin: ../bin/xfst-kor.bin
-../bin/xfst-kor.bin: xfst-kor.txt
+xfst-cor.bin: ../bin/xfst-cor.bin
+../bin/xfst-cor.bin: xfst-cor.txt
 	@echo
-	@echo "*** Building xfst-kor.bin ***" ;
+	@echo "*** Building xfst-cor.bin ***" ;
 	@echo
-	@printf "source xfst-kor.txt \n\
-	save stack ../bin/xfst-kor.bin \n\
-	quit \n" > ../../tmp/xfst-kor-script
-	$(XFST) -utf8 < ../../tmp/xfst-kor-script
-	@rm -f ../../tmp/xfst-kor-script
+	@printf "source xfst-cor.txt \n\
+	save stack ../bin/xfst-cor.bin \n\
+	quit \n" > ../../tmp/xfst-cor-script
+	$(XFST) -utf8 < ../../tmp/xfst-cor-script
+	@rm -f ../../tmp/xfst-cor-script
 
 
 
@@ -164,9 +164,9 @@ xfst-kor.bin: ../bin/xfst-kor.bin
 # make sorted
 # make hunspellspeller
 # cd ../hunspell/
-# hunspell -d ./kor
+# hunspell -d ./cor
 # (and enter words)
-# hunspell -d ./kor -l ../corp/kk.news.txt 
+# hunspell -d ./cor -l ../corp/kk.news.txt 
 # (and have a look)
 
 
@@ -175,13 +175,13 @@ hunspellspeller: sorted
 	@echo
 	@echo "*** Making $(TARGET) ../hunspell dictionary ***"
 	filter_plx_file ../hunspell/dics ../hunspell/sorted-list.txt
-	echo `wc -l ../hunspell/dics_tmp.dic` > ../hunspell/kor.dic
-	cat ../hunspell/dics_tmp.dic >> ../hunspell/kor.dic
+	echo `wc -l ../hunspell/dics_tmp.dic` > ../hunspell/cor.dic
+	cat ../hunspell/dics_tmp.dic >> ../hunspell/cor.dic
 	# lag en fil aff_intro
-	cat ../hunspell/aff_intro > ../hunspell/kor.aff
+	cat ../hunspell/aff_intro > ../hunspell/cor.aff
 	# lag fonetiske regler (dette blir språkspesifikt, la denne evt. være tom)
-	cat ../hunspell/phonrules >> ../hunspell/kor.aff
-	cat ../hunspell/dics_tmp.aff >> ../hunspell/kor.aff
+	cat ../hunspell/phonrules >> ../hunspell/cor.aff
+	cat ../hunspell/dics_tmp.aff >> ../hunspell/cor.aff
 
 
 hsp-conversion: ifst-norm lexc2xspell #$(HSPSRCjava) $(HSPSRCprefix)
@@ -194,8 +194,8 @@ hsp-conversion: ifst-norm lexc2xspell #$(HSPSRCjava) $(HSPSRCprefix)
 # This is to avoid breaking a 2Gb file size limit in the Xerox tools.
 # THIS COMMAND CAN ONLY BE RUN SUCCESSFULLY ON VICTORIO!
 # It requires the commercial fst tool to be able to print all upper-words.
-# (note: in sme we did lower-words, but here upper, as we use ikor.fst)
-wordlist: ../bin/ikor.fst
+# (note: in sme we did lower-words, but here upper, as we use icor.fst)
+wordlist: ../bin/icor.fst
 	@echo
 	@echo "*** Building full-form wordlist ***"
 	@echo
