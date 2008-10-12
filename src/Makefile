@@ -200,7 +200,7 @@ wordlist: ../bin/ikor.fst
 	@echo "*** Building full-form wordlist ***"
 	@echo
 	@printf "load stack < $< \n\
-	upper-words \n\
+	upper-words \n\
 	quit \n" > ../tmp/wordlist-script
 	$(CFST) -f ../tmp/wordlist-script -q > ../tmp/wordlist.txt
 	#@rm -f ../tmp/wordlist-script
