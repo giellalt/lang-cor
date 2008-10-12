@@ -38,7 +38,8 @@ SRCS =  cor-lex.txt \
 # Here we build a converter from KK to SWF. Not done.
 
 orth-cor.fst: ../bin/orth-cor.fst
-../bin/orth-cor.fst: orth-cor.xfst ../bin/icor.fst ../bin/tok.fst
+../bin/orth-cor.fst: orth-cor.xfst ../bin/icor.fst \
+	../bin/tok.fst #../bin/kor-dis.bin
 	@echo
 	@echo "*** Building orth-cor.fst ***" ;
 	@echo
@@ -77,6 +78,16 @@ cor.fst: ../bin/cor.fst
 	quit \n" > ../../tmp/cor-fst-script
 	$(XFST) < ../../tmp/cor-fst-script
 	@rm -f ../../tmp/cor-fst-script
+
+
+# Let us just make a binary disambiguator
+# It can be used instead of the source file.
+dis-bin: ../bin/cor-dis.bin
+../bin/cor-dis.bin: cor-dis.rle
+	@echo
+	@echo "*** Building a binary disambiguator cor-dis.bin ***" ;
+	@echo
+	@vislcg3 --grammar cor-dis.rle --grammar-only --grammar-bin ../bin/cor-dis.bin -C UTF-8
 
 
 # The second goal is to build the caseconv.fst file
