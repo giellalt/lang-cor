@@ -1,0 +1,6 @@
+SET UTF-8
+FLAG num
+# Allow hyphens in words
+BREAK 1
+BREAK -
+WORDCHARS -:
