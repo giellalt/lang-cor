@@ -83,6 +83,7 @@ cor.fst: ../bin/cor.fst
 
 # Let us just make a binary disambiguator
 # It can be used instead of the source file.
+
 dis-bin: ../bin/cor-dis.bin
 ../bin/cor-dis.bin: cor-dis.rle
 	@echo
@@ -180,9 +181,9 @@ xfst-cor.bin: ../bin/xfst-cor.bin
 
 
 # ##################################################### #
-# 														#
+# 							#
 #                    Speller section                    #
-#														#
+#							#
 # ##################################################### #
 
 # commands to compile:
@@ -240,9 +241,9 @@ sorted: wordlist
 
 
 # ##################################################### #
-# 														#
+#							#
 #                   Clean target                        #
-#														#
+#							#
 # ##################################################### #
 
 
