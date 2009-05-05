@@ -438,9 +438,9 @@ LEXICON sbjpres
 +1Sg:%>iv        # ;
 +2Sg:%>i         # ;
 +3Sg:%>o         # ;
-+1Pl:%>syn       # ;
-+2Pl:%>sowgh     # ;
-+3Pl:%>sons      # ;
++1Pl:%>yn       # ; !XXX syn
++2Pl:%>owgh     # ; !XXX sowgh
++3Pl:%>ons      # ; !XXX sons ... were earlier
 +Impers:%>as     # ;
 
 LEXICON sbjimpf
