@@ -33,21 +33,22 @@
 
 % The name of these boxes are now legible, rather than the tags (tags in parentheses?)
 % Noun: N
-% Gender: Msc|Fem|Neu
+% Gender: Msc|Fem
 % Number: Sg|Pl
-% Case: NomAcc|Gen|Dat
 % Function:
 
 
 % Verb: V
-% Mood: Ind|Imp
-% PersonNumber: 1Sg|2Sg|3Sg|Pl
-% Infinite: Inf|Sup|PrsPtc|PstPtc
+% Mood: Ind|Sbj|Imperat
+% Tense: Prs|Prt|Ipf|Prf
+% PersonNumber: 1Sg|2Sg|3Sg|1Pl|2Pl|3Pl
+% Infinite: Inf
 % Function:
 
 % Pronoun: Pron
+% Type: Pers
 % Case: Nom|Acc|Gen|Dat
-% Number: Sg|Pl
+% Number: 1Sg|2Sg|3Sg|1Pl|2Pl|3Pl
 % Function:
 
 
@@ -72,7 +73,6 @@ Neu Neuter
 
 Sg	Singular
 Pl	Plural
-Du	Dual
 #Number
 
 Nom Nominative
@@ -86,19 +86,19 @@ Def Definite
 #Definiteness
 
 Ind Indicative
-Imp Imperative
+Sbj Subjunctive
+Imperat Imperative
 #Mood
 
 1Sg First Person singular
 2Sg Second Person singular
 3Sg Third Person singular
-Pl Plural
+1Pl First Person plural
+2Pl Second Person plural
+3Pl Third Person plural
 #PersonNumber
 
-Inf
-Sup
-PrsPtc
-PstPtc
+Inf Infinitive
 #Infinite
 
 Prs
