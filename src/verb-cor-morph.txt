@@ -1,5 +1,4 @@
-! ================= !
-! Verbal morphology 
+! Verbal morphology
 ! ================= !
 
 
@@ -90,16 +89,16 @@ LEXICON COPULA
 +Sbj+Imp+3Pl:bens # ;
 +Sbj+Imp+Impers:bes # ;
 
-+Imperat+2Sg:bydh # ;
-+Imperat+3Sg:bedhes # ;
-+Imperat+1Pl:bedhen # ;
-+Imperat+2Pl:bedhewgh # ;
-+Imperat+3Pl:bedhens # ;
++Imp+2Sg:bydh # ;
++Imp+3Sg:bedhes # ;
++Imp+1Pl:bedhen # ;
++Imp+2Pl:bedhewgh # ;
++Imp+3Pl:bedhens # ;
 
 
 LEXICON MOS
-+Inf:mos # ; 
-+Inf:mones # ; 
++Inf:mos # ;
++Inf:mones # ;
 
 +Ind+Prs+1Sg:av # ;
 +Ind+Prs+2Sg:edh # ;
@@ -156,18 +155,18 @@ LEXICON MOS
 +Sbj+Ipf+3Pl:ellens # ;
 +Sbj+Ipf+Impers:elles # ;
 
-+Imperat+2Sg:ke # ;
-+Imperat+2Sg:a # ;
-+Imperat+3Sg:es # ;
-+Imperat+1Pl:deun # ;
-+Imperat+2Pl:kewgh # ;
-+Imperat+2Pl:ewgh # ;
-+Imperat+3Pl:ens # ;
++Imp+2Sg:ke # ;
++Imp+2Sg:a # ;
++Imp+3Sg:es # ;
++Imp+1Pl:deun # ;
++Imp+2Pl:kewgh # ;
++Imp+2Pl:ewgh # ;
++Imp+3Pl:ens # ;
 
 +PP: gyllys # ;
 
 LEXICON DOS
-+Inf:dos # ; 
++Inf:dos # ;
 +Inf:dones #;
 +Inf:devones #;
 
@@ -227,11 +226,11 @@ LEXICON DOS
 +Sbj+Ipf+3Pl:deffens # ;
 +Sbj+Ipf+Impers:deffes # ;
 
-+Imperat+2Sg:deus # ;
-+Imperat+3Sg:des # ;
-+Imperat+1Pl:deun # ;
-+Imperat+2Pl:dewgh # ;
-+Imperat+3Pl:dens # ;
++Imp+2Sg:deus # ;
++Imp+3Sg:des # ;
++Imp+1Pl:deun # ;
++Imp+2Pl:dewgh # ;
++Imp+3Pl:dens # ;
 
 +PP: devedhys # ;
 
@@ -289,11 +288,11 @@ LEXICON GUL
 +Sbj+Ipf+3Pl:gwrellens # ;
 +Sbj+Ipf+Impers:gwrellys # ;
 
-+Imperat+2Sg:gwra # ;
-+Imperat+3Sg:gwres # ;
-+Imperat+1Pl:gwren # ;
-+Imperat+2Pl:gwrewgh # ;
-+Imperat+3Pl:gwrens # ;
++Imp+2Sg:gwra # ;
++Imp+3Sg:gwres # ;
++Imp+1Pl:gwren # ;
++Imp+2Pl:gwrewgh # ;
++Imp+3Pl:gwrens # ;
 
 +PP: gwrys # ;
 
@@ -311,6 +310,7 @@ LEXICON vb ! regular verbs
 +V+Ind+Plf:   pluperf ;
 +V+Sbj+Prs:%^CD   sbjpres ;
 +V+Sbj+Prt:%^CD   sbjimpf ;
+!+V+Imp:
 
 LEXICON vb1
 +V+Inf:%>a       # ;
@@ -441,7 +441,7 @@ LEXICON sbjpres
 +1Pl:%>yn       # ; !XXX syn
 +2Pl:%>owgh     # ; !XXX sowgh
 +3Pl:%>ons      # ; !XXX sons ... were earlier
-+Impers:%>as     # ;
++Impers:%>er     # ;
 
 LEXICON sbjimpf
 +1Sg:%>en        # ;
@@ -451,11 +451,5 @@ LEXICON sbjimpf
 +2Pl:%>ewgh     # ;
 +3Pl:%>ens      # ;
 +Impers:%>ys     # ;
-
-
-
-
-
-
 
 
