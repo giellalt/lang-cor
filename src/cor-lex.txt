@@ -16,6 +16,7 @@ Multichar_Symbols
 +Inf +Sit ! what is +Sit?
 +Pos +Neg +ConNeg
 +1Sg +2Sg +3Sg +1Pl +2Pl +3Pl
++Impers
 
 ! Nominal MSP
 +Sg +Pl +P
@@ -24,7 +25,6 @@ Multichar_Symbols
 
 !Pronominal MSP
 +Suff +Emph +Indef
-
 +Msc +Fem
 
 ! Diacritical marks, to trigger 
