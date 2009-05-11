@@ -10,11 +10,11 @@ SHELL = /bin/sh
 # ====================
 
 # Tools used when compiling
-XFST = xfst -utf8
+XFST = xfst
 
 # Where all the perl scripts are:
-BINDIR = ../../script/testing
-#BINDIR = ../../../gt/script/testing
+#BINDIR = ../../script/testing
+BINDIR = ../../../gt/script/testing
 
 # Directory where all the compiled fst's are:
 FSTDIR = ../bin
