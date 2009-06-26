@@ -25,12 +25,21 @@ gul+V:     GUL        "do" ;
 
 ! Continuation lexica:
 ! This is what we have today:
-! vb1 -a (= v1 above)
-! vbya -ya (= v2 above)
-! vbhe -e (= v4 above)
-! vbi -i (= v3 above)
+! vb1 -a     (= v1 above)
+! vbya -ya   (= v2 above)
+! vbi -i     (= v3 above)
+! vbhe -e    (= v4 above)
 ! vb the rest (= ??? above)
 ! Irregulars (the final cat above)
+
+! We now have:
+! 513 vb1
+! 398 vbya
+! 195 vbi
+!  74 vbhe
+! 227 vb
+
+
 
 ! Umlaut class verbs
 
@@ -53,6 +62,8 @@ gul+V:     GUL        "do" ;
 ! some -i verbs are type 3: v3-u3
 ! and the rest are type 2: v3-u2
 ! he-verbs are all type 2: v4-u2
+
+
 
 
 ! The lexicon starts here
