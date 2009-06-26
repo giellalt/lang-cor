@@ -11,12 +11,13 @@ Multichar_Symbols
 
 ! Verbal MSP
 +Prs +Fut +Prt +Prf +Ipf +Plf
-+Ind +Imp +Cond +Opt +Sbj
-+Sg1 +Sg2 +Sg3 +Pl1 +Pl2 +Pl3
++Ind +Imp +Sbj
 +Inf +Sit ! what is +Sit?
 +Pos +Neg +ConNeg
 +1Sg +2Sg +3Sg +1Pl +2Pl +3Pl
 +Impers
++Ptc
++VN
 
 ! Nominal MSP
 +Sg +Pl +P
