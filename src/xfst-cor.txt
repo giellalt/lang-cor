@@ -18,7 +18,7 @@ echo << We define our definitions >>
 ! ^E = triggers o to e in agent suffix
 ! ^D = no mutation dummy for immutable words
 ! ^CD = triggers consonant doubling in subjunctive
-
+! ^TRUNC = 
 
 ! These triggers are given a name, so that we can delete them when
 ! they have done their job.
@@ -102,8 +102,8 @@ define ConsonantDoublingII d h -> t h , h -> g h ,
                            h e -> h a h a , j -> c h || _ (Vow) %^CD ;
 
 
-!define LightStemVow  Vow -> 0 || _ (Dummy) [ %^TRUNC | %> Vow ] ;
-define LightStemVow  Vow -> 0 || _ (Dummy)  %^TRUNC ;
+define LightStemVow  Vow -> 0 || _ (Dummy) [ %^TRUNC %> Vow ] ;
+!define LightStemVow  Vow -> 0 || _ (Dummy)  %^TRUNC ;
  ! a r h a %^V %^TRUNC .#. ->  a r h %^V %^TRUNC .#.
 
 
