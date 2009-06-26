@@ -89,12 +89,6 @@ LEXICON COPULA
 +Sbj+Imp+3Pl:bens # ;
 +Sbj+Imp+Impers:bes # ;
 
-+Imp+2Sg:bydh # ;
-+Imp+3Sg:bedhes # ;
-+Imp+1Pl:bedhen # ;
-+Imp+2Pl:bedhewgh # ;
-+Imp+3Pl:bedhens # ;
-
 
 LEXICON MOS
 +Inf:mos # ;
@@ -163,7 +157,7 @@ LEXICON MOS
 +Imp+2Pl:ewgh # ;
 +Imp+3Pl:ens # ;
 
-+PP: gyllys # ;
++Ptc: gyllys # ;
 
 LEXICON DOS
 +Inf:dos # ;
@@ -232,7 +226,7 @@ LEXICON DOS
 +Imp+2Pl:dewgh # ;
 +Imp+3Pl:dens # ;
 
-+PP: devedhys # ;
++Ptc: devedhys # ;
 
 LEXICON GUL
 
@@ -294,70 +288,80 @@ LEXICON GUL
 +Imp+2Pl:gwrewgh # ;
 +Imp+3Pl:gwrens # ;
 
-+PP: gwrys # ;
++Ptc: gwrys # ;
 
 
 
+
+! ============= !
+! ============= !
 ! Regular verbs
-! -------------
+! ============= !
+! ============= !
 
 
-LEXICON vb ! regular verbs
-+V+Inf:       # ;
-+V+Ind+Prs:   indpres ;
-+V+Ind+Prt:   indpret ;
-+V+Ind+Ipf:   indimpf ;
-+V+Ind+Plf:   pluperf ;
-+V+Sbj+Prs:%^CD   sbjpres ;
-+V+Sbj+Prt:%^CD   sbjimpf ;
-!+V+Imp:
-
-LEXICON vb1
+LEXICON vb1   ! class 1
 +V+Inf:%>a       # ;
 +V+Ind+Prs:   indpres ;
 +V+Ind+Prt:   indpret ;
 +V+Ind+Ipf:   indimpf ;
 +V+Ind+Plf:   pluperf ;
 +V+Sbj+Prs:%^CD   sbjpres ;
-+V+Sbj+Prt:%^CD   sbjimpf ;
++V+Sbj+Ipf:%^CD   sbjimpf ;
++V+Imp: imp ;
 
-LEXICON vbya
+LEXICON vbya   ! classv2
 +V+Inf:%>ya       # ;
 +V+Ind+Prs:   indpres ;
 +V+Ind+Prt:   indpret ;
 +V+Ind+Ipf:   indimpf ;
 +V+Ind+Plf:   pluperf ;
 +V+Sbj+Prs:%^CD   sbjpres ;
-+V+Sbj+Prt:%^CD   sbjimpf ;
++V+Sbj+Ipf:%^CD   sbjimpf ;
++V+Imp:%>y   imp ;
 
-LEXICON vbhe
-+V+Inf:%>e       # ;
-+V+Ind+Prs:   indpres ;
-+V+Ind+Prt:   indpret ;
-+V+Ind+Ipf:   indimpf ;
-+V+Ind+Plf:   pluperf ;
-+V+Sbj+Prs:%^CD   sbjpres ;
-+V+Sbj+Prt:%^CD   sbjimpf ;
-
-LEXICON vbi
+LEXICON vbi      ! class 3
 +V+Inf:%>i       # ;
 +V+Ind+Prs:   indpres ;
 +V+Ind+Prt:   indpret ;
 +V+Ind+Ipf:   indimpf ;
 +V+Ind+Plf:   pluperf ;
 +V+Sbj+Prs:%^CD   sbjpres ;
-+V+Sbj+Prt:%^CD   sbjimpf ;
++V+Sbj+Ipf:%^CD   sbjimpf ;
++V+Imp: imp ;
+
+LEXICON vbhe   ! class 4
++V+Inf:%>e       # ;
++V+Ind+Prs:   indpres1sg ; ! regular
++V+Ind+Prs:   indpres3sg-a ; ! special
++V+Ind+Prs:   indpresrest ; ! rest
++V+Ind+Prt:%^TRUNC   indpret ;
++V+Ind+Ipf:   indimpf ;
++V+Ind+Plf:   pluperf ;
++V+Sbj+Prs:%^CD   sbjpres ;
++V+Sbj+Ipf:%^CD   sbjimpf ;
++V+Imp: imp ;
+
+LEXICON vb ! regular verbs
++V+Inf:       # ;
++V+Ind+Prs:   indpres ;
++V+Ind+Prt:%^TRUNC%>a   indpret ;
++V+Ind+Ipf:   indimpf ;
++V+Ind+Plf:   pluperf ;
++V+Sbj+Prs:%^CD   sbjpres ;
++V+Sbj+Ipf:%^CD   sbjimpf ;
++V+Imp:       imp ; !XXX check
 
 
-
-LEXICON vb-y ! verbs with -yn etc. ipf
+LEXICON vb-y ! class ??    ! verbs with -yn etc. ipf
 +V+Inf:           # ;
 +V+Ind+Prs:       indpres ;
 +V+Ind+Prt:       indpret ;
 +V+Ind+Ipf:       indimpf-y ; ! special y form
 +V+Ind+Plf:       pluperf ;
 +V+Sbj+Prs:%^CD   sbjpres ;
-+V+Sbj+Prt:%^CD   sbjimpf ;
++V+Sbj+Ipf:%^CD   sbjimpf ;
++V+Imp:           imp ; ! XXX check
 
 LEXICON ERHI
 +V+Inf:%^V%>i # ;
@@ -367,7 +371,8 @@ LEXICON ERHI
 +V+Ind+Ipf:       indimpf ;
 +V+Ind+Plf:       pluperf ;
 +V+Sbj+Prs:%^CD   sbjpres ;
-+V+Sbj+Prt:%^CD   sbjimpf ;
++V+Sbj+Ipf:%^CD   sbjimpf ;
++V+Imp:           imp ; ! XXX check
 
 LEXICON TAVA
 +V+Inf:       # ;
@@ -376,7 +381,8 @@ LEXICON TAVA
 +V+Ind+Ipf:   indimpf ;
 +V+Ind+Plf:   pluperf ;
 +V+Sbj+Prs:%^CD   sbjpres ;
-+V+Sbj+Prt:%^CD   sbjimpf ;
++V+Sbj+Ipf:%^CD   sbjimpf ;
++V+Imp:           imp ; ! XXX check
 
 
 ! The verbal continuation lexica
@@ -384,14 +390,20 @@ LEXICON TAVA
 
 LEXICON indpres
  indpres1sg ;
+ indpres3sg ;
  indpresrest ;
 
 LEXICON indpres1sg
 +1Sg:%>av     # ;
 
+LEXICON indpres3sg
++3Sg:%^TRUNC  # ;
+
+LEXICON indpres3sg-a ! vbhe
++3Sg:%>a     # ;
+
 LEXICON indpresrest
 +2Sg:%>ydh    # ;
-+3Sg:%^TRUNC  # ;
 +1Pl:%>yn     # ;
 +2Pl:%>owgh   # ;
 +3Pl:%>ons    # ;
@@ -451,5 +463,13 @@ LEXICON sbjimpf
 +2Pl:%>ewgh     # ;
 +3Pl:%>ens      # ;
 +Impers:%>ys     # ;
+
+LEXICON imp
++2Sg:        # ;
++3Sg:%>es         # ;
++3Sg:%>ens        # ;
++1Pl:%>yn      # ;
++2Pl:%>ewgh     # ;
++3Pl:%>ens      # ;
 
 
