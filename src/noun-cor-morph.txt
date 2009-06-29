@@ -67,6 +67,10 @@ LEXICON f-yow
 +N+Fem:  sg ;
 +N+Fem:  yowpl ;
 
+LEXICON f-edh
++N+Fem:  sg ;
++N+Fem:  edhpl ;
+
 !LEXICON faff
 !+N+Fem:    sg ;
 !+N+Fem:%^V yonpl ;
@@ -88,27 +92,40 @@ LEXICON yonpl
 
 LEXICON owpl
 +Pl:%>ow mutation ;
+!:>%>ek adjd ;
 
 LEXICON yowpl
 +Pl:%>yow mutation ;
+:%>yek adjd ;
 
 LEXICON ipl 
-+PL:%>i   mutation ;
++Pl:%>i   mutation ;
+:%>ek adjd ;
 
 LEXICON yspl
-+PL:%>ys  mutation ;
++Pl:%>ys  mutation ;
 
 LEXICON ynpl
-+PL:%>yn  mutation ;
++Pl:%>yn  mutation ;
 
 LEXICON enspl
-+PL:%>ens  mutation ;
++Pl:%>ens  mutation ;
+:%>ek adjd ;
 
 LEXICON espl
-+PL:%>es  mutation ;
++Pl:%>es  mutation ;
+:%>ek adjd ;
+
+LEXICON edhpl
++Pl:%>edh  mutation ;
+:%>ek adjd ;
 
 LEXICON spl
-+PL:%>s  mutation ;
++Pl:%>s  mutation ;
+:%>ek adjd ;
+
+LEXICON adjd
++A: # ;
 
 ! Irregular plurals
 !==================
