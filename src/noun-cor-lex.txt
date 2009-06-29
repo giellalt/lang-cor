@@ -169,6 +169,14 @@ mona           m-pltantum "money" ; !NW
 ! Masculines
 ! ==========
 
+
+! ----- !
+! m-ow !
+! ----- !
+
+lavrok:lavrog m-ow ;
+lavrok:lavreg m-ow ; !UC
+
 ! ----- !
 ! m-yow !
 ! ----- !
@@ -449,6 +457,13 @@ vertu		 m-ys	"power" ;
 
 ! Feminines 
 ! =========
+
+
+! Irregular feminines
+
+modrep:modreb f-edh ;
+
+
 
 ! ================ !
 ! f with ow plural !
