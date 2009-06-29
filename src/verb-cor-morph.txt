@@ -337,10 +337,10 @@ LEXICON vbhe   ! class 4
 +V+Ind+Prs:   indpresrest ; ! rest
 +V+Ind+Prt:%^TRUNC   indpret ;
 +V+Ind+Ipf:   indimpf ;
-+V+Ind+Plf:   pluperf ;
-+V+Sbj+Prs:%^CD   sbjpres ;
-+V+Sbj+Ipf:%^CD   sbjimpf ;
-+V+Imp: imp ;
++V+Ind+Plf:a   pluperf ;
++V+Sbj+Prs:a%^CD   sbjpres ;
++V+Sbj+Ipf:ah%^CD   sbjimpf ;
++V+Imp:ah imp ;
 
 LEXICON vb ! regular verbs
 +V+Inf:       # ;
