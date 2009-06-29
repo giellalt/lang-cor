@@ -1,6 +1,6 @@
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% %
 %                                                                            %
-%    List of morphological and syntactic tags used in the Ïnupiaq corpus     %
+%    List of morphological and syntactic tags used in the Cornish corpus     %
 %                                                                            %
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% %
 
@@ -39,7 +39,7 @@
 
 
 % Verb: V
-% Mood: Ind|Sbj|Imperat
+% Mood: Ind|Sbj|Imp
 % Tense: Prs|Prt|Ipf|Prf
 % PersonNumber: 1Sg|2Sg|3Sg|1Pl|2Pl|3Pl
 % Infinite: Inf
@@ -55,11 +55,16 @@
 % 2.  List of the tags, and their internal distribution
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-% Initial star = not yet found in kal file
 N	Noun
 V	Verb
+A	Adjective
+Adv	Adverb
+CC	Conjunction
+CS	Subjunction
+Interj	Interjection
 Pron	Pronoun
-Part Particle
+Num	Numeral
+Pr	Preposition
 #Wordclass
 
 Prop	Propernoun
@@ -68,7 +73,6 @@ Prop	Propernoun
 
 Msc Masculine
 Fem Feminine
-Neu Neuter
 #Gender
 
 Sg	Singular
@@ -78,16 +82,12 @@ Pl	Plural
 Nom Nominative
 Acc Accusative
 Gen Genitive
-Dat Dative
 #Case
 
-Indef Indefinite
-Def Definite
-#Definiteness
 
 Ind Indicative
 Sbj Subjunctive
-Imperat Imperative
+Imp Imperative
 #Mood
 
 1Sg First Person singular
@@ -103,4 +103,7 @@ Inf Infinitive
 
 Prs
 Prt
+Prf
+Ipf
+Plf
 #Tense
