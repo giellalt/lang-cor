@@ -94,7 +94,7 @@ define Nonmutation [ a -> a, e -> e, o -> o, y -> y, u -> u, i -> i, f -> f,
                      h -> h, j -> j, l -> l, n -> n, r -> r, s -> s, 
                      v -> v, w -> w || .#. _ [Sgm]* [ ~[%^A|%^S|%^M|%^P] ] ] ;
 
-define ConsonantDoublingI  b -> p p , g -> k k , d -> t t || _ ([l|r]) %>CD ;
+define ConsonantDoublingI  b -> p p , g -> k k , d -> t t || _ ([l|r]) %^CD ;
 
 define ConsonantDoublingII t -> t t || Vow _ h (Vow) %^CD ;
 ! this probably holds for more than t. Check also left context in next rule.
