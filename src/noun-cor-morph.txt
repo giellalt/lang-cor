@@ -13,6 +13,10 @@ LEXICON m-yow
 +N+Msc:    sg ;
 +N+Msc:    yowpl ;
 
+LEXICON m-ow
++N+Msc:    sg ;
++N+Msc:    owpl ;
+
 
 LEXICON m-ys
 +N+Msc:    sg ;
