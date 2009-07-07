@@ -10,5 +10,5 @@
 #
 	
 N+Gender+Number
-V+Mood+Tense?+PersonNumber
 V+Infinite
+V+Mood+Tense?+PersonNumber
