@@ -300,89 +300,89 @@ LEXICON GUL
 ! ============= !
 
 
-LEXICON vb1   ! class 1
-+V+Inf:%>a       # ;
-+V+Ind+Prs:   indpres ;
-+V+Ind+Prt:   indpret ;
-+V+Ind+Ipf:   indimpf ;
-+V+Ind+Plf:   pluperf ;
-+V+Sbj+Prs:%^CD   sbjpres ;
-+V+Sbj+Ipf:%^CD   sbjimpf ;
+LEXICON vb1 ! class 1
++V+Inf:%>a # ;
++V+Ind+Prs: indpres ;
++V+Ind+Prt: indpret ;
++V+Ind+Ipf: indimpf ;
++V+Ind+Plf: pluperf ;
++V+Sbj+Prs:%^CD sbjpres ;
++V+Sbj+Ipf:%^CD sbjimpf ;
 +V+Imp: imp ;
 
-LEXICON vbya   ! classv2
-+V+Inf:%>ya       # ;
-+V+Ind+Prs:   indpres ;
-+V+Ind+Prt:   indpret ;
-+V+Ind+Ipf:   indimpf ;
-+V+Ind+Plf:   pluperf ;
-+V+Sbj+Prs:%^CD   sbjpres ;
-+V+Sbj+Ipf:%^CD   sbjimpf ;
-+V+Imp:%>y   imp ;
+LEXICON vbya ! classv2
++V+Inf:%>ya # ;
++V+Ind+Prs: indpres ;
++V+Ind+Prt: indpret ;
++V+Ind+Ipf: indimpf ;
++V+Ind+Plf: pluperf ;
++V+Sbj+Prs:%^CD sbjpres ;
++V+Sbj+Ipf:%^CD sbjimpf ;
++V+Imp:%>y imp ;
 
-LEXICON vbi      ! class 3
-+V+Inf:%>i       # ;
-+V+Ind+Prs:   indpres ;
-+V+Ind+Prt:   indpret ;
-+V+Ind+Ipf:   indimpf ;
-+V+Ind+Plf:   pluperf ;
-+V+Sbj+Prs:%^CD   sbjpres ;
-+V+Sbj+Ipf:%^CD   sbjimpf ;
+LEXICON vbi ! class 3
++V+Inf:%>i # ;
++V+Ind+Prs: indpres ;
++V+Ind+Prt: indpret ;
++V+Ind+Ipf: indimpf ;
++V+Ind+Plf: pluperf ;
++V+Sbj+Prs:%^CD sbjpres ;
++V+Sbj+Ipf:%^CD sbjimpf ;
 +V+Imp: imp ;
 
-LEXICON vbhe   ! class 4
-+V+Inf:%>e       # ;
-+V+Ind+Prs:   indpres1sg ; ! regular
-+V+Ind+Prs:   indpres3sg-a ; ! special
-+V+Ind+Prs:   indpresrest ; ! rest
-+V+Ind+Prt:%^TRUNC   indpret ;
-+V+Ind+Ipf:   indimpf ;
-+V+Ind+Plf:a   pluperf ;
-+V+Sbj+Prs:a%^CD   sbjpres ;
-+V+Sbj+Ipf:ah%^CD   sbjimpf ;
+LEXICON vbhe ! class 4
++V+Inf:%>e # ;
++V+Ind+Prs: indpres1sg ; ! regular
++V+Ind+Prs: indpres3sg-a ; ! special
++V+Ind+Prs: indpresrest ; ! rest
++V+Ind+Prt:%^TRUNC indpret ;
++V+Ind+Ipf: indimpf ;
++V+Ind+Plf:a pluperf ;
++V+Sbj+Prs:a%^CD sbjpres ;
++V+Sbj+Ipf:ah%^CD sbjimpf ;
 +V+Imp:ah imp ;
 
 LEXICON vb ! regular verbs
-+V+Inf:       # ;
-+V+Ind+Prs:   indpres ;
-+V+Ind+Prt:%^TRUNC%>a   indpret ;
-+V+Ind+Ipf:   indimpf ;
-+V+Ind+Plf:   pluperf ;
-+V+Sbj+Prs:%^CD   sbjpres ;
-+V+Sbj+Ipf:%^CD   sbjimpf ;
-+V+Imp:       imp ; !XXX check
++V+Inf: # ;
++V+Ind+Prs: indpres ;
++V+Ind+Prt:%^TRUNC%>a indpret ;
++V+Ind+Ipf: indimpf ;
++V+Ind+Plf: pluperf ;
++V+Sbj+Prs:%^CD sbjpres ;
++V+Sbj+Ipf:%^CD sbjimpf ;
++V+Imp: imp ; !XXX check
 
 
-LEXICON vb-y ! class ??    ! verbs with -yn etc. ipf
-+V+Inf:           # ;
-+V+Ind+Prs:       indpres ;
-+V+Ind+Prt:       indpret ;
-+V+Ind+Ipf:       indimpf-y ; ! special y form
-+V+Ind+Plf:       pluperf ;
-+V+Sbj+Prs:%^CD   sbjpres ;
-+V+Sbj+Ipf:%^CD   sbjimpf ;
-+V+Imp:           imp ; ! XXX check
+LEXICON vb-y ! class ?? ! verbs with -yn etc. ipf
++V+Inf: # ;
++V+Ind+Prs: indpres ;
++V+Ind+Prt: indpret ;
++V+Ind+Ipf: indimpf-y ; ! special y form
++V+Ind+Plf: pluperf ;
++V+Sbj+Prs:%^CD sbjpres ;
++V+Sbj+Ipf:%^CD sbjimpf ;
++V+Imp: imp ; ! XXX check
 
 LEXICON ERHI
 +V+Inf:%^V%>i # ;
-+V+Ind+Prs:       indpres1sg ;
-+V+Ind+Prs:%^V    indpresrest ;
-+V+Ind+Prt:       indpret ;
-+V+Ind+Ipf:       indimpf ;
-+V+Ind+Plf:       pluperf ;
-+V+Sbj+Prs:%^CD   sbjpres ;
-+V+Sbj+Ipf:%^CD   sbjimpf ;
-+V+Imp:           imp ; ! XXX check
++V+Ind+Prs: indpres1sg ;
++V+Ind+Prs:%^V indpresrest ;
++V+Ind+Prt: indpret ;
++V+Ind+Ipf: indimpf ;
++V+Ind+Plf: pluperf ;
++V+Sbj+Prs:%^CD sbjpres ;
++V+Sbj+Ipf:%^CD sbjimpf ;
++V+Imp: imp ; ! XXX check
 
 LEXICON TAVA
-+V+Inf:       # ;
-+V+Ind+Prs:   indpres ;
-+V+Ind+Prt:   indpret ;
-+V+Ind+Ipf:   indimpf ;
-+V+Ind+Plf:   pluperf ;
-+V+Sbj+Prs:%^CD   sbjpres ;
-+V+Sbj+Ipf:%^CD   sbjimpf ;
-+V+Imp:           imp ; ! XXX check
++V+Inf: # ;
++V+Ind+Prs: indpres ;
++V+Ind+Prt: indpret ;
++V+Ind+Ipf: indimpf ;
++V+Ind+Plf: pluperf ;
++V+Sbj+Prs:%^CD sbjpres ;
++V+Sbj+Ipf:%^CD sbjimpf ;
++V+Imp: imp ; ! XXX check
 
 
 ! The verbal continuation lexica
@@ -394,82 +394,82 @@ LEXICON indpres
  indpresrest ;
 
 LEXICON indpres1sg
-+1Sg:%>av     # ;
++1Sg:%>av # ;
 
 LEXICON indpres3sg
-+3Sg:%^TRUNC  # ;
++3Sg:%^TRUNC # ;
 
 LEXICON indpres3sg-a ! vbhe
-+3Sg:%>a     # ;
++3Sg:%>a # ;
 
 LEXICON indpresrest
-+2Sg:%>ydh    # ;
-+1Pl:%>yn     # ;
-+2Pl:%>owgh   # ;
-+3Pl:%>ons    # ;
-+Impers:%>ir  # ;
++2Sg:%>ydh # ;
++1Pl:%>yn # ;
++2Pl:%>owgh # ;
++3Pl:%>ons # ;
++Impers:%>ir # ;
 
 LEXICON indpret
-+1Sg:%>is        # ;
-+2Sg:%>sys       # ;
-+3Sg:%>as        # ;
-+1Pl:%>syn       # ;
-+2Pl:%>sowgh     # ;
-+3Pl:%>sons      # ;
-+Impers:%>as     # ;
++1Sg:%>is # ;
++2Sg:%>sys # ;
++3Sg:%>as # ;
++1Pl:%>syn # ;
++2Pl:%>sowgh # ;
++3Pl:%>sons # ;
++Impers:%>as # ;
 
 LEXICON indimpf
-+1Sg:%>en     # ;
-+2Sg:%>es     # ;
-+3Sg:%>a      # ;
-+1Pl:%>en     # ;
-+2Pl:%>ewgh   # ;
-+3Pl:%>ens    # ;
-+Impers:%>ys  # ;
++1Sg:%>en # ;
++2Sg:%>es # ;
++3Sg:%>a # ;
++1Pl:%>en # ;
++2Pl:%>ewgh # ;
++3Pl:%>ens # ;
++Impers:%>ys # ;
 
 LEXICON indimpf-y
-+1Sg:%>yn     # ;
-+2Sg:%>ys     # ;
-+3Sg:%>i      # ;
-+1Pl:%>yn     # ;
-+2Pl:%>ewgh   # ;
-+3Pl:%>ens    # ;
-+Impers:%>ys  # ;
++1Sg:%>yn # ;
++2Sg:%>ys # ;
++3Sg:%>i # ;
++1Pl:%>yn # ;
++2Pl:%>ewgh # ;
++3Pl:%>ens # ;
++Impers:%>ys # ;
 
 LEXICON pluperf
-+1Sg:%>sen     # ;
-+2Sg:%>ses     # ;
-+3Sg:%>sa      # ;
-+1Pl:%>sen     # ;
-+2Pl:%>sewgh   # ;
-+3Pl:%>sens    # ;
-+Impers:%>sys  # ;
++1Sg:%>sen # ;
++2Sg:%>ses # ;
++3Sg:%>sa # ;
++1Pl:%>sen # ;
++2Pl:%>sewgh # ;
++3Pl:%>sens # ;
++Impers:%>sys # ;
 
 
 LEXICON sbjpres
-+1Sg:%>iv        # ;
-+2Sg:%>i         # ;
-+3Sg:%>o         # ;
-+1Pl:%>yn       # ; !XXX syn
-+2Pl:%>owgh     # ; !XXX sowgh
-+3Pl:%>ons      # ; !XXX sons ... were earlier
-+Impers:%>er     # ;
++1Sg:%>iv # ;
++2Sg:%>i # ;
++3Sg:%>o # ;
++1Pl:%>yn # ; !XXX syn
++2Pl:%>owgh # ; !XXX sowgh
++3Pl:%>ons # ; !XXX sons ... were earlier
++Impers:%>er # ;
 
 LEXICON sbjimpf
-+1Sg:%>en        # ;
-+2Sg:%>es         # ;
-+3Sg:%>a         # ;
-+1Pl:%>en       # ;
-+2Pl:%>ewgh     # ;
-+3Pl:%>ens      # ;
-+Impers:%>ys     # ;
++1Sg:%>en # ;
++2Sg:%>es # ;
++3Sg:%>a # ;
++1Pl:%>en # ;
++2Pl:%>ewgh # ;
++3Pl:%>ens # ;
++Impers:%>ys # ;
 
 LEXICON imp
-+2Sg:        # ;
-+3Sg:%>es         # ;
-+3Sg:%>ens        # ;
-+1Pl:%>yn      # ;
-+2Pl:%>ewgh     # ;
-+3Pl:%>ens      # ;
++2Sg: # ;
++3Sg:%>es # ;
++3Sg:%>ens # ;
++1Pl:%>yn # ;
++2Pl:%>ewgh # ;
++3Pl:%>ens # ;
 
 
