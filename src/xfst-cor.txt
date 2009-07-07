@@ -113,8 +113,8 @@ define LightStemVow  Vow -> 0 || _ (Dummy) [ %^TRUNC %> Vow ] ;
  ! a r h a %^V %^TRUNC .#. ->  a r h %^V %^TRUNC .#.
 
 
-define NoFinalH   h -> g h ||  [Vow|l|r] _ Dummy* .#. ,,
- 				  g h -> h ||  [Vow|l|r] _ %> [Vow|l|r] ;                             
+define NoFinalH   h -> g h || Cns Vow (l|r) _ Dummy* .#. ,,
+ 				  g h -> h || Cns Vow (l|r) _ %> [Vow|l|r] ;                             
  ! a r h  %^V %^TRUNC .#. -> a r g h %^V %^TRUNC .#.
 
 define STDEL t -> 0 || _ %> %^STDEL ;
