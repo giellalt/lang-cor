@@ -39,7 +39,7 @@ SRCS =  cor-lex.txt \
 
 orth-cor.fst: ../bin/orth-cor.fst
 ../bin/orth-cor.fst: orth-cor.xfst ../bin/icor.fst \
-	../bin/tok.fst #../bin/cor-dis.bin
+	../bin/tok.fst ../bin/cor-dis.bin
 	@echo
 	@echo "*** Building orth-cor.fst ***" ;
 	@echo
