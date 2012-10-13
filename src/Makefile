@@ -9,12 +9,14 @@
 XFST = xfst #-utf8
 CFST = xfst #-utf8
 LEXC = lexc #-utf8
+VISLCG3 = /opt/sami/cg/bin/vislcg3
 
-ifeq (victorio.uit.no, $(shell hostname))
-XFST = /opt/sami/xerox/c-fsm/ix86-linux2.6-gcc3.4/bin/fst -utf8
+#ifeq (victorio.uit.no, $(shell hostname))
+#XFST = /opt/sami/xerox/c-fsm/ix86-linux2.6-gcc3.4/bin/fst -utf8
 CFST = /opt/sami/xerox/c-fsm/ix86-linux2.6-gcc3.4/bin/fst -utf8
-LEXC = /opt/sami/xerox/bin/lexc -utf8
-endif
+#LEXC = /opt/sami/xerox/bin/lexc -utf8
+#VISLCG3 = /opt/sami/cg/bin/vislcg3
+#endif
 
 
 
@@ -89,7 +91,7 @@ dis-bin: ../bin/cor-dis.bin
 	@echo
 	@echo "*** Building a binary disambiguator cor-dis.bin ***" ;
 	@echo
-	@vislcg3 --grammar cor-dis.rle --grammar-only --grammar-bin ../bin/cor-dis.bin -C UTF-8
+	$(VISLCG3) --grammar cor-dis.rle --grammar-only --grammar-bin ../bin/cor-dis.bin -C UTF-8
 
 
 
