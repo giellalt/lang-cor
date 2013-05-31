@@ -1,0 +1,71 @@
+LEXICON Pronoun 
+
+Personal ;
+Demonstrative ;
+Determinative ;
+Possessive ;
+Indefinite ;
+Suffixed ;
+
+LEXICON Personal
+my+Pron+Pers+Nom+1Sg:my # ;
+my+Pron+Pers+Nom+1Sg:'m # ;
+ty+Pron+Pers+Nom+2Sg:ty # ;
+ty+Pron+Pers+Nom+2Sg:ta # ; ! Reduced form XXX
+ty+Pron+Pers+Acc+2Sg:'th # ;
+ev+Pron+Pers+Msc+Nom+3Sg:ev # ;
+ev+Pron+Pers+Msc+Acc+3Sg:'n # ;
+hi+Pron+Pers+Fem+Nom+3Sg:hi # ;
+hi+Pron+Pers+Fem+Acc+3Sg:'s # ;
+ni+Pron+Pers+Nom+1Pl:ni # ;
+ni+Pron+Pers+Acc+1Pl:'gan # ;
+hwi+Pron+Pers+Nom+2Pl:hwi # ;
+hwi+Pron+Pers+Acc+2Pl:'gas # ;
+i+Pron+Pers+Nom+3Pl:i # ;
+i+Pron+Pers+Acc+3Pl:'s # ;
+
+LEXICON Suffixed
+my+Pron+Pers+Suff+1Sg:vy # ;
+my+Pron+Pers+Suff+Emph+1Sg:evy # ;
+ty+Pron+Pers+Suff+2Sg:jy # ;
+ty+Pron+Pers+Suff+Emph+2Sg:tejy # ;
+ev+Pron+Pers+Msc+Suff+3Sg:ev # ;
+ev+Pron+Pers+Msc+Suff+3Sg:e # ;
+ev+Pron+Pers+Msc+Suff+Emph+3Sg:eev # ;
+hi+Pron+Pers+Fem+Suff+3Sg:hi # ;
+hi+Pron+Pers+Fem+Suff+Emph+3Sg:hyhi # ;
+ni+Pron+Pers+Suff+1Pl:ni # ;
+ni+Pron+Pers+Suff+Emph+1Pl:nyni # ;
+hwi+Pron+Pers+Suff+Emph+2Pl:hwi # ;
+hwi+Pron+Pers+Suff+Emph+2Pl:hwyhwi # ;
+i+Pron+Pers+Suff+3Pl:i # ;
+i+Pron+Pers+Suff+Emph+3Pl:ynsi # ;
+
+
+LEXICON Demonstrative
+ma+Dem:ma # "this" ;
+na+Dem:na # "that" ;
+hemm+Dem+Msc+Sg:hemm # "this one (masc.)" ;
+hemma+Dem+Msc+Sg:hemma # "this one (masc.)" ;
+henn+Dem+Msc+Sg:henn # "that one (masc.)" ;
+henna+Dem+Msc+Sg:henna # "that one (masc.)" ;
+homm+Dem+Fem+Sg:homm # "this one (fem.)" ;
+homma+Dem+Fem+Sg:homma # "this one (fem.)" ;
+honn+Dem+Fem+Sg:honn # "that one (fem.)" ;
+honna+Dem+Fem+Sg:honna # "that one (fem.)" ;
+
+
+LEXICON Determinative
+an+Det+Def:an # ;
+
+LEXICON Possessive 
+ow+Pron+Poss+1Sg:ow # ;
+dha+Pron+Poss+2Sg:dha # ;
+y+Pron+Poss+Msc+3Sg:y # ; 
+hy+Pron+Poss+Fem+3Sg:hy # ;
+agan+Pron+Poss+1Pl:agan # ;
+agas+Pron+Poss+2Pl:agas # ;
+aga+Pron+Poss+3Pl:aga # ;
+
+LEXICON Indefinite
+huni+Pron+Indef+Sg:huni # ;

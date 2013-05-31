@@ -57,7 +57,7 @@ Conjunction ;
 Subjunction ;
 Verb ;
 Adjective ;
-!Interjection ;
+Interjection ;
 !Numeral ;
 Pronoun ;
 Punctuation ;
