@@ -1,0 +1,169 @@
+
+# ===================== #
+# Cornish disambiguator #
+# ===================== #
+
+
+# ========== #
+# Delimiters #
+# ========== #
+
+
+DELIMITERS = "<.>" "<!>" "<?>" "<¶>";
+
+
+
+# ============= #
+# Tags and sets #
+# ============= #
+
+
+# ========
+   SETS
+# ========
+
+LIST BOS = (>>>) (<s>); 
+LIST EOS = (<<<) (</s>); # vislcg and CG-2 together.
+
+LIST N = N ;
+LIST V = V ;
+LIST A = A ;
+LIST Prop = Prop ;
+LIST Adv = Adv ;
+LIST Num = Num ;
+LIST CC = CC ;
+LIST CS = CS ;
+LIST Interj = Interj ;
+LIST Abbr = Abbr ;
+LIST ACR = ACR ;
+LIST Pr = Pr ;
+LIST Pron = Pron ;
+LIST Pers = Pers ;
+LIST Det = Det ;
+LIST Refl = Refl ;
+LIST Recipr = Recipr ;
+LIST Poss = Poss ;
+LIST Interr = Interr ;
+LIST Nom = Nom ;
+LIST Acc = Acc ;
+LIST Gen = Gen ;
+LIST Msc = Msc ;
+LIST Fem = Fem ;
+LIST Sg = Sg ;
+LIST Pl = Pl ;
+LIST Def = Def ;
+LIST Indef = Indef ;
+
+LIST Prs = Prs ;
+LIST Prt = Prt ;
+
+LIST 1Sg = 1Sg ;
+LIST 2Sg = 2Sg ;
+LIST 3Sg = 3Sg ;
+LIST 1Pl = 1Pl ;
+LIST 2Pl = 2Pl ;
+LIST 3Pl = 3Pl ;
+
+LIST Inf = Inf ;
+LIST Imp = Imp ;
+LIST Sbj = Sbj ;
+
+LIST CLB = CLB ;
+LIST PUNCT = PUNCT ;
+LIST LEFT = LEFT ;
+LIST RIGHT = RIGHT ;
+
+LIST Smut = Smut ;
+LIST Mmut = Mmut ;
+LIST Pmut = Pmut ;
+LIST Amut = Amut ;
+
+
+
+LIST TAG = N V A Prop Adv Num CC CS Interj Abbr ACR Pr Pron Pers Det Refl Recipr Poss Interr Nom Acc Gen Msc Fem Sg Pl Def Indef  Prs Prt  1Sg 2Sg 3Sg 1Pl 2Pl 3Pl  Inf Imp Sbj  CLB PUNCT LEFT RIGHT  Smut Mmut Pmut Amut  ;
+
+
+LIST NAG = Nom Acc Gen ;
+LIST GENDER = Msc Fem ;
+LIST NUMBER = Sg Pl ;
+
+# Sets
+# ====
+
+# Noun sets
+
+# Nominal sets
+
+LIST NOMINALHEAD = N Num Pers Refl Recipr Interr ;
+
+
+
+# Verb sets
+
+
+# Mutation sets
+
+# SMUT = 2 = soft mutation
+# AMUT = 3 = breathed mutation
+# PMUT = 4 = hard mutation
+# MMUT = 5 = mixed mutation
+
+LIST SMUT = "a" "a-ban" "a-dhann" "a-dhia" "ass" "dell" "dew" "diw" "dha" "dhe" "erna" "fatell" "hedra" "hwi" "kettel" "malbew" "mar" "mil" "na" "namna" "ny" "pan" "pana" "pur" "re" "seul" "ty" "war" "y" "yn-dann" "yn unn"  ;
+LIST AMUT = "ow" "hy" "aga" "tri" "teyr" "dy'" ;
+LIST PMUT = "owth" "ow" "mar" "mars" "mara" "maras" "a" ;
+LIST MMUT = "kyn" "maga" "may" "ple" "p'eur" "py" "'th" "y" "yn" ;
+
+LIST MUTTAG = Smut Amut Mmut Pmut ;
+
+# This assumes, the mutation sets are lexically triggered.
+# In order to have grammatical categories here, we must use other notations.
+# sieh 142 und 146, ist 146 in prinzip richtig?
+# possessor possessed 
+# where possessed is a lenited noun?
+
+# Boundary sets
+
+SET S-BOUNDARY = CS | Interr | (";") | BOS  | EOS ;
+
+
+# Complementary set
+
+SET WORD = N | V | A | Pr | Pron | Adv | CC | CS | Interj | Num | ("\?") ;
+SET MARK =  (",") | ("\") | ("\;") ; #"
+
+LIST COMMA = "," ;
+
+SET WORDMARK = WORD | MARK ;
+
+
+
+SECTION
+
+# Verb
+
+SELECT 2Sg IF (0 V)(1 (Pron Pers Nom 2Sg));
+
+# Selecting mutated forms
+
+SELECT:PrSmut Smut IF (-1 SMUT) ;
+
+SELECT:PossSmut Smut IF (-1C N)(0 N);
+
+
+# Removed non-selected mutated forms
+
+# The idea is:
+# First we select the appropriate mutated forms (rules above)
+# In that operation, the form without a mut-tag is removed.
+# If the mut-less reading is left, it means no mut-rule has hit.
+# We then remove all the reading with mut tags and are left 
+# with the mutless one.
+# Now, whether this works as intended needs to be checked.
+# One weakness is that the rule as formulated now will not hit
+# when there is homonymy betw N and other POS.
+
+REMOVE:DelMUT MUTTAG IF (0C N) ;
+
+
+
+

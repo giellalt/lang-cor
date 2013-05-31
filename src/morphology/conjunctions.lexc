@@ -1,0 +1,43 @@
+LEXICON CC 
++CC: #;
+
+LEXICON Conjunction 
+mes   CC "but" ;
+hag  CC "and (before vowels)" ;
+ha   CC "and (before consonants)" ;
+nag  CC "nor (before cons.)" ;
+na   CC "nor (before vowels)" ;
+po   CC "or" ;
+bo   CC "or" ;
+py   CC "or" ;
+poken CC "or else" ;
+boken CC "or else" ;
+marnas CC "unless, except" ;
+ma's CC "unless, except" ;
+saw CC "save, unless, only" ;
+keffrys% ha CC "as well as" ;
+kekeffrys% ha CC "as well as" ;
+kehys% ha CC "as long as" ;
+rag CC "for" ;
+ytho CC "then, so" ;
+may CC "so that" ;
+mar CC "if (before cons.)" ;
+mara CC "if (before cons.)" ;
+mars CC "if (before vowels)" ;
+maras CC "if (before vowels)" ;
+kyn CC "although" ;
+a-ban CC "since, because" ;
+awos CC "because" ;
+drefen CC "because" ;
+pan CC "since" ;
+bys% pan CC "until when" ;
+erna CC "until" ;
+hedra CC "while" ;
+kyns CC "before" ;
+kyns% es CC "before" ;
+kettel CC "as soon as" ;
+warlergh CC "after" ;
+wosa CC "after" ;
+dell CC "as" ;
+kepar% ha% pan CC "just as" ;
+
