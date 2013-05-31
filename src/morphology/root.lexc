@@ -1,53 +1,53 @@
-! Cornish morphology
+!! !!!Cornish morphology
 
-! First, we declare multicharacter symbols
+!! First, we declare multicharacter symbols
 Multichar_Symbols
 
-! POS
-+N +V +A 
-+Adv +CC +CS +Interj +Pron +Num +Pr
-+Smut +Mmut +Pmut +Amut !haben wir.
+!! !!POS
++N +V +A           !!= * @CODE@
++Adv +CC +CS +Interj +Pron +Num +Pr         !!= * @CODE@
++Smut +Mmut +Pmut +Amut               !!= * @CODE@ for mutation
 
 
-! Verbal MSP
-+Prs +Fut +Prt +Prf +Ipf +Plf
-+Ind +Imp +Sbj
-+Inf +Sit ! what is +Sit?
-+Pos +Neg +ConNeg
-+1Sg +2Sg +3Sg +1Pl +2Pl +3Pl
-+Impers
-+Ptc
-+VN
+!! !!Verbal MSP
++Prs +Fut +Prt +Prf +Ipf +Plf       !!= @CODE@
++Ind +Imp +Sbj       !!= @CODE@
++Inf +Sit ! what is +Sit?       !!= @CODE@
++Pos +Neg +ConNeg       !!= @CODE@
++1Sg +2Sg +3Sg +1Pl +2Pl +3Pl       !!= @CODE@
++Impers       !!= @CODE@
++Ptc       !!= @CODE@
++VN       !!= @CODE@
 
-! Nominal MSP
-+Sg +Pl +P
-+Nom +Acc +Gen 
-+Ord
+!! !!Nominal MSP
++Sg +Pl +P            !!= @CODE@
++Nom +Acc +Gen        !!= @CODE@
++Ord       !!= @CODE@
 
-!Pronominal MSP
-+Suff +Emph +Indef
-+Msc +Fem
+!! !!Pronominal MSP
++Suff +Emph +Indef         !!= @CODE@
++Msc +Fem                  !!= @CODE@
 
-! Diacritical marks, to trigger 
-! morphophonological rules.
-! The "%" symbol literalises the next symbol
+!! Diacritical marks, to trigger 
+!! morphophonological rules.
+!! The "%" symbol literalises the next symbol
 
-%^S %^A %^P %^M %^V %^E
-%> %^D
-%^UML %^CD %^TRUNC %^STDEL
+%^S %^A %^P %^M %^V %^E        !!= @CODE@
+%> %^D                         !!= @CODE@
+%^UML %^CD %^TRUNC %^STDEL     !!= @CODE@
 
-! Archiphonemes
- e3    ! e to o in plural
- a4 o4 !Umlaut phonemes, changing to e
-
-
+!! !!Archiphonemes
+ e3           !!= @CODE@  e to o in plural
+ a4 o4        !!= @CODE@ Umlaut phonemes, changing to e
 
 
-! Key lexicon
-! ===========
+
+
+!! !!!Key lexicon
+!     ===========
 
 ! This is the start lexicon.
-LEXICON Root
+LEXICON Root        !!= * @CODE@
 
 Adverb ;
 Noun ;
