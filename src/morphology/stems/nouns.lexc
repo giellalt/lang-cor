@@ -1,12 +1,13 @@
-! Lexicon over Cornish nouns
-! These are pointed to from kor-lex.txt
+!! !!!Lexicon over Cornish nouns
 
 
 
 
 LEXICON Noun 
 
-! Exceptions
+!! !!Exceptions
+
+!! ki, den, ojyon, ...
 
 ki+N+Msc:        KI 	"dog" ;
 den+N+Msc:       DEN "man";
@@ -20,46 +21,46 @@ tulyfant         GARLONT  "tulip" ;
 protestant       GARLONT "protestant" ;
 
 
-! Short overview of the types
-! Masculines
-! m          = ow plural
-! m-yow      = yow plural
-! m-ys       = ys plural
-! m-yon      = yon plural
-! m-yn       = yn plural 	*not implemented yet*
-! m-ag       = -(y)er agent nouns
-! m-es       = -es plural
-! m-ens	      = -ens plural 	*not implemented yet*
-! m-s        = -s plural
-! m-         = balek-wörter
-! m-dual     = Duals		*not implemented yet*
-! m-aff      = Root vowel change
-! m-yon      = yon plural
-! m-aff-i    = i plural
-! m-sgtantum = Singularia tantum
-! m-pltantum = Pluralia tantum
+!! !!Short overview of the types
+!! Masculines
+!! * m          = ow plural
+!! * m-yow      = yow plural
+!! * m-ys       = ys plural
+!! * m-yon      = yon plural
+!! * m-yn       = yn plural 	*not implemented yet*
+!! * m-ag       = -(y)er agent nouns
+!! * m-es       = -es plural
+!! * m-ens	      = -ens plural 	*not implemented yet*
+!! * m-s        = -s plural
+!! * m-         = balek-wörter
+!! * m-dual     = Duals		*not implemented yet*
+!! * m-aff      = Root vowel change
+!! * m-yon      = yon plural
+!! * m-aff-i    = i plural
+!! * m-sgtantum = Singularia tantum
+!! * m-pltantum = Pluralia tantum
 
-! Feminines
+!! Feminines
 ! =========
-! f          =  ow plural
-! f-yow      = yow plural
-! f-yon      = yon plural
+!! * f          =  ow plural
+!! * f-yow      = yow plural
+!! * f-yon      = yon plural
 
 
-! Masculine
-! ==========
+!! !!Masculine
+!    =========
 
-! lexc syntax:
-! lemmaform:stem continuationlexicon "facultative translation" ;
-! without the colon, lemmaform and stem are identical.
-! The morphology is then handeled in noun-kor-morph.txt
+!! !lexc syntax:
+!! lemmaform:stem continuationlexicon "facultative translation" ;
+!! without the colon, lemmaform and stem are identical.
+!! The morphology is then handeled in noun-kor-morph.txt
 
-! Here the noun types begin:
-! ==========================
+!! Here the noun types begin:
+!  ==========================
 
-! ow plural
+!! !ow plural
 ! --------
-!All -(y)ans nouns are here even though the dictionary lists no plurals for them (Brown, p. 30)
+!! All -(y)ans nouns are here even though the dictionary lists no plurals for them (Brown, p. 30)
 abatti         m    "abbey"    ;
 abes           m    "abbot"    ;
 adhyskans      m    "education"  ;
@@ -80,7 +81,7 @@ lyther         m    "letter" ;
 mammskrif      m    "original text" ;
 tas            m    "father" ;
 
-!yow plural
+!! yow plural
 !----------
 aber           m-yow      "river mouth" ;
 grogys 	       m-yow      "belt"     ;
@@ -91,27 +92,27 @@ balyer         m-yow      "barrel"   ;
 begel          m-yow      "navel, hillock" ;
 begh           m-yow      "load"     ;
 
-!ys plural
+!! ys plural
 acheson        m-ys       "reason"   ;
 adamant        m-ys       "diamond"  ;
 akont          m-ys       "account"  ;
 
-!yon plural
+!! yon plural
 akontydh       m-yon      "accountant" ;
 
-!-(y)er agent nouns
+!! -(y)er agent nouns
 aghskrifer:aghskrifor m-ag "genealogist" ;
 bleujenner:bleujennor m-ag "florist" ;
 begyer+N+Msc:begyor   yonpl "beggar" ; !also m-s
 
 
-! -es plural
+!!  -es plural
 ! ---------
 
 baban         m-es "baby" ; 
 badh          m-es "boar" ;
 
-! -s plural
+!!  -s plural
 
 bacheler      m-s  "bachelor" ;
 balyer        m-s  "balyers" ;
@@ -122,22 +123,22 @@ gyglet        m-s  "wanton person" ;
 popynjay      m-s  "parrot" ;
 
 
-! balek-wörter
+!!  balek-wörter
 
 balek:bale3k m ;
 
 
-! Duals
+!!  Duals
 ! abrans       m          "eyebrow" This needs to be done later on
 
-! Root vowel change
+!!  Root vowel change
 ! =======
 
-! yon plural
+!!  yon plural
 
 mab:ma4b            m-yon "son" ;
 
-! i plural
+!!  i plural
 
 abostol:abo4sto4l        m-aff-i    "apostle"  ; !not working yet
 
