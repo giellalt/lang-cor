@@ -1,12 +1,12 @@
-! ================= !
-! Punctuation marks !
-! ================= !
+!     ================= !
+!! !!!Punctuation marks !
+!     ================= !
 
 
 LEXICON Punctuation
 
 
-! Clause boundary symbols
+!! * Clause boundary symbols
 
 %,+CLB:%,           # ;
 %.+CLB:%.           # ;
@@ -39,7 +39,7 @@ LEXICON Punctuation
 %~+PUNCT:%~	        # ;
 
 
-! Paired punctuation marks
+!! * Paired punctuation marks
 
 %«+PUNCT+LEFT:%«    # ;
 %»+PUNCT+RIGHT:%»   # ;

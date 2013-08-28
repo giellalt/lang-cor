@@ -1,11 +1,13 @@
+!! !!!Pronoun stems and morphology
+
 LEXICON Pronoun 
 
-Personal ;
-Demonstrative ;
-Determinative ;
-Possessive ;
-Indefinite ;
-Suffixed ;
+Personal ;	     !!= * @CODE@
+Demonstrative ;  !!= * @CODE@
+Determinative ;  !!= * @CODE@
+Possessive ;     !!= * @CODE@
+Indefinite ;     !!= * @CODE@
+Suffixed ;	     !!= * @CODE@
 
 LEXICON Personal
 my+Pron+Pers+Nom+1Sg:my # ;
