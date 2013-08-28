@@ -1,8 +1,11 @@
-! Adverbs
+!! !!!Adverbs
+
+!! Adding the tag +Adv
 
 LEXICON adv
 +Adv:  # ;
 
+!! The adverbs
 
 LEXICON Adverb
 
