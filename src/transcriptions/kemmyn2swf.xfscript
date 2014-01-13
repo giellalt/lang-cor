@@ -78,6 +78,6 @@ read regex [ wh
 .o. lexical
 ] ;
 
-invert net ;
+
 
 !save ../bin/kk2swf.fst ;
