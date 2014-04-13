@@ -7,7 +7,7 @@
   / [affixes|https://victorio.uit.no/langtech/trunk/langs/cor/src/morphology/affixes/] 
   / [syntax|https://victorio.uit.no/langtech/trunk/langs/cor/src/syntax] 
   / [twolc|https://victorio.uit.no/langtech/trunk/langs/cor/src/phonology/cor-phon.xfscript]   
-  / [yaml|https://victorio.uit.no/langtech/trunk/langs/cor/test/src/morphology/]
+  / [yaml|https://victorio.uit.no/langtech/trunk/langs/cor/test/src/gt-norm-yamls/]
 * Generation of: [paradigms|http://giellatekno.uit.no/cgi/p-cor.eng.html]
   / [text|http://giellatekno.uit.no/cgi/d-cor.eng.html]
 
