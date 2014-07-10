@@ -28,7 +28,7 @@ Multichar_Symbols
 +Suff +Emph +Indef         !!= @CODE@
 +Msc +Fem                  !!= @CODE@
 
-!! Diacritical marks, to trigger 
+!! Diacritical marks, to trigger
 !! morphophonological rules.
 !! The "%" symbol literalises the next symbol
 
