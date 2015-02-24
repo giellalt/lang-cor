@@ -6,59 +6,59 @@
 ! and the suffixes are found to the left of the colon
 
 LEXICON m 
-+N+Msc: sg ; ! no suffix, of course
-+N+Msc: owpl ; ! no suffix yet, see LEXICON owpl below
++N+Sem/Msc: sg ; ! no suffix, of course
++N+Sem/Msc: owpl ; ! no suffix yet, see LEXICON owpl below
 
 LEXICON m-yow
-+N+Msc:    sg ;
-+N+Msc:    yowpl ;
++N+Sem/Msc:    sg ;
++N+Sem/Msc:    yowpl ;
 
 LEXICON m-ow
-+N+Msc:    sg ;
-+N+Msc:    owpl ;
++N+Sem/Msc:    sg ;
++N+Sem/Msc:    owpl ;
 
 
 LEXICON m-ys
-+N+Msc:    sg ;
-+N+Msc:    yspl ;
++N+Sem/Msc:    sg ;
++N+Sem/Msc:    yspl ;
 
 LEXICON m-es
-+N+Msc:    sg ;
-+N+Msc:    espl ;
++N+Sem/Msc:    sg ;
++N+Sem/Msc:    espl ;
 
 LEXICON m-s
-+N+Msc:    sg ;
-+N+Msc:    spl ;
++N+Sem/Msc:    sg ;
++N+Sem/Msc:    spl ;
 
 LEXICON m-yn
-+N+Msc:    sg ;
-+N+Msc:    ynpl ;
++N+Sem/Msc:    sg ;
++N+Sem/Msc:    ynpl ;
 
 LEXICON m-ens
-+N+Msc:    sg ;
-+N+Msc:    enspl ;
++N+Sem/Msc:    sg ;
++N+Sem/Msc:    enspl ;
 
 LEXICON m-yon
-+N+Msc:    sg ;
-+N+Msc:    yonpl ;
++N+Sem/Msc:    sg ;
++N+Sem/Msc:    yonpl ;
 
 !LEXICON m-aff-yon
-!+N+Msc:    sg ;
-!+N+Msc:    yonpl ;
+!+N+Sem/Msc:    sg ;
+!+N+Sem/Msc:    yonpl ;
 
 LEXICON m-aff-i
-+N+Msc:    sg  ;
-+N+Msc:    ipl ; ! Need no trigger to signal MPh rule
++N+Sem/Msc:    sg  ;
++N+Sem/Msc:    ipl ; ! Need no trigger to signal MPh rule
 
 LEXICON m-ag
-+N+Msc:%^E  sg ; ! ditto
-+N+Msc:     yonpl ;
++N+Sem/Msc:%^E  sg ; ! ditto
++N+Sem/Msc:     yonpl ;
 
 LEXICON m-sgtantum
-+N+Msc:  mutation ;
++N+Sem/Msc:  mutation ;
 
 LEXICON m-pltantum
-+N+Msc+PLT:   mutation ;
++N+Sem/Msc+PLT:   mutation ;
 
 ! Feminine stem classes
 ! =====================
