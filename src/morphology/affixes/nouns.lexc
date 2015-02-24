@@ -64,20 +64,20 @@ LEXICON m-pltantum
 ! =====================
 
 LEXICON f
-+N+Fem:  sg ;
-+N+Fem:  owpl ;
++N+Sem/Fem:  sg ;
++N+Sem/Fem:  owpl ;
 
 LEXICON f-yow
-+N+Fem:  sg ;
-+N+Fem:  yowpl ;
++N+Sem/Fem:  sg ;
++N+Sem/Fem:  yowpl ;
 
 LEXICON f-edh
-+N+Fem:  sg ;
-+N+Fem:  edhpl ;
++N+Sem/Fem:  sg ;
++N+Sem/Fem:  edhpl ;
 
 !LEXICON faff
-!+N+Fem:    sg ;
-!+N+Fem:%^V yonpl ;
+!+N+Sem/Fem:    sg ;
+!+N+Sem/Fem:%^V yonpl ;
 
 
 ! Nest step: 

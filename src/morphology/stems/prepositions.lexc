@@ -17,7 +17,7 @@ LEXICON pp-prona
 +Pr+1Sg:av    # ;
 +Pr+2Sg:as    # ;
 +Pr+Msc+3Sg:o # ;
-+Pr+Fem+3Sg:i # ;
++Pr+Sem/Fem+3Sg:i # ;
 +Pr+1Pl:an    # ;
 +Pr+2Pl:owgh  # ;
 +Pr+3Pl:a     # ;
@@ -28,7 +28,7 @@ LEXICON pp-prono
 +Pr+1Sg:ov    # ;
 +Pr+2Sg:os    # ;
 +Pr+Msc+3Sg:o # ;
-+Pr+Fem+3Sg:i # ;
++Pr+Sem/Fem+3Sg:i # ;
 +Pr+1Pl:on    # ;
 +Pr+2Pl:owgh  # ;
 +Pr+3Pl:a     # ;
@@ -38,7 +38,7 @@ LEXICON pp-proni
 +Pr+1Sg:iv    # ;
 +Pr+2Sg:is    # ;
 +Pr+Msc+3Sg:o # ;
-+Pr+Fem+3Sg:i # ;
++Pr+Sem/Fem+3Sg:i # ;
 +Pr+1Pl:yn    # ;
 +Pr+2Pl:owgh  # ;
 +Pr+3Pl:a     # ;
@@ -48,7 +48,7 @@ LEXICON pp-a
 +Pr+1Sg:hanav    # ;
 +Pr+2Sg:hanas   # ;
 +Pr+Msc+3Sg:nodho # ;
-+Pr+Fem+3Sg:nedhi # ;
++Pr+Sem/Fem+3Sg:nedhi # ;
 +Pr+1Pl:hanan    # ;
 +Pr+2Pl:hanowgh  # ;
 +Pr+3Pl:nedha     # ;
