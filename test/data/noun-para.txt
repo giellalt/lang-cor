@@ -1,7 +1,7 @@
-+N+Msc+Sg
-+N+Msc+Pl
-+N+Msc+Sg
-+N+Msc+Pl
++N+Sem/Msc+Sg
++N+Sem/Msc+Pl
++N+Sem/Msc+Sg
++N+Sem/Msc+Pl
 +N+Sem/Fem+Sg
 +N+Sem/Fem+Pl
 +N+Sem/Fem+Sg
