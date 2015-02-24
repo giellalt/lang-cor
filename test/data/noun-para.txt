@@ -2,7 +2,7 @@
 +N+Msc+Pl
 +N+Msc+Sg
 +N+Msc+Pl
-+N+Fem+Sg
-+N+Fem+Pl
-+N+Fem+Sg
-+N+Fem+Pl
++N+Sem/Fem+Sg
++N+Sem/Fem+Pl
++N+Sem/Fem+Sg
++N+Sem/Fem+Pl

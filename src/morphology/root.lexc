@@ -26,7 +26,7 @@ Multichar_Symbols
 
 !! !!Pronominal MSP
 +Suff +Emph +Indef         !!= @CODE@
-+Msc +Fem                  !!= @CODE@
++Msc +Sem/Fem                  !!= @CODE@
 
 !! Diacritical marks, to trigger
 !! morphophonological rules.
