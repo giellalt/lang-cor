@@ -9,9 +9,9 @@ LEXICON Noun
 
 !! ki, den, ojyon, ...
 
-ki+N+Sem/Msc:        KI 	"dog" ;
-den+N+Sem/Msc:       DEN "man";
-ojyon+N+Sem/Msc:     OJYON "ox" ;
+ki+N+Msc:        KI 	"dog" ;
+den+N+Msc:       DEN "man";
+ojyon+N+Msc:     OJYON "ox" ;
 kar+N+Sg:kar     mutation "parent" ;
 kar+N+Pl:kerens  mutation "parents" ;
 
@@ -103,7 +103,7 @@ akontydh       m-yon      "accountant" ;
 !! -(y)er agent nouns
 aghskrifer:aghskrifor m-ag "genealogist" ;
 bleujenner:bleujennor m-ag "florist" ;
-begyer+N+Sem/Msc:begyor   yonpl "beggar" ; !also m-s
+begyer+N+Msc:begyor   yonpl "beggar" ; !also m-s
 
 
 !!  -es plural
