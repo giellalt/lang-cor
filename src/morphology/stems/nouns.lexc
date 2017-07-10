@@ -3,159 +3,159 @@
 
 
 
-LEXICON Noun 
+LEXICON Noun
 
 !! !!Exceptions
 
 !! ki, den, ojyon, ...
 
-ki+N+Msc:        KI 	"dog" ;
-den+N+Msc:       DEN "man";
-ojyon+N+Msc:     OJYON "ox" ;
-kar+N+Sg:kar     mutation "parent" ;
-kar+N+Pl:kerens  mutation "parents" ;
+ ki+N+Msc: KI "dog" ;
+ den+N+Msc: DEN "man" ;
+ ojyon+N+Msc: OJYON "ox" ;
+ kar+N+Sg:kar mutation "parent" ;
+ kar+N+Pl:kerens mutation "parents" ;
 
-garlont          GARLONT "garland" ;
-marchont         GARLONT  "merchant" ;
-tulyfant         GARLONT  "tulip" ;
-protestant       GARLONT "protestant" ;
+ garlont GARLONT "garland" ;
+ marchont GARLONT "merchant" ;
+ tulyfant GARLONT "tulip" ;
+ protestant GARLONT "protestant" ;
 
 
 !! !!Short overview of the types
 !! Masculines
-!! * m          = ow plural
-!! * m-yow      = yow plural
-!! * m-ys       = ys plural
-!! * m-yon      = yon plural
-!! * m-yn       = yn plural 	*not implemented yet*
-!! * m-ag       = -(y)er agent nouns
-!! * m-es       = -es plural
-!! * m-ens	      = -ens plural 	*not implemented yet*
-!! * m-s        = -s plural
-!! * m-         = balek-wörter
-!! * m-dual     = Duals		*not implemented yet*
-!! * m-aff      = Root vowel change
-!! * m-yon      = yon plural
-!! * m-aff-i    = i plural
+!! * m = ow plural
+!! * m-yow = yow plural
+!! * m-ys = ys plural
+!! * m-yon = yon plural
+!! * m-yn = yn plural 	*not implemented yet*
+!! * m-ag = -(y)er agent nouns
+!! * m-es = -es plural
+!! * m-ens	 = -ens plural 	*not implemented yet*
+!! * m-s = -s plural
+!! * m- = balek-wörter
+!! * m-dual = Duals		*not implemented yet*
+!! * m-aff = Root vowel change
+!! * m-yon = yon plural
+!! * m-aff-i = i plural
 !! * m-sgtantum = Singularia tantum
 !! * m-pltantum = Pluralia tantum
 
 !! Feminines
 ! =========
-!! * f          =  ow plural
-!! * f-yow      = yow plural
-!! * f-yon      = yon plural
+!! * f = ow plural
+!! * f-yow = yow plural
+!! * f-yon = yon plural
 
 
 !! !!Masculine
-!    =========
+! =========
 
 !! !lexc syntax:
-!! lemmaform:stem continuationlexicon "facultative translation" ;
+ lemmaform:stem continuationlexicon "facultative translation" ;
 !! without the colon, lemmaform and stem are identical.
 !! The morphology is then handeled in noun-kor-morph.txt
 
 !! Here the noun types begin:
-!  ==========================
+! ==========================
 
 !! !ow plural
 ! --------
 !! All -(y)ans nouns are here even though the dictionary lists no plurals for them (Brown, p. 30)
-abatti         m    "abbey"    ;
-abes           m    "abbot"    ;
-adhyskans      m    "education"  ;
-afinans        m    "decoration" ;
-aghskrif       m    "pedigree" ;
-ahwer          m    "sorrow"   ; !no plural listed
-akont          m    "account" ;
-akontyans      m    "reckoning" ;
-akord          m    "accord" ; !no plural listed
-akordyans      m    "agreement" ;
-akwityans      m    "receipt" ;
-babi           m    "baby" ;
-bagas          m    "group" ;
-bagas-gwari    m     "play group" ;
-bagasik	       m    "batch" ; 
-berrskrif      m    "summary" ;
-lyther         m    "letter" ;
-mammskrif      m    "original text" ;
-tas            m    "father" ;
+ abatti m "abbey" ;
+ abes m "abbot" ;
+ adhyskans m "education" ;
+ afinans m "decoration" ;
+ aghskrif m "pedigree" ;
+ ahwer m "sorrow" ; !no plural listed
+ akont m "account" ;
+ akontyans m "reckoning" ;
+ akord m "accord" ; !no plural listed
+ akordyans m "agreement" ;
+ akwityans m "receipt" ;
+ babi m "baby" ;
+ bagas m "group" ;
+ bagas-gwari m "play group" ;
+ bagasik m "batch" ;
+ berrskrif m "summary" ;
+ lyther m "letter" ;
+ mammskrif m "original text" ;
+ tas m "father" ;
 
 !! yow plural
 !----------
-aber           m-yow      "river mouth" ;
-grogys 	       m-yow      "belt"     ;
-gwrogys        m-yow      "belt"     ;
-acheson        m-yow      "reason"   ;
-bal            m-yow      "mine"     ;
-balyer         m-yow      "barrel"   ;
-begel          m-yow      "navel, hillock" ;
-begh           m-yow      "load"     ;
+ aber m-yow "river mouth" ;
+ grogys m-yow "belt" ;
+ gwrogys m-yow "belt" ;
+ acheson m-yow "reason" ;
+ bal m-yow "mine" ;
+ balyer m-yow "barrel" ;
+ begel m-yow "navel, hillock" ;
+ begh m-yow "load" ;
 
 !! ys plural
-acheson        m-ys       "reason"   ;
-adamant        m-ys       "diamond"  ;
-akont          m-ys       "account"  ;
+ acheson m-ys "reason" ;
+ adamant m-ys "diamond" ;
+ akont m-ys "account" ;
 
 !! yon plural
-akontydh       m-yon      "accountant" ;
+ akontydh m-yon "accountant" ;
 
 !! -(y)er agent nouns
-aghskrifer:aghskrifor m-ag "genealogist" ;
-bleujenner:bleujennor m-ag "florist" ;
-begyer+N+Msc:begyor   yonpl "beggar" ; !also m-s
+ aghskrifer:aghskrifor m-ag "genealogist" ;
+ bleujenner:bleujennor m-ag "florist" ;
+ begyer+N+Msc:begyor yonpl "beggar" ; !also m-s
 
 
-!!  -es plural
+!! -es plural
 ! ---------
 
-baban         m-es "baby" ; 
-badh          m-es "boar" ;
+ baban m-es "baby" ;
+ badh m-es "boar" ;
 
-!!  -s plural
+!! -s plural
 
-bacheler      m-s  "bachelor" ;
-balyer        m-s  "balyers" ;
-banana        m-s  "banana" ;
-begyer        m-s  "beggar" ;
-degre         m-s  "degree" ;
-gyglet        m-s  "wanton person" ; 
-popynjay      m-s  "parrot" ;
-
-
-!!  balek-wörter
-
-balek:bale3k m ;
+ bacheler m-s "bachelor" ;
+ balyer m-s "balyers" ;
+ banana m-s "banana" ;
+ begyer m-s "beggar" ;
+ degre m-s "degree" ;
+ gyglet m-s "wanton person" ;
+ popynjay m-s "parrot" ;
 
 
-!!  Duals
-! abrans       m          "eyebrow" This needs to be done later on
+!! balek-wörter
 
-!!  Root vowel change
+ balek:bale3k m ;
+
+
+!! Duals
+! abrans m "eyebrow" This needs to be done later on
+
+!! Root vowel change
 ! =======
 
-!!  yon plural
+!! yon plural
 
-mab:ma4b            m-yon "son" ;
+ mab:ma4b m-yon "son" ;
 
-!!  i plural
+!! i plural
 
-abostol:abo4sto4l        m-aff-i    "apostle"  ; !not working yet
+ abostol:abo4sto4l m-aff-i "apostle" ; !not working yet
 
 
 
 !Singularia tantum
-adhvetter      m-sgtantum "ripeness"   ;
-Afrikan        m-sgtantum "African"    ;
-agha           m-sgtantum "dread"      ;
-badh           m-sgtantum "bath"       ;
-backen         m-sgtantum "bacon"      ;
-blam           m-sgtantum "blame"      ;
-blas           m-sgtantum "taste, smell" ;
+ adhvetter m-sgtantum "ripeness" ;
+ Afrikan m-sgtantum "African" ;
+ agha m-sgtantum "dread" ;
+ badh m-sgtantum "bath" ;
+ backen m-sgtantum "bacon" ;
+ blam m-sgtantum "blame" ;
+ blas m-sgtantum "taste, smell" ;
 
 !Pluralia tantum
-arghans        m-pltantum "money" ; !MF
-mona           m-pltantum "money" ; !NW
+ arghans m-pltantum "money" ; !MF
+ mona m-pltantum "money" ; !NW
 ! mona is here as illustration, should get a new continuation lex
 
 
@@ -163,7 +163,7 @@ mona           m-pltantum "money" ; !NW
 
 ! €€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€
 
-!    Longer lists
+! Longer lists
 
 ! €€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€
 
@@ -175,294 +175,294 @@ mona           m-pltantum "money" ; !NW
 ! m-ow !
 ! ----- !
 
-lavrok:lavrog m-ow ;
-lavrok:lavreg m-ow ; !UC
+ lavrok:lavrog m-ow ;
+ lavrok:lavreg m-ow ; !UC
 
 ! ----- !
 ! m-yow !
 ! ----- !
 
-aber       m-yow  "river mouth"  ;
-anken      m-yow  "misery"  ;
-ankor      m-yow  "anchor"  ;
-apron      m-yow  "[a?pr??nj??] (pl.) apron. "  ;
-arhadow    m-yow  "command"  ;
-aros       m-yow  "poop"  ;
-askus      m-yow  "excuse."  ;
-bal        m-yow  "mine"  ;
-balyer     m-yow  "balyers [?ba?lj?rs] (pl.)"  ;
-baner      m-yow  "flag"  ;
-bargen     m-yow  "bargain."  ;
-bason      m-yow  "basonys [ba?z??n?s] (pl.)"  ;
-bay        m-yow  "kiss."  ;
-begel      m-yow  "navel"  ;
-begh       m-yow  "burden"  ;
-ben        m-yow  "stump"  ;
-ber        m-yow  "roasting spit."  ;
-bleus      m-yow  "flour; bleus bleuj "  ;
-bleyn      m-yow  "tip (end)"  ;
-boton      m-yow  "button."  ;
-brastir    m-yow  "continent."  ;
-brys       m-yow  "mind"  ;
-budhyn     m-yow  "meadow."  ;
-chambour   m-yow  "bedroom"  ;
-chanj      m-yow  "change."  ;
-chapel     m-yow  "chapel."  ;
-charj      m-yow  "service charge."  ;
-chons      m-yow  "chance"  ;
-dasson     m-yow  "echo."  ;
-daswel     m-yow  "review."  ;
-delow      m-yow  "statue."  ;
-desin      m-yow  "design"  ;
-devis      m-yow  "device"  ;
-devnydh    m-yow  "material"  ;
-difeythtir m-yow  "desert."  ;
-difyk      m-yow  "failure"  ;
-digomposter      m-yow  "irregularity."  ;
-dons      m-yow  "dance; dons-kledha [d?ns ?kl???a] (m.)"  ;
-dorgrys      m-yow  "earthquake."  ;
-doster      m-yow  "density (in physics)."  ;
-downder      m-yow  "depth"  ;
-dowrfols      m-yow  "leak."  ;
-dowrgleudh      m-yow  "canal"  ;
-dowrhyns      m-yow  "watercourse."  ;
-dy'gol      m-yow  "feast-day"  ;
-dy'gweyth      m-yow  "working day"  ;
-dydh      m-yow  "day"  ;
-dynamo      m-yow  "dynamo."  ;
-ebil      m-yow  "bolt"  ;
-egin      m-yow  "sprout"  ;
-elin      m-yow  "dewelin [d???w??l?n] (dl.)"  ;
-er      m-yow  "temple (head)."  ;
-erbys      m-yow  "economy"  ;
-euro      m-yow  "euro (currency)."  ;
-evredhder      m-yow  "disability."  ;
-ewnder      m-yow  "equity"  ;
-fer      m-yow  "fair"  ;
-fler      m-yow  "bad smell"  ;
-fols      m-yow  "split"  ;
-fortun      m-yow  "fortune"  ;
-galweyth      m-yow  "crime."  ;
-ger      m-yow  "word"  ;
-glastir      m-yow  "verdant ground."  ;
-glesin      m-yow  "lawn"  ;
-glin      m-yow  "dewlin [?d??l?n] (dl.)"  ;
-gool      m-yow  "feast, sail, vigil"  ;
-gorher      m-yow  "cover"  ;
-gorwel      m-yow  "horizon."  ;
-gow      m-yow  "lie"  ;
-gris      m-yow  "grisys [?gri?z?s] (pl.)"  ;
-grogys      m-yow  "belt"  ;
-growgleudh      m-yow  "gravel pit."  ;
-gruglon      m-yow  "heather-bush."  ;
-gwel      m-yow  "field, sight"  ;
-gwelstir      m-yow  "grassland."  ;
-gwerthbris      m-yow  "sale price."  ;
-gwigh      m-yow  "squeak."  ;
-gwir      m-yow  "right"  ;
-gwiwder      m-yow  "worthiness"  ;
-gwydh      m-yow  "video."  ;
-gwydhyv      m-yow  "bill-hook"  ;
-gwyll      m-yow  "vagrant"  ;
-hansel      m-yow  "breakfast."  ;
-hansli      m-yow  "brunch."  ;
-hanterkylgh      m-yow  "semicircle."  ;
-havalder      m-yow  "similarity."  ;
-hengov      m-yow  "tradition."  ;
-hevis      m-yow  "shirt (rough)"  ;
-heyl      m-yow  "estuary"  ;
-hin      m-yow  "border."  ;
-hirgylgh      m-yow  "ellipse"  ;
-hoghwyw      m-yow  "boar-spear."  ;
-hweghkorn      m-yow  "hexagon."  ;
-hwel      m-yow  "work"  ;
-hweldro      m-yow  "revolution (in mechanics)."  ;
-hyns      m-yow  "road"  ;
-iseldir      m-yow  "lowland."  ;
-iston      m-yow  "line of harmony (e.g. tenor)."  ;
-jorna      m-yow  "day."  ;
-justis      m-yow  "justice (judge)"  ;
-kalgh      m-yow  "penis. "  ;
-kanon      m-yow  "[ka?n??nj??] cannon. "  ;
-kanou      m-yow  "canoe. "  ;
-kansvil      m-yow  "hundred thousand. "  ;
-kantoler      m-yow  "chandelier"  ;
-karhyns      m-yow  "cart-track"  ;
-karjel      m-yow  "accordion."  ;
-karol      m-yow  "dance to sung music. "  ;
-karrhyns      m-yow  "cart-track"  ;
-karrostel      m-yow  "motel."  ;
-kaskleudh      m-yow  "entrenchment"  ;
-kaslu      m-yow  "regiment."  ;
-kav      m-yow  "cave. "  ;
-kay      m-yow  "quay"  ;
-kel      m-yow  "hiding"  ;
-kemper      m-yow  "junction of streams. "  ;
-kenkidh      m-yow  "second home"  ;
-keswel      m-yow  "interview. "  ;
-keur      m-yow  "choir. "  ;
-keus      m-yow  "cheese. "  ;
-kevals      m-yow  "joint"  ;
-kevar      m-yow  "joint-tillage. "  ;
-kevelin      m-yow  "cubit."  ;
-kevrin      m-yow  "mystery"  ;
-keyndir      m-yow  "background. "  ;
-kig      m-yow  "meat"  ;
-kigver      m-yow  "fleshhook"  ;
-kil      m-yow  "skittle"  ;
-kin      m-yow  "kinyewow [k?n?j??w??] (pl.)"  ;
-kledha      m-yow  "sword; kledha byghan [?kl???a?b??han] (m.)"  ;
-kleghtour      m-yow  "belfry"  ;
-kleudh      m-yow  "ditch"  ;
-kleys      m-yow  "trench"  ;
-klos      m-yow  "klosys [?kl??z?s] (pl.)"  ;
-klus      m-yow  "heap"  ;
-knegh      m-yow  "hillock"  ;
-kornet      m-yow  "nook."  ;
-korrgowser      m-yow  "microphone. "  ;
-kov      m-yow  "memory"  ;
-kowbal      m-yow  "ferry."  ;
-kowses      m-yow  "conscience"  ;
-kranndir      m-yow  "scrubland."  ;
-kraw      m-yow  "hole"  ;
-kren      m-yow  "tremble"  ;
-krer      m-yow  "relic (of saint)."  ;
-kreun      m-yow  "reservoir"  ;
-kreyon      m-yow  "crayon."  ;
-kris      m-yow  "fold"  ;
-krodhvol      m-yow  "complaint."  ;
-kroust      m-yow  "picnic lunch"  ;
-krow      m-yow  "hut"  ;
-krowshyns      m-yow  "crossroads. "  ;
-krygh      m-yow  "wrinkle"  ;
-krys      m-yow  "shirt"  ;
-kuldir      m-yow  "isthmus."  ;
-kwilkyn      m-yow  "frog."  ;
-kyfeyth      m-yow  "preserve"  ;
-kylgh      m-yow  "circle"  ;
-kyttrin      m-yow  "bus"  ;
-lavrek      m-yow  "laborious"  ;
-lavurlu      m-yow  "work-force."  ;
-led      m-yow  "lead (electrical)."  ;
-les      m-yow  "plant"  ;
-lestrier      m-yow  "dresser"  ;
-leur      m-yow  "ground"  ;
-leys      m-yow  "mud"  ;
-lien      m-yow  "kerchief"  ;
-lien      m-yow  "napkin"  ;
-lin      m-yow  "fluid"  ;
-lindir      m-yow  "flax-land."  ;
-lith      m-yow  "limb"  ;
-liw      m-yow  "colour"  ;
-loskvenydh      m-yow  "volcanic losni (m.)"  ;
-loskvenydh      m-yow  "volcano."  ;
-lowarth      m-yow  "garden."  ;
-lown      m-yow  "blade"  ;
-lown      m-yow  "concourse"  ;
-lown      m-yow  "open working area "  ;
-lown      m-yow  "sliver"  ;
-lu      m-yow  "army"  ;
-lyver-dydh      m-yow  "lyvrow-dydh "  ;
-lyw      m-yow  "rudder"  ;
-masken      m-yow  "bier."  ;
-melon      m-yow  "melon."  ;
-mengleudh      m-yow  "opencast mine-working."  ;
-menydh      m-yow  "mountain"  ;
-merk      m-yow  "mark."  ;
-mes      m-yow  "open field"  ;
-mewgh      m-yow  "bail"  ;
-mil      m-yow  "thousand."  ;
-mildir      m-yow  "mile."  ;
-milvil      m-yow  "million."  ;
-min      m-yow  "face"  ;
-mis      m-yow  "month."  ;
-mol      m-yow  "clot"  ;
-mor      m-yow  "sea."  ;
-myghtern      m-yow  "king"  ;
-mysterlu      m-yow  "trade union."  ;
-myttin      m-yow  "morning"  ;
-nen      m-yow  "ceiling"  ;
-nivel      m-yow  "standard"  ;
-patron      m-yow  "example"  ;
-pennglin      m-yow  "coal-tit"  ;
-penntan      m-yow  "chieftain"  ;
-pennvis      m-yow  "month's end"  ;
-pols      m-yow  "instant"  ;
-pons      m-yow  "bridge"  ;
-pot      m-yow  "kick "  ;
-praktis      m-yow  "practice"  ;
-pris      m-yow  "value"  ;
-prison      m-yow  "prison "  ;
-prys      m-yow  "meal-time"  ;
-pynser      m-yow  "pair of pincers "  ;
-radyo      m-yow  "radio"  ;
-rannriv      m-yow  "sea-area"  ;
-rim      m-yow  "rhyme"  ;
-rin      m-yow  "mystery"  ;
-ros      m-yow  "spur (topographic)"  ;
-soler      m-yow  "attic"  ;
-son      m-yow  "noise;"  ;
-spis      m-yow  "spice"  ;
-stank      m-yow  "chassis"  ;
-sugen      m-yow  "sap"  ;
-sul      m-yow  "Sunday (time) adv. on a"  ;
-tabour      m-yow  "tabor"  ;
-tal      m-yow  "forehead"  ;
-tan      m-yow  "fire; gans tan on fire"  ;
-tanker      m-yow  "tanker; tanker oyl oil tanker "  ;
-tansys      m-yow  "blaze "  ;
-tavern      m-yow  "tavern "  ;
-termyn      m-yow  "term"  ;
-teylu      m-yow  "household "  ;
-tir      m-yow  "ground"  ;
-tirwel      m-yow  "landscape"  ;
-tokyn      m-yow  "symptom"  ;
-ton      m-yow  "melody; tone;"  ;
-tour      m-yow  "steeple." ;
-treth      m-yow  "passage over water "  ;
-trog      m-yow  "coulter of plough "  ;
-trogylgh      m-yow  "circuit"  ;
-tron      m-yow  "snout, throne "  ;
-tros      m-yow  "clamour"  ;
-troyll      m-yow  "ceilidh"  ;
-tu      m-yow  "way"  ;
-tyller      m-yow  "spot (location) "  ;
-uhelder      m-yow  "superiority "  ;
-uheldir      m-yow  "highland; An Uheldir "  ;
-uhelgowser      m-yow  "loudspeaker "  ;
-uskitter      m-yow  "velocity"  ;
+ aber m-yow "river mouth" ;
+ anken m-yow "misery" ;
+ ankor m-yow "anchor" ;
+ apron m-yow "[a?pr??nj??] (pl.) apron. " ;
+ arhadow m-yow "command" ;
+ aros m-yow "poop" ;
+ askus m-yow "excuse." ;
+ bal m-yow "mine" ;
+ balyer m-yow "balyers [?ba?lj?rs] (pl.)" ;
+ baner m-yow "flag" ;
+ bargen m-yow "bargain." ;
+ bason m-yow "basonys [ba?z??n?s] (pl.)" ;
+ bay m-yow "kiss." ;
+ begel m-yow "navel" ;
+ begh m-yow "burden" ;
+ ben m-yow "stump" ;
+ ber m-yow "roasting spit." ;
+ bleus m-yow "flour; bleus bleuj " ;
+ bleyn m-yow "tip (end)" ;
+ boton m-yow "button." ;
+ brastir m-yow "continent." ;
+ brys m-yow "mind" ;
+ budhyn m-yow "meadow." ;
+ chambour m-yow "bedroom" ;
+ chanj m-yow "change." ;
+ chapel m-yow "chapel." ;
+ charj m-yow "service charge." ;
+ chons m-yow "chance" ;
+ dasson m-yow "echo." ;
+ daswel m-yow "review." ;
+ delow m-yow "statue." ;
+ desin m-yow "design" ;
+ devis m-yow "device" ;
+ devnydh m-yow "material" ;
+ difeythtir m-yow "desert." ;
+ difyk m-yow "failure" ;
+ digomposter m-yow "irregularity." ;
+ dons m-yow "dance; dons-kledha [d?ns ?kl???a] (m.)" ;
+ dorgrys m-yow "earthquake." ;
+ doster m-yow "density (in physics)." ;
+ downder m-yow "depth" ;
+ dowrfols m-yow "leak." ;
+ dowrgleudh m-yow "canal" ;
+ dowrhyns m-yow "watercourse." ;
+ dy'gol m-yow "feast-day" ;
+ dy'gweyth m-yow "working day" ;
+ dydh m-yow "day" ;
+ dynamo m-yow "dynamo." ;
+ ebil m-yow "bolt" ;
+ egin m-yow "sprout" ;
+ elin m-yow "dewelin [d???w??l?n] (dl.)" ;
+ er m-yow "temple (head)." ;
+ erbys m-yow "economy" ;
+ euro m-yow "euro (currency)." ;
+ evredhder m-yow "disability." ;
+ ewnder m-yow "equity" ;
+ fer m-yow "fair" ;
+ fler m-yow "bad smell" ;
+ fols m-yow "split" ;
+ fortun m-yow "fortune" ;
+ galweyth m-yow "crime." ;
+ ger m-yow "word" ;
+ glastir m-yow "verdant ground." ;
+ glesin m-yow "lawn" ;
+ glin m-yow "dewlin [?d??l?n] (dl.)" ;
+ gool m-yow "feast, sail, vigil" ;
+ gorher m-yow "cover" ;
+ gorwel m-yow "horizon." ;
+ gow m-yow "lie" ;
+ gris m-yow "grisys [?gri?z?s] (pl.)" ;
+ grogys m-yow "belt" ;
+ growgleudh m-yow "gravel pit." ;
+ gruglon m-yow "heather-bush." ;
+ gwel m-yow "field, sight" ;
+ gwelstir m-yow "grassland." ;
+ gwerthbris m-yow "sale price." ;
+ gwigh m-yow "squeak." ;
+ gwir m-yow "right" ;
+ gwiwder m-yow "worthiness" ;
+ gwydh m-yow "video." ;
+ gwydhyv m-yow "bill-hook" ;
+ gwyll m-yow "vagrant" ;
+ hansel m-yow "breakfast." ;
+ hansli m-yow "brunch." ;
+ hanterkylgh m-yow "semicircle." ;
+ havalder m-yow "similarity." ;
+ hengov m-yow "tradition." ;
+ hevis m-yow "shirt (rough)" ;
+ heyl m-yow "estuary" ;
+ hin m-yow "border." ;
+ hirgylgh m-yow "ellipse" ;
+ hoghwyw m-yow "boar-spear." ;
+ hweghkorn m-yow "hexagon." ;
+ hwel m-yow "work" ;
+ hweldro m-yow "revolution (in mechanics)." ;
+ hyns m-yow "road" ;
+ iseldir m-yow "lowland." ;
+ iston m-yow "line of harmony (e.g. tenor)." ;
+ jorna m-yow "day." ;
+ justis m-yow "justice (judge)" ;
+ kalgh m-yow "penis. " ;
+ kanon m-yow "[ka?n??nj??] cannon. " ;
+ kanou m-yow "canoe. " ;
+ kansvil m-yow "hundred thousand. " ;
+ kantoler m-yow "chandelier" ;
+ karhyns m-yow "cart-track" ;
+ karjel m-yow "accordion." ;
+ karol m-yow "dance to sung music. " ;
+ karrhyns m-yow "cart-track" ;
+ karrostel m-yow "motel." ;
+ kaskleudh m-yow "entrenchment" ;
+ kaslu m-yow "regiment." ;
+ kav m-yow "cave. " ;
+ kay m-yow "quay" ;
+ kel m-yow "hiding" ;
+ kemper m-yow "junction of streams. " ;
+ kenkidh m-yow "second home" ;
+ keswel m-yow "interview. " ;
+ keur m-yow "choir. " ;
+ keus m-yow "cheese. " ;
+ kevals m-yow "joint" ;
+ kevar m-yow "joint-tillage. " ;
+ kevelin m-yow "cubit." ;
+ kevrin m-yow "mystery" ;
+ keyndir m-yow "background. " ;
+ kig m-yow "meat" ;
+ kigver m-yow "fleshhook" ;
+ kil m-yow "skittle" ;
+ kin m-yow "kinyewow [k?n?j??w??] (pl.)" ;
+ kledha m-yow "sword; kledha byghan [?kl???a?b??han] (m.)" ;
+ kleghtour m-yow "belfry" ;
+ kleudh m-yow "ditch" ;
+ kleys m-yow "trench" ;
+ klos m-yow "klosys [?kl??z?s] (pl.)" ;
+ klus m-yow "heap" ;
+ knegh m-yow "hillock" ;
+ kornet m-yow "nook." ;
+ korrgowser m-yow "microphone. " ;
+ kov m-yow "memory" ;
+ kowbal m-yow "ferry." ;
+ kowses m-yow "conscience" ;
+ kranndir m-yow "scrubland." ;
+ kraw m-yow "hole" ;
+ kren m-yow "tremble" ;
+ krer m-yow "relic (of saint)." ;
+ kreun m-yow "reservoir" ;
+ kreyon m-yow "crayon." ;
+ kris m-yow "fold" ;
+ krodhvol m-yow "complaint." ;
+ kroust m-yow "picnic lunch" ;
+ krow m-yow "hut" ;
+ krowshyns m-yow "crossroads. " ;
+ krygh m-yow "wrinkle" ;
+ krys m-yow "shirt" ;
+ kuldir m-yow "isthmus." ;
+ kwilkyn m-yow "frog." ;
+ kyfeyth m-yow "preserve" ;
+ kylgh m-yow "circle" ;
+ kyttrin m-yow "bus" ;
+ lavrek m-yow "laborious" ;
+ lavurlu m-yow "work-force." ;
+ led m-yow "lead (electrical)." ;
+ les m-yow "plant" ;
+ lestrier m-yow "dresser" ;
+ leur m-yow "ground" ;
+ leys m-yow "mud" ;
+ lien m-yow "kerchief" ;
+ lien m-yow "napkin" ;
+ lin m-yow "fluid" ;
+ lindir m-yow "flax-land." ;
+ lith m-yow "limb" ;
+ liw m-yow "colour" ;
+ loskvenydh m-yow "volcanic losni (m.)" ;
+ loskvenydh m-yow "volcano." ;
+ lowarth m-yow "garden." ;
+ lown m-yow "blade" ;
+ lown m-yow "concourse" ;
+ lown m-yow "open working area " ;
+ lown m-yow "sliver" ;
+ lu m-yow "army" ;
+ lyver-dydh m-yow "lyvrow-dydh " ;
+ lyw m-yow "rudder" ;
+ masken m-yow "bier." ;
+ melon m-yow "melon." ;
+ mengleudh m-yow "opencast mine-working." ;
+ menydh m-yow "mountain" ;
+ merk m-yow "mark." ;
+ mes m-yow "open field" ;
+ mewgh m-yow "bail" ;
+ mil m-yow "thousand." ;
+ mildir m-yow "mile." ;
+ milvil m-yow "million." ;
+ min m-yow "face" ;
+ mis m-yow "month." ;
+ mol m-yow "clot" ;
+ mor m-yow "sea." ;
+ myghtern m-yow "king" ;
+ mysterlu m-yow "trade union." ;
+ myttin m-yow "morning" ;
+ nen m-yow "ceiling" ;
+ nivel m-yow "standard" ;
+ patron m-yow "example" ;
+ pennglin m-yow "coal-tit" ;
+ penntan m-yow "chieftain" ;
+ pennvis m-yow "month's end" ;
+ pols m-yow "instant" ;
+ pons m-yow "bridge" ;
+ pot m-yow "kick " ;
+ praktis m-yow "practice" ;
+ pris m-yow "value" ;
+ prison m-yow "prison " ;
+ prys m-yow "meal-time" ;
+ pynser m-yow "pair of pincers " ;
+ radyo m-yow "radio" ;
+ rannriv m-yow "sea-area" ;
+ rim m-yow "rhyme" ;
+ rin m-yow "mystery" ;
+ ros m-yow "spur (topographic)" ;
+ soler m-yow "attic" ;
+ son m-yow "noise;" ;
+ spis m-yow "spice" ;
+ stank m-yow "chassis" ;
+ sugen m-yow "sap" ;
+ sul m-yow "Sunday (time) adv. on a" ;
+ tabour m-yow "tabor" ;
+ tal m-yow "forehead" ;
+ tan m-yow "fire; gans tan on fire" ;
+ tanker m-yow "tanker; tanker oyl oil tanker " ;
+ tansys m-yow "blaze " ;
+ tavern m-yow "tavern " ;
+ termyn m-yow "term" ;
+ teylu m-yow "household " ;
+ tir m-yow "ground" ;
+ tirwel m-yow "landscape" ;
+ tokyn m-yow "symptom" ;
+ ton m-yow "melody; tone;" ;
+ tour m-yow "steeple." ;
+ treth m-yow "passage over water " ;
+ trog m-yow "coulter of plough " ;
+ trogylgh m-yow "circuit" ;
+ tron m-yow "snout, throne " ;
+ tros m-yow "clamour" ;
+ troyll m-yow "ceilidh" ;
+ tu m-yow "way" ;
+ tyller m-yow "spot (location) " ;
+ uhelder m-yow "superiority " ;
+ uheldir m-yow "highland; An Uheldir " ;
+ uhelgowser m-yow "loudspeaker " ;
+ uskitter m-yow "velocity" ;
 
 
 ! ----- !
-! m-ys  !
+! m-ys !
 ! ----- !
 
-kanel       m-ys  	"tap"  ;
-mason       m-ys  	"mason"  ;
-desir       m-ys  	"desire"  ;
-enor		 m-ys 	"honour" ; 	 	
-entent		 m-ys	"purpose" ;
-remetant	 m-ys	"remain" ;
-sant   		 m-ys	"course of a meal" ;
-chalys		 m-ys	"chalice" ;
-degre		 m-ys	"degree" ;
-ertaj		 m-ys	"heritage" ;
-offis		 m-ys	"function" ;
-polat		 m-ys	"fellow" ;
-rewl		 m-ys	"rule" ;
-slod		 m-ys	"sledgehammer" ;
-splat		 m-ys	"plot of ground" ;
-tid			 m-ys	"tide" ;
-trumach		 m-ys	"passage by water" ;
-vertu		 m-ys	"power" ;
+ kanel m-ys "tap" ;
+ mason m-ys "mason" ;
+ desir m-ys "desire" ;
+ enor m-ys "honour" ;
+ entent m-ys "purpose" ;
+ remetant m-ys "remain" ;
+ sant m-ys "course of a meal" ;
+ chalys m-ys "chalice" ;
+ degre m-ys "degree" ;
+ ertaj m-ys "heritage" ;
+ offis m-ys "function" ;
+ polat m-ys "fellow" ;
+ rewl m-ys "rule" ;
+ slod m-ys "sledgehammer" ;
+ splat m-ys "plot of ground" ;
+ tid m-ys "tide" ;
+ trumach m-ys "passage by water" ;
+ vertu m-ys "power" ;
 
-! Feminines 
+! Feminines
 ! =========
 
 
 ! Irregular feminines
 
-modrep:modreb f-edh ;
+ modrep:modreb f-edh ;
 
 
 
@@ -470,328 +470,328 @@ modrep:modreb f-edh ;
 ! f with ow plural !
 ! ================ !
 
-abases         f            "abbess" ;
-tagel          f             "constriction, choker" ;
-taklen          f             "item" ;
-talgel          f             "pantry, buttery, store-cellar " ;
-tanbellen          f             "bomb, shell (explosive)" ;
-tanvaglen          f             "fire-grate " ;
-tardhel          f             "vent, loophole, outlet " ;
-tavel          f             "probe " ;
-tavlinen          f             "tangent" ;
-tavoseth          f             "idiom" ;
-tegen          f             "trinket, jewel" ;
-telyn           f             "harp " ;
-telynnyores          f             "harpist " ;
-tennros          f             "draw-net " ;
-tronn          f             "turn, caunter lode " ;
-turen          f             "turtle-dove" ;
-pellen          f             "ball, dumpling," ;
-pellskrifen          f             "fax (message)," ;
-pennduen          f             "," ;
-penndyskadores          f             "" ;
-pennlinen          f             "headline pennlugarn (m.), pennlugern" ;
-pennseres          f             "architect" ;
-pennseviges          f             "princess" ;
-pennsodhva          f             "headquarters" ;
-pennwlas          f             "chief country" ;
-perlan          f             "pear " ;
-pib          f             "pipe, flute" ;
-pilen          f             ", pil fringe" ;
-plasen          f             "record, disc," ;
-plenkyn          f             "board (timber), shingle, squared timber" ;
-plentyades          f             "plaintiff" ;
-pleth          f             "plait of hair, ridge of" ;
-plethen          f             "plait of hair, braid, reel (dance)" ;
-plethores          f             "braider" ;
-ploumen          f             "plum" ;
-pluven          f             ", pluv pen, feather, quill" ;
-plyw          f             "parish" ;
-pollen          f             "puddle, rock-pool, little pool" ;
-ponsfordh          f             "viaduct" ;
-poren               f             ", por leek" ;
-porthores          f             "porter " ;
-porven          f             ", porv rush" ;
-prenores          f             "buyer " ;
-prien          f             "clayey place" ;
-prilehen          f             "tile" ;
-prisnores          f             "prisoner (female) " ;
-priweythva          f             "clay-works, pottery " ;
-prydydhes          f             "poetess" ;
-prynses          f             "princess " ;
-prynseth          f             "principality " ;
-pryven          f             "worm" ;
-pyglen          f             "tarpaulin " ;
-pysklyn          f             "fish-pond" ;
-pystriores          f             "sorceress " ;
-pythyonen          f             "," ;
-raglen          f             "over-trousers" ;
-rakherdhel          f             "propeller" ;
-rann          f             "part, share, portion," ;
-rannyeth          f             "dialect" ;
-rask          f             "plane (tool)" ;
-ratheli          f             "grater, rasp" ;
-redyores          f             "reader" ;
-regydhen          f             ", regydh" ;
-rekenva          f             "till (in shop), check­out" ;
-reknel          f             "calculator" ;
-resegva          f             "course, career, orbit" ;
-resell          f             "cursor, cross-wire," ;
-restren          f             "file (document)" ;
-restrenva          f             "filing cabinet restrer (m.), comb" ;
-rev          f             "oar" ;
-rewlel          f             "ruler (tool)" ;
-risen          f             ", ris grain of rice" ;
-ros          f             "wheel, circle" ;
-rosel          f             "rotor, roulette wheel" ;
-rostel          f             "skate-board rostya v. roast" ;
-rosva          f             "promenade, avenue rosvoes +ow trolley (for food)" ;
-routh          f             "crowd, throng," ;
-ruglen          f             "rattle" ;
-rybfordh          f             "slip-road" ;
-ryll          f             "cleft, furrow" ;
-ruwvanes          f             "queen" ;
-saben          f             ", sab conifer," ;
-sadronen          f             ", sadron" ;
-sanses          f             "saint (female)" ;
-savon          f             "standard" ;
-sawren          f             "taste" ;
-selsigen          f             ", coil" ;
-serhegen          f             "," ;
-seth          f             "arrow" ;
-sewyades          f             "seamstress" ;
-sinel          f             "signal" ;
-skansen          f             ", skans" ;
-skath                   f             "boat" ;
-skavel          f             "stool" ;
-skethen          f             "strip, tatter" ;
-skethren          f             "splinter" ;
-skeusen          f             "photograph" ;
-skinen          f             "ear-ring" ;
-skoodh          f             "shoulder, help " ;
-skostel          f             "dashboard" ;
-skolores          f             "scholar" ;
-skowa          f             "shelter, refuge, shade" ;
-skrifen          f             "writing, article, document" ;
-skrifenyades          f             "secretary" ;
-skubel          f             "broom (implement)" ;
-skubeloges          f             "untidy person" ;
-skudellas          f             "dishful" ;
-skwychel          f             "switch" ;
-skyren          f             ", skyr splinter" ;
-soodh          f             "office" ;
-sodhva          f             "office (work­place), place of employment" ;
-sommen          f             "sum, total" ;
-souben               f             "soup, broth" ;
-sowlwodh          f             "stubble" ;
-sowses          f             "Englishwoman" ;
-spadel          f             "spatula" ;
-spavnel          f             "iull" ;
-spernen          f             ", spern" ;
-sportva          f             "stadium" ;
-steren          f             ", ster star" ;
-steus          f             "course (of study)" ;
-stevel          f             "room" ;
-stokkyn          f             "stub" ;
-stredh          f             "stream, brook" ;
-studhva          f             "study (room)" ;
-stycken          f             "stake" ;
-swynnen          f             "swig, draught" ;
-sylaben          f             "syllable" ;
-synsel          f             "clip (e.g. paper-clip)" ;
-ternwelen          f             "sceptre" ;
-terthen          f             "fever, influenza, flu " ;
-tesen          f             "cake" ;
-testen          f             "subject (of study) " ;
-teth          f             "teat " ;
-tethen          f             "teat" ;
-teudherigva          f             "fuse-box" ;
-teudhva          f             "foundry " ;
-tevesiges          f             "adult (female) " ;
-teyrros          f             "tricycle " ;
-tigen          f             "hand-bag, wallet " ;
-tigres          f             "tigress" ;
-tioges          f             "farmer, countrywoman, housewife " ;
-tolores          f             "deceiver (female) " ;
-tokynva          f             "ticket-office, booking office " ;
-toll          f             "tax, toll, duty" ;
-tollfordh          f             "toll-road " ;
-tollva          f             "tax-office, toll-booth" ;
-tommen          f             "earth-bank, dyke, dam" ;
-tonn          f             "wave, billow " ;
-tonnel          f             "tun, keeve " ;
-torr          f             "belly, stomach" ;
-torr          f             "tor" ;
-torrva          f             "rupture, breach, breakdown" ;
-torth          f             "loaf, large cake " ;
-towlen          f             "programme, schedule" ;
-towlennores          f             "programmer" ;
-tra          f             "thing, article (object)" ;
-tregeredh          f             "mercy (loving kindness)" ;
-trenken          f             "acid " ;
-tresen          f             "trace (as in art)," ;
-tresklen          f             ", treskel  missel-thrush " ;
-tresorva          f             "treasury " ;
-tresyades          f             "draughtswoman" ;
-trethen          f             "sandy patch " ;
-trethyades          f             "female passenger in ferry " ;
-treus-hesken          f             "cross-saw " ;
-treusva          f             "crossing-place, crossing" ;
-trev          f             "farmstead " ;
-trevas          f             "harvest, crop " ;
-trevesiges          f             "countrywoman " ;
-trigva          f             "address (place), abode, country seat" ;
-troll          f             "lathe" ;
-trosell          f             "pedal" ;
-troghva          f             "cutting (e.g. on road)" ;
-trova          f             "circuit" ;
-trovan       f                    "tropic" ;
-truflen          f             "trifle" ;
-tysk          f             "sheaf, mass (heap) " ;
-tysken          f             "sheaf, bunch " ;
-ughvarhas          f             "hypermarket " ;
-unnros          f             "unicycle" ;
-verb          f             "verb. " ;
-yalgh          f             "purse." ;
-Yedhowes          f             "Jewess. " ;
-yeth          f             "language, way of speaking. " ;
-yew          f             "yoke. " ;
-yeynel          f             "refrigerator." ;
-ynjinores          f             "engineer. " ;
-ynys          f             "island, isolated place." ;
-yslan          f             "rick-yard, mowhay." ;
+ abases f "abbess" ;
+ tagel f "constriction, choker" ;
+ taklen f "item" ;
+ talgel f "pantry, buttery, store-cellar " ;
+ tanbellen f "bomb, shell (explosive)" ;
+ tanvaglen f "fire-grate " ;
+ tardhel f "vent, loophole, outlet " ;
+ tavel f "probe " ;
+ tavlinen f "tangent" ;
+ tavoseth f "idiom" ;
+ tegen f "trinket, jewel" ;
+ telyn f "harp " ;
+ telynnyores f "harpist " ;
+ tennros f "draw-net " ;
+ tronn f "turn, caunter lode " ;
+ turen f "turtle-dove" ;
+ pellen f "ball, dumpling," ;
+ pellskrifen f "fax (message)," ;
+ pennduen f "," ;
+ f "" ;
+ pennlinen f "headline pennlugarn (m.), pennlugern" ;
+ pennseres f "architect" ;
+ pennseviges f "princess" ;
+ pennsodhva f "headquarters" ;
+ pennwlas f "chief country" ;
+ perlan f "pear " ;
+ pib f "pipe, flute" ;
+ pilen f ", pil fringe" ;
+ plasen f "record, disc," ;
+ plenkyn f "board (timber), shingle, squared timber" ;
+ plentyades f "plaintiff" ;
+ pleth f "plait of hair, ridge of" ;
+ plethen f "plait of hair, braid, reel (dance)" ;
+ plethores f "braider" ;
+ ploumen f "plum" ;
+ pluven f ", pluv pen, feather, quill" ;
+ plyw f "parish" ;
+ pollen f "puddle, rock-pool, little pool" ;
+ ponsfordh f "viaduct" ;
+ poren f ", por leek" ;
+ porthores f "porter " ;
+ porven f ", porv rush" ;
+ prenores f "buyer " ;
+ prien f "clayey place" ;
+ prilehen f "tile" ;
+ prisnores f "prisoner (female) " ;
+ priweythva f "clay-works, pottery " ;
+ prydydhes f "poetess" ;
+ prynses f "princess " ;
+ prynseth f "principality " ;
+ pryven f "worm" ;
+ pyglen f "tarpaulin " ;
+ pysklyn f "fish-pond" ;
+ pystriores f "sorceress " ;
+ pythyonen f "," ;
+ raglen f "over-trousers" ;
+ rakherdhel f "propeller" ;
+ rann f "part, share, portion," ;
+ rannyeth f "dialect" ;
+ rask f "plane (tool)" ;
+ ratheli f "grater, rasp" ;
+ redyores f "reader" ;
+ regydhen f ", regydh" ;
+ rekenva f "till (in shop), check?out" ;
+ reknel f "calculator" ;
+ resegva f "course, career, orbit" ;
+ resell f "cursor, cross-wire," ;
+ restren f "file (document)" ;
+ restrenva f "filing cabinet restrer (m.), comb" ;
+ rev f "oar" ;
+ rewlel f "ruler (tool)" ;
+ risen f ", ris grain of rice" ;
+ ros f "wheel, circle" ;
+ rosel f "rotor, roulette wheel" ;
+ rostel f "skate-board rostya v. roast" ;
+ rosva f "promenade, avenue rosvoes +ow trolley (for food)" ;
+ routh f "crowd, throng," ;
+ ruglen f "rattle" ;
+ rybfordh f "slip-road" ;
+ ryll f "cleft, furrow" ;
+ ruwvanes f "queen" ;
+ saben f ", sab conifer," ;
+ sadronen f ", sadron" ;
+ sanses f "saint (female)" ;
+ savon f "standard" ;
+ sawren f "taste" ;
+ selsigen f ", coil" ;
+ serhegen f "," ;
+ seth f "arrow" ;
+ sewyades f "seamstress" ;
+ sinel f "signal" ;
+ skansen f ", skans" ;
+ skath f "boat" ;
+ skavel f "stool" ;
+ skethen f "strip, tatter" ;
+ skethren f "splinter" ;
+ skeusen f "photograph" ;
+ skinen f "ear-ring" ;
+ skoodh f "shoulder, help " ;
+ skostel f "dashboard" ;
+ skolores f "scholar" ;
+ skowa f "shelter, refuge, shade" ;
+ skrifen f "writing, article, document" ;
+ skrifenyades f "secretary" ;
+ skubel f "broom (implement)" ;
+ skubeloges f "untidy person" ;
+ skudellas f "dishful" ;
+ skwychel f "switch" ;
+ skyren f ", skyr splinter" ;
+ soodh f "office" ;
+ sodhva f "office (work?place), place of employment" ;
+ sommen f "sum, total" ;
+ souben f "soup, broth" ;
+ sowlwodh f "stubble" ;
+ sowses f "Englishwoman" ;
+ spadel f "spatula" ;
+ spavnel f "iull" ;
+ spernen f ", spern" ;
+ sportva f "stadium" ;
+ steren f ", ster star" ;
+ steus f "course (of study)" ;
+ stevel f "room" ;
+ stokkyn f "stub" ;
+ stredh f "stream, brook" ;
+ studhva f "study (room)" ;
+ stycken f "stake" ;
+ swynnen f "swig, draught" ;
+ sylaben f "syllable" ;
+ synsel f "clip (e.g. paper-clip)" ;
+ ternwelen f "sceptre" ;
+ terthen f "fever, influenza, flu " ;
+ tesen f "cake" ;
+ testen f "subject (of study) " ;
+ teth f "teat " ;
+ tethen f "teat" ;
+ teudherigva f "fuse-box" ;
+ teudhva f "foundry " ;
+ tevesiges f "adult (female) " ;
+ teyrros f "tricycle " ;
+ tigen f "hand-bag, wallet " ;
+ tigres f "tigress" ;
+ tioges f "farmer, countrywoman, housewife " ;
+ tolores f "deceiver (female) " ;
+ tokynva f "ticket-office, booking office " ;
+ toll f "tax, toll, duty" ;
+ tollfordh f "toll-road " ;
+ tollva f "tax-office, toll-booth" ;
+ tommen f "earth-bank, dyke, dam" ;
+ tonn f "wave, billow " ;
+ tonnel f "tun, keeve " ;
+ torr f "belly, stomach" ;
+ torr f "tor" ;
+ torrva f "rupture, breach, breakdown" ;
+ torth f "loaf, large cake " ;
+ towlen f "programme, schedule" ;
+ towlennores f "programmer" ;
+ tra f "thing, article (object)" ;
+ tregeredh f "mercy (loving kindness)" ;
+ trenken f "acid " ;
+ tresen f "trace (as in art)," ;
+ tresklen f ", treskel missel-thrush " ;
+ tresorva f "treasury " ;
+ tresyades f "draughtswoman" ;
+ trethen f "sandy patch " ;
+ trethyades f "female passenger in ferry " ;
+ treus-hesken f "cross-saw " ;
+ treusva f "crossing-place, crossing" ;
+ trev f "farmstead " ;
+ trevas f "harvest, crop " ;
+ trevesiges f "countrywoman " ;
+ trigva f "address (place), abode, country seat" ;
+ troll f "lathe" ;
+ trosell f "pedal" ;
+ troghva f "cutting (e.g. on road)" ;
+ trova f "circuit" ;
+ trovan f "tropic" ;
+ truflen f "trifle" ;
+ tysk f "sheaf, mass (heap) " ;
+ tysken f "sheaf, bunch " ;
+ ughvarhas f "hypermarket " ;
+ unnros f "unicycle" ;
+ verb f "verb. " ;
+ yalgh f "purse." ;
+ Yedhowes f "Jewess. " ;
+ yeth f "language, way of speaking. " ;
+ yew f "yoke. " ;
+ yeynel f "refrigerator." ;
+ ynjinores f "engineer. " ;
+ ynys f "island, isolated place." ;
+ yslan f "rick-yard, mowhay." ;
 
 
 ! ===== !
 ! f-yow !
 ! ===== !
 
-aden        f-yow    "binding board of a book"  ;
-als         f-yow    "cliff"  ;
-alter       f-yow    "altar"  ;
-amser       f-yow    "tense (of verb)"  ;
-anwan       f-yow    "anvil"  ;
-argel       f-yow    "retreat, sequestered place"  ;
-arwodh     f-yow    "sign, symbol, emblem, annorial device"  ;
-atalgyst    f-yow    "dustbin, trash can (US), garbage can (US)"  ;
-avon        f-yow    "river"  ;
-awedh       f-yow    "watercourse"  ;
-awel        f-yow    "wind, gale, weather"  ;
-aweyl       f-yow    "gospel"  ;
-batel       f-yow    "battle"  ;
-bis         f-yow    "vice (tool)"  ;
-bleujen     f-yow    "flower, bloom, blossom"  ;
-bool        f-yow    "axe"  ;
-bownder     f-yow    "lane"  ;
-bresel      f-yow    "dispute, striwar"  ;
-breuslys    f-yow    "assize-court, court of law"  ;
-bro         f-yow    "country, land"  ;
-brow        f-yow    "handmill, quern"  ;
-bryv        f-yow    "bleating of sheep"  ;
-bynk        f-yow    "platform, bench"  ;
-byskoon     f-yow    "thimble"  ;
-kadon       f-yow    "chain, bond (link), trace"  ;
-kador       f-yow    "chair, seat"  ;
-kalter      f-yow    "kettle"  ;
-kanel       f-yow    "channel, canal, water-channel, inlet of sea, television channel"  ;
-kansbledhen f-yow    "century, hundred years"  ;
-kantol      f-yow    "spark-plug"  ;
-kasel       f-yow    "arm-pit, aisle underarm (US)"  ;
-kloos       f-yow    "hurdle, fence, crate, trellis, lattice, rack, harrow"  ;
-koloven     f-yow    "column"  ;
-kon         f-yow    "late dinner"  ;
-kow         f-yow    "enclosure, hollow"  ;
-kromlegh    f-yow    "cromlech, megalithic chamber-tomb"  ;
-krows       f-yow    "cross, rood"  ;
-krowseryow  f-yow    "crowseryow"  ;
-kurun       f-yow    "crown"  ;
-kusul       f-yow    "advice, counsel, opinion"  ;
-dama        f-yow    "mother"  ;
-degbledhen  f-yow    "decade"  ;
-dowrlann    f-yow    "waterside"  ;
-dydhweyth   f-yow    "day’s time"  ;
-ehel        f-yow    "axle"  ;
-eglos       f-yow    "church"  ;
-elgeth      f-yow    "chin"  ;
-esker       f-yow    "diwesker [dɪʊˈwɛˑskɛr] (dl"  ;
-eskeul      f-yow    "escalator"  ;
-eskis       f-yow    "shoe"  ;
-eur         f-yow    "time, o’clock"  ;
-fals        f-yow    "scythe"  ;
-fenten      f-yow    "spring (water), fountain, surface well"  ;
-fin         f-yow    "end"  ;
-finwedh     f-yow    "end, limit, cessation"  ;
-fiol        f-yow    "vial, shallow cup"  ;
-fornes      f-yow    "furnace"  ;
-fun         f-yow    "cable, long rope"  ;
-gavel       f-yow    "grasp, hold, capacity"  ;
-geler       f-yow    "bier, coffin"  ;
-goon        f-yow    "downland, unenclosed pasture, moor (upland)"  ;
-gwan        f-yow    "stab, prick, piercing"  ;
-gwarthol    f-yow    "stirrup"  ;
-gwelgyst    f-yow    "video-cassette"  ;
-gwers       f-yow    "gwers meythrin [ˌgwɛrzˈmɛɪθrɪn] nursery-rhyme"  ;
-gweus       f-yow    "diwweus [ˈdiʊwœs] (dl"  ;
-gweyth      f-yow    "occasion (time)"  ;
-hel         f-yow    "hall, parlour"  ;
-hellys      f-yow    "old court"  ;
-kadon       f-yow    "chain, bond (link), trace"  ;
-kador       f-yow    "chair, seat"  ;
-kalter      f-yow    "kettle"  ;
-kanel       f-yow    "channel, canal, water-channel, inlet of sea, television channel"  ;
-kansbledhen f-yow    "century, hundred years"  ;
-kantol      f-yow    "spark-plug"  ;
-kasel       f-yow    "arm-pit, aisle underarm (US)"  ;
-kaskleudh   f-yow    "(pl"  ;
-ker         f-yow    "fort, camp (earthwork), hill-fort"  ;
-keryn       f-yow    "tub, butt (container), open barrel"  ;
-kildro      f-yow    "backward turn, ruse"  ;
-kloos       f-yow    "hurdle, fence, crate, trellis, lattice, rack, harrow"  ;
-kloos-platyow       f-yow    "plate-rack"  ;
-klun        f-yow    "diwglun [ˈdiʊglɪn] (dl"  ;
-kon         f-yow    "late dinner"  ;
-koloven     f-yow    "column"  ;
-kow         f-yow    "enclosure, hollow"  ;
-kromlegh    f-yow    "cromlech, megalithic chamber-tomb"  ;
-krows       f-yow    "cross, rood"  ;
-krowseryow  f-yow    "krowseryow"  ;
-kurun       f-yow    "crown"  ;
-kusul       f-yow    "advice, counsel, opinion"  ;
-kygel       f-yow    "distaff"  ;
-kyst        f-yow    "box (container), chest"  ;
-kysten      f-yow    "small box"  ;
-liv         f-yow    "lunch(eon)."  ;
-lo          f-yow    "spoon, ladle, spatula."  ;
-loor        f-yow    "moon."  ;
-lys         f-yow    "court, hall, palace"  ;
-lo          f-yow    "loyow spoon, ladle, spatula"  ;
-magor       f-yow    "ruin."  ;
-mammvro     f-yow    "motherland."  ;
-mantol      f-yow    "balance, scales (for weighing)."  ;
-medyner     f-yow    "hinge."  ;
-melin       f-yow    "mill."  ;
-milvledhen  f-yow    "millennium."  ;
-mogow       f-yow    "cave."  ;
-nas         f-yow    "nature (character)"  ;
-new         f-yow    "trough, sink"  ;
-ostel       f-yow    "lodging, hostel, hotel"  ;
-penneglos   f-yow    "cathedral"  ;
-pennseythen f-yow    "weekend"  ;
-pennskol    f-yow    "university,"  ;
-penntir   	f-yow    "headland"  ;
-pows        f-yow    "coat, gown, frock, dress "  ;
-ragarwodh  f-yow    "portent "  ;
-rannvro     f-yow    "region "  ;
-raw         f-yow    "strop, bond "  ;
-rol         f-yow    "roll, list"  ;
-rys         f-yow    "ford Rysoghen Oxford"  ;
-sawn        f-yow    "geo, clegully"  ;
-sel         f-yow    "base, foundation "  ;
-seythen     f-yow    "week"  ;
-skol        f-yow    "school"  ;
-stol        f-yow    "stole"  ;
-strolgyst   f-yow    "litter-bin,"  ;
-tiogeth     f-yow    "household"  ;
-treveglos   f-yow    "churchtown, village "  ;
-tro         f-yow    "turn, circuit, twist"  ;
-troweyth    f-yow    "cycle (of motion)"  ;
+ aden f-yow "binding board of a book" ;
+ als f-yow "cliff" ;
+ alter f-yow "altar" ;
+ amser f-yow "tense (of verb)" ;
+ anwan f-yow "anvil" ;
+ argel f-yow "retreat, sequestered place" ;
+ arwodh f-yow "sign, symbol, emblem, annorial device" ;
+ atalgyst f-yow "dustbin, trash can (US), garbage can (US)" ;
+ avon f-yow "river" ;
+ awedh f-yow "watercourse" ;
+ awel f-yow "wind, gale, weather" ;
+ aweyl f-yow "gospel" ;
+ batel f-yow "battle" ;
+ bis f-yow "vice (tool)" ;
+ bleujen f-yow "flower, bloom, blossom" ;
+ bool f-yow "axe" ;
+ bownder f-yow "lane" ;
+ bresel f-yow "dispute, striwar" ;
+ breuslys f-yow "assize-court, court of law" ;
+ bro f-yow "country, land" ;
+ brow f-yow "handmill, quern" ;
+ bryv f-yow "bleating of sheep" ;
+ bynk f-yow "platform, bench" ;
+ byskoon f-yow "thimble" ;
+ kadon f-yow "chain, bond (link), trace" ;
+ kador f-yow "chair, seat" ;
+ kalter f-yow "kettle" ;
+ kanel f-yow "channel, canal, water-channel, inlet of sea, television channel" ;
+ kansbledhen f-yow "century, hundred years" ;
+ kantol f-yow "spark-plug" ;
+ kasel f-yow "arm-pit, aisle underarm (US)" ;
+ kloos f-yow "hurdle, fence, crate, trellis, lattice, rack, harrow" ;
+ koloven f-yow "column" ;
+ kon f-yow "late dinner" ;
+ kow f-yow "enclosure, hollow" ;
+ kromlegh f-yow "cromlech, megalithic chamber-tomb" ;
+ krows f-yow "cross, rood" ;
+ krowseryow f-yow "crowseryow" ;
+ kurun f-yow "crown" ;
+ kusul f-yow "advice, counsel, opinion" ;
+ dama f-yow "mother" ;
+ degbledhen f-yow "decade" ;
+ dowrlann f-yow "waterside" ;
+ dydhweyth f-yow "day’s time" ;
+ ehel f-yow "axle" ;
+ eglos f-yow "church" ;
+ elgeth f-yow "chin" ;
+ esker f-yow "diwesker [d???w??sk?r] (dl" ;
+ eskeul f-yow "escalator" ;
+ eskis f-yow "shoe" ;
+ eur f-yow "time, o’clock" ;
+ fals f-yow "scythe" ;
+ fenten f-yow "spring (water), fountain, surface well" ;
+ fin f-yow "end" ;
+ finwedh f-yow "end, limit, cessation" ;
+ fiol f-yow "vial, shallow cup" ;
+ fornes f-yow "furnace" ;
+ fun f-yow "cable, long rope" ;
+ gavel f-yow "grasp, hold, capacity" ;
+ geler f-yow "bier, coffin" ;
+ goon f-yow "downland, unenclosed pasture, moor (upland)" ;
+ gwan f-yow "stab, prick, piercing" ;
+ gwarthol f-yow "stirrup" ;
+ gwelgyst f-yow "video-cassette" ;
+ gwers f-yow "gwers meythrin [?gw?rz?m???r?n] nursery-rhyme" ;
+ gweus f-yow "diwweus [?di?wœs] (dl" ;
+ gweyth f-yow "occasion (time)" ;
+ hel f-yow "hall, parlour" ;
+ hellys f-yow "old court" ;
+ kadon f-yow "chain, bond (link), trace" ;
+ kador f-yow "chair, seat" ;
+ kalter f-yow "kettle" ;
+ kanel f-yow "channel, canal, water-channel, inlet of sea, television channel" ;
+ kansbledhen f-yow "century, hundred years" ;
+ kantol f-yow "spark-plug" ;
+ kasel f-yow "arm-pit, aisle underarm (US)" ;
+ kaskleudh f-yow "(pl" ;
+ ker f-yow "fort, camp (earthwork), hill-fort" ;
+ keryn f-yow "tub, butt (container), open barrel" ;
+ kildro f-yow "backward turn, ruse" ;
+ kloos f-yow "hurdle, fence, crate, trellis, lattice, rack, harrow" ;
+ kloos-platyow f-yow "plate-rack" ;
+ klun f-yow "diwglun [?di?gl?n] (dl" ;
+ kon f-yow "late dinner" ;
+ koloven f-yow "column" ;
+ kow f-yow "enclosure, hollow" ;
+ kromlegh f-yow "cromlech, megalithic chamber-tomb" ;
+ krows f-yow "cross, rood" ;
+ krowseryow f-yow "krowseryow" ;
+ kurun f-yow "crown" ;
+ kusul f-yow "advice, counsel, opinion" ;
+ kygel f-yow "distaff" ;
+ kyst f-yow "box (container), chest" ;
+ kysten f-yow "small box" ;
+ liv f-yow "lunch(eon)." ;
+ lo f-yow "spoon, ladle, spatula." ;
+ loor f-yow "moon." ;
+ lys f-yow "court, hall, palace" ;
+ lo f-yow "loyow spoon, ladle, spatula" ;
+ magor f-yow "ruin." ;
+ mammvro f-yow "motherland." ;
+ mantol f-yow "balance, scales (for weighing)." ;
+ medyner f-yow "hinge." ;
+ melin f-yow "mill." ;
+ milvledhen f-yow "millennium." ;
+ mogow f-yow "cave." ;
+ nas f-yow "nature (character)" ;
+ new f-yow "trough, sink" ;
+ ostel f-yow "lodging, hostel, hotel" ;
+ penneglos f-yow "cathedral" ;
+ pennseythen f-yow "weekend" ;
+ pennskol f-yow "university," ;
+ penntir f-yow "headland" ;
+ pows f-yow "coat, gown, frock, dress " ;
+ ragarwodh f-yow "portent " ;
+ rannvro f-yow "region " ;
+ raw f-yow "strop, bond " ;
+ rol f-yow "roll, list" ;
+ rys f-yow "ford Rysoghen Oxford" ;
+ sawn f-yow "geo, clegully" ;
+ sel f-yow "base, foundation " ;
+ seythen f-yow "week" ;
+ skol f-yow "school" ;
+ stol f-yow "stole" ;
+ strolgyst f-yow "litter-bin," ;
+ tiogeth f-yow "household" ;
+ treveglos f-yow "churchtown, village " ;
+ tro f-yow "turn, circuit, twist" ;
+ troweyth f-yow "cycle (of motion)" ;
