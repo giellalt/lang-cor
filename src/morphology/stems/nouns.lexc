@@ -51,7 +51,7 @@ LEXICON Noun
 ! =========
 
 !! !lexc syntax:
- lemmaform:stem continuationlexicon "facultative translation" ;
+!! lemmaform:stem continuationlexicon "facultative translation" ;
 !! without the colon, lemmaform and stem are identical.
 !! The morphology is then handeled in noun-kor-morph.txt
 
