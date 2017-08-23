@@ -24,7 +24,7 @@ LEXICON pp-prona
 
 
 LEXICON pp-prono
-+Pr:          # ; ! bare form
++Pr:0          # ; ! bare form
 +Pr+1Sg:ov    # ;
 +Pr+2Sg:os    # ;
 +Pr+Sem/Msc+3Sg:o # ;
@@ -95,7 +95,8 @@ war		   pp "on" ;
 warbynn	   pp "against" ;
 war-lergh  pp "behind" ;
 wosa	   pp "after" ;
-yn : ynn     pp-prono "in" ;
+!yn : ynn     pp-prono "in" ;
+yn        pp-prono "in" ;
 yn-dann    pp-prono "under" ;
 yntra : yntredh pp-prono "between" ;
 
