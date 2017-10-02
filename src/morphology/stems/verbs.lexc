@@ -1,15 +1,18 @@
 
 !! !!!Verb stems
 
-LEXICON Verb
-
 !! !!Auxiliaries and exceptions
 
+LEXICON AUX
 bos+V:     COPULA     "to be" ;   !!= * @CODE@
 mos+V:     MOS        "go" ;      !!= * @CODE@
 dos+V:     DOS        "come" ;    !!= * @CODE@
 gul+V:     GUL        "do" ;      !!= * @CODE@
 
+!! !!Verbs tems proper
+
+LEXICON Verb
+AUX ;
 
 !! The regular verbs -- a discussion:
 
