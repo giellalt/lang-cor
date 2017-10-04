@@ -301,24 +301,24 @@ LEXICON GUL
 
 
 LEXICON vb1 ! class 1
-+V+Inf:%>a # ;
-+V+Ind+Prs: indpres ;
-+V+Ind+Prt: indpret ;
-+V+Ind+Ipf: indimpf ;
-+V+Ind+Plf: pluperf ;
-+V+Sbj+Prs:%^CD sbjpres ;
-+V+Sbj+Ipf:%^CD sbjimpf ;
-+V+Imp: imp ;
+     +V+Inf:%>a  #       ;
+ +V+Ind+Prs:     indpres ;
+ +V+Ind+Prt:     indpret ;
+ +V+Ind+Ipf:     indimpf ;
+ +V+Ind+Plf:     pluperf ;
+ +V+Sbj+Prs:%^CD sbjpres ;
+ +V+Sbj+Ipf:%^CD sbjimpf ;
+     +V+Imp:     imp     ;
 
 LEXICON vbya ! classv2
-+V+Inf:%>ya # ;
-+V+Ind+Prs: indpres ;
-+V+Ind+Prt: indpret ;
-+V+Ind+Ipf: indimpf ;
-+V+Ind+Plf: pluperf ;
-+V+Sbj+Prs:%^CD sbjpres ;
-+V+Sbj+Ipf:%^CD sbjimpf ;
-+V+Imp:%>y imp ;
+     +V+Inf:%>ya #       ;
+ +V+Ind+Prs:     indpres ;
+ +V+Ind+Prt:     indpret ;
+ +V+Ind+Ipf:     indimpf ;
+ +V+Ind+Plf:     pluperf ;
+ +V+Sbj+Prs:%^CD sbjpres ;
+ +V+Sbj+Ipf:%^CD sbjimpf ;
+     +V+Imp:%>y  imp     ;
 
 LEXICON vbi ! class 3
 +V+Inf:%>i # ;
