@@ -1,13 +1,20 @@
-! Verbal morphology
+!! !!!Verbal morphology
 ! ================= !
 
 
-! The declension classes
+!! !!The declension classes
 ! ======================
 
 
-! Auxiliaries
+!! !Auxiliaries
 ! -----------
+
+LEXICON AUX
+bos+V:     COPULA     "to be" ;   !!= * @CODE@
+mos+V:     MOS        "go" ;      !!= * @CODE@
+dos+V:     DOS        "come" ;    !!= * @CODE@
+gul+V:     GUL        "do" ;      !!= * @CODE@
+
 
 LEXICON COPULA
 +Inf:bos # ;
