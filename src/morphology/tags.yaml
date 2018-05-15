@@ -1,0 +1,42 @@
+!!python/object/apply:collections.defaultdict
+args:
+- !!python/name:__builtin__.set ''
+dictitems:
+  Sem: !!set
+    !!python/unicode 'Sem/Fem': null
+    !!python/unicode 'Sem/Msc': null
+  resten: !!set
+    ? !!python/unicode ''
+    : null
+    !!python/unicode '/-': null
+    !!python/unicode '1Pl': null
+    !!python/unicode '1Sg': null
+    !!python/unicode '2Pl': null
+    !!python/unicode '2Sg': null
+    !!python/unicode '3Pl': null
+    !!python/unicode '3Sg': null
+    !!python/unicode 'Acc': null
+    !!python/unicode 'Adv': null
+    !!python/unicode 'CC': null
+    !!python/unicode 'CLB': null
+    !!python/unicode 'CS': null
+    !!python/unicode 'Def': null
+    !!python/unicode 'Dem': null
+    !!python/unicode 'Det': null
+    !!python/unicode 'Emph': null
+    !!python/unicode 'Indef': null
+    !!python/unicode 'Interj': null
+    !!python/unicode 'LEFT': null
+    !!python/unicode 'Msc': null
+    !!python/unicode 'N': null
+    !!python/unicode 'Nom': null
+    !!python/unicode 'PUNCT': null
+    !!python/unicode 'Pers': null
+    !!python/unicode 'Pl': null
+    !!python/unicode 'Poss': null
+    !!python/unicode 'Pr': null
+    !!python/unicode 'Pron': null
+    !!python/unicode 'RIGHT': null
+    !!python/unicode 'Sg': null
+    !!python/unicode 'Suff': null
+    !!python/unicode 'adj': null
