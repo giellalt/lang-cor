@@ -7,6 +7,7 @@ Multichar_Symbols
 +N +V +A           !!= * @CODE@
 +Adv +CC +CS +Interj +Pron +Num +Pr         !!= * @CODE@
 +Smut +Mmut +Pmut +Amut               !!= * @CODE@ for mutation
++Symbol !!≈ * @CODE@ = independent symbols in the text stream, like £, €, ©
 
 
 !! !!Verbal MSP
