@@ -6,6 +6,7 @@ First, we declare multicharacter symbols
  * +N +V +A           
  * +Adv +CC +CS +Interj +Pron +Num +Pr         
  * +Smut +Mmut +Pmut +Amut                for mutation
+ * +Symbol = independent symbols in the text stream, like £, €, ©
 
 
 !!Verbal MSP
@@ -72,6 +73,4 @@ given the proper use of these flags.
 !!!Key lexicon
 
  * LEXICON Root        
-
-
 
