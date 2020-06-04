@@ -1,0 +1,9 @@
+name = "Cornish"
+version = "@SPELLERVERSION@"
+
+[macos]
+system_pkg_id = "no.divvun.MacDivvun.kw"
+
+[windows]
+system_product_code = "4545B4D7-E474-47CD-81D1-99A7703ECEA1"
+msoffice_product_code = "5A2E2DCA-5769-42FB-8D21-C005E4A32D0A"
