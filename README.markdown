@@ -21,7 +21,7 @@ Documentation
 
 Documentation can be found at:
 
--   <https://giellalt.uit.no/lang/cordoc/index.html>
+-   <https://giellalt.uit.no/lang/cor/CornishDocumentation.html>
 -   <https://giellalt.uit.no/index.html>
 
 Core dependencies
