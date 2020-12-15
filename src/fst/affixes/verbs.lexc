@@ -362,15 +362,15 @@ LEXICON vb ! regular verbs
 +V+Imp: imp ; !XXX check
 
 
-LEXICON vb-y ! class ?? ! verbs with -yn etc. ipf
-+V+Inf: # ;
-+V+Ind+Prs: indpres ;
-+V+Ind+Prt: indpret ;
-+V+Ind+Ipf: indimpf-y ; ! special y form
-+V+Ind+Plf: pluperf ;
-+V+Sbj+Prs:%^CD sbjpres ;
-+V+Sbj+Ipf:%^CD sbjimpf ;
-+V+Imp: imp ; ! XXX check
+!LEXICON vb-y ! class ?? ! verbs with -yn etc. ipf
+!+V+Inf: # ;
+!+V+Ind+Prs: indpres ;
+!+V+Ind+Prt: indpret ;
+!+V+Ind+Ipf: indimpf-y ; ! special y form
+!+V+Ind+Plf: pluperf ;
+!+V+Sbj+Prs:%^CD sbjpres ;
+!+V+Sbj+Ipf:%^CD sbjimpf ;
+!+V+Imp: imp ; ! XXX check
 
 LEXICON ERHI
 +V+Inf:%^V%>i # ;
@@ -436,14 +436,14 @@ LEXICON indimpf
 +3Pl:%>ens # ;
 +Impers:%>ys # ;
 
-LEXICON indimpf-y
-+1Sg:%>yn # ;
-+2Sg:%>ys # ;
-+3Sg:%>i # ;
-+1Pl:%>yn # ;
-+2Pl:%>ewgh # ;
-+3Pl:%>ens # ;
-+Impers:%>ys # ;
+!LEXICON indimpf-y
+!+1Sg:%>yn # ;
+!+2Sg:%>ys # ;
+!+3Sg:%>i # ;
+!+1Pl:%>yn # ;
+!+2Pl:%>ewgh # ;
+!+3Pl:%>ens # ;
+!+Impers:%>ys # ;
 
 LEXICON pluperf
 +1Sg:%>sen # ;
