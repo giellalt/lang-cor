@@ -12,15 +12,15 @@
 LEXICON pp
 +Pr: # ;
 
-LEXICON pp-prona
-+Pr:          # ; ! bare form
-+Pr+1Sg:av    # ;
-+Pr+2Sg:as    # ;
-+Pr+Sem/Msc+3Sg:o # ;
-+Pr+Sem/Fem+3Sg:i # ;
-+Pr+1Pl:an    # ;
-+Pr+2Pl:owgh  # ;
-+Pr+3Pl:a     # ;
+!LEXICON pp-prona
+!+Pr:          # ; ! bare form
+!+Pr+1Sg:av    # ;
+!+Pr+2Sg:as    # ;
+!+Pr+Sem/Msc+3Sg:o # ;
+!+Pr+Sem/Fem+3Sg:i # ;
+!+Pr+1Pl:an    # ;
+!+Pr+2Pl:owgh  # ;
+!+Pr+3Pl:a     # ;
 
 
 LEXICON pp-prono

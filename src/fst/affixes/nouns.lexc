@@ -30,13 +30,13 @@ LEXICON m-s
  +N+Msc: sg  ;
  +N+Msc: spl ;
 
-LEXICON m-yn
- +N+Msc: sg   ;
- +N+Msc: ynpl ;
+!LEXICON m-yn
+! +N+Msc: sg   ;
+! +N+Msc: ynpl ;
 
-LEXICON m-ens
- +N+Msc: sg    ;
- +N+Msc: enspl ;
+!LEXICON m-ens
+! +N+Msc: sg    ;
+! +N+Msc: enspl ;
 
 LEXICON m-yon
   +N+Msc: sg    ;
@@ -109,12 +109,12 @@ LEXICON ipl
 LEXICON yspl
  +Pl:%>ys mutation ;
 
-LEXICON ynpl
- +Pl:%>yn mutation ;
+!LEXICON ynpl
+! +Pl:%>yn mutation ;
 
-LEXICON enspl
- +Pl:%>ens mutation ;
-    :%>ek  adjd     ;
+!LEXICON enspl
+! +Pl:%>ens mutation ;
+!    :%>ek  adjd     ;
 
 LEXICON espl
  +Pl:%>es mutation ;
