@@ -78,6 +78,12 @@ Multichar_Symbols
 !! given the proper use of these flags.
  @U.Cap.Obl@        !!≈ | @CODE@ | Allowing downcasing of derived names: deatnulasj.
  @U.Cap.Opt@        !!≈ | @CODE@ | Allowing downcasing of derived names: deatnulasj.
+@P.Pmatch.Backtrack@
+
+@R.ErrOrth.ON@
++Err/Orth
+@C.ErrOrth@
++Use/PMatch
 
 
 !! !!!Key lexicon
@@ -95,7 +101,7 @@ Subjunction ;
 Verb ;
 Adjective ;
 Interjection ;
-!Numeral ;
+Numeral ;
 Pronoun ;
 Punctuation ;
 Symbols     ;
@@ -103,4 +109,11 @@ Symbols     ;
 
 ! Adhoc lexica, to be fixed
 
+
+LEXICON ENDLEX
+# ;
+LEXICON RNum
+:%- # ;
+LEXICON ARABICCOMPOUNDS
+# ;
 
