@@ -1,0 +1,51 @@
+
+LEXICON Numeral
+NUM-PREFIXES  ;
+ARABICS ;
+Cardinals ;
+Ordinals ;
+ISOLATED-NUMEXP ;
+ROMAN ;
+
+LEXICON Cardinals
+onan card-yow "one" ;
+onen card-yow "one" ;
+diw card-yow "two" ;
+teyr card-yow "three" ;
+trei card-yow "three" ;
+pajar card-yow "four" ;
+peder card-yow "four" ;
+pajar-ugens card-yow "eighty" ;
+pemp card-yow "five" ;
+hwegh card-yow "six" ;
+hwetek card-yow "sixteen" ;
+seytek card-yow "seventeen" ;
+seyth card-yow "seven" ;
+etek card-yow "eighteen" ;
+naw card-yow "nine" ;
+udnek card-yow "eleven" ;
+dewdhek card-yow "twelve" ;
+terdhek card-yow "thirteen" ;
+tredhek card-yow "thirteen" ;
+pemdhek card-yow "fifteen" ;
+trei-ugens card-yow "sixty" ;
+
+
+LEXICON Ordinals
+pajwora ord-yow "fourth" ;
+pempes ord-yow "fifth" ;
+hweghves ord-yow "sixth" ;
+hweffes ord-yow "sixth" ;
+hwetegves ord-yow "sixteenth" ;
+seytegves ord-yow "seventeenth" ;
+seythves ord-yow "seventh" ;
+etegves ord-yow "eighteenth" ;
+nawhes ord-yow "ninth" ;
+nawves ord-yow "ninth" ;
+udnegves ord-yow "eleventh" ;
+unnegves ord-yow "eleventh" ;
+dewdhegves ord-yow "twelfth" ;
+tredhegves ord-yow "thirteenth" ;
+terdhegves ord-yow "thirteenth" ;
+pemdhegves ord-yow "fifteenth" ;
+trei-ugensves ord-yow "sixtieth" ;
