@@ -1,15 +1,13 @@
 [What is this?|WhatIsThis.html]
 
-!!! Dynamic documentation
 
-* [Links to generated source file documentation|Links.html]
-* Source files: [stems|https://gtsvn.uit.no/langtech/trunk/langs/cor/src/fst/stems/]   
-  / [affixes|https://gtsvn.uit.no/langtech/trunk/langs/cor/src/fst/affixes/] 
-  / [syntax|https://gtsvn.uit.no/langtech/trunk/langs/cor/src/syntax] 
-  / [twolc|https://gtsvn.uit.no/langtech/trunk/langs/cor/src/phonology/cor-phon.xfscript]   
-  / [yaml|https://gtsvn.uit.no/langtech/trunk/langs/cor/test/src/gt-norm-yamls/]
+
+ 
+ 
+ 
+ 
 * Generation of: [paradigms|http://giellatekno.uit.no/cgi/p-cor.en.html]
-  / [text|http://giellatekno.uit.no/cgi/d-cor.en.html]
+ 
 
 !!! Grammatical issues
 
