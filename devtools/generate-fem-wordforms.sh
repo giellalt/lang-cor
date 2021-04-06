@@ -19,22 +19,11 @@ fi
 
 ######### USER Variables - change these to your liking: #########
 # Codes for the word forms to be generated - list as many or few as needed:
-morf_codes="+V+Inf \
-            +V+Ind+Prs+1Sg \
-            +V+Ind+Prs+2Sg \
-            +V+Ind+Prs+3Sg \
-            +V+Ind+Prs+1Pl \
-            +V+Ind+Prs+2Pl \
-            +V+Ind+Prs+1Pl \
-            +V+Ind+Prt+3Sg \
-            +V+Ind+Ipf+3Sg \
-            +V+Ind+Plf+3Sg \
-            +V+Sbj+Prs+3Sg \
-            +V+Sbj+Ipf+3Sg \
-            +V+Imp+Sg"
+morf_codes="+N+Fem+Sg \
+            +N+Fem+Pl"
 
 # Lexicon source file for lexicons and lemmas:
-source_file=src/fst/stems/verbs.lexc
+source_file=src/fst/stems/nouns.lexc
 
 # Lexicons that should NOT be used to extract lemmas (egrep expression):
 exception_lexicons="(flagK)"
