@@ -12,7 +12,7 @@ adjectives.lexc	  	unknown words from new_lexicon_for_evaluation added to fst (n
 adverbs.lexc		unknown words from new_lexicon_for_evaluation added to fst (not mwe)
 conjunctions.lexc	unknown words from new_lexicon_for_evaluation added to fst (not mwe)
 interjections.lexc	unknown words from new_lexicon_for_evaluation added to fst (not mwe)
-verbs.lexc		
+verbs.lexc		New verbs added at the end of the file
 nouns.lexc		unknown words from new_lexicon_for_evaluation added to fst (not mwe)
 
 For reference: These are the noun classes in the old fst:
