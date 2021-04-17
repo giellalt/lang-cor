@@ -91,29 +91,28 @@ Multichar_Symbols
 
 ! This is the start lexicon.
 LEXICON Root        !!= * @CODE@
-
-Adverb ;
-Noun ;
-Propernoun ;
-Preposition ;
-Conjunction ;
-Subjunction ;
-Verb ;
-Adjective ;
-Interjection ;
-Numeral ;
-Pronoun ;
-Punctuation ;
-Symbols     ;
-
-
-! Adhoc lexica, to be fixed
+Adverb ;	           !!= ** @CODE@
+Noun ;		           !!= ** @CODE@
+Propernoun ;           !!= ** @CODE@
+Preposition ;          !!= ** @CODE@
+Conjunction ;          !!= ** @CODE@
+Subjunction ;          !!= ** @CODE@
+Verb ;		           !!= ** @CODE@
+Adjective ;	           !!= ** @CODE@
+Interjection ;         !!= ** @CODE@
+Numeral ;	           !!= ** @CODE@
+Pronoun ;	           !!= ** @CODE@
+Punctuation ;          !!= ** @CODE@
+Symbols     ;          !!= ** @CODE@
 
 
-LEXICON ENDLEX
+!! Adhoc lexica, to be fixed
+
+
+LEXICON ENDLEX       !!= * @CODE@
 # ;
-LEXICON RNum
+LEXICON RNum       !!= * @CODE@
 :%- # ;
-LEXICON ARABICCOMPOUNDS
+LEXICON ARABICCOMPOUNDS        !!= * @CODE@
 # ;
 
