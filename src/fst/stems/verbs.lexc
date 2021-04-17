@@ -1,10 +1,10 @@
 
-!! !!!Verb stems
+!! # Verb stems
 
-!! !!Auxiliaries and exceptions
+!! ## Auxiliaries and exceptions
 
 
-!! !!Verbs tems proper
+!! ## Verbs tems proper
 
 LEXICON Verb
 AUX ;
@@ -19,7 +19,7 @@ AUX ;
 !! * vb2) -ya    ya-Verbs
 !! * vb3) -es/-i i-Umlaut im Paradigma
 !! * vb4) -he    he-Verbs
-!! * vb5) -el/-i -C[l|n|m|r]-Verben
+!! * vb5) -el/-i -C[l|n|m](r)-Verben
 !! * And finally the irregulars: Suppletion im Paradigma
 
 !! Continuation lexica:
@@ -37,7 +37,7 @@ AUX ;
 !! all other verbs to vb
 !! TODO: Go through the new verbs (at the end of this file)
 
-!! !!Umlaut class verbs
+!! ## Umlaut class verbs
 
 !! * u0. Verbs that never have Umlaut?
 !! * u1. Verbs that only have umlaut before an ending that contains <i>, <y>, <owgh> or imperative <ewgh>.
@@ -65,7 +65,7 @@ AUX ;
 ! The lexicon starts here
 
 
-!! !!The verbs
+!! ## The verbs
 !    =========
 
 !dri:dr DRI "bring, take with one, persuade" ;

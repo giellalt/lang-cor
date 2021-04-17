@@ -21,10 +21,10 @@ LEXICON ord-yow
 
 
 ! ############################## !
-!! !!!Kven numerals 
+!! # Kven numerals 
 ! ############################## !
 
-!! !!!Numeral inflection
+!! # Numeral inflection
 !! Numeral inflection is like nominal, except that numerals compound in all
 !! forms which requires great amount of care in the inflection patterns.
 ! FIXME: compounding
@@ -36,13 +36,13 @@ LEXICON dateyearcase_fullsuff
 +Sg: # ;
       +Cmp/SplitR:%-   ENDLEX ;
 
-LEXICON ARABICCASES   !!≈ * __@CODE@__  adds +Arab
+LEXICON ARABICCASES   !!≈ * **@CODE@**  adds +Arab
 +Arab: # ;
 
-LEXICON ARABICCASE   !!≈ * __@CODE@__  adds +Arab
+LEXICON ARABICCASE   !!≈ * **@CODE@**  adds +Arab
  +Arab: # ;
 
-LEXICON ARABICCASE0   !!≈ * __@CODE@__  adds +Arab
+LEXICON ARABICCASE0   !!≈ * **@CODE@**  adds +Arab
  +Arab:  # ;
 
 LEXICON DIGITCASES
