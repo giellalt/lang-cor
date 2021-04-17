@@ -1,11 +1,11 @@
-!! !!!Lexicon over Cornish nouns
+!! # Lexicon over Cornish nouns
 
 
 
 
 LEXICON Noun
 
-!! !!Exceptions
+!! ## Exceptions
 
 !! ki, den, ojyon, ...
 
@@ -21,7 +21,7 @@ LEXICON Noun
  protestant GARLONT "protestant" ;
 
 
-!! !!Short overview of the types
+!! ## Short overview of the types
 !! Masculines
 !! * m = ow plural
 !! * m-yow = yow plural (all new 2020 masculines assigned here)
@@ -47,10 +47,10 @@ LEXICON Noun
 !! * f-yon = yon plural
 
 
-!! !!Masculine
+!! ## Masculine
 ! =========
 
-!! !lexc syntax:
+!! ### lexc syntax:
 !! lemmaform:stem continuationlexicon "facultative translation" ;
 !! without the colon, lemmaform and stem are identical.
 !! The morphology is then handeled in noun-kor-morph.txt
@@ -58,7 +58,7 @@ LEXICON Noun
 !! Here the noun types begin:
 ! ==========================
 
-!! !ow plural
+!! ### ow plural
 ! --------
 !! All -(y)ans nouns are here even though the dictionary lists no plurals for them (Brown, p. 30)
  abatti m "abbey" ;

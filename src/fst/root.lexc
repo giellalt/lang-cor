@@ -1,16 +1,16 @@
-!! !!!Cornish morphology
+!! # Cornish morphology
 
 !! First, we declare multicharacter symbols
 Multichar_Symbols
 
-!! !!POS
+!! ## POS
 +N +V +A           !!= * @CODE@
 +Adv +CC +CS +Interj +Pron +Num +Pr         !!= * @CODE@
 +Smut +Mmut +Pmut +Amut               !!= * @CODE@ for mutation
 +Symbol !!≈ * @CODE@ = independent symbols in the text stream, like £, €, ©
 
 
-!! !!Verbal MSP
+!! ## Verbal MSP
 +Prs +Fut +Prt +Prf +Ipf +Plf       !!= @CODE@
 +Ind +Imp +Sbj       !!= @CODE@
 +Inf +Sit ! what is +Sit?       !!= @CODE@
@@ -20,12 +20,12 @@ Multichar_Symbols
 +Ptc       !!= @CODE@
 +VN       !!= @CODE@
 
-!! !!Nominal MSP
+!! ## Nominal MSP
 +Sg +Pl +P            !!= @CODE@
 +Nom +Acc +Gen        !!= @CODE@
 +Ord       !!= @CODE@
 
-!! !!Pronominal MSP
+!! ## Pronominal MSP
 +Suff +Emph +Indef         !!= @CODE@
 +Msc +Fem                  !!= @CODE@
 
@@ -37,47 +37,47 @@ Multichar_Symbols
 %> %^D                         !!= @CODE@
 %^UML %^CD %^TRUNC %^STDEL     !!= @CODE@
 
-!! !!Archiphonemes
+!! ## Archiphonemes
  e3           !!= @CODE@  e to o in plural
  a4 o4        !!= @CODE@ Umlaut phonemes, changing to e
 
 
-        !! !!Symbols that need to be escaped on the lower side (towards twolc):
- »7     !!≈ ; @CODE@ : Literal »
- «7     !!≈ ; @CODE@ : Literal «
-        !! {{{
+        !! ## Symbols that need to be escaped on the lower side (towards twolc):
+ »7     !!≈ * **@CODE@**:  Literal »
+ «7     !!≈ * **@CODE@**:  Literal «
+        !! ```
  %[%>%] !!= @CODE@ - Literal >
  %[%<%] !!= @CODE@ - Literal <
-        !! }}}
+        !! ```
 
 
-!! !!Flag diacritics
+!! ## Flag diacritics
 !! We have manually optimised the structure of our lexicon using following
 !! flag diacritics to restrict morhpological combinatorics - only allow compounds
 !! with verbs if the verb is further derived into a noun again:
- @P.NeedNoun.ON@    !!≈ | @CODE@ | (Dis)allow compounds with verbs unless nominalised
- @D.NeedNoun.ON@    !!≈ | @CODE@ | (Dis)allow compounds with verbs unless nominalised
- @C.NeedNoun@       !!≈ | @CODE@ | (Dis)allow compounds with verbs unless nominalised
+ @P.NeedNoun.ON@    !!≈ |  @CODE@ | (Dis)allow compounds with verbs unless nominalised
+ @D.NeedNoun.ON@    !!≈ |  @CODE@ | (Dis)allow compounds with verbs unless nominalised
+ @C.NeedNoun@       !!≈ |  @CODE@ | (Dis)allow compounds with verbs unless nominalised
 !! 
 !! For languages that allow compounding, the following flag diacritics are needed
 !! to control position-based compounding restrictions for nominals. Their use is
 !! handled automatically if combined with +CmpN/xxx tags. If not used, they will
 !! do no harm.
- @P.CmpFrst.FALSE@ !!≈ | @CODE@ | Require that words tagged as such only appear first
- @D.CmpPref.TRUE@  !!≈ | @CODE@ | Block such words from entering ENDLEX
- @P.CmpPref.FALSE@ !!≈ | @CODE@ | Block these words from making further compounds
- @D.CmpLast.TRUE@  !!≈ | @CODE@ | Block such words from entering R
- @D.CmpNone.TRUE@  !!≈ | @CODE@ | Combines with the next tag to prohibit compounding
- @U.CmpNone.FALSE@ !!≈ | @CODE@ | Combines with the prev tag to prohibit compounding
- @P.CmpOnly.TRUE@  !!≈ | @CODE@ | Sets a flag to indicate that the word has passed R
- @D.CmpOnly.FALSE@ !!≈ | @CODE@ | Disallow words coming directly from root.
+ @P.CmpFrst.FALSE@ !!≈ |  @CODE@ | Require that words tagged as such only appear first
+ @D.CmpPref.TRUE@  !!≈ |  @CODE@ | Block such words from entering ENDLEX
+ @P.CmpPref.FALSE@ !!≈ |  @CODE@ | Block these words from making further compounds
+ @D.CmpLast.TRUE@  !!≈ |  @CODE@ | Block such words from entering R
+ @D.CmpNone.TRUE@  !!≈ |  @CODE@ | Combines with the next tag to prohibit compounding
+ @U.CmpNone.FALSE@ !!≈ |  @CODE@ | Combines with the prev tag to prohibit compounding
+ @P.CmpOnly.TRUE@  !!≈ |  @CODE@ | Sets a flag to indicate that the word has passed R
+ @D.CmpOnly.FALSE@ !!≈ |  @CODE@ | Disallow words coming directly from root.
 !! 
 !! Use the following flag diacritics to control downcasing of derived proper
 !! nouns (e.g. Finnish Pariisi -> pariisilainen). See e.g. North Sámi for how to use
 !! these flags. There exists a ready-made regex that will do the actual down-casing
 !! given the proper use of these flags.
- @U.Cap.Obl@        !!≈ | @CODE@ | Allowing downcasing of derived names: deatnulasj.
- @U.Cap.Opt@        !!≈ | @CODE@ | Allowing downcasing of derived names: deatnulasj.
+ @U.Cap.Obl@        !!≈ |  @CODE@ | Allowing downcasing of derived names: deatnulasj.
+ @U.Cap.Opt@        !!≈ |  @CODE@ | Allowing downcasing of derived names: deatnulasj.
 @P.Pmatch.Backtrack@
 
 @R.ErrOrth.ON@
@@ -86,24 +86,24 @@ Multichar_Symbols
 +Use/PMatch
 
 
-!! !!!Key lexicon
+!! # Key lexicon
 !     ===========
 
 ! This is the start lexicon.
 LEXICON Root        !!= * @CODE@
-Adverb ;	           !!= ** @CODE@
-Noun ;		           !!= ** @CODE@
-Propernoun ;           !!= ** @CODE@
-Preposition ;          !!= ** @CODE@
-Conjunction ;          !!= ** @CODE@
-Subjunction ;          !!= ** @CODE@
-Verb ;		           !!= ** @CODE@
-Adjective ;	           !!= ** @CODE@
-Interjection ;         !!= ** @CODE@
-Numeral ;	           !!= ** @CODE@
-Pronoun ;	           !!= ** @CODE@
-Punctuation ;          !!= ** @CODE@
-Symbols     ;          !!= ** @CODE@
+Adverb ;	           !!=     - @CODE@
+Noun ;		           !!=     - @CODE@
+Propernoun ;           !!=     - @CODE@
+Preposition ;          !!=     - @CODE@
+Conjunction ;          !!=     - @CODE@
+Subjunction ;          !!=     - @CODE@
+Verb ;		           !!=     - @CODE@
+Adjective ;	           !!=     - @CODE@
+Interjection ;         !!=     - @CODE@
+Numeral ;	           !!=     - @CODE@
+Pronoun ;	           !!=     - @CODE@
+Punctuation ;          !!=     - @CODE@
+Symbols     ;          !!=     - @CODE@
 
 
 !! Adhoc lexica, to be fixed
