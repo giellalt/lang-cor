@@ -1,6 +1,10 @@
 The Cornish morphology and tools
 ==========================================
 
+[![GitHub issues](https://img.shields.io/github/issues-raw/giellalt/lang-cor)](https://github.com/giellalt/lang-cor/issues)
+[![Build Status](https://github.com/giellalt/lang-cor/workflows/Speller%20CI+CD/badge.svg)](https://github.com/giellalt/lang-cor/actions)
+[![License](https://img.shields.io/github/license/giellalt/lang-cor)](https://raw.githubusercontent.com/giellalt/lang-cor/develop/LICENSE)
+
 This repository contains finite state source files for the Cornish language,
 for building morphological analysers, proofing tools
 and dictionaries. The data and implementation are licenced under __LICENCE__
@@ -8,10 +12,6 @@ licence, also detailed in the
 [LICENCE](https://github.com/giellalt/lang-cor/blob/develop/LICENCE). The
 authors named in the AUTHORS file are available to grant other licencing
 choices.
-
-[![GitHub issues](https://img.shields.io/github/issues-raw/giellalt/lang-cor)](https://github.com/giellalt/lang-cor/issues)
-[![Build Status](https://github.com/giellalt/lang-cor/workflows/Speller%20CI+CD/badge.svg)](https://github.com/giellalt/lang-cor/actions)
-[![License](https://img.shields.io/github/license/giellalt/lang-cor)](https://raw.githubusercontent.com/giellalt/lang-cor/develop/LICENSE)
 
 Install proofing tools and [keyboards](https://github.com/giellalt/keyboard-cor)
 for the Cornish language by using the [Divvun Installer](http://divvun.no)
