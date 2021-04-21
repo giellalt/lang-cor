@@ -1,32 +1,32 @@
-! Cornish noun morphology
+!! # Cornish noun morphology
 
-! Masculine stem classes
+!! ## Masculine stem classes
 ! ======================
-! The nouns get tags (to the left of :, i.e. in the upper representation
-! and the suffixes are found to the left of the colon
+!! The nouns get tags (to the left of :, i.e. in the upper representation
+!! and the suffixes are found to the left of the colon
 
-LEXICON m
+LEXICON m  !!≈ * **@CODE@** 
  +N+Msc: sg   ; ! no suffix, of course
  +N+Msc: owpl ; ! no suffix yet, see LEXICON owpl below
 
-LEXICON m-yow
+LEXICON m-yow  !!≈ * **@CODE@** 
  +N+Msc: sg    ;
  +N+Msc: yowpl ;
 
-LEXICON m-ow
+LEXICON m-ow  !!≈ * **@CODE@** 
  +N+Msc: sg   ;
  +N+Msc: owpl ;
 
 
-LEXICON m-ys
+LEXICON m-ys  !!≈ * **@CODE@** 
  +N+Msc: sg   ;
  +N+Msc: yspl ;
 
-LEXICON m-es
+LEXICON m-es  !!≈ * **@CODE@** 
  +N+Msc: sg   ;
  +N+Msc: espl ;
 
-LEXICON m-s
+LEXICON m-s  !!≈ * **@CODE@** 
  +N+Msc: sg  ;
  +N+Msc: spl ;
 
@@ -38,7 +38,7 @@ LEXICON m-s
 ! +N+Msc: sg    ;
 ! +N+Msc: enspl ;
 
-LEXICON m-yon
+LEXICON m-yon  !!≈ * **@CODE@** 
   +N+Msc: sg    ;
   +N+Msc: yonpl ;
 
@@ -46,32 +46,32 @@ LEXICON m-yon
 ! +N+Msc: sg    ;
 ! +N+Msc: yonpl ;
 
-LEXICON m-aff-i
+LEXICON m-aff-i  !!≈ * **@CODE@** 
  +N+Msc: sg  ;
  +N+Msc: ipl ; ! Need no trigger to signal MPh rule
 
-LEXICON m-ag
+LEXICON m-ag  !!≈ * **@CODE@** 
  +N+Msc:%^E sg    ; ! ditto
  +N+Msc:    yonpl ;
 
-LEXICON m-sgtantum
+LEXICON m-sgtantum  !!≈ * **@CODE@** 
  +N+Msc: mutation ;
 
-LEXICON m-pltantum
+LEXICON m-pltantum  !!≈ * **@CODE@** 
  +N+Msc+PLT: mutation ;
 
-! Feminine stem classes
+!! ## Feminine stem classes
 ! =====================
 
-LEXICON f
+LEXICON f  !!≈ * **@CODE@** 
  +N+Fem: sg   ;
  +N+Fem: owpl ;
 
-LEXICON f-yow
+LEXICON f-yow !!≈ * **@CODE@** 
  +N+Fem: sg    ;
  +N+Fem: yowpl ;
 
-LEXICON f-edh
+LEXICON f-edh !!≈ * **@CODE@** 
   +N+Fem:    sg    ;
   +N+Fem:    edhpl ;
 
@@ -80,33 +80,35 @@ LEXICON f-edh
 ! +N+Fem:%^V yonpl ;
 
 
-! Nest step:
-! Here we add suffixes. These may be common to several stem classes
-! and are therefore pointed to in a different layer (this one)
+!! Nest step:
 
-! Number lexica
+!! Here we add suffixes. These may be common to several stem classes
+!! and are therefore pointed to in a different layer (this one)
+
+
+!! ## Number lexica
 ! =============
 
-LEXICON sg
+LEXICON sg !!≈ * **@CODE@** 
  +Sg: mutation ; ! No suffix here, only tag.
 
-LEXICON yonpl
+LEXICON yonpl !!≈ * **@CODE@** 
   +Pl:%>yon    mutation ; ! Plural is yon, and there is mutation to come.
 ! +Pl:%^V%>yon mutation ; ! Plural is yon, and there is mutation to come.
 
-LEXICON owpl
+LEXICON owpl !!≈ * **@CODE@** 
   +Pl:%>ow  mutation ;
 !    :>%>ek adjd     ;
 
-LEXICON yowpl
+LEXICON yowpl !!≈ * **@CODE@** 
  +Pl:%>yow mutation ;
     :%>yek adjd     ;
 
-LEXICON ipl
+LEXICON ipl !!≈ * **@CODE@** 
  +Pl:%>i  mutation ;
     :%>ek adjd     ;
 
-LEXICON yspl
+LEXICON yspl !!≈ * **@CODE@** 
  +Pl:%>ys mutation ;
 
 !LEXICON ynpl
@@ -116,41 +118,41 @@ LEXICON yspl
 ! +Pl:%>ens mutation ;
 !    :%>ek  adjd     ;
 
-LEXICON espl
+LEXICON espl !!≈ * **@CODE@** 
  +Pl:%>es mutation ;
     :%>ek adjd     ;
 
-LEXICON edhpl
+LEXICON edhpl !!≈ * **@CODE@** 
  +Pl:%>edh mutation ;
     :%>ek  adjd     ;
 
-LEXICON spl
+LEXICON spl !!≈ * **@CODE@** 
  +Pl:%>s  mutation ;
     :%>ek adjd     ;
 
-LEXICON adjd
+LEXICON adjd !!≈ * **@CODE@** 
  +A: # ;
 
-! Irregular plurals
+!! ### Irregular plurals
 !==================
 
-LEXICON KI
+LEXICON KI !!≈ * **@CODE@** 
  +Sg:ki   # ;
  +Pl:keun # ;
 
-LEXICON DEN
+LEXICON DEN !!≈ * **@CODE@** 
  +Sg:den # ;
  +Pl:tus # ;
 
-LEXICON OJYON
+LEXICON OJYON !!≈ * **@CODE@** 
  +Sg:ojyon # ;
  +Pl:ohen  # ;
 
-LEXICON GARLONT
+LEXICON GARLONT !!≈ * **@CODE@** 
  +N+Sg:           mutation ; ! or #?
  +N+Pl:%>%^STDELs mutation ; ! or #?
 
-! Mutation lexicon
+!! # Mutation lexicon
 ! ================
 
 ! This is the final lexicon. Here, no suffix is added, only some marks.
@@ -160,7 +162,7 @@ LEXICON GARLONT
 ! The mutations are here given tags and multi-char symbols.
 ! The symbols are deleted by DummyDeletion in xfst-kor.txt.
 
-LEXICON mutation
+LEXICON mutation !!≈ * **@CODE@** 
       :%^D # ; ! baseform
  +Smut:%^S # ; ! soft, lenition
  +Mmut:%^M # ; ! mixed

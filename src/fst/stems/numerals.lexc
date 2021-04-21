@@ -1,5 +1,6 @@
+!! # Numeral stems
 
-LEXICON Numeral
+LEXICON Numeral !!≈ * **@CODE@** 
 NUM-PREFIXES  ;
 ARABICS ;
 Cardinals ;
@@ -7,9 +8,9 @@ Ordinals ;
 ISOLATED-NUMEXP ;
 ROMAN ;
 
-LEXICON Cardinals
-onan card-yow "one" ;
-onen card-yow "one" ;
+LEXICON Cardinals !!≈ * **@CODE@** 
+onan card-yow "one" ;  !!≈ * **@CODE@** 
+onen card-yow "one" ;  !!≈ * **@CODE@** 
 diw card-yow "two" ;
 teyr card-yow "three" ;
 trei card-yow "three" ;
@@ -31,9 +32,9 @@ pemdhek card-yow "fifteen" ;
 trei-ugens card-yow "sixty" ;
 
 
-LEXICON Ordinals
-pajwora ord-yow "fourth" ;
-pempes ord-yow "fifth" ;
+LEXICON Ordinals !!≈ * **@CODE@** 
+pajwora ord-yow "fourth" ;  !!≈ * **@CODE@** 
+pempes ord-yow "fifth" ;  !!≈ * **@CODE@** 
 hweghves ord-yow "sixth" ;
 hweffes ord-yow "sixth" ;
 hwetegves ord-yow "sixteenth" ;

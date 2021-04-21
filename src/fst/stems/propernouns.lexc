@@ -1,11 +1,11 @@
 ! ==================== !
-! Cornish proper nouns !
+!! # Cornish proper nouns !
 ! ==================== !
 
-LEXICON Propernoun
-Abram prop ;
-Adam prop ;
-Arthur prop ;
+LEXICON Propernoun  !!≈ * **@CODE@** 
+Abram prop ;  !!≈ * **@CODE@** 
+Adam prop ;  !!≈ * **@CODE@** 
+Arthur prop ; !! ... and some 1000 more.
 Arthor prop ;
 Bedhwer prop ;
 Davydh prop ;
