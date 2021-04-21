@@ -1,26 +1,28 @@
 !! !!!Cornish morph-phon grammar file
 
 
+!! # Cornish morphphonology
+
 !! This is the file for the morphophonological rules.
 
 !! We keep a verbose style, at each point we tell what we will do.
-! That is the echo commands.
+!! That is the echo commands.
 
-!! !!Definitions
+!! ## Definitions
 
 echo << We define our definitions >>
 
-! Here, we have left some documentation for curious readers:
+!! Here, we have left some documentation for curious readers:
 
-!! ^S = 2 = soft mutation						     \\
-!! ^A = 3 = breathed mutation					     \\
-!! ^P = 4 = hard mutation						     \\
-!! ^M = 5 = mixed mutation						     \\
-!! ^V = vowel affection							     \\
-!! ^E = triggers o to e in agent suffix			     \\
-!! ^D = no mutation dummy for immutable words	     \\
-!! ^CD = triggers consonant doubling in subjunctive  \\
-!! ^TRUNC = 									     \\
+!! * ^S = 2 = soft mutation						     \\
+!! * ^A = 3 = breathed mutation					     \\
+!! * ^P = 4 = hard mutation						     \\
+!! * ^M = 5 = mixed mutation						     \\
+!! * ^V = vowel affection							     \\
+!! * ^E = triggers o to e in agent suffix			     \\
+!! * ^D = no mutation dummy for immutable words	     \\
+!! * ^CD = triggers consonant doubling in subjunctive  \\
+!! * ^TRUNC = 									     \\
 
 !! These triggers are given a name, so that we can delete them when
 !! they have done their job.
@@ -60,13 +62,13 @@ define Symbols [ %- ] ;
 !! * Sgm 
 define Sgm   [ Vow | Cns | Yy | Dummy | Symbols | Archi ] ;
 
-!! !!Rules
+!! ## Rules
 
 !! Here the action begins.
 
 echo << We define our rules >>
 
-!! !Mutations
+!! ### Mutations
 echo << ... first the mutations >>
 
 !! !identity
@@ -160,12 +162,12 @@ define LightSuffixEK e3 -> o || _ Cns %> o w ;
 
 !! Umlaut of e3, a4, ... in %^UML contexts
 define Umlaut a4 -> e , o4 -> e || _ Sgm* [ %> y o n | %^UML ] ; 
-! Always Uml if affix. Then Uml if no affix, but when %^UML mark
+!! Always Uml if affix. Then Uml if no affix, but when %^UML mark
 
-! The triggers have done their work
-! The order of rules here is not crucial, crucial is the order below:
-! But it is a good idea to have the same rule here as well.
-! Dummydeletion comes last:
+!! The triggers have done their work
+!! The order of rules here is not crucial, crucial is the order below:
+!! But it is a good idea to have the same rule here as well.
+!! Dummydeletion comes last:
 
 echo << We tidy up our dummys >>
 
@@ -175,35 +177,35 @@ define ArchiPhonemes         e3 -> e , a4 -> a , o4 -> o ;
 define DummyDeletion [ DummySymbols -> 0 ] ;  ! For use for speller generation
 define DummyDeletion [ Dummy -> 0 ] ;         ! For normal use
 
-!! !!Compilation
+!! ## Compilation
 
 !! Then we compile, one rule after another.
 
 echo << We compile it all >>
 
-read regex [ Nonmutation
-.o. identity
-.o. gsoft
-.o. gmixed
-.o. softmut 
-!.o. gwsimplification
-.o. aspmut 
-.o. kaspmut 
-.o. prov
-.o. mixed
-.o. Nonmutation
-.o. ConsonantDoublingI
-.o. ConsonantDoublingII
-.o. ConsonantDoublingIII
-.o. Devoicing
-.o. LightStemVow
-.o. NoFinalH
-.o. STDEL
-.o. VowelAffection
-.o. OtoE
-.o. LightSuffixEK
-!.o. AuslautHerdung
-.o. Umlaut
-.o. ArchiPhonemes
-.o. DummyDeletion 
-] ;
+read regex [ Nonmutation !!≈ * @CODE@
+.o. identity			 !!≈ * @CODE@
+.o. gsoft				 !!≈ * @CODE@
+.o. gmixed				 !!≈ * @CODE@
+.o. softmut 			 !!≈ * @CODE@
+!.o. gwsimplification	 !!≈ * @CODE@
+.o. aspmut 				 !!≈ * @CODE@
+.o. kaspmut 			 !!≈ * @CODE@
+.o. prov				 !!≈ * @CODE@
+.o. mixed				 !!≈ * @CODE@
+.o. Nonmutation			 !!≈ * @CODE@
+.o. ConsonantDoublingI	 !!≈ * @CODE@
+.o. ConsonantDoublingII	 !!≈ * @CODE@
+.o. ConsonantDoublingIII !!≈ * @CODE@
+.o. Devoicing			 !!≈ * @CODE@
+.o. LightStemVow		 !!≈ * @CODE@
+.o. NoFinalH			 !!≈ * @CODE@
+.o. STDEL				 !!≈ * @CODE@
+.o. VowelAffection		 !!≈ * @CODE@
+.o. OtoE				 !!≈ * @CODE@
+.o. LightSuffixEK		 !!≈ * @CODE@
+!.o. AuslautHerdung		 !!≈ * @CODE@
+.o. Umlaut				 !!≈ * @CODE@
+.o. ArchiPhonemes		 !!≈ * @CODE@
+.o. DummyDeletion 		 !!≈ * @CODE@
+] ;						 !!≈ * @CODE@

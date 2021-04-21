@@ -1,2 +1,6 @@
-LEXICON adj
-+Adj: # ;
+!! # Adjectve morphology
+
+!! Only add tag so far.
+
+LEXICON adj  !!≈ * **@CODE@** 
++Adj: # ;  !!≈ * **@CODE@** 
