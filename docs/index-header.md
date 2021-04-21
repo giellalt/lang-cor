@@ -1,7 +1,7 @@
 # Cornish documentation
 
 [![Maturity: Experiment](https://img.shields.io/badge/Maturity-Experiment-black.svg)](https://giellalt.github.io/MaturityClassification.html)
-[![License](https://img.shields.io/github/license/giellalt/template-lang-cor)](https://raw.githubusercontent.com/giellalt/lang-cor/develop/LICENSE)
+[![License](https://img.shields.io/github/license/giellalt/lang-cor)](https://raw.githubusercontent.com/giellalt/lang-cor/develop/LICENSE)
 [![Issues](https://img.shields.io/github/issues/giellalt/lang-cor)](https://github.com/giellalt/lang-cor/issues)
 [![Build status](https://github.com/giellalt/lang-cor/workflows/Speller%20CI+CD/badge.svg)](https://github.com/giellalt/lang-cor/actions)
 
