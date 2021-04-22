@@ -1,0 +1,21 @@
+[What is this?|WhatIsThis.html]
+
+
+
+ 
+ 
+ 
+ 
+* Generation of: [paradigms|http://giellatekno.uit.no/cgi/p-cor.en.html]
+ 
+
+!!! Grammatical issues
+
+* [The tags that are in use|https://gtsvn.uit.no/langtech/trunk/langs/cor/src/fst/root.lexc]   
+* [A list of morphological tags|/lang/common/MorphologicalTags.html]
+
+
+!!!Using the analysers
+
+* In the terminal: analyse words by writing ''ucor'', generate with ''dcor''
+* For more info, see [How to use the morphological parsers|/tools/docu-sme-manual.html]
