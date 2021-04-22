@@ -55,6 +55,9 @@ Multichar_Symbols
 !! We have manually optimised the structure of our lexicon using following
 !! flag diacritics to restrict morhpological combinatorics - only allow compounds
 !! with verbs if the verb is further derived into a noun again:
+
+!! | Flag | Explanation
+!! | --- | --- 
  @P.NeedNoun.ON@    !!≈ |  @CODE@ | (Dis)allow compounds with verbs unless nominalised
  @D.NeedNoun.ON@    !!≈ |  @CODE@ | (Dis)allow compounds with verbs unless nominalised
  @C.NeedNoun@       !!≈ |  @CODE@ | (Dis)allow compounds with verbs unless nominalised
@@ -63,6 +66,9 @@ Multichar_Symbols
 !! to control position-based compounding restrictions for nominals. Their use is
 !! handled automatically if combined with +CmpN/xxx tags. If not used, they will
 !! do no harm.
+
+!! | Flag | Explanation
+!! | --- | --- 
  @P.CmpFrst.FALSE@ !!≈ |  @CODE@ | Require that words tagged as such only appear first
  @D.CmpPref.TRUE@  !!≈ |  @CODE@ | Block such words from entering ENDLEX
  @P.CmpPref.FALSE@ !!≈ |  @CODE@ | Block these words from making further compounds
@@ -76,13 +82,16 @@ Multichar_Symbols
 !! nouns (e.g. Finnish Pariisi -> pariisilainen). See e.g. North Sámi for how to use
 !! these flags. There exists a ready-made regex that will do the actual down-casing
 !! given the proper use of these flags.
- @U.Cap.Obl@        !!≈ |  @CODE@ | Allowing downcasing of derived names: deatnulasj.
- @U.Cap.Opt@        !!≈ |  @CODE@ | Allowing downcasing of derived names: deatnulasj.
-@P.Pmatch.Backtrack@
 
-@R.ErrOrth.ON@
+!! | Flag | Explanation
+!! | --- | --- 
+ @U.Cap.Obl@            !!≈ |  @CODE@ | Allowing downcasing of derived names: deatnulasj.
+ @U.Cap.Opt@            !!≈ |  @CODE@ | Allowing downcasing of derived names: deatnulasj.
+ @P.Pmatch.Backtrack@   !!≈ |  @CODE@ | For preprocessing
+@R.ErrOrth.ON@          !!≈ |  @CODE@ | resetting ErrOrth flag
+@C.ErrOrth@             !!≈ |  @CODE@ | clearing ErrOrth Flag.
+
 +Err/Orth
-@C.ErrOrth@
 +Use/PMatch
 
 
