@@ -1,3 +1,226 @@
+# Cornish noun morphology
+
+## Masculine stem classes
+The nouns get tags (to the left of :, i.e. in the upper representation
+and the suffixes are found to the left of the colon
+
+ * **LEXICON m** 
+
+ * **LEXICON m-yow** 
+
+ * **LEXICON m-ow** 
+
+
+ * **LEXICON m-ys** 
+
+ * **LEXICON m-es** 
+
+ * **LEXICON m-s** 
+
+
+
+ * **LEXICON m-yon** 
+
+
+ * **LEXICON m-aff-i** 
+
+ * **LEXICON m-ag** 
+
+ * **LEXICON m-sgtantum** 
+
+ * **LEXICON m-pltantum** 
+
+## Feminine stem classes
+
+ * **LEXICON f** 
+
+ * **LEXICON f-yow** 
+
+ * **LEXICON f-edh** 
+
+
+
+Nest step:
+
+Here we add suffixes. These may be common to several stem classes
+and are therefore pointed to in a different layer (this one)
+
+
+## Number lexica
+
+ * **LEXICON sg** 
+
+ * **LEXICON yonpl** 
+
+ * **LEXICON owpl** 
+
+ * **LEXICON yowpl** 
+
+ * **LEXICON ipl** 
+
+ * **LEXICON yspl** 
+
+
+
+ * **LEXICON espl** 
+
+ * **LEXICON edhpl** 
+
+ * **LEXICON spl** 
+
+ * **LEXICON adjd** 
+
+### Irregular plurals
+
+ * **LEXICON KI** 
+
+ * **LEXICON DEN** 
+
+ * **LEXICON OJYON** 
+
+ * **LEXICON GARLONT** 
+
+# Mutation lexicon
+
+
+
+ * **LEXICON mutation** 
+
+# Propernoun affix
+
+ * **LEXICON prop** 
+ * **+N+Prop: mutation ;** 
+
+
+
+
+
+# Symbol affixes
+
+
+
+
+
+# Adjectve morphology
+
+Only add tag so far.
+
+ * **LEXICON adj** 
+ * **+Adj: # ;** 
+# Verbal morphology
+
+
+## The declension classes
+
+
+### Auxiliaries
+
+ * bos+V:     COPULA     "to be" ;   
+ * mos+V:     MOS        "go" ;      
+ * dos+V:     DOS        "come" ;    
+ * gul+V:     GUL        "do" ;      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Kven numerals 
+
+# Numeral inflection
+Numeral inflection is like nominal, except that numerals compound in all
+forms which requires great amount of care in the inflection patterns.
+
+
+
+ * **LEXICON ARABICCASES**  adds +Arab
+
+ * **LEXICON ARABICCASE**  adds +Arab
+
+ * **LEXICON ARABICCASE0**  adds +Arab
+
+
+
+
+
+
+
+
+
+
 # Cornish morphology
 
 First, we declare multicharacter symbols
@@ -117,188 +340,6 @@ Adhoc lexica, to be fixed
  * LEXICON RNum       
  * LEXICON ARABICCOMPOUNDS        
 
-!!!Cornish morph-phon grammar file
-
-
-# Cornish morphphonology
-
-This is the file for the morphophonological rules.
-
-We keep a verbose style, at each point we tell what we will do.
-That is the echo commands.
-
-## Definitions
-
-
-Here, we have left some documentation for curious readers:
-
-* ^S = 2 = soft mutation						     \\
-* ^A = 3 = breathed mutation					     \\
-* ^P = 4 = hard mutation						     \\
-* ^M = 5 = mixed mutation						     \\
-* ^V = vowel affection							     \\
-* ^E = triggers o to e in agent suffix			     \\
-* ^D = no mutation dummy for immutable words	     \\
-* ^CD = triggers consonant doubling in subjunctive  \\
-* ^TRUNC = 									     \\
-
-These triggers are given a name, so that we can delete them when
-they have done their job.
-
-* DummySymbols
-
-* Boundary
-
-* Dummy
-
-* Vow 
-* Cns 
-
-* Yy 
-
-
-
-* Symbols 
-
-* Sgm 
-
-## Rules
-
-Here the action begins.
-
-
-### Mutations
-
-!identity
-
-gsoft: 
-If we encounter a final %^S symbol, we delete an initial g
-
-Etc for changing g to h in front of %^M, etc.
-
-Then we generalise:
-softmut p -> b etc. in front of %^S
-
-Change gw to g with gwsimplification
-
-Aspirant mutation p > f etc. in front of %^A
-
-k to h in front of %^A with kaspmut
-
-!The other consonant rules
-
-Devoicing b -> p etc. in front of %^P
-
-Voiced plosive to fric with mixed in front of %^M
-
-
-Nonmutation as identity when we do not have triggers.
-Hmm, why is this needed?
-
-ConsonantDoublingI bdg in front of %^CD
-
-ConsonantDoublingII t in front of %^CD
-
-ConsonantDoublingIII  various cns in front of %^CD
-
-Devoicing b -> p
-
-Deleting light stem vowel with LightStemVow
-
-
-
-
-
-
-
-
-
-AuslautHerdung
-
-Umlaut of e3, a4, ... in %^UML contexts
-Always Uml if affix. Then Uml if no affix, but when %^UML mark
-
-The triggers have done their work
-The order of rules here is not crucial, crucial is the order below:
-But it is a good idea to have the same rule here as well.
-Dummydeletion comes last:
-
-
-ArchiPhonemes should not be on the surface
-
-
-## Compilation
-
-Then we compile, one rule after another.
-
-
- * read regex [ Nonmutation
- * .o. identity			
- * .o. gsoft				
- * .o. gmixed				
- * .o. softmut 			
- * .o. aspmut 				
- * .o. kaspmut 			
- * .o. prov				
- * .o. mixed				
- * .o. Nonmutation			
- * .o. ConsonantDoublingI	
- * .o. ConsonantDoublingII	
- * .o. ConsonantDoublingIII
- * .o. Devoicing			
- * .o. LightStemVow		
- * .o. NoFinalH			
- * .o. STDEL				
- * .o. VowelAffection		
- * .o. OtoE				
- * .o. LightSuffixEK		
- * .o. Umlaut				
- * .o. ArchiPhonemes		
- * .o. DummyDeletion 		
- * ] ;						
-# Adjective root lexicon
-
-Some 1300 adjectives, only one continuation lexicon.
-
-# Cornish prepositions !
-
-
-Four classes:
-* Class 1  
-* Class 2 
-* Class 3 
-* Class 4 
-
-
-
-
-
-
-
-
-
-
-# Adverbs
-
-Adding the tag +Adv
-
-
-The adverbs
-
-
-
-Then comes the list with adverbs from the 2020 dictionary
-
-# Conjunctions
-
-
-
-2020 dictionary CC entries not known to fst
-
-
-
-Words from 2020 dictionary
-
 # Lexicon over Cornish nouns
 
 
@@ -416,18 +457,18 @@ Masculine nouns from 2020 dictionary. TODO: Check for inflection class
 Feminine nouns from 2020 dictionary. TODO: Check for inflection class
 
 
-# Numeral stems
+# Cornish proper nouns !
 
- * **LEXICON Numeral** 
+ * **LEXICON Propernoun** 
+ * **Abram prop ;** 
+ * **Adam prop ;** 
+... and some 1000 more.
 
- * **LEXICON Cardinals** 
- * **onan card-yow "one" ;** 
- * **onen card-yow "one" ;** 
 
 
- * **LEXICON Ordinals** 
- * **pajwora ord-yow "fourth" ;** 
- * **pempes ord-yow "fifth" ;** 
+
+
+
 # Pronoun stems and morphology
 
 
@@ -445,25 +486,43 @@ Feminine nouns from 2020 dictionary. TODO: Check for inflection class
 
 
 
-# Propernoun affix
-
- * **LEXICON prop** 
- * **+N+Prop: mutation ;** 
+# Cornish prepositions !
 
 
-
-
-# Cornish proper nouns !
-
- * **LEXICON Propernoun** 
- * **Abram prop ;** 
- * **Adam prop ;** 
-... and some 1000 more.
+Four classes:
+* Class 1  
+* Class 2 
+* Class 3 
+* Class 4 
 
 
 
 
 
+
+
+
+
+
+
+
+
+Words from 2020 dictionary
+
+# Adverbs
+
+Adding the tag +Adv
+
+
+The adverbs
+
+
+
+Then comes the list with adverbs from the 2020 dictionary
+
+# Adjective root lexicon
+
+Some 1300 adjectives, only one continuation lexicon.
 
 
 # Subjunctions
@@ -542,31 +601,33 @@ It is fortunately easier than that:
 
 Verbs from the 2020 dictionary
 
+# Conjunctions
 
-# Symbol affixes
 
 
+2020 dictionary CC entries not known to fst
+# Numeral stems
 
+ * **LEXICON Numeral** 
 
+ * **LEXICON Cardinals** 
+ * **onan card-yow "one" ;** 
+ * **onen card-yow "one" ;** 
 
 
+ * **LEXICON Ordinals** 
+ * **pajwora ord-yow "fourth" ;** 
+ * **pempes ord-yow "fifth" ;** 
 
 
 
 
-# Kven numerals 
 
-# Numeral inflection
-Numeral inflection is like nominal, except that numerals compound in all
-forms which requires great amount of care in the inflection patterns.
 
 
 
- * **LEXICON ARABICCASES**  adds +Arab
 
- * **LEXICON ARABICCASE**  adds +Arab
 
- * **LEXICON ARABICCASE0**  adds +Arab
 
 
 
@@ -577,183 +638,53 @@ forms which requires great amount of care in the inflection patterns.
 
 
 
-# Adjectve morphology
 
-Only add tag so far.
 
- * **LEXICON adj** 
- * **+Adj: # ;** 
-# Cornish noun morphology
 
-## Masculine stem classes
-The nouns get tags (to the left of :, i.e. in the upper representation
-and the suffixes are found to the left of the colon
 
- * **LEXICON m** 
 
- * **LEXICON m-yow** 
 
- * **LEXICON m-ow** 
 
 
- * **LEXICON m-ys** 
 
- * **LEXICON m-es** 
 
- * **LEXICON m-s** 
 
 
 
- * **LEXICON m-yon** 
 
 
- * **LEXICON m-aff-i** 
 
- * **LEXICON m-ag** 
 
- * **LEXICON m-sgtantum** 
 
- * **LEXICON m-pltantum** 
 
-## Feminine stem classes
 
- * **LEXICON f** 
 
- * **LEXICON f-yow** 
 
- * **LEXICON f-edh** 
 
 
 
-Nest step:
 
-Here we add suffixes. These may be common to several stem classes
-and are therefore pointed to in a different layer (this one)
 
 
-## Number lexica
+% komma% :,      Root ;
+% tjuohkkis% :%. Root ;
+% kolon% :%:     Root ;
+% sárggis% :%-   Root ; 
+% násti% :%*     Root ; 
 
- * **LEXICON sg** 
 
- * **LEXICON yonpl** 
 
- * **LEXICON owpl** 
 
- * **LEXICON yowpl** 
+We describe here how abbreviations are in Cornish are read out, e.g.
+for text-to-speech systems.
 
- * **LEXICON ipl** 
+For example:
 
- * **LEXICON yspl** 
-
-
-
- * **LEXICON espl** 
-
- * **LEXICON edhpl** 
-
- * **LEXICON spl** 
-
- * **LEXICON adjd** 
-
-### Irregular plurals
-
- * **LEXICON KI** 
-
- * **LEXICON DEN** 
-
- * **LEXICON OJYON** 
-
- * **LEXICON GARLONT** 
-
-# Mutation lexicon
-
-
-
- * **LEXICON mutation** 
-
-# Verbal morphology
-
-
-## The declension classes
-
-
-### Auxiliaries
-
- * bos+V:     COPULA     "to be" ;   
- * mos+V:     MOS        "go" ;      
- * dos+V:     DOS        "come" ;    
- * gul+V:     GUL        "do" ;      
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ * s.:syntynyt # ;  
+ * os.:omaa% sukua # ;  
+ * v.:vuosi # ;  
+ * v.:vuonna # ;  
+ * esim.:esimerkki # ; 
+ * esim.:esimerkiksi # ; 
 
 
