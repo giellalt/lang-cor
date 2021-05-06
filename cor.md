@@ -1,3 +1,288 @@
+# Conjunctions
+
+
+
+2020 dictionary CC entries not known to fst
+
+# Subjunctions
+
+Adding tag +CS
+
+
+Some 20 subjunctions here
+
+# Lexicon over Cornish nouns
+
+
+
+
+
+## Exceptions
+
+ki, den, ojyon, ...
+
+
+
+
+## Short overview of the types
+Masculines
+* m = ow plural
+* m-yow = yow plural (all new 2020 masculines assigned here)
+* m-ys = ys plural
+* m-yon = yon plural
+* m-yn = yn plural 	*not implemented yet*
+* m-ag = -(y)er agent nouns
+* m-es = -es plural
+* m-ens	 = -ens plural 	*not implemented yet*
+* m-s = -s plural
+* m- = balek-wörter
+* m-dual = Duals		*not implemented yet*
+* m-aff = Root vowel change
+* m-yon = yon plural
+* m-aff-i = i plural
+* m-sgtantum = Singularia tantum
+* m-pltantum = Pluralia tantum
+
+Feminines
+* f = ow plural
+* f-yow = yow plural
+* f-yon = yon plural
+
+
+## Masculine
+
+### lexc syntax:
+lemmaform:stem continuationlexicon "facultative translation" ;
+without the colon, lemmaform and stem are identical.
+The morphology is then handeled in noun-kor-morph.txt
+
+Here the noun types begin:
+
+### ow plural
+All -(y)ans nouns are here even though the dictionary lists no plurals for them (Brown, p. 30)
+
+yow plural
+
+ys plural
+
+yon plural
+
+-(y)er agent nouns
+
+
+-es plural
+
+
+-s plural
+
+
+
+balek-wörter
+
+
+
+Duals
+
+Root vowel change
+
+yon plural
+
+
+i plural
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Masculine nouns from 2020 dictionary. TODO: Check for inflection class
+
+
+
+Feminine nouns from 2020 dictionary. TODO: Check for inflection class
+
+
+# Cornish prepositions !
+
+
+Four classes:
+* Class 1  
+* Class 2 
+* Class 3 
+* Class 4 
+
+
+
+
+
+
+
+
+
+
+# Numeral stems
+
+ * **LEXICON Numeral** 
+
+ * **LEXICON Cardinals** 
+ * **onan card-yow "one" ;** 
+ * **onen card-yow "one" ;** 
+
+
+ * **LEXICON Ordinals** 
+ * **pajwora ord-yow "fourth" ;** 
+ * **pempes ord-yow "fifth" ;** 
+# Adverbs
+
+Adding the tag +Adv
+
+
+The adverbs
+
+
+
+Then comes the list with adverbs from the 2020 dictionary
+
+# Cornish proper nouns !
+
+ * **LEXICON Propernoun** 
+ * **Abram prop ;** 
+ * **Adam prop ;** 
+... and some 1000 more.
+
+
+
+
+
+
+
+
+
+Words from 2020 dictionary
+
+
+# Verb stems
+
+## Auxiliaries and exceptions
+
+
+## Verbs tems proper
+
+
+The regular verbs -- a discussion:
+
+Overview over types
+This is what  we were aspiring at in 2009:
+
+Here, 1-5 are declension classes.
+* vb1) -a     no i-Umlaut im Paradima
+* vb2) -ya    ya-Verbs
+* vb3) -es/-i i-Umlaut im Paradigma
+* vb4) -he    he-Verbs
+* vb5) -el/-i -C[l|n|m](r)-Verben
+* And finally the irregulars: Suppletion im Paradigma
+
+Continuation lexica:
+This is what we have today:
+* vb1 -a     (= v1 above)
+* vbya -ya   (= v2 above)
+* vbi -i     (= v3 above)
+* vbhe -e    (= v4 above)
+* vb the rest (= ??? above)
+* Irregulars (the final cat above)
+
+2020 verbs were added as follows:
+verbs with -ya, -i, -he infinitive to vbya, vbi, vbye
+verbs in -a other than -ya to vb1
+all other verbs to vb
+TODO: Go through the new verbs (at the end of this file)
+
+## Umlaut class verbs
+
+* u0. Verbs that never have Umlaut?
+* u1. Verbs that only have umlaut before an ending that contains <i>, <y>, <owgh> or imperative <ewgh>.
+* u2. Verbs that have umlaut wherever (1) does, but also have the imperfect tense in <-yn, -ys, -i, -yn>.
+* u3. Verbs that have umlaut wherever (2) does (including the imperfect tense rule), and also have the 3s pret in <-is>.
+* u1 This means VA before suffixes containing <i y owgh> or imperative <ewgh>
+* u2 This means VA before everything in Umlaut = 1, + the following: 3s and 3p present indicative, 3s and 3p imperative
+* u3
+
+
+Todo:
+* for each stem class, split in umlaut type and make sub-contlexes.
+* In theory, this gives us 6x4 = 24 verbal continuation lexica.
+
+It is fortunately easier than that:
+* -el verbs are always type 3: v5-u3
+* some -i verbs are type 3: v3-u3
+* and the rest are type 2: v3-u2
+* he-verbs are all type 2: v4-u2
+
+
+
+
+
+
+## The verbs
+
+
+
+Verbs from the 2020 dictionary
+
+# Adjective root lexicon
+
+Some 1300 adjectives, only one continuation lexicon.
+
+# Pronoun stems and morphology
+
+
+ * Personal ;	     
+ * Demonstrative ;  
+ * Determinative ;  
+ * Possessive ;     
+ * Indefinite ;     
+ * Suffixed ;	     
+
+
+
+
+
+
+
+
+
+# Symbol affixes
+
+
+
+
+
 # Cornish noun morphology
 
 ## Masculine stem classes
@@ -86,6 +371,34 @@ and are therefore pointed to in a different layer (this one)
 
  * **LEXICON mutation** 
 
+
+
+
+
+
+# Kven numerals 
+
+# Numeral inflection
+Numeral inflection is like nominal, except that numerals compound in all
+forms which requires great amount of care in the inflection patterns.
+
+
+
+ * **LEXICON ARABICCASES**  adds +Arab
+
+ * **LEXICON ARABICCASE**  adds +Arab
+
+ * **LEXICON ARABICCASE0**  adds +Arab
+
+
+
+
+
+
+
+
+
+
 # Propernoun affix
 
  * **LEXICON prop** 
@@ -94,19 +407,6 @@ and are therefore pointed to in a different layer (this one)
 
 
 
-
-# Symbol affixes
-
-
-
-
-
-# Adjectve morphology
-
-Only add tag so far.
-
- * **LEXICON adj** 
- * **+Adj: # ;** 
 # Verbal morphology
 
 
@@ -193,34 +493,12 @@ Only add tag so far.
 
 
 
+# Adjectve morphology
 
+Only add tag so far.
 
-
-
-
-# Kven numerals 
-
-# Numeral inflection
-Numeral inflection is like nominal, except that numerals compound in all
-forms which requires great amount of care in the inflection patterns.
-
-
-
- * **LEXICON ARABICCASES**  adds +Arab
-
- * **LEXICON ARABICCASE**  adds +Arab
-
- * **LEXICON ARABICCASE0**  adds +Arab
-
-
-
-
-
-
-
-
-
-
+ * **LEXICON adj** 
+ * **+Adj: # ;** 
 # Cornish morphology
 
 First, we declare multicharacter symbols
@@ -340,284 +618,22 @@ Adhoc lexica, to be fixed
  * LEXICON RNum       
  * LEXICON ARABICCOMPOUNDS        
 
-# Lexicon over Cornish nouns
 
 
 
+We describe here how abbreviations are in Cornish are read out, e.g.
+for text-to-speech systems.
 
+For example:
 
-## Exceptions
+ * s.:syntynyt # ;  
+ * os.:omaa% sukua # ;  
+ * v.:vuosi # ;  
+ * v.:vuonna # ;  
+ * esim.:esimerkki # ; 
+ * esim.:esimerkiksi # ; 
 
-ki, den, ojyon, ...
 
-
-
-
-## Short overview of the types
-Masculines
-* m = ow plural
-* m-yow = yow plural (all new 2020 masculines assigned here)
-* m-ys = ys plural
-* m-yon = yon plural
-* m-yn = yn plural 	*not implemented yet*
-* m-ag = -(y)er agent nouns
-* m-es = -es plural
-* m-ens	 = -ens plural 	*not implemented yet*
-* m-s = -s plural
-* m- = balek-wörter
-* m-dual = Duals		*not implemented yet*
-* m-aff = Root vowel change
-* m-yon = yon plural
-* m-aff-i = i plural
-* m-sgtantum = Singularia tantum
-* m-pltantum = Pluralia tantum
-
-Feminines
-* f = ow plural
-* f-yow = yow plural
-* f-yon = yon plural
-
-
-## Masculine
-
-### lexc syntax:
-lemmaform:stem continuationlexicon "facultative translation" ;
-without the colon, lemmaform and stem are identical.
-The morphology is then handeled in noun-kor-morph.txt
-
-Here the noun types begin:
-
-### ow plural
-All -(y)ans nouns are here even though the dictionary lists no plurals for them (Brown, p. 30)
-
-yow plural
-
-ys plural
-
-yon plural
-
--(y)er agent nouns
-
-
--es plural
-
-
--s plural
-
-
-
-balek-wörter
-
-
-
-Duals
-
-Root vowel change
-
-yon plural
-
-
-i plural
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Masculine nouns from 2020 dictionary. TODO: Check for inflection class
-
-
-
-Feminine nouns from 2020 dictionary. TODO: Check for inflection class
-
-
-# Cornish proper nouns !
-
- * **LEXICON Propernoun** 
- * **Abram prop ;** 
- * **Adam prop ;** 
-... and some 1000 more.
-
-
-
-
-
-
-# Pronoun stems and morphology
-
-
- * Personal ;	     
- * Demonstrative ;  
- * Determinative ;  
- * Possessive ;     
- * Indefinite ;     
- * Suffixed ;	     
-
-
-
-
-
-
-
-
-# Cornish prepositions !
-
-
-Four classes:
-* Class 1  
-* Class 2 
-* Class 3 
-* Class 4 
-
-
-
-
-
-
-
-
-
-
-
-
-
-Words from 2020 dictionary
-
-# Adverbs
-
-Adding the tag +Adv
-
-
-The adverbs
-
-
-
-Then comes the list with adverbs from the 2020 dictionary
-
-# Adjective root lexicon
-
-Some 1300 adjectives, only one continuation lexicon.
-
-
-# Subjunctions
-
-Adding tag +CS
-
-
-Some 20 subjunctions here
-
-
-# Verb stems
-
-## Auxiliaries and exceptions
-
-
-## Verbs tems proper
-
-
-The regular verbs -- a discussion:
-
-Overview over types
-This is what  we were aspiring at in 2009:
-
-Here, 1-5 are declension classes.
-* vb1) -a     no i-Umlaut im Paradima
-* vb2) -ya    ya-Verbs
-* vb3) -es/-i i-Umlaut im Paradigma
-* vb4) -he    he-Verbs
-* vb5) -el/-i -C[l|n|m](r)-Verben
-* And finally the irregulars: Suppletion im Paradigma
-
-Continuation lexica:
-This is what we have today:
-* vb1 -a     (= v1 above)
-* vbya -ya   (= v2 above)
-* vbi -i     (= v3 above)
-* vbhe -e    (= v4 above)
-* vb the rest (= ??? above)
-* Irregulars (the final cat above)
-
-2020 verbs were added as follows:
-verbs with -ya, -i, -he infinitive to vbya, vbi, vbye
-verbs in -a other than -ya to vb1
-all other verbs to vb
-TODO: Go through the new verbs (at the end of this file)
-
-## Umlaut class verbs
-
-* u0. Verbs that never have Umlaut?
-* u1. Verbs that only have umlaut before an ending that contains <i>, <y>, <owgh> or imperative <ewgh>.
-* u2. Verbs that have umlaut wherever (1) does, but also have the imperfect tense in <-yn, -ys, -i, -yn>.
-* u3. Verbs that have umlaut wherever (2) does (including the imperfect tense rule), and also have the 3s pret in <-is>.
-* u1 This means VA before suffixes containing <i y owgh> or imperative <ewgh>
-* u2 This means VA before everything in Umlaut = 1, + the following: 3s and 3p present indicative, 3s and 3p imperative
-* u3
-
-
-Todo:
-* for each stem class, split in umlaut type and make sub-contlexes.
-* In theory, this gives us 6x4 = 24 verbal continuation lexica.
-
-It is fortunately easier than that:
-* -el verbs are always type 3: v5-u3
-* some -i verbs are type 3: v3-u3
-* and the rest are type 2: v3-u2
-* he-verbs are all type 2: v4-u2
-
-
-
-
-
-
-## The verbs
-
-
-
-Verbs from the 2020 dictionary
-
-# Conjunctions
-
-
-
-2020 dictionary CC entries not known to fst
-# Numeral stems
-
- * **LEXICON Numeral** 
-
- * **LEXICON Cardinals** 
- * **onan card-yow "one" ;** 
- * **onen card-yow "one" ;** 
-
-
- * **LEXICON Ordinals** 
- * **pajwora ord-yow "fourth" ;** 
- * **pempes ord-yow "fifth" ;** 
 
 
 
@@ -671,20 +687,4 @@ Verbs from the 2020 dictionary
 % kolon% :%:     Root ;
 % sárggis% :%-   Root ; 
 % násti% :%*     Root ; 
-
-
-
-
-We describe here how abbreviations are in Cornish are read out, e.g.
-for text-to-speech systems.
-
-For example:
-
- * s.:syntynyt # ;  
- * os.:omaa% sukua # ;  
- * v.:vuosi # ;  
- * v.:vuonna # ;  
- * esim.:esimerkki # ; 
- * esim.:esimerkiksi # ; 
-
 
