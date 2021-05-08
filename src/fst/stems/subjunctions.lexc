@@ -1,19 +1,20 @@
 
-!! # Subjunctions
+!! # Cornish Subjunctions
 
-!! Adding tag +CS
+!! This file lists the subjunctions and assign them the **+CS** tag.
 
 LEXICON CS 
+!! **LEXICON @LEXNAME@** Adds tag +CS
 +CS: #;
 
-!! Some 20 subjunctions here
 
 LEXICON Subjunction
-ages   CS "than" ;
-awos  CS "because, though, for the sake of, in spite of" ; 
-drefenn  CS "because, on account of" ;
-erna  CS "till, until" ;
-ernag  CS "till, until" ;
+!! **LEXICON @LEXNAME@** contains the 20 or so subjunctions
+ages   CS "than" ; !!≈ @CODE@
+awos  CS "because, though, for the sake of, in spite of" ;  !!≈ @CODE@
+drefenn  CS "because, on account of" ; !!≈ @CODE@
+erna  CS "till, until" ; !!≈ @CODE@
+ernag  CS "till, until" ; !! ...
 es   CS "than" ;
 ha  CS "and (before consonants), while, then, and so" ;
 hedra  CS "while, as long as" ;

@@ -1,7 +1,8 @@
 ! ==================== !
-!! # Cornish prepositions !
-! ==================== !
+!! # Cornish prepositions 
+! ==================== 
 
+!!Thie file `stems/prepositions.lexc` lists prepositions and add tags.
 
 !! Four classes:
 !! * Class 1  
@@ -10,7 +11,8 @@
 !! * Class 4 
 
 LEXICON pp
-+Pr: # ;
+!! **LEXICON @LEXNAME@**   tag only
++Pr: # ; !!≈ * @CODE@
 
 !LEXICON pp-prona
 !+Pr:          # ; ! bare form
@@ -24,30 +26,33 @@ LEXICON pp
 
 
 LEXICON pp-prono
-+Pr:0          # ; ! bare form
-+Pr+1Sg:ov    # ;
-+Pr+2Sg:os    # ;
-+Pr+Sem/Msc+3Sg:o # ;
+!! **LEXICON @LEXNAME@** tag and person forms, -o-
++Pr:0          # ;  !!≈ * @CODE@ =  bare form
++Pr+1Sg:ov    # ;  !!≈ * @CODE@ 
++Pr+2Sg:os    # ; !!≈ * @CODE@
++Pr+Sem/Msc+3Sg:o # ; !! ...
 +Pr+Sem/Fem+3Sg:i # ;
 +Pr+1Pl:on    # ;
 +Pr+2Pl:owgh  # ;
 +Pr+3Pl:a     # ;
 
 LEXICON pp-proni
-+Pr:          # ; ! bare form
-+Pr+1Sg:iv    # ;
-+Pr+2Sg:is    # ;
-+Pr+Sem/Msc+3Sg:o # ;
+!! **LEXICON @LEXNAME@** tag and person -i-
++Pr:          # ;  !!≈ * @CODE@ bare form
++Pr+1Sg:iv    # ;  !!≈ * @CODE@
++Pr+2Sg:is    # ;  !!≈ * @CODE@
++Pr+Sem/Msc+3Sg:o # ; !! ...
 +Pr+Sem/Fem+3Sg:i # ;
 +Pr+1Pl:yn    # ;
 +Pr+2Pl:owgh  # ;
 +Pr+3Pl:a     # ;
 
 LEXICON pp-a
-+Pr:          # ; ! bare form
-+Pr+1Sg:hanav    # ;
-+Pr+2Sg:hanas   # ;
-+Pr+Sem/Msc+3Sg:nodho # ;
+!! **LEXICON @LEXNAME@** tag and person form -a-
++Pr:          # ;  !!≈ * @CODE@ bare form
++Pr+1Sg:hanav    # ;  !!≈ * @CODE@
++Pr+2Sg:hanas   # ;  !!≈ * @CODE@
++Pr+Sem/Msc+3Sg:nodho # ; !! ---
 +Pr+Sem/Fem+3Sg:nedhi # ;
 +Pr+1Pl:hanan    # ;
 +Pr+2Pl:hanowgh  # ;
@@ -55,11 +60,11 @@ LEXICON pp-a
 
 
 LEXICON Preposition
-
-a          pp-a "of, from" ; 
-avel	   pp-prono "like" ;
-a-barth    pp "for the sake of, beside, in the name of, along with" ;
-a-berth	   pp "within" ;
+!! **LEXICON @LEXNAME@** the list (some 20-30)
+a          pp-a "of, from" ;  !!≈ * @CODE@
+avel	   pp-prono "like" ; !!≈ * @CODE@
+a-barth    pp "for the sake of, beside, in the name of, along with" ; !!≈ * @CODE@
+a-berth	   pp "within" ; !! ...
 a-der	   pp "without" ;
 a-dhann    pp-prono "from under, from beneath" ;
 a-dherag   pp-prono "before" ;

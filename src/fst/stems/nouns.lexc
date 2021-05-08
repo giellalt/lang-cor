@@ -2,8 +2,36 @@
 
 
 
+!! ## Short overview of the types
+
+!! Masculines
+!! * **m** = ow plural
+!! * **m-yow** = yow plural (all new 2020 masculines assigned here)
+!! * **m-ys** = ys plural
+!! * **m-yon** = yon plural
+!! * **m-yn** = yn plural 	*not implemented yet*
+!! * **m-ag** = -(y)er agent nouns
+!! * **m-es** = -es plural
+!! * **m-ens	** = -ens plural 	*not implemented yet*
+!! * **m-s** = -s plural
+!! * **m-** = balek-wörter
+!! * **m-dual** = Duals		*not implemented yet*
+!! * **m-aff** = Root vowel change
+!! * **m-yon** = yon plural
+!! * **m-aff-i** = i plural
+!! * **m-sgtantum** = Singularia tantum
+!! * **m-pltantum** = Pluralia tantum
+
+!! Feminines
+!! * **f** = ow plural
+!! * **f-yow** = yow plural
+!! * **f-yon** = yon plural
+
+
+!! ## The stems
 
 LEXICON Noun
+!! * **LEXICON @LEXNAME@** contains all the nouns 
 
 !! ## Exceptions
 
@@ -20,32 +48,7 @@ LEXICON Noun
  tulyfant GARLONT "tulip" ;
  protestant GARLONT "protestant" ;
 
-
-!! ## Short overview of the types
-!! Masculines
-!! * m = ow plural
-!! * m-yow = yow plural (all new 2020 masculines assigned here)
-!! * m-ys = ys plural
-!! * m-yon = yon plural
-!! * m-yn = yn plural 	*not implemented yet*
-!! * m-ag = -(y)er agent nouns
-!! * m-es = -es plural
-!! * m-ens	 = -ens plural 	*not implemented yet*
-!! * m-s = -s plural
-!! * m- = balek-wörter
-!! * m-dual = Duals		*not implemented yet*
-!! * m-aff = Root vowel change
-!! * m-yon = yon plural
-!! * m-aff-i = i plural
-!! * m-sgtantum = Singularia tantum
-!! * m-pltantum = Pluralia tantum
-
-!! Feminines
-! =========
-!! * f = ow plural
-!! * f-yow = yow plural
-!! * f-yon = yon plural
-
+!! ## Regular nouns
 
 !! ## Masculine
 ! =========
@@ -61,9 +64,9 @@ LEXICON Noun
 !! ### ow plural
 ! --------
 !! All -(y)ans nouns are here even though the dictionary lists no plurals for them (Brown, p. 30)
- abatti m "abbey" ;
- abes m "abbot" ;
- adhyskans m "education" ;
+ abatti m "abbey" ; !!≈ * @CODE@ 
+ abes m "abbot" ; !!≈ * @CODE@ 
+ adhyskans m "education" ; !! ...
  afinans m "decoration" ;
  aghskrif m "pedigree" ;
  ahwer m "sorrow" ; !no plural listed
@@ -83,9 +86,9 @@ LEXICON Noun
 
 !! yow plural
 !----------
- aber m-yow "river mouth" ;
- grogys m-yow "belt" ;
- gwrogys m-yow "belt" ;
+ aber m-yow "river mouth" ; !!≈ * @CODE@ 
+ grogys m-yow "belt" ; !!≈ * @CODE@ 
+ gwrogys m-yow "belt" ; !! ...
  acheson m-yow "reason" ;
  bal m-yow "mine" ;
  balyer m-yow "barrel" ;
@@ -93,30 +96,30 @@ LEXICON Noun
  begh m-yow "load" ;
 
 !! ys plural
- acheson m-ys "reason" ;
- adamant m-ys "diamond" ;
- akont m-ys "account" ;
+ acheson m-ys "reason" ; !!≈ * @CODE@ 
+ adamant m-ys "diamond" ; !!≈ * @CODE@ 
+ akont m-ys "account" ; !! ...
 
 !! yon plural
- akontydh m-yon "accountant" ;
+ akontydh m-yon "accountant" ; !!≈ * @CODE@ 
 
 !! -(y)er agent nouns
- aghskrifer:aghskrifor m-ag "genealogist" ;
- bleujenner:bleujennor m-ag "florist" ;
- begyer+N+Msc:begyor yonpl "beggar" ; !also m-s
+ aghskrifer:aghskrifor m-ag "genealogist" ; !!≈ * @CODE@ 
+ bleujenner:bleujennor m-ag "florist" ; !!≈ * @CODE@ 
+ begyer+N+Msc:begyor yonpl "beggar" ;  !!≈ * @CODE@  also m-s
 
 
 !! -es plural
 ! ---------
 
- baban m-es "baby" ;
- badh m-es "boar" ;
+ baban m-es "baby" ; !!≈ * @CODE@ 
+ badh m-es "boar" ; !!≈ * @CODE@ 
 
 !! -s plural
 
- bacheler m-s "bachelor" ;
- balyer m-s "balyers" ;
- banana m-s "banana" ;
+ bacheler m-s "bachelor" ; !!≈ * @CODE@ 
+ balyer m-s "balyers" ; !!≈ * @CODE@ 
+ banana m-s "banana" ; !! ...
  begyer m-s "beggar" ;
  degre m-s "degree" ;
  gyglet m-s "wanton person" ;
@@ -125,7 +128,7 @@ LEXICON Noun
 
 !! balek-wörter
 
- balek:bale3k m ;
+ balek:bale3k m ; !!≈ * @CODE@ 
 
 
 !! Duals
@@ -136,56 +139,56 @@ LEXICON Noun
 
 !! yon plural
 
- mab:ma4b m-yon "son" ;
+ mab:ma4b m-yon "son" ; !!≈ * @CODE@ 
 
 !! i plural
 
- abostol:abo4sto4l m-aff-i "apostle" ; !not working yet
+ abostol:abo4sto4l m-aff-i "apostle" ;  !!≈ * @CODE@ not working yet
 
 
 
-!Singularia tantum
- adhvetter m-sgtantum "ripeness" ;
- Afrikan m-sgtantum "African" ;
- agha m-sgtantum "dread" ;
+!! Singularia tantum
+ adhvetter m-sgtantum "ripeness" ; !!≈ * @CODE@ 
+ Afrikan m-sgtantum "African" ; !!≈ * @CODE@ 
+ agha m-sgtantum "dread" ; !! ...
  badh m-sgtantum "bath" ;
  backen m-sgtantum "bacon" ;
  blam m-sgtantum "blame" ;
  blas m-sgtantum "taste, smell" ;
 
-!Pluralia tantum
- arghans m-pltantum "money" ; !MF
- mona m-pltantum "money" ; !NW
-! mona is here as illustration, should get a new continuation lex
+!! Pluralia tantum
+ arghans m-pltantum "money" ;  !!≈ * @CODE@ MF
+ mona m-pltantum "money" ;  !!≈ * @CODE@  NW
+!! mona is here as illustration, should get a new continuation lex
 
 
 
 
 ! €€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€
 
-! Longer lists
+!! ## Longer lists
 
 ! €€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€
 
-! Masculines
+!! ### Masculines
 ! ==========
 
 
 ! ----- !
-! m-ow !
+!! m-ow 
 ! ----- !
 
- lavrok:lavrog m-ow ;
- lavrok:lavreg m-ow ; !UC
+ lavrok:lavrog m-ow ;  !!≈ * @CODE@ 
+ lavrok:lavreg m-ow ;  !!≈ * @CODE@ UC
 
 ! ----- !
-! m-yow !
+!! m-yow 
 ! ----- !
 
- aber m-yow "river mouth" ;
- anken m-yow "misery" ;
- ankor m-yow "anchor" ;
- apron m-yow "[a?pr??nj??] (pl.) apron. " ;
+ aber m-yow "river mouth" ; !!≈ * @CODE@ 
+ anken m-yow "misery" ; !!≈ * @CODE@ 
+ ankor m-yow "anchor" ; !!≈ * @CODE@ 
+ apron m-yow "[a?pr??nj??] (pl.) apron. " ; !! ...
  arhadow m-yow "command" ;
  aros m-yow "poop" ;
  askus m-yow "excuse." ;
@@ -434,12 +437,12 @@ LEXICON Noun
 
 
 ! ----- !
-! m-ys !
+!! m-ys 
 ! ----- !
 
- kanel m-ys "tap" ;
- mason m-ys "mason" ;
- desir m-ys "desire" ;
+ kanel m-ys "tap" ; !!≈ * @CODE@ 
+ mason m-ys "mason" ; !!≈ * @CODE@ 
+ desir m-ys "desire" ;!! ...
  enor m-ys "honour" ;
  entent m-ys "purpose" ;
  remetant m-ys "remain" ;
@@ -456,23 +459,23 @@ LEXICON Noun
  trumach m-ys "passage by water" ;
  vertu m-ys "power" ;
 
-! Feminines
+!! ### Feminines
 ! =========
 
 
-! Irregular feminines
+!! #### Irregular feminines
 
- modrep:modreb f-edh ;
+ modrep:modreb f-edh ; !!≈ * @CODE@ 
 
 
 
 ! ================ !
-! f with ow plural !
+!! #### f with ow plural 
 ! ================ !
 
- abases f "abbess" ;
- tagel f "constriction, choker" ;
- taklen f "item" ;
+ abases f "abbess" ; !!≈ * @CODE@ 
+ tagel f "constriction, choker" ; !!≈ * @CODE@ 
+ taklen f "item" ;!! ...
  talgel f "pantry, buttery, store-cellar " ;
  tanbellen f "bomb, shell (explosive)" ;
  tanvaglen f "fire-grate " ;
@@ -663,12 +666,12 @@ LEXICON Noun
 
 
 ! ===== !
-! f-yow !
+!! #### f-yow 
 ! ===== !
 
- aden f-yow "binding board of a book" ;
- als f-yow "cliff" ;
- alter f-yow "altar" ;
+ aden f-yow "binding board of a book" ; !!≈ * @CODE@ 
+ als f-yow "cliff" ; !!≈ * @CODE@ 
+ alter f-yow "altar" ; !! ...
  amser f-yow "tense (of verb)" ;
  anwan f-yow "anvil" ;
  argel f-yow "retreat, sequestered place" ;
@@ -798,12 +801,12 @@ LEXICON Noun
 
 !! Masculine nouns from 2020 dictionary. TODO: Check for inflection class
 
-'Edhow m-yow "Jew" ;
-'eghes m-yow "health" ;
+'Edhow m-yow "Jew" ; !!≈ * @CODE@ 
+'eghes m-yow "health" ; !!≈ * @CODE@ 
 'manyn m-yow "butter" ;
-Albanian m-yow "Albanian" ;
-Albaniek m-yow "Albanian language" ;
-Alman m-yow "German" ;
+Albanian m-yow "Albanian" ; !!≈ * @CODE@ 
+Albaniek m-yow "Albanian language" ; !!≈ * @CODE@ 
+Alman m-yow "German" ; !!≈ * @CODE@ 
 Anglikan m-yow "Anglican" ;
 Ankow m-yow "Death" ;
 Antarktek m-yow "Antarctic" ;
@@ -943,10 +946,10 @@ akusacyon m-yow "accusation" ;
 akwytyans m-yow "receipt" ;
 alamand m-yow "almond" ;
 alargh m-yow "swan" ;
-alarm m-yow "alarm" ;
-albom m-yow "album" ;
-alejyans m-yow "allegation" ;
-alhwedhor m-yow "treasurer" ;
+alarm m-yow "alarm" ; !!≈ * @CODE@ 
+albom m-yow "album" ; !!≈ * @CODE@ 
+alejyans m-yow "allegation" ; !!≈ * @CODE@ 
+alhwedhor m-yow "treasurer" ; !! ...
 alibi m-yow "alibi" ;
 alinyans m-yow "alignment" ;
 aljebra m-yow "algebra" ;
@@ -3904,9 +3907,9 @@ zypp m-yow "zip" ;
 !! Feminine nouns from 2020 dictionary. TODO: Check for inflection class
 
 
-'Edhowes f "Jew" ;
-'eth f "language" ;
-Afrikanes f "African" ;
+'Edhowes f "Jew" ; !!≈ * @CODE@ 
+'eth f "language" ; !!≈ * @CODE@ 
+Afrikanes f "African" ; !!≈ * @CODE@ 
 Albanes f "Scot" ;
 Albani f "Albania" ;
 Albanianes f "Albanian" ;
@@ -4058,10 +4061,10 @@ ayren f "aeroplane" ;
 ayrlinen f "airline" ;
 balegva f "balcony" ;
 ball f "pest" ;
-banadhlek f "broom-brake" ;
-banken f "bank" ;
-banow f "sow" ;
-bardhes f "bard" ;
+banadhlek f "broom-brake" ; !!≈ * @CODE@ 
+banken f "bank" ; !!≈ * @CODE@ 
+banow f "sow" ; !!≈ * @CODE@ 
+bardhes f "bard" ; !! ...
 bardhonieth f "poetry" ;
 barlen f "lap" ;
 barnores f "judge" ;

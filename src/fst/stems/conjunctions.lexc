@@ -1,17 +1,23 @@
-!! # Conjunctions
+!! # Cornish Conjunctions
+
+!! This documents the file `stems/conjunctions.lexc`. Note that based on the English 
+!! translations it seems there are some subjunctions here, and it also seems the Cornish
+!! version of *and* is missing. Have a look at the original file!
 
 LEXICON CC 
+!! **LEXICON @LEXNAME@** adds tag **+CC**
 +CC: #;
 
 LEXICON Conjunction 
-mes   CC "but" ;
-hag  CC "and (before vowels)" ;
-ha   CC "and (before consonants)" ;
+!! **LEXICON @LEXNAME@** lists 30 or so conjunctions
+mes   CC "but" ; !!≈ @CODE@
+hag  CC "and (before vowels)" ; !!≈ @CODE@
+ha   CC "and (before consonants)" ; !!≈ @CODE@
 nag  CC "nor (before cons.)" ;
 na   CC "nor (before vowels)" ;
-po   CC "or" ;
-bo   CC "or" ;
-py   CC "or" ;
+po   CC "or" ; !!≈ @CODE@
+bo   CC "or" ; !!≈ @CODE@
+py   CC "or" ; !!≈ @CODE@
 poken CC "or else" ;
 boken CC "or else" ;
 marnas CC "unless, except" ;
@@ -20,7 +26,7 @@ saw CC "save, unless, only" ;
 keffrys% ha CC "as well as" ;
 kekeffrys% ha CC "as well as" ;
 kehys% ha CC "as long as" ;
-rag CC "for" ;
+rag CC "for" ; !!≈ @CODE@
 ytho CC "then, so" ;
 may CC "so that" ;
 mar CC "if (before cons.)" ;

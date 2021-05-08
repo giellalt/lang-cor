@@ -1,20 +1,14 @@
 
-!! # Verb stems
-
-!! ## Auxiliaries and exceptions
+!! # Cornish Verb stems
 
 
-!! ## Verbs tems proper
+!! ## The regular verb system -- an overview:
 
-LEXICON Verb
-AUX ;
+!! This shows two version of the analysis, one from 2009 (for reference) and
+!! one from 2020 (the current one).
 
-!! The regular verbs -- a discussion:
-
-!! Overview over types
-!! This is what  we were aspiring at in 2009:
-
-!! Here, 1-5 are declension classes.
+!! ### For reference: This was the first version of the model (2009)
+!! vb1-vb5 are declension classes.
 !! * vb1) -a     no i-Umlaut im Paradima
 !! * vb2) -ya    ya-Verbs
 !! * vb3) -es/-i i-Umlaut im Paradigma
@@ -22,8 +16,7 @@ AUX ;
 !! * vb5) -el/-i -C[l|n|m](r)-Verben
 !! * And finally the irregulars: Suppletion im Paradigma
 
-!! Continuation lexica:
-!! This is what we have today:
+!! ### The 2020 version of the model:
 !! * vb1 -a     (= v1 above)
 !! * vbya -ya   (= v2 above)
 !! * vbi -i     (= v3 above)
@@ -62,29 +55,33 @@ AUX ;
 
 
 
-! The lexicon starts here
 
 
-!! ## The verbs
+!! ## The verb lexicon
 !    =========
 
+LEXICON Verb
+!! **LEXICON @LEXNAME@** lists all the verbs
+AUX ; !!≈ * @CODE@ = this one entry points to the AUX lexicon in the affixes catalogue
+
+
 !dri:dr DRI "bring, take with one, persuade" ;
-erhi:arha ERHI "command, order, require, bid" ;
-tava:tav TAVA "touch, stroke " ;
+erhi:arha ERHI "command, order, require, bid" ;  !!≈ * @CODE@ = some example entries
+tava:tav TAVA "touch, stroke " ; !!≈ * @CODE@ = 
 !gul:!gul vb "do, make, perform, accomplish" ;
-anomdhiskwedhes:anomdhiskwedh vb "disappear" ;
-aras:ar vb "plough" ;
-argeles:argel vb "sequester" ;
+anomdhiskwedhes:anomdhiskwedh vb "disappear" ; !!≈ * @CODE@ = 
+aras:ar vb "plough" ; !!≈ * @CODE@ = 
+argeles:argel vb "sequester" ; !!≈ * @CODE@ = 
 argerdhes:argerdh vb "process" ;
-arvedh:arvedh vb "affront, harass, browbeat" ;
+arvedh:arvedh vb "affront, harass, browbeat" ;  !!≈ * @CODE@ = 
 arveth:arveth vb "hire, employ" ;
 arwodhvos:arwodhvos vb "to be aware" ;
 astel:astel vb "discontinue, suspend, cease, break off" ;
 asver:asver vb "restore (fig.)" ;
 aswonn:aswonn vb "know (persons or places), recognize, acknowledge, realize, be familiar with" ;
-batalyas:bataly vb "fight" ;
+batalyas:bataly vb "fight" ; !!≈ * @CODE@ = 
 brewvann:brewvann vb "soreness, inflammation" ;
-bryjon:bryjon vb "boil" ;
+bryjon:bryjon vb "boil" ; !!≈ * @CODE@ = 
 bynner:bynner vb "never" ;
 camomdhun:camomdhun vb "misbehave" ;
 dalleth:dallath vb "begin, originate" ;
@@ -157,7 +154,7 @@ gordhyllo:gordhyllo vb "sack (dismiss), fire, expel, terminate employment of" ;
 goresek:goresek vb "jog" ;
 gorhemmyn:gorhemmyn vb "command, order (command)" ;
 gormel:gormel vb "praise, laud" ;
-gortos:gortos vb "await, wait for, remain, stay" ;
+gortos:gortos vb "await, wait for, remain, stay" ; !!≈ * @CODE@ = 
 gorweles:gorwel vb "oversee" ;
 gorwolyas:gorwoly vb "monitor" ;
 gorwul:gorwul vb "do strictly, overdo" ;
@@ -171,7 +168,7 @@ gweles:gwel vb "see, behold, perceive" ;
 gweres:gwer vb "help, aid, assist" ;
 gweskel:gweskel vb "beat, knock, hit, strike" ;
 gwihal:gwihal vb "squeak" ;
-gwrias:gwri vb "sew, stitch" ;
+gwrias:gwri vb "sew, stitch" ; !!≈ * @CODE@ = 
 gwruthyl:gwruthyl vb "create" ;
 gwynnel:gwynnel vb "wriggle, writhe, squirm, struggle" ;
 hedhes:hedh vb "reach, attain, fetch" ;

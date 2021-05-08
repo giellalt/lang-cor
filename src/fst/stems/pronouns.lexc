@@ -1,18 +1,21 @@
-!! # Pronoun stems and morphology
+!! # Cornish Pronoun stems and morphology
+
+!! This file lists pronouns fullforms.
 
 LEXICON Pronoun 
-
-Personal ;	     !!= * @CODE@
-Demonstrative ;  !!= * @CODE@
-Determinative ;  !!= * @CODE@
-Possessive ;     !!= * @CODE@
-Indefinite ;     !!= * @CODE@
-Suffixed ;	     !!= * @CODE@
+!! **LEXICON @LEXNAME@** 
+Personal ;	     !!≈ * @CODE@
+Demonstrative ;  !!≈ * @CODE@
+Determinative ;  !!≈ * @CODE@
+Possessive ;     !!≈ * @CODE@
+Indefinite ;     !!≈ * @CODE@
+Suffixed ;	     !!≈ * @CODE@
 
 LEXICON Personal
-my+Pron+Pers+Nom+1Sg:my # ;
-my+Pron+Pers+Nom+1Sg:'m # ;
-ty+Pron+Pers+Nom+2Sg:ty # ;
+!! **LEXICON @LEXNAME@** 
+my+Pron+Pers+Nom+1Sg:my # ;   !!≈ * @CODE@
+my+Pron+Pers+Nom+1Sg:'m # ;   !!≈ * @CODE@
+ty+Pron+Pers+Nom+2Sg:ty # ; !! ...
 ty+Pron+Pers+Nom+2Sg:ta # ; ! Reduced form XXX
 ty+Pron+Pers+Acc+2Sg:'th # ;
 ev+Pron+Pers+Sem/Msc+Nom+3Sg:ev # ;
@@ -27,9 +30,10 @@ i+Pron+Pers+Nom+3Pl:i # ;
 i+Pron+Pers+Acc+3Pl:'s # ;
 
 LEXICON Suffixed
-my+Pron+Pers+Suff+1Sg:vy # ;
-my+Pron+Pers+Suff+Emph+1Sg:evy # ;
-ty+Pron+Pers+Suff+2Sg:jy # ;
+!! **LEXICON @LEXNAME@** 
+my+Pron+Pers+Suff+1Sg:vy # ;   !!≈ * @CODE@
+my+Pron+Pers+Suff+Emph+1Sg:evy # ;   !!≈ * @CODE@
+ty+Pron+Pers+Suff+2Sg:jy # ; ! ...
 ty+Pron+Pers+Suff+Emph+2Sg:tejy # ;
 ev+Pron+Pers+Sem/Msc+Suff+3Sg:ev # ;
 ev+Pron+Pers+Sem/Msc+Suff+3Sg:e # ;
@@ -45,10 +49,11 @@ i+Pron+Pers+Suff+Emph+3Pl:ynsi # ;
 
 
 LEXICON Demonstrative
-ma+Dem:ma # "this" ;
-na+Dem:na # "that" ;
-hemm+Dem+Sem/Msc+Sg:hemm # "this one (masc.)" ;
-hemma+Dem+Sem/Msc+Sg:hemma # "this one (masc.)" ;
+!! **LEXICON @LEXNAME@** 
+ma+Dem:ma # "this" ;   !!≈ * @CODE@
+na+Dem:na # "that" ;   !!≈ * @CODE@
+hemm+Dem+Sem/Msc+Sg:hemm # "this one (masc.)" ;   !!≈ * @CODE@
+hemma+Dem+Sem/Msc+Sg:hemma # "this one (masc.)" ; !! ...
 henn+Dem+Sem/Msc+Sg:henn # "that one (masc.)" ;
 henna+Dem+Sem/Msc+Sg:henna # "that one (masc.)" ;
 homm+Dem+Sem/Fem+Sg:homm # "this one (fem.)" ;
@@ -58,16 +63,19 @@ honna+Dem+Sem/Fem+Sg:honna # "that one (fem.)" ;
 
 
 LEXICON Determinative
-an+Det+Def:an # ;
+!! **LEXICON @LEXNAME@** 
+an+Det+Def:an # ;   !!≈ * @CODE@
 
 LEXICON Possessive 
-ow+Pron+Poss+1Sg:ow # ;
-dha+Pron+Poss+2Sg:dha # ;
-y+Pron+Poss+Sem/Msc+3Sg:y # ; 
+!! **LEXICON @LEXNAME@** 
+ow+Pron+Poss+1Sg:ow # ;   !!≈ * @CODE@
+dha+Pron+Poss+2Sg:dha # ;   !!≈ * @CODE@
+y+Pron+Poss+Sem/Msc+3Sg:y # ; !! ...
 hy+Pron+Poss+Sem/Fem+3Sg:hy # ;
 agan+Pron+Poss+1Pl:agan # ;
 agas+Pron+Poss+2Pl:agas # ;
 aga+Pron+Poss+3Pl:aga # ;
 
 LEXICON Indefinite
-huni+Pron+Indef+Sg:huni # ;
+!! **LEXICON @LEXNAME@** 
+huni+Pron+Indef+Sg:huni # ;   !!≈ * @CODE@
