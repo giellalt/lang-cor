@@ -1,4 +1,6 @@
-# Cornish proper nouns !
+# Cornish proper nouns 
+
+This file lists cornish proper nouns. They are directed to the same continuation lexicon.
 
  * **LEXICON Propernoun** 
  * **Abram prop ;** 

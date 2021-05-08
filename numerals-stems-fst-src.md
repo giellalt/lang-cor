@@ -1,4 +1,4 @@
-# Numeral stems
+# Cornish numeral stems
 
  * **LEXICON Numeral** 
 

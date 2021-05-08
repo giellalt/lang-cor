@@ -1,18 +1,14 @@
 
-# Verb stems
-
-## Auxiliaries and exceptions
+# Cornish Verb stems
 
 
-## Verbs tems proper
+## The regular verb system -- an overview:
 
+This shows two version of the analysis, one from 2009 (for reference) and
+one from 2020 (the current one).
 
-The regular verbs -- a discussion:
-
-Overview over types
-This is what  we were aspiring at in 2009:
-
-Here, 1-5 are declension classes.
+### For reference: This was the first version of the model (2009)
+vb1-vb5 are declension classes.
 * vb1) -a     no i-Umlaut im Paradima
 * vb2) -ya    ya-Verbs
 * vb3) -es/-i i-Umlaut im Paradigma
@@ -20,8 +16,7 @@ Here, 1-5 are declension classes.
 * vb5) -el/-i -C[l|n|m](r)-Verben
 * And finally the irregulars: Suppletion im Paradigma
 
-Continuation lexica:
-This is what we have today:
+### The 2020 version of the model:
 * vb1 -a     (= v1 above)
 * vbya -ya   (= v2 above)
 * vbi -i     (= v3 above)
@@ -61,8 +56,22 @@ It is fortunately easier than that:
 
 
 
-## The verbs
+## The verb lexicon
 
+**LEXICON Verb** lists all the verbs
+ * AUX ; = this one entry points to the AUX lexicon in the affixes catalogue
+
+
+ * erhi:arha ERHI "command, order, require, bid" ; = some example entries
+ * tava:tav TAVA "touch, stroke " ; = 
+ * anomdhiskwedhes:anomdhiskwedh vb "disappear" ; = 
+ * aras:ar vb "plough" ; = 
+ * argeles:argel vb "sequester" ; = 
+ * arvedh:arvedh vb "affront, harass, browbeat" ; = 
+ * batalyas:bataly vb "fight" ; = 
+ * bryjon:bryjon vb "boil" ; = 
+ * gortos:gortos vb "await, wait for, remain, stay" ; = 
+ * gwrias:gwri vb "sew, stitch" ; = 
 
 
 Verbs from the 2020 dictionary

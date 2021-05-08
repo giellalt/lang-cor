@@ -1,21 +1,68 @@
-# Conjunctions
+# Cornish Conjunctions
 
+This documents the file `stems/conjunctions.lexc`. Note that based on the English 
+translations it seems there are some subjunctions here, and it also seems the Cornish
+version of *and* is missing. Have a look at the original file!
 
+**LEXICON CC** adds tag **+CC**
+
+**LEXICON Conjunction** lists 30 or so conjunctions
+ mes CC "but" ;
+ hag CC "and (before vowels)" ;
+ ha CC "and (before consonants)" ;
+ po CC "or" ;
+ bo CC "or" ;
+ py CC "or" ;
+ rag CC "for" ;
 
 2020 dictionary CC entries not known to fst
 
-# Subjunctions
+# Cornish Subjunctions
 
-Adding tag +CS
+This file lists the subjunctions and assign them the **+CS** tag.
+
+**LEXICON CS** Adds tag +CS
 
 
-Some 20 subjunctions here
-
+**LEXICON Subjunction** contains the 20 or so subjunctions
+ ages CS "than" ;
+ awos CS "because, though, for the sake of, in spite of" ;
+ drefenn CS "because, on account of" ;
+ erna CS "till, until" ;
+...
 # Lexicon over Cornish nouns
 
 
 
+## Short overview of the types
 
+Masculines
+* **m** = ow plural
+* **m-yow** = yow plural (all new 2020 masculines assigned here)
+* **m-ys** = ys plural
+* **m-yon** = yon plural
+* **m-yn** = yn plural 	*not implemented yet*
+* **m-ag** = -(y)er agent nouns
+* **m-es** = -es plural
+* **m-ens	** = -ens plural 	*not implemented yet*
+* **m-s** = -s plural
+* **m-** = balek-wörter
+* **m-dual** = Duals		*not implemented yet*
+* **m-aff** = Root vowel change
+* **m-yon** = yon plural
+* **m-aff-i** = i plural
+* **m-sgtantum** = Singularia tantum
+* **m-pltantum** = Pluralia tantum
+
+Feminines
+* **f** = ow plural
+* **f-yow** = yow plural
+* **f-yon** = yon plural
+
+
+## The stems
+
+* **LEXICON Noun** contains all the nouns 
 
 ## Exceptions
 
@@ -23,31 +70,7 @@ ki, den, ojyon, ...
 
 
 
-
-## Short overview of the types
-Masculines
-* m = ow plural
-* m-yow = yow plural (all new 2020 masculines assigned here)
-* m-ys = ys plural
-* m-yon = yon plural
-* m-yn = yn plural 	*not implemented yet*
-* m-ag = -(y)er agent nouns
-* m-es = -es plural
-* m-ens	 = -ens plural 	*not implemented yet*
-* m-s = -s plural
-* m- = balek-wörter
-* m-dual = Duals		*not implemented yet*
-* m-aff = Root vowel change
-* m-yon = yon plural
-* m-aff-i = i plural
-* m-sgtantum = Singularia tantum
-* m-pltantum = Pluralia tantum
-
-Feminines
-* f = ow plural
-* f-yow = yow plural
-* f-yon = yon plural
-
+## Regular nouns
 
 ## Masculine
 
@@ -60,25 +83,44 @@ Here the noun types begin:
 
 ### ow plural
 All -(y)ans nouns are here even though the dictionary lists no plurals for them (Brown, p. 30)
+ * abatti m "abbey" ; 
+ * abes m "abbot" ; 
+...
 
 yow plural
+ * aber m-yow "river mouth" ; 
+ * grogys m-yow "belt" ; 
+...
 
 ys plural
+ * acheson m-ys "reason" ; 
+ * adamant m-ys "diamond" ; 
+...
 
 yon plural
+ * akontydh m-yon "accountant" ; 
 
 -(y)er agent nouns
+ * aghskrifer:aghskrifor m-ag "genealogist" ; 
+ * bleujenner:bleujennor m-ag "florist" ; 
+ * begyer+N+Msc:begyor yonpl "beggar" ;  also m-s
 
 
 -es plural
 
+ * baban m-es "baby" ; 
+ * badh m-es "boar" ; 
 
 -s plural
 
+ * bacheler m-s "bachelor" ; 
+ * balyer m-s "balyers" ; 
+...
 
 
 balek-wörter
 
+ * balek:bale3k m ; 
 
 
 Duals
@@ -87,48 +129,99 @@ Root vowel change
 
 yon plural
 
+ * mab:ma4b m-yon "son" ; 
 
 i plural
 
+ * abostol:abo4sto4l m-aff-i "apostle" ; not working yet
+
+
+
+Singularia tantum
+ * adhvetter m-sgtantum "ripeness" ; 
+ * Afrikan m-sgtantum "African" ; 
+...
+
+Pluralia tantum
+ * arghans m-pltantum "money" ; MF
+ * mona m-pltantum "money" ;  NW
+mona is here as illustration, should get a new continuation lex
 
 
 
 
 
+## Longer lists
+
+
+### Masculines
+
+
+m-ow 
+
+ * lavrok:lavrog m-ow ; 
+ * lavrok:lavreg m-ow ; UC
+
+m-yow 
+
+ * aber m-yow "river mouth" ; 
+ * anken m-yow "misery" ; 
+ * ankor m-yow "anchor" ; 
+...
+
+
+m-ys 
+
+ * kanel m-ys "tap" ; 
+ * mason m-ys "mason" ; 
+...
+
+### Feminines
+
+
+#### Irregular feminines
+
+ * modrep:modreb f-edh ; 
 
 
 
+#### f with ow plural 
+
+ * abases f "abbess" ; 
+ * tagel f "constriction, choker" ; 
+...
 
 
+#### f-yow 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ * aden f-yow "binding board of a book" ; 
+ * als f-yow "cliff" ; 
+...
 
 Masculine nouns from 2020 dictionary. TODO: Check for inflection class
 
+ * 'Edhow m-yow "Jew" ; 
+ * 'eghes m-yow "health" ; 
+ * Albanian m-yow "Albanian" ; 
+ * Albaniek m-yow "Albanian language" ; 
+ * Alman m-yow "German" ; 
+ * alarm m-yow "alarm" ; 
+ * albom m-yow "album" ; 
+ * alejyans m-yow "allegation" ; 
+...
 
 
 Feminine nouns from 2020 dictionary. TODO: Check for inflection class
 
 
-# Cornish prepositions !
+ * 'Edhowes f "Jew" ; 
+ * 'eth f "language" ; 
+ * Afrikanes f "African" ; 
+ * banadhlek f "broom-brake" ; 
+ * banken f "bank" ; 
+ * banow f "sow" ; 
+...
+# Cornish prepositions 
 
 
 Four classes:
@@ -137,16 +230,37 @@ Four classes:
 * Class 3 
 * Class 4 
 
+**LEXICON pp**   tag only
+ * +Pr: # ;
 
 
 
+**LEXICON pp-prono** tag and person forms, -o-
+ * +Pr:0 # ; =  bare form
+ * +Pr+1Sg:ov # ; 
+ * +Pr+2Sg:os # ;
+...
+
+**LEXICON pp-proni** tag and person -i-
+ * +Pr: # ; bare form
+ * +Pr+1Sg:iv # ;
+ * +Pr+2Sg:is # ;
+...
+
+**LEXICON pp-a** tag and person form -a-
+ * +Pr: # ; bare form
+ * +Pr+1Sg:hanav # ;
+ * +Pr+2Sg:hanas # ;
+---
 
 
+**LEXICON Preposition** the list (some 20-30)
+ * a pp-a "of, from" ;
+ * avel pp-prono "like" ;
+ * a-barth pp "for the sake of, beside, in the name of, along with" ;
+...
 
-
-
-
-# Numeral stems
+# Cornish numeral stems
 
  * **LEXICON Numeral** 
 
@@ -158,18 +272,32 @@ Four classes:
  * **LEXICON Ordinals** 
  * **pajwora ord-yow "fourth" ;** 
  * **pempes ord-yow "fifth" ;** 
-# Adverbs
+# Cornish Adverbs
+
+Documenting `stems/adverbs.lexc`
 
 Adding the tag +Adv
 
+**LEXICON adv** adds the tag **+Adv**
+ +Adv: # ;
 
 The adverbs
 
-
+**LEXICON Adverb** lists the adverbs
+ a-bell adv "afar. " ;
+ a-bervedh adv "inside, indoors, aboard." ;
+ a-ble adv "whence, from what place. " ;
+ dhi adv "thither, to that place." ;
+ hedhyw adv "today." ;
+ hevlyna adv "this year." ;
+ isos adv "downward, below." ;
+ jammes adv "never." ;
 
 Then comes the list with adverbs from the 2020 dictionary
 
-# Cornish proper nouns !
+# Cornish proper nouns 
+
+This file lists cornish proper nouns. They are directed to the same continuation lexicon.
 
  * **LEXICON Propernoun** 
  * **Abram prop ;** 
@@ -181,26 +309,30 @@ Then comes the list with adverbs from the 2020 dictionary
 
 
 
+# Interjections
 
+**LEXICON aj** adds tag 
+ * +Interj: # ; 
 
+**LEXICON Interjection** lists the interjections
+ * a aj "o" ; 
+ * agh aj "ugh" ; 
+ * aha aj "aha" ; 
+...
 
 Words from 2020 dictionary
 
 
-# Verb stems
-
-## Auxiliaries and exceptions
+# Cornish Verb stems
 
 
-## Verbs tems proper
+## The regular verb system -- an overview:
 
+This shows two version of the analysis, one from 2009 (for reference) and
+one from 2020 (the current one).
 
-The regular verbs -- a discussion:
-
-Overview over types
-This is what  we were aspiring at in 2009:
-
-Here, 1-5 are declension classes.
+### For reference: This was the first version of the model (2009)
+vb1-vb5 are declension classes.
 * vb1) -a     no i-Umlaut im Paradima
 * vb2) -ya    ya-Verbs
 * vb3) -es/-i i-Umlaut im Paradigma
@@ -208,8 +340,7 @@ Here, 1-5 are declension classes.
 * vb5) -el/-i -C[l|n|m](r)-Verben
 * And finally the irregulars: Suppletion im Paradigma
 
-Continuation lexica:
-This is what we have today:
+### The 2020 version of the model:
 * vb1 -a     (= v1 above)
 * vbya -ya   (= v2 above)
 * vbi -i     (= v3 above)
@@ -249,33 +380,78 @@ It is fortunately easier than that:
 
 
 
-## The verbs
+## The verb lexicon
 
+**LEXICON Verb** lists all the verbs
+ * AUX ; = this one entry points to the AUX lexicon in the affixes catalogue
+
+
+ * erhi:arha ERHI "command, order, require, bid" ; = some example entries
+ * tava:tav TAVA "touch, stroke " ; = 
+ * anomdhiskwedhes:anomdhiskwedh vb "disappear" ; = 
+ * aras:ar vb "plough" ; = 
+ * argeles:argel vb "sequester" ; = 
+ * arvedh:arvedh vb "affront, harass, browbeat" ; = 
+ * batalyas:bataly vb "fight" ; = 
+ * bryjon:bryjon vb "boil" ; = 
+ * gortos:gortos vb "await, wait for, remain, stay" ; = 
+ * gwrias:gwri vb "sew, stitch" ; = 
 
 
 Verbs from the 2020 dictionary
 
-# Adjective root lexicon
+# The Cornish Adjective root lexicon
 
-Some 1300 adjectives, only one continuation lexicon.
+Some 1300 adjectives, only one continuation lexicon. (**adj**).
 
-# Pronoun stems and morphology
+**LEXICON Adjective** 
+ Albanek adj "Scottish. Scots" ; 
+ Almaynek adj "German" ; 
+ a-berthek adj "intrinsic" ; 
+ a-dhevis adj "exact" ; 
+ ardhek adj "lofty" ; 
+ arhansek adj "financial" ; 
+ arnowydh adj "modern" ; 
+...
+# Cornish Pronoun stems and morphology
+
+This file lists pronouns fullforms.
+
+**LEXICON Pronoun** 
+ * Personal ;
+ * Demonstrative ;
+ * Determinative ;
+ * Possessive ;
+ * Indefinite ;
+ * Suffixed ;
+
+**LEXICON Personal** 
+ * my+Pron+Pers+Nom+1Sg:my # ;
+ * my+Pron+Pers+Nom+1Sg:'m # ;
+...
+
+**LEXICON Suffixed** 
+ * my+Pron+Pers+Suff+1Sg:vy # ;
+ * my+Pron+Pers+Suff+Emph+1Sg:evy # ;
 
 
- * Personal ;	     
- * Demonstrative ;  
- * Determinative ;  
- * Possessive ;     
- * Indefinite ;     
- * Suffixed ;	     
+**LEXICON Demonstrative** 
+ * ma+Dem:ma # "this" ;
+ * na+Dem:na # "that" ;
+ * hemm+Dem+Sem/Msc+Sg:hemm # "this one (masc.)" ;
+...
 
 
+**LEXICON Determinative** 
+ * an+Det+Def:an # ;
 
+**LEXICON Possessive** 
+ * ow+Pron+Poss+1Sg:ow # ;
+ * dha+Pron+Poss+2Sg:dha # ;
+...
 
-
-
-
-
+**LEXICON Indefinite** 
+ * huni+Pron+Indef+Sg:huni # ;
 
 # Symbol affixes
 
