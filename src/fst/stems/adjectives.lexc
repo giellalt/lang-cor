@@ -1,10 +1,11 @@
-!! # Adjective root lexicon
+!! # The Cornish Adjective root lexicon
 
-!! Some 1300 adjectives, only one continuation lexicon.
+!! Some 1300 adjectives, only one continuation lexicon. (**adj**).
 
 LEXICON Adjective
-Albanek          adj               "Scottish. Scots" ;
-Almaynek          adj               "German" ;
+!! **LEXICON @LEXNAME@** 
+Albanek          adj               "Scottish. Scots" ; !!≈ @CODE@ 
+Almaynek          adj               "German" ; !!≈ @CODE@ 
 Arabek          adj               "Arabic" ;
 Bretonek          adj               "Breton" ;
 Brythonek          adj               "Brittonic, Brittonic Celtic" ;
@@ -32,8 +33,8 @@ Predennek          adj               "British" ;
 Romanek          adj               "Roman" ;
 sowlek          adj               "stubbly" ;
 West        	  adj               "West" ;
-a-berthek          adj               "intrinsic" ;
-a-dhevis          adj               "exact" ;
+a-berthek          adj               "intrinsic" ; !!≈ @CODE@ 
+a-dhevis          adj               "exact" ; !!≈ @CODE@ 
 a-dhewis          adj               "optional" ;
 a-dhiwedhes          adj               "late, recent" ;
 a-gammow          adj               "progressive" ;
@@ -103,10 +104,10 @@ aradow          adj               "arable" ;
 aral	  		 adj              "other, another" ;
 aral+adj+Pl: erel # ;
 arbennek          adj               "special" ;
-ardhek          adj               "lofty" ;
-arhansek          adj               "financial" ;
-arnowydh          adj               "modern" ;
-arvek          adj               "armed" ;
+ardhek          adj               "lofty" ; !!≈ @CODE@ 
+arhansek          adj               "financial" ; !!≈ @CODE@ 
+arnowydh          adj               "modern" ; !!≈ @CODE@ 
+arvek          adj               "armed" ; !! ...
 arvorek          adj               "coastal" ;
 arwodhek          adj               "symbolic, emblematic" ;
 asennek          adj               "ribbed" ;

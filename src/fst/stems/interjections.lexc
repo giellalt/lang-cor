@@ -1,12 +1,15 @@
+!! # Interjections
 
 LEXICON aj
-+Interj: # ;
+!! **LEXICON @LEXNAME@** adds tag 
++Interj: # ;  !!≈ * @CODE@ 
 
 LEXICON Interjection
-a aj "o" ;
-agh aj "ugh" ;
-aha aj "aha" ;
-ass aj "how" ;
+!! **LEXICON @LEXNAME@** lists the interjections
+a aj "o" ; !!≈ * @CODE@ 
+agh aj "ugh" ; !!≈ * @CODE@ 
+aha aj "aha" ; !!≈ * @CODE@ 
+ass aj "how" ; !! ...
 assa aj "how" ;
 avond aj "avaunt, begone" ;
 awotta aj "behold" ;

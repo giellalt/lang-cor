@@ -1,17 +1,20 @@
-!! # Adverbs
+!! # Cornish Adverbs
+
+!! Documenting `stems/adverbs.lexc`
 
 !! Adding the tag +Adv
 
 LEXICON adv
-+Adv:  # ;
+!! **LEXICON @LEXNAME@** adds the tag **+Adv**
++Adv:  # ; !!≈ @CODE@
 
 !! The adverbs
 
 LEXICON Adverb
-
-a-bell        adv      "afar. " ;
-a-bervedh        adv      "inside, indoors, aboard." ;
-a-ble        adv      "whence, from what place. " ;
+!! **LEXICON @LEXNAME@** lists the adverbs
+a-bell        adv      "afar. " ; !!≈ @CODE@
+a-bervedh        adv      "inside, indoors, aboard." ; !!≈ @CODE@
+a-ble        adv      "whence, from what place. " ; !!≈ @CODE@
 a-borpos        adv      "purposely, on purpose. " ;
 a-boynt        adv      "punctual, promptly, with alacrity. " ;
 a-brys        adv      "early, timely, on time, in good time. " ;
@@ -84,7 +87,7 @@ dhe-hys        adv      "at length." ;
 dhe-ves        adv      "away." ;
 dhe-wir        adv      "in truth, really, forsooth, verily, truly." ;
 dhe-woles        adv      "to the bottom, down below." ;
-dhi        adv      "thither, to that place." ;
+dhi        adv      "thither, to that place." ; !!≈ @CODE@
 di        adv      "thither, to that place." ;
 dibarow        adv      "separately." ;
 diblans        adv      "distinctly." ;
@@ -109,16 +112,16 @@ nep-tu        adv      "somewhere, anywhere" ;
 gordhiwedh        adv      "definitely, finally." ;
 gorthuherweyth        adv      "in the evening." ;
 haneth        adv      "tonight, this evening." ;
-hedhyw        adv      "today." ;
+hedhyw        adv      "today." ; !!≈ @CODE@
 hepken        adv      "only." ;
-hevlyna        adv      "this year." ;
+hevlyna        adv      "this year." ; !!≈ @CODE@
 hogen        adv      "still, even, yet, perpetually." ;
 hons        adv      "yonder." ;
 hware        adv      "immediately, forthwith, at once, right away." ;
 hwymm-hwamm        adv      "capriciously, whimsically, slap unsteadily, this way and that." ;
 hys-ha-hys        adv      "end-to-end." ;
-isos        adv      "downward, below." ;
-jammes        adv      "never." ;
+isos        adv      "downward, below." ; !!≈ @CODE@
+jammes        adv      "never." ; !!≈ @CODE@
 kankweyth        adv      "a hundred times. " ;
 kansplek        adv      "hundredfold. " ;
 keffrys        adv      "also, likewise, moreover, too, as well. " ;
