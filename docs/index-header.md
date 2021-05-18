@@ -10,6 +10,7 @@ This page documents the work on the [Cornish language model](https://github.com/
 ## Resources based upon the language model
 
 * [Cornish online speller](https://divvun.org/proofing/online-speller.html) (click the blue ABC symbol and choose Cornish)
+* [Downloadable speller for Cornish](https://divvun.org/proofing/proofing.html) (MS Word, LibreOffice)
 
 ## In-source documentation
 
