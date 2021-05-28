@@ -605,6 +605,424 @@ These were the set types.
 
 
 
+# Verbal morphology
+
+
+## The declension classes
+
+
+### Auxiliaries
+
+ * bos+V:     COPULA     "to be" ;   
+ * mos+V:     MOS        "go" ;      
+ * dos+V:     DOS        "come" ;    
+ * gul+V:     GUL        "do" ;      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Propernoun affix
+
+ * **LEXICON prop** 
+ * **+N+Prop: mutation ;** 
+
+
+
+
+
+
+
+
+
+# Kven numerals 
+
+# Numeral inflection
+Numeral inflection is like nominal, except that numerals compound in all
+forms which requires great amount of care in the inflection patterns.
+
+
+
+ * **LEXICON ARABICCASES**  adds +Arab
+
+ * **LEXICON ARABICCASE**  adds +Arab
+
+ * **LEXICON ARABICCASE0**  adds +Arab
+
+
+
+
+
+
+
+
+
+
+# Adjectve morphology
+
+Only add tag so far.
+
+ * **LEXICON adj** 
+ * **+Adj: # ;** 
+# Cornish noun morphology
+
+## Masculine stem classes
+The nouns get tags (to the left of :, i.e. in the upper representation
+and the suffixes are found to the left of the colon
+
+ * **LEXICON m** 
+
+ * **LEXICON m-yow** 
+
+ * **LEXICON m-ow** 
+
+
+ * **LEXICON m-ys** 
+
+ * **LEXICON m-es** 
+
+ * **LEXICON m-s** 
+
+
+
+ * **LEXICON m-yon** 
+
+
+ * **LEXICON m-aff-i** 
+
+ * **LEXICON m-ag** 
+
+ * **LEXICON m-sgtantum** 
+
+ * **LEXICON m-pltantum** 
+
+## Feminine stem classes
+
+ * **LEXICON f** 
+
+ * **LEXICON f-yow** 
+
+ * **LEXICON f-edh** 
+
+
+
+Nest step:
+
+Here we add suffixes. These may be common to several stem classes
+and are therefore pointed to in a different layer (this one)
+
+
+## Number lexica
+
+ * **LEXICON sg** 
+
+ * **LEXICON yonpl** 
+
+ * **LEXICON owpl** 
+
+ * **LEXICON yowpl** 
+
+ * **LEXICON ipl** 
+
+ * **LEXICON yspl** 
+
+
+
+ * **LEXICON espl** 
+
+ * **LEXICON edhpl** 
+
+ * **LEXICON spl** 
+
+ * **LEXICON adjd** 
+
+### Irregular plurals
+
+ * **LEXICON KI** 
+
+ * **LEXICON DEN** 
+
+ * **LEXICON OJYON** 
+
+ * **LEXICON GARLONT** 
+
+# Mutation lexicon
+
+
+
+ * **LEXICON mutation** 
+
+
+# Symbol affixes
+
+
+
+
+
+
+# Cornish Verb stems
+
+
+## The regular verb system -- an overview:
+
+This shows two version of the analysis, one from 2009 (for reference) and
+one from 2020 (the current one).
+
+### For reference: This was the first version of the model (2009)
+vb1-vb5 are declension classes.
+* vb1) -a     no i-Umlaut im Paradima
+* vb2) -ya    ya-Verbs
+* vb3) -es/-i i-Umlaut im Paradigma
+* vb4) -he    he-Verbs
+* vb5) -el/-i -C[l|n|m](r)-Verben
+* And finally the irregulars: Suppletion im Paradigma
+
+### The 2020 version of the model:
+* vb1 -a     (= v1 above)
+* vbya -ya   (= v2 above)
+* vbi -i     (= v3 above)
+* vbhe -e    (= v4 above)
+* vb the rest (= ??? above)
+* Irregulars (the final cat above)
+
+2020 verbs were added as follows:
+verbs with -ya, -i, -he infinitive to vbya, vbi, vbye
+verbs in -a other than -ya to vb1
+all other verbs to vb
+TODO: Go through the new verbs (at the end of this file)
+
+## Umlaut class verbs
+
+* u0. Verbs that never have Umlaut?
+* u1. Verbs that only have umlaut before an ending that contains <i>, <y>, <owgh> or imperative <ewgh>.
+* u2. Verbs that have umlaut wherever (1) does, but also have the imperfect tense in <-yn, -ys, -i, -yn>.
+* u3. Verbs that have umlaut wherever (2) does (including the imperfect tense rule), and also have the 3s pret in <-is>.
+* u1 This means VA before suffixes containing <i y owgh> or imperative <ewgh>
+* u2 This means VA before everything in Umlaut = 1, + the following: 3s and 3p present indicative, 3s and 3p imperative
+* u3
+
+
+Todo:
+* for each stem class, split in umlaut type and make sub-contlexes.
+* In theory, this gives us 6x4 = 24 verbal continuation lexica.
+
+It is fortunately easier than that:
+* -el verbs are always type 3: v5-u3
+* some -i verbs are type 3: v3-u3
+* and the rest are type 2: v3-u2
+* he-verbs are all type 2: v4-u2
+
+
+
+
+
+
+## The verb lexicon
+
+**LEXICON Verb** lists all the verbs
+ * AUX ; = this one entry points to the AUX lexicon in the affixes catalogue
+
+
+ * erhi:arha ERHI "command, order, require, bid" ; = some example entries
+ * tava:tav TAVA "touch, stroke " ; = 
+ * anomdhiskwedhes:anomdhiskwedh vb "disappear" ; = 
+ * aras:ar vb "plough" ; = 
+ * argeles:argel vb "sequester" ; = 
+ * arvedh:arvedh vb "affront, harass, browbeat" ; = 
+ * batalyas:bataly vb "fight" ; = 
+ * bryjon:bryjon vb "boil" ; = 
+ * gortos:gortos vb "await, wait for, remain, stay" ; = 
+ * gwrias:gwri vb "sew, stitch" ; = 
+
+
+Verbs from the 2020 dictionary
+
+# Cornish proper nouns 
+
+This file lists cornish proper nouns. They are directed to the same continuation lexicon.
+
+ * **LEXICON Propernoun** 
+ * **Abram prop ;** 
+ * **Adam prop ;** 
+... and some 1000 more.
+
+
+
+
+
+
+# Cornish prepositions 
+
+
+Four classes:
+* Class 1  
+* Class 2 
+* Class 3 
+* Class 4 
+
+**LEXICON pp**   tag only
+ * +Pr: # ;
+
+
+
+**LEXICON pp-prono** tag and person forms, -o-
+ * +Pr:0 # ; =  bare form
+ * +Pr+1Sg:ov # ; 
+ * +Pr+2Sg:os # ;
+...
+
+**LEXICON pp-proni** tag and person -i-
+ * +Pr: # ; bare form
+ * +Pr+1Sg:iv # ;
+ * +Pr+2Sg:is # ;
+...
+
+**LEXICON pp-a** tag and person form -a-
+ * +Pr: # ; bare form
+ * +Pr+1Sg:hanav # ;
+ * +Pr+2Sg:hanas # ;
+---
+
+
+**LEXICON Preposition** the list (some 20-30)
+ * a pp-a "of, from" ;
+ * avel pp-prono "like" ;
+ * a-barth pp "for the sake of, beside, in the name of, along with" ;
+...
+
+# Cornish Pronoun stems and morphology
+
+This file lists pronouns fullforms.
+
+**LEXICON Pronoun** 
+ * Personal ;
+ * Demonstrative ;
+ * Determinative ;
+ * Possessive ;
+ * Indefinite ;
+ * Suffixed ;
+
+**LEXICON Personal** 
+ * my+Pron+Pers+Nom+1Sg:my # ;
+ * my+Pron+Pers+Nom+1Sg:'m # ;
+...
+
+**LEXICON Suffixed** 
+ * my+Pron+Pers+Suff+1Sg:vy # ;
+ * my+Pron+Pers+Suff+Emph+1Sg:evy # ;
+
+
+**LEXICON Demonstrative** 
+ * ma+Dem:ma # "this" ;
+ * na+Dem:na # "that" ;
+ * hemm+Dem+Sem/Msc+Sg:hemm # "this one (masc.)" ;
+...
+
+
+**LEXICON Determinative** 
+ * an+Det+Def:an # ;
+
+**LEXICON Possessive** 
+ * ow+Pron+Poss+1Sg:ow # ;
+ * dha+Pron+Poss+2Sg:dha # ;
+...
+
+**LEXICON Indefinite** 
+ * huni+Pron+Indef+Sg:huni # ;
+# Interjections
+
+**LEXICON aj** adds tag 
+ * +Interj: # ; 
+
+**LEXICON Interjection** lists the interjections
+ * a aj "o" ; 
+ * agh aj "ugh" ; 
+ * aha aj "aha" ; 
+...
+
+Words from 2020 dictionary
+
+# Cornish numeral stems
+
+ * **LEXICON Numeral** 
+
+ * **LEXICON Cardinals** 
+ * **onan card-yow "one" ;** 
+ * **onen card-yow "one" ;** 
+
+
+ * **LEXICON Ordinals** 
+ * **pajwora ord-yow "fourth" ;** 
+ * **pempes ord-yow "fifth" ;** 
 # Cornish Conjunctions
 
 This documents the file `stems/conjunctions.lexc`. Note that based on the English 
@@ -623,20 +1041,42 @@ version of *and* is missing. Have a look at the original file!
  rag CC "for" ;
 
 2020 dictionary CC entries not known to fst
+# The Cornish Adjective root lexicon
 
-# Cornish Subjunctions
+Some 1300 adjectives, only one continuation lexicon. (**adj**).
 
-This file lists the subjunctions and assign them the **+CS** tag.
-
-**LEXICON CS** Adds tag +CS
-
-
-**LEXICON Subjunction** contains the 20 or so subjunctions
- ages CS "than" ;
- awos CS "because, though, for the sake of, in spite of" ;
- drefenn CS "because, on account of" ;
- erna CS "till, until" ;
+**LEXICON Adjective** 
+ Albanek adj "Scottish. Scots" ; 
+ Almaynek adj "German" ; 
+ a-berthek adj "intrinsic" ; 
+ a-dhevis adj "exact" ; 
+ ardhek adj "lofty" ; 
+ arhansek adj "financial" ; 
+ arnowydh adj "modern" ; 
 ...
+# Cornish Adverbs
+
+Documenting `stems/adverbs.lexc`
+
+Adding the tag +Adv
+
+**LEXICON adv** adds the tag **+Adv**
+ +Adv: # ;
+
+The adverbs
+
+**LEXICON Adverb** lists the adverbs
+ a-bell adv "afar. " ;
+ a-bervedh adv "inside, indoors, aboard." ;
+ a-ble adv "whence, from what place. " ;
+ dhi adv "thither, to that place." ;
+ hedhyw adv "today." ;
+ hevlyna adv "this year." ;
+ isos adv "downward, below." ;
+ jammes adv "never." ;
+
+Then comes the list with adverbs from the 2020 dictionary
+
 # Lexicon over Cornish nouns
 
 
@@ -828,460 +1268,20 @@ Feminine nouns from 2020 dictionary. TODO: Check for inflection class
  * banken f "bank" ; 
  * banow f "sow" ; 
 ...
-# Cornish prepositions 
+
+# Cornish Subjunctions
+
+This file lists the subjunctions and assign them the **+CS** tag.
+
+**LEXICON CS** Adds tag +CS
 
 
-Four classes:
-* Class 1  
-* Class 2 
-* Class 3 
-* Class 4 
-
-**LEXICON pp**   tag only
- * +Pr: # ;
-
-
-
-**LEXICON pp-prono** tag and person forms, -o-
- * +Pr:0 # ; =  bare form
- * +Pr+1Sg:ov # ; 
- * +Pr+2Sg:os # ;
+**LEXICON Subjunction** contains the 20 or so subjunctions
+ ages CS "than" ;
+ awos CS "because, though, for the sake of, in spite of" ;
+ drefenn CS "because, on account of" ;
+ erna CS "till, until" ;
 ...
-
-**LEXICON pp-proni** tag and person -i-
- * +Pr: # ; bare form
- * +Pr+1Sg:iv # ;
- * +Pr+2Sg:is # ;
-...
-
-**LEXICON pp-a** tag and person form -a-
- * +Pr: # ; bare form
- * +Pr+1Sg:hanav # ;
- * +Pr+2Sg:hanas # ;
----
-
-
-**LEXICON Preposition** the list (some 20-30)
- * a pp-a "of, from" ;
- * avel pp-prono "like" ;
- * a-barth pp "for the sake of, beside, in the name of, along with" ;
-...
-
-# Cornish numeral stems
-
- * **LEXICON Numeral** 
-
- * **LEXICON Cardinals** 
- * **onan card-yow "one" ;** 
- * **onen card-yow "one" ;** 
-
-
- * **LEXICON Ordinals** 
- * **pajwora ord-yow "fourth" ;** 
- * **pempes ord-yow "fifth" ;** 
-# Cornish Adverbs
-
-Documenting `stems/adverbs.lexc`
-
-Adding the tag +Adv
-
-**LEXICON adv** adds the tag **+Adv**
- +Adv: # ;
-
-The adverbs
-
-**LEXICON Adverb** lists the adverbs
- a-bell adv "afar. " ;
- a-bervedh adv "inside, indoors, aboard." ;
- a-ble adv "whence, from what place. " ;
- dhi adv "thither, to that place." ;
- hedhyw adv "today." ;
- hevlyna adv "this year." ;
- isos adv "downward, below." ;
- jammes adv "never." ;
-
-Then comes the list with adverbs from the 2020 dictionary
-
-# Cornish proper nouns 
-
-This file lists cornish proper nouns. They are directed to the same continuation lexicon.
-
- * **LEXICON Propernoun** 
- * **Abram prop ;** 
- * **Adam prop ;** 
-... and some 1000 more.
-
-
-
-
-
-
-# Interjections
-
-**LEXICON aj** adds tag 
- * +Interj: # ; 
-
-**LEXICON Interjection** lists the interjections
- * a aj "o" ; 
- * agh aj "ugh" ; 
- * aha aj "aha" ; 
-...
-
-Words from 2020 dictionary
-
-
-# Cornish Verb stems
-
-
-## The regular verb system -- an overview:
-
-This shows two version of the analysis, one from 2009 (for reference) and
-one from 2020 (the current one).
-
-### For reference: This was the first version of the model (2009)
-vb1-vb5 are declension classes.
-* vb1) -a     no i-Umlaut im Paradima
-* vb2) -ya    ya-Verbs
-* vb3) -es/-i i-Umlaut im Paradigma
-* vb4) -he    he-Verbs
-* vb5) -el/-i -C[l|n|m](r)-Verben
-* And finally the irregulars: Suppletion im Paradigma
-
-### The 2020 version of the model:
-* vb1 -a     (= v1 above)
-* vbya -ya   (= v2 above)
-* vbi -i     (= v3 above)
-* vbhe -e    (= v4 above)
-* vb the rest (= ??? above)
-* Irregulars (the final cat above)
-
-2020 verbs were added as follows:
-verbs with -ya, -i, -he infinitive to vbya, vbi, vbye
-verbs in -a other than -ya to vb1
-all other verbs to vb
-TODO: Go through the new verbs (at the end of this file)
-
-## Umlaut class verbs
-
-* u0. Verbs that never have Umlaut?
-* u1. Verbs that only have umlaut before an ending that contains <i>, <y>, <owgh> or imperative <ewgh>.
-* u2. Verbs that have umlaut wherever (1) does, but also have the imperfect tense in <-yn, -ys, -i, -yn>.
-* u3. Verbs that have umlaut wherever (2) does (including the imperfect tense rule), and also have the 3s pret in <-is>.
-* u1 This means VA before suffixes containing <i y owgh> or imperative <ewgh>
-* u2 This means VA before everything in Umlaut = 1, + the following: 3s and 3p present indicative, 3s and 3p imperative
-* u3
-
-
-Todo:
-* for each stem class, split in umlaut type and make sub-contlexes.
-* In theory, this gives us 6x4 = 24 verbal continuation lexica.
-
-It is fortunately easier than that:
-* -el verbs are always type 3: v5-u3
-* some -i verbs are type 3: v3-u3
-* and the rest are type 2: v3-u2
-* he-verbs are all type 2: v4-u2
-
-
-
-
-
-
-## The verb lexicon
-
-**LEXICON Verb** lists all the verbs
- * AUX ; = this one entry points to the AUX lexicon in the affixes catalogue
-
-
- * erhi:arha ERHI "command, order, require, bid" ; = some example entries
- * tava:tav TAVA "touch, stroke " ; = 
- * anomdhiskwedhes:anomdhiskwedh vb "disappear" ; = 
- * aras:ar vb "plough" ; = 
- * argeles:argel vb "sequester" ; = 
- * arvedh:arvedh vb "affront, harass, browbeat" ; = 
- * batalyas:bataly vb "fight" ; = 
- * bryjon:bryjon vb "boil" ; = 
- * gortos:gortos vb "await, wait for, remain, stay" ; = 
- * gwrias:gwri vb "sew, stitch" ; = 
-
-
-Verbs from the 2020 dictionary
-
-# The Cornish Adjective root lexicon
-
-Some 1300 adjectives, only one continuation lexicon. (**adj**).
-
-**LEXICON Adjective** 
- Albanek adj "Scottish. Scots" ; 
- Almaynek adj "German" ; 
- a-berthek adj "intrinsic" ; 
- a-dhevis adj "exact" ; 
- ardhek adj "lofty" ; 
- arhansek adj "financial" ; 
- arnowydh adj "modern" ; 
-...
-# Cornish Pronoun stems and morphology
-
-This file lists pronouns fullforms.
-
-**LEXICON Pronoun** 
- * Personal ;
- * Demonstrative ;
- * Determinative ;
- * Possessive ;
- * Indefinite ;
- * Suffixed ;
-
-**LEXICON Personal** 
- * my+Pron+Pers+Nom+1Sg:my # ;
- * my+Pron+Pers+Nom+1Sg:'m # ;
-...
-
-**LEXICON Suffixed** 
- * my+Pron+Pers+Suff+1Sg:vy # ;
- * my+Pron+Pers+Suff+Emph+1Sg:evy # ;
-
-
-**LEXICON Demonstrative** 
- * ma+Dem:ma # "this" ;
- * na+Dem:na # "that" ;
- * hemm+Dem+Sem/Msc+Sg:hemm # "this one (masc.)" ;
-...
-
-
-**LEXICON Determinative** 
- * an+Det+Def:an # ;
-
-**LEXICON Possessive** 
- * ow+Pron+Poss+1Sg:ow # ;
- * dha+Pron+Poss+2Sg:dha # ;
-...
-
-**LEXICON Indefinite** 
- * huni+Pron+Indef+Sg:huni # ;
-
-# Symbol affixes
-
-
-
-
-
-# Cornish noun morphology
-
-## Masculine stem classes
-The nouns get tags (to the left of :, i.e. in the upper representation
-and the suffixes are found to the left of the colon
-
- * **LEXICON m** 
-
- * **LEXICON m-yow** 
-
- * **LEXICON m-ow** 
-
-
- * **LEXICON m-ys** 
-
- * **LEXICON m-es** 
-
- * **LEXICON m-s** 
-
-
-
- * **LEXICON m-yon** 
-
-
- * **LEXICON m-aff-i** 
-
- * **LEXICON m-ag** 
-
- * **LEXICON m-sgtantum** 
-
- * **LEXICON m-pltantum** 
-
-## Feminine stem classes
-
- * **LEXICON f** 
-
- * **LEXICON f-yow** 
-
- * **LEXICON f-edh** 
-
-
-
-Nest step:
-
-Here we add suffixes. These may be common to several stem classes
-and are therefore pointed to in a different layer (this one)
-
-
-## Number lexica
-
- * **LEXICON sg** 
-
- * **LEXICON yonpl** 
-
- * **LEXICON owpl** 
-
- * **LEXICON yowpl** 
-
- * **LEXICON ipl** 
-
- * **LEXICON yspl** 
-
-
-
- * **LEXICON espl** 
-
- * **LEXICON edhpl** 
-
- * **LEXICON spl** 
-
- * **LEXICON adjd** 
-
-### Irregular plurals
-
- * **LEXICON KI** 
-
- * **LEXICON DEN** 
-
- * **LEXICON OJYON** 
-
- * **LEXICON GARLONT** 
-
-# Mutation lexicon
-
-
-
- * **LEXICON mutation** 
-
-
-
-
-
-
-# Kven numerals 
-
-# Numeral inflection
-Numeral inflection is like nominal, except that numerals compound in all
-forms which requires great amount of care in the inflection patterns.
-
-
-
- * **LEXICON ARABICCASES**  adds +Arab
-
- * **LEXICON ARABICCASE**  adds +Arab
-
- * **LEXICON ARABICCASE0**  adds +Arab
-
-
-
-
-
-
-
-
-
-
-# Propernoun affix
-
- * **LEXICON prop** 
- * **+N+Prop: mutation ;** 
-
-
-
-
-# Verbal morphology
-
-
-## The declension classes
-
-
-### Auxiliaries
-
- * bos+V:     COPULA     "to be" ;   
- * mos+V:     MOS        "go" ;      
- * dos+V:     DOS        "come" ;    
- * gul+V:     GUL        "do" ;      
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# Adjectve morphology
-
-Only add tag so far.
-
- * **LEXICON adj** 
- * **+Adj: # ;** 
 # Cornish morphology
 
 First, we declare multicharacter symbols
@@ -1404,22 +1404,6 @@ Adhoc lexica, to be fixed
 
 
 
-We describe here how abbreviations are in Cornish are read out, e.g.
-for text-to-speech systems.
-
-For example:
-
- * s.:syntynyt # ;  
- * os.:omaa% sukua # ;  
- * v.:vuosi # ;  
- * v.:vuonna # ;  
- * esim.:esimerkki # ; 
- * esim.:esimerkiksi # ; 
-
-
-
-
-
 
 
 
@@ -1470,6 +1454,22 @@ For example:
 % kolon% :%:     Root ;
 % sárggis% :%-   Root ; 
 % násti% :%*     Root ; 
+
+
+
+
+We describe here how abbreviations are in Cornish are read out, e.g.
+for text-to-speech systems.
+
+For example:
+
+ * s.:syntynyt # ;  
+ * os.:omaa% sukua # ;  
+ * v.:vuosi # ;  
+ * v.:vuonna # ;  
+ * esim.:esimerkki # ; 
+ * esim.:esimerkiksi # ; 
+
 
 
       [ L A N G U A G E ]  G R A M M A R   C H E C K E R
