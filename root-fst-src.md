@@ -117,3 +117,5 @@ Adhoc lexica, to be fixed
  * LEXICON RNum       
  * LEXICON ARABICCOMPOUNDS        
 
+* * *
+<small>This (part of) documentation was generated from [../src/fst/root.lexc](http://github.com/giellalt/lang-cor/blob/main/../src/fst/root.lexc)</small>

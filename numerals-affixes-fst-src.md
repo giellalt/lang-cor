@@ -26,3 +26,5 @@ forms which requires great amount of care in the inflection patterns.
 
 
 
+* * *
+<small>This (part of) documentation was generated from [../src/fst/affixes/numerals.lexc](http://github.com/giellalt/lang-cor/blob/main/../src/fst/affixes/numerals.lexc)</small>

@@ -86,3 +86,5 @@ and are therefore pointed to in a different layer (this one)
 
  * **LEXICON mutation** 
 
+* * *
+<small>This (part of) documentation was generated from [../src/fst/affixes/nouns.lexc](http://github.com/giellalt/lang-cor/blob/main/../src/fst/affixes/nouns.lexc)</small>

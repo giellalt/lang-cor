@@ -12,3 +12,5 @@ This file lists the subjunctions and assign them the **+CS** tag.
  drefenn CS "because, on account of" ;
  erna CS "till, until" ;
 ...
+* * *
+<small>This (part of) documentation was generated from [../src/fst/stems/subjunctions.lexc](http://github.com/giellalt/lang-cor/blob/main/../src/fst/stems/subjunctions.lexc)</small>

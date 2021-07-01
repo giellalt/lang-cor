@@ -16,3 +16,5 @@ version of *and* is missing. Have a look at the original file!
  rag CC "for" ;
 
 2020 dictionary CC entries not known to fst
+* * *
+<small>This (part of) documentation was generated from [../src/fst/stems/conjunctions.lexc](http://github.com/giellalt/lang-cor/blob/main/../src/fst/stems/conjunctions.lexc)</small>

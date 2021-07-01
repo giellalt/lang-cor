@@ -37,3 +37,5 @@ This file lists pronouns fullforms.
 
 **LEXICON Indefinite** 
  * huni+Pron+Indef+Sg:huni # ;
+* * *
+<small>This (part of) documentation was generated from [../src/fst/stems/pronouns.lexc](http://github.com/giellalt/lang-cor/blob/main/../src/fst/stems/pronouns.lexc)</small>

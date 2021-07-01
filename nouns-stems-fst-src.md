@@ -189,3 +189,5 @@ Feminine nouns from 2020 dictionary. TODO: Check for inflection class
  * banken f "bank" ; 
  * banow f "sow" ; 
 ...
+* * *
+<small>This (part of) documentation was generated from [../src/fst/stems/nouns.lexc](http://github.com/giellalt/lang-cor/blob/main/../src/fst/stems/nouns.lexc)</small>
