@@ -606,380 +606,7 @@ These were the set types.
 
 
 * * *
-<small>This (part of) documentation was generated from [../src/cg3/functions.cg3](http://github.com/giellalt/lang-cor/blob/main/../src/cg3/functions.cg3)</small># Cornish noun morphology
-
-## Masculine stem classes
-The nouns get tags (to the left of :, i.e. in the upper representation
-and the suffixes are found to the left of the colon
-
- * **LEXICON m** 
-
- * **LEXICON m-yow** 
-
- * **LEXICON m-ow** 
-
-
- * **LEXICON m-ys** 
-
- * **LEXICON m-es** 
-
- * **LEXICON m-s** 
-
-
-
- * **LEXICON m-yon** 
-
-
- * **LEXICON m-aff-i** 
-
- * **LEXICON m-ag** 
-
- * **LEXICON m-sgtantum** 
-
- * **LEXICON m-pltantum** 
-
-## Feminine stem classes
-
- * **LEXICON f** 
-
- * **LEXICON f-yow** 
-
- * **LEXICON f-edh** 
-
-
-
-Nest step:
-
-Here we add suffixes. These may be common to several stem classes
-and are therefore pointed to in a different layer (this one)
-
-
-## Number lexica
-
- * **LEXICON sg** 
-
- * **LEXICON yonpl** 
-
- * **LEXICON owpl** 
-
- * **LEXICON yowpl** 
-
- * **LEXICON ipl** 
-
- * **LEXICON yspl** 
-
-
-
- * **LEXICON espl** 
-
- * **LEXICON edhpl** 
-
- * **LEXICON spl** 
-
- * **LEXICON adjd** 
-
-### Irregular plurals
-
- * **LEXICON KI** 
-
- * **LEXICON DEN** 
-
- * **LEXICON OJYON** 
-
- * **LEXICON GARLONT** 
-
-# Mutation lexicon
-
-
-
- * **LEXICON mutation** 
-
-* * *
-<small>This (part of) documentation was generated from [../src/fst/affixes/nouns.lexc](http://github.com/giellalt/lang-cor/blob/main/../src/fst/affixes/nouns.lexc)</small># Propernoun affix
-
- * **LEXICON prop** 
- * **+N+Prop: mutation ;** 
-
-
-
-
-* * *
-<small>This (part of) documentation was generated from [../src/fst/affixes/propernouns.lexc](http://github.com/giellalt/lang-cor/blob/main/../src/fst/affixes/propernouns.lexc)</small># Verbal morphology
-
-
-## The declension classes
-
-
-### Auxiliaries
-
- * bos+V:     COPULA     "to be" ;   
- * mos+V:     MOS        "go" ;      
- * dos+V:     DOS        "come" ;    
- * gul+V:     GUL        "do" ;      
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-* * *
-<small>This (part of) documentation was generated from [../src/fst/affixes/verbs.lexc](http://github.com/giellalt/lang-cor/blob/main/../src/fst/affixes/verbs.lexc)</small># Adjectve morphology
-
-Only add tag so far.
-
- * **LEXICON adj** 
- * **+Adj: # ;** 
-* * *
-<small>This (part of) documentation was generated from [../src/fst/affixes/adjectives.lexc](http://github.com/giellalt/lang-cor/blob/main/../src/fst/affixes/adjectives.lexc)</small>
-
-
-
-
-# Kven numerals 
-
-# Numeral inflection
-Numeral inflection is like nominal, except that numerals compound in all
-forms which requires great amount of care in the inflection patterns.
-
-
-
- * **LEXICON ARABICCASES**  adds +Arab
-
- * **LEXICON ARABICCASE**  adds +Arab
-
- * **LEXICON ARABICCASE0**  adds +Arab
-
-
-
-
-
-
-
-
-
-
-* * *
-<small>This (part of) documentation was generated from [../src/fst/affixes/numerals.lexc](http://github.com/giellalt/lang-cor/blob/main/../src/fst/affixes/numerals.lexc)</small>
-# Symbol affixes
-
-
-
-
-
-* * *
-<small>This (part of) documentation was generated from [../src/fst/affixes/symbols.lexc](http://github.com/giellalt/lang-cor/blob/main/../src/fst/affixes/symbols.lexc)</small># Cornish morphology
-
-First, we declare multicharacter symbols
-
-## POS
- * +N +V +A           
- * +Adv +CC +CS +Interj +Pron +Num +Pr         
- * +Smut +Mmut +Pmut +Amut                for mutation
- * +Symbol = independent symbols in the text stream, like £, €, ©
-
-
-## Verbal MSP
- +Prs +Fut +Prt +Prf +Ipf +Plf       
- +Ind +Imp +Sbj       
- +Inf +Sit ! what is +Sit?       
- +Pos +Neg +ConNeg       
- +1Sg +2Sg +3Sg +1Pl +2Pl +3Pl       
- +Impers       
- +Ptc       
- +VN       
-
-## Nominal MSP
- +Sg +Pl +P            
- +Nom +Acc +Gen        
- +Ord       
-
-## Pronominal MSP
- +Suff +Emph +Indef         
- +Msc +Fem                  
-
-Diacritical marks, to trigger
-morphophonological rules.
-The "%" symbol literalises the next symbol
-
- %^S %^A %^P %^M %^V %^E        
- %> %^D                         
- %^UML %^CD %^TRUNC %^STDEL     
-
-## Archiphonemes
-  e3             e to o in plural
-  a4 o4         Umlaut phonemes, changing to e
-
-
-## Symbols that need to be escaped on the lower side (towards twolc):
- * **»7**:  Literal »
- * **«7**:  Literal «
-```
-  %[%>%]  - Literal >
-  %[%<%]  - Literal <
-```
-
-
-## Flag diacritics
-We have manually optimised the structure of our lexicon using following
-flag diacritics to restrict morhpological combinatorics - only allow compounds
-with verbs if the verb is further derived into a noun again:
-
-| Flag | Explanation
-| --- | --- 
- |  @P.NeedNoun.ON@ | (Dis)allow compounds with verbs unless nominalised
- |  @D.NeedNoun.ON@ | (Dis)allow compounds with verbs unless nominalised
- |  @C.NeedNoun@ | (Dis)allow compounds with verbs unless nominalised
-
-For languages that allow compounding, the following flag diacritics are needed
-to control position-based compounding restrictions for nominals. Their use is
-handled automatically if combined with +CmpN/xxx tags. If not used, they will
-do no harm.
-
-| Flag | Explanation
-| --- | --- 
- |  @P.CmpFrst.FALSE@ | Require that words tagged as such only appear first
- |  @D.CmpPref.TRUE@ | Block such words from entering ENDLEX
- |  @P.CmpPref.FALSE@ | Block these words from making further compounds
- |  @D.CmpLast.TRUE@ | Block such words from entering R
- |  @D.CmpNone.TRUE@ | Combines with the next tag to prohibit compounding
- |  @U.CmpNone.FALSE@ | Combines with the prev tag to prohibit compounding
- |  @P.CmpOnly.TRUE@ | Sets a flag to indicate that the word has passed R
- |  @D.CmpOnly.FALSE@ | Disallow words coming directly from root.
-
-Use the following flag diacritics to control downcasing of derived proper
-nouns (e.g. Finnish Pariisi -> pariisilainen). See e.g. North Sámi for how to use
-these flags. There exists a ready-made regex that will do the actual down-casing
-given the proper use of these flags.
-
-| Flag | Explanation
-| --- | --- 
- |  @U.Cap.Obl@ | Allowing downcasing of derived names: deatnulasj.
- |  @U.Cap.Opt@ | Allowing downcasing of derived names: deatnulasj.
- |  @P.Pmatch.Backtrack@ | For preprocessing
- |  @R.ErrOrth.ON@ | resetting ErrOrth flag
- |  @C.ErrOrth@ | clearing ErrOrth Flag.
-
-
-
-# Key lexicon
-
- * LEXICON Root        
-     - Adverb ;	           
-     - Noun ;		           
-     - Propernoun ;           
-     - Preposition ;          
-     - Conjunction ;          
-     - Subjunction ;          
-     - Verb ;		           
-     - Adjective ;	           
-     - Interjection ;         
-     - Numeral ;	           
-     - Pronoun ;	           
-     - Punctuation ;          
-     - Symbols     ;          
-
-
-Adhoc lexica, to be fixed
-
-
- * LEXICON ENDLEX       
- * LEXICON RNum       
- * LEXICON ARABICCOMPOUNDS        
-
-* * *
-<small>This (part of) documentation was generated from [../src/fst/root.lexc](http://github.com/giellalt/lang-cor/blob/main/../src/fst/root.lexc)</small># Cornish Adverbs
-
-Documenting `stems/adverbs.lexc`
-
-Adding the tag +Adv
-
-**LEXICON adv** adds the tag **+Adv**
- +Adv: # ;
-
-The adverbs
-
-**LEXICON Adverb** lists the adverbs
- a-bell adv "afar. " ;
- a-bervedh adv "inside, indoors, aboard." ;
- a-ble adv "whence, from what place. " ;
- dhi adv "thither, to that place." ;
- hedhyw adv "today." ;
- hevlyna adv "this year." ;
- isos adv "downward, below." ;
- jammes adv "never." ;
-
-Then comes the list with adverbs from the 2020 dictionary
-
-* * *
-<small>This (part of) documentation was generated from [../src/fst/stems/adverbs.lexc](http://github.com/giellalt/lang-cor/blob/main/../src/fst/stems/adverbs.lexc)</small># Lexicon over Cornish nouns
+<small>This (part of) documentation was generated from [../src/cg3/functions.cg3](http://github.com/giellalt/lang-cor/blob/main/../src/cg3/functions.cg3)</small># Lexicon over Cornish nouns
 
 
 
@@ -1171,37 +798,7 @@ Feminine nouns from 2020 dictionary. TODO: Check for inflection class
  * banow f "sow" ; 
 ...
 * * *
-<small>This (part of) documentation was generated from [../src/fst/stems/nouns.lexc](http://github.com/giellalt/lang-cor/blob/main/../src/fst/stems/nouns.lexc)</small># Cornish proper nouns 
-
-This file lists cornish proper nouns. They are directed to the same continuation lexicon.
-
- * **LEXICON Propernoun** 
- * **Abram prop ;** 
- * **Adam prop ;** 
-... and some 1000 more.
-
-
-
-
-
-
-* * *
-<small>This (part of) documentation was generated from [../src/fst/stems/propernouns.lexc](http://github.com/giellalt/lang-cor/blob/main/../src/fst/stems/propernouns.lexc)</small>
-# Cornish Subjunctions
-
-This file lists the subjunctions and assign them the **+CS** tag.
-
-**LEXICON CS** Adds tag +CS
-
-
-**LEXICON Subjunction** contains the 20 or so subjunctions
- ages CS "than" ;
- awos CS "because, though, for the sake of, in spite of" ;
- drefenn CS "because, on account of" ;
- erna CS "till, until" ;
-...
-* * *
-<small>This (part of) documentation was generated from [../src/fst/stems/subjunctions.lexc](http://github.com/giellalt/lang-cor/blob/main/../src/fst/stems/subjunctions.lexc)</small># Interjections
+<small>This (part of) documentation was generated from [../src/fst/stems/nouns.lexc](http://github.com/giellalt/lang-cor/blob/main/../src/fst/stems/nouns.lexc)</small># Interjections
 
 **LEXICON aj** adds tag 
  * +Interj: # ; 
@@ -1215,7 +812,64 @@ This file lists the subjunctions and assign them the **+CS** tag.
 Words from 2020 dictionary
 
 * * *
-<small>This (part of) documentation was generated from [../src/fst/stems/interjections.lexc](http://github.com/giellalt/lang-cor/blob/main/../src/fst/stems/interjections.lexc)</small>
+<small>This (part of) documentation was generated from [../src/fst/stems/interjections.lexc](http://github.com/giellalt/lang-cor/blob/main/../src/fst/stems/interjections.lexc)</small># Cornish Conjunctions
+
+This documents the file `stems/conjunctions.lexc`. Note that based on the English 
+translations it seems there are some subjunctions here, and it also seems the Cornish
+version of *and* is missing. Have a look at the original file!
+
+**LEXICON CC** adds tag **+CC**
+
+**LEXICON Conjunction** lists 30 or so conjunctions
+ mes CC "but" ;
+ hag CC "and (before vowels)" ;
+ ha CC "and (before consonants)" ;
+ po CC "or" ;
+ bo CC "or" ;
+ py CC "or" ;
+ rag CC "for" ;
+
+2020 dictionary CC entries not known to fst
+* * *
+<small>This (part of) documentation was generated from [../src/fst/stems/conjunctions.lexc](http://github.com/giellalt/lang-cor/blob/main/../src/fst/stems/conjunctions.lexc)</small># Cornish Adverbs
+
+Documenting `stems/adverbs.lexc`
+
+Adding the tag +Adv
+
+**LEXICON adv** adds the tag **+Adv**
+ +Adv: # ;
+
+The adverbs
+
+**LEXICON Adverb** lists the adverbs
+ a-bell adv "afar. " ;
+ a-bervedh adv "inside, indoors, aboard." ;
+ a-ble adv "whence, from what place. " ;
+ dhi adv "thither, to that place." ;
+ hedhyw adv "today." ;
+ hevlyna adv "this year." ;
+ isos adv "downward, below." ;
+ jammes adv "never." ;
+
+Then comes the list with adverbs from the 2020 dictionary
+
+* * *
+<small>This (part of) documentation was generated from [../src/fst/stems/adverbs.lexc](http://github.com/giellalt/lang-cor/blob/main/../src/fst/stems/adverbs.lexc)</small># The Cornish Adjective root lexicon
+
+Some 1300 adjectives, only one continuation lexicon. (**adj**).
+
+**LEXICON Adjective** 
+ Albanek adj "Scottish. Scots" ; 
+ Almaynek adj "German" ; 
+ a-berthek adj "intrinsic" ; 
+ a-dhevis adj "exact" ; 
+ ardhek adj "lofty" ; 
+ arhansek adj "financial" ; 
+ arnowydh adj "modern" ; 
+...
+* * *
+<small>This (part of) documentation was generated from [../src/fst/stems/adjectives.lexc](http://github.com/giellalt/lang-cor/blob/main/../src/fst/stems/adjectives.lexc)</small>
 # Cornish Verb stems
 
 
@@ -1294,21 +948,20 @@ It is fortunately easier than that:
 Verbs from the 2020 dictionary
 
 * * *
-<small>This (part of) documentation was generated from [../src/fst/stems/verbs.lexc](http://github.com/giellalt/lang-cor/blob/main/../src/fst/stems/verbs.lexc)</small># The Cornish Adjective root lexicon
+<small>This (part of) documentation was generated from [../src/fst/stems/verbs.lexc](http://github.com/giellalt/lang-cor/blob/main/../src/fst/stems/verbs.lexc)</small># Cornish numeral stems
 
-Some 1300 adjectives, only one continuation lexicon. (**adj**).
+ * **LEXICON Numeral** 
 
-**LEXICON Adjective** 
- Albanek adj "Scottish. Scots" ; 
- Almaynek adj "German" ; 
- a-berthek adj "intrinsic" ; 
- a-dhevis adj "exact" ; 
- ardhek adj "lofty" ; 
- arhansek adj "financial" ; 
- arnowydh adj "modern" ; 
-...
+ * **LEXICON Cardinals** 
+ * **onan card-yow "one" ;** 
+ * **onen card-yow "one" ;** 
+
+
+ * **LEXICON Ordinals** 
+ * **pajwora ord-yow "fourth" ;** 
+ * **pempes ord-yow "fifth" ;** 
 * * *
-<small>This (part of) documentation was generated from [../src/fst/stems/adjectives.lexc](http://github.com/giellalt/lang-cor/blob/main/../src/fst/stems/adjectives.lexc)</small># Cornish prepositions 
+<small>This (part of) documentation was generated from [../src/fst/stems/numerals.lexc](http://github.com/giellalt/lang-cor/blob/main/../src/fst/stems/numerals.lexc)</small># Cornish prepositions 
 
 
 Four classes:
@@ -1348,39 +1001,37 @@ Four classes:
 ...
 
 * * *
-<small>This (part of) documentation was generated from [../src/fst/stems/prepositions.lexc](http://github.com/giellalt/lang-cor/blob/main/../src/fst/stems/prepositions.lexc)</small># Cornish Conjunctions
+<small>This (part of) documentation was generated from [../src/fst/stems/prepositions.lexc](http://github.com/giellalt/lang-cor/blob/main/../src/fst/stems/prepositions.lexc)</small>
+# Cornish Subjunctions
 
-This documents the file `stems/conjunctions.lexc`. Note that based on the English 
-translations it seems there are some subjunctions here, and it also seems the Cornish
-version of *and* is missing. Have a look at the original file!
+This file lists the subjunctions and assign them the **+CS** tag.
 
-**LEXICON CC** adds tag **+CC**
+**LEXICON CS** Adds tag +CS
 
-**LEXICON Conjunction** lists 30 or so conjunctions
- mes CC "but" ;
- hag CC "and (before vowels)" ;
- ha CC "and (before consonants)" ;
- po CC "or" ;
- bo CC "or" ;
- py CC "or" ;
- rag CC "for" ;
 
-2020 dictionary CC entries not known to fst
+**LEXICON Subjunction** contains the 20 or so subjunctions
+ ages CS "than" ;
+ awos CS "because, though, for the sake of, in spite of" ;
+ drefenn CS "because, on account of" ;
+ erna CS "till, until" ;
+...
 * * *
-<small>This (part of) documentation was generated from [../src/fst/stems/conjunctions.lexc](http://github.com/giellalt/lang-cor/blob/main/../src/fst/stems/conjunctions.lexc)</small># Cornish numeral stems
+<small>This (part of) documentation was generated from [../src/fst/stems/subjunctions.lexc](http://github.com/giellalt/lang-cor/blob/main/../src/fst/stems/subjunctions.lexc)</small># Cornish proper nouns 
 
- * **LEXICON Numeral** 
+This file lists cornish proper nouns. They are directed to the same continuation lexicon.
 
- * **LEXICON Cardinals** 
- * **onan card-yow "one" ;** 
- * **onen card-yow "one" ;** 
+ * **LEXICON Propernoun** 
+ * **Abram prop ;** 
+ * **Adam prop ;** 
+... and some 1000 more.
 
 
- * **LEXICON Ordinals** 
- * **pajwora ord-yow "fourth" ;** 
- * **pempes ord-yow "fifth" ;** 
+
+
+
+
 * * *
-<small>This (part of) documentation was generated from [../src/fst/stems/numerals.lexc](http://github.com/giellalt/lang-cor/blob/main/../src/fst/stems/numerals.lexc)</small># Cornish Pronoun stems and morphology
+<small>This (part of) documentation was generated from [../src/fst/stems/propernouns.lexc](http://github.com/giellalt/lang-cor/blob/main/../src/fst/stems/propernouns.lexc)</small># Cornish Pronoun stems and morphology
 
 This file lists pronouns fullforms.
 
@@ -1420,7 +1071,373 @@ This file lists pronouns fullforms.
 **LEXICON Indefinite** 
  * huni+Pron+Indef+Sg:huni # ;
 * * *
-<small>This (part of) documentation was generated from [../src/fst/stems/pronouns.lexc](http://github.com/giellalt/lang-cor/blob/main/../src/fst/stems/pronouns.lexc)</small>
+<small>This (part of) documentation was generated from [../src/fst/stems/pronouns.lexc](http://github.com/giellalt/lang-cor/blob/main/../src/fst/stems/pronouns.lexc)</small># Cornish noun morphology
+
+## Masculine stem classes
+The nouns get tags (to the left of :, i.e. in the upper representation
+and the suffixes are found to the left of the colon
+
+ * **LEXICON m** 
+
+ * **LEXICON m-yow** 
+
+ * **LEXICON m-ow** 
+
+
+ * **LEXICON m-ys** 
+
+ * **LEXICON m-es** 
+
+ * **LEXICON m-s** 
+
+
+
+ * **LEXICON m-yon** 
+
+
+ * **LEXICON m-aff-i** 
+
+ * **LEXICON m-ag** 
+
+ * **LEXICON m-sgtantum** 
+
+ * **LEXICON m-pltantum** 
+
+## Feminine stem classes
+
+ * **LEXICON f** 
+
+ * **LEXICON f-yow** 
+
+ * **LEXICON f-edh** 
+
+
+
+Nest step:
+
+Here we add suffixes. These may be common to several stem classes
+and are therefore pointed to in a different layer (this one)
+
+
+## Number lexica
+
+ * **LEXICON sg** 
+
+ * **LEXICON yonpl** 
+
+ * **LEXICON owpl** 
+
+ * **LEXICON yowpl** 
+
+ * **LEXICON ipl** 
+
+ * **LEXICON yspl** 
+
+
+
+ * **LEXICON espl** 
+
+ * **LEXICON edhpl** 
+
+ * **LEXICON spl** 
+
+ * **LEXICON adjd** 
+
+### Irregular plurals
+
+ * **LEXICON KI** 
+
+ * **LEXICON DEN** 
+
+ * **LEXICON OJYON** 
+
+ * **LEXICON GARLONT** 
+
+# Mutation lexicon
+
+
+
+ * **LEXICON mutation** 
+
+* * *
+<small>This (part of) documentation was generated from [../src/fst/affixes/nouns.lexc](http://github.com/giellalt/lang-cor/blob/main/../src/fst/affixes/nouns.lexc)</small>
+# Symbol affixes
+
+
+
+
+
+* * *
+<small>This (part of) documentation was generated from [../src/fst/affixes/symbols.lexc](http://github.com/giellalt/lang-cor/blob/main/../src/fst/affixes/symbols.lexc)</small># Adjectve morphology
+
+Only add tag so far.
+
+ * **LEXICON adj** 
+ * **+Adj: # ;** 
+* * *
+<small>This (part of) documentation was generated from [../src/fst/affixes/adjectives.lexc](http://github.com/giellalt/lang-cor/blob/main/../src/fst/affixes/adjectives.lexc)</small># Verbal morphology
+
+
+## The declension classes
+
+
+### Auxiliaries
+
+ * bos+V:     COPULA     "to be" ;   
+ * mos+V:     MOS        "go" ;      
+ * dos+V:     DOS        "come" ;    
+ * gul+V:     GUL        "do" ;      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+* * *
+<small>This (part of) documentation was generated from [../src/fst/affixes/verbs.lexc](http://github.com/giellalt/lang-cor/blob/main/../src/fst/affixes/verbs.lexc)</small>
+
+
+
+
+# Kven numerals 
+
+# Numeral inflection
+Numeral inflection is like nominal, except that numerals compound in all
+forms which requires great amount of care in the inflection patterns.
+
+
+
+ * **LEXICON ARABICCASES**  adds +Arab
+
+ * **LEXICON ARABICCASE**  adds +Arab
+
+ * **LEXICON ARABICCASE0**  adds +Arab
+
+
+
+
+
+
+
+
+
+
+* * *
+<small>This (part of) documentation was generated from [../src/fst/affixes/numerals.lexc](http://github.com/giellalt/lang-cor/blob/main/../src/fst/affixes/numerals.lexc)</small># Propernoun affix
+
+ * **LEXICON prop** 
+ * **+N+Prop: mutation ;** 
+
+
+
+
+* * *
+<small>This (part of) documentation was generated from [../src/fst/affixes/propernouns.lexc](http://github.com/giellalt/lang-cor/blob/main/../src/fst/affixes/propernouns.lexc)</small># Cornish morphology
+
+First, we declare multicharacter symbols
+
+## POS
+ * +N +V +A           
+ * +Adv +CC +CS +Interj +Pron +Num +Pr         
+ * +Smut +Mmut +Pmut +Amut                for mutation
+ * +Symbol = independent symbols in the text stream, like £, €, ©
+
+
+## Verbal MSP
+ +Prs +Fut +Prt +Prf +Ipf +Plf       
+ +Ind +Imp +Sbj       
+ +Inf +Sit ! what is +Sit?       
+ +Pos +Neg +ConNeg       
+ +1Sg +2Sg +3Sg +1Pl +2Pl +3Pl       
+ +Impers       
+ +Ptc       
+ +VN       
+
+## Nominal MSP
+ +Sg +Pl +P            
+ +Nom +Acc +Gen        
+ +Ord       
+
+## Pronominal MSP
+ +Suff +Emph +Indef         
+ +Msc +Fem                  
+
+Diacritical marks, to trigger
+morphophonological rules.
+The "%" symbol literalises the next symbol
+
+ %^S %^A %^P %^M %^V %^E        
+ %> %^D                         
+ %^UML %^CD %^TRUNC %^STDEL     
+
+## Archiphonemes
+  e3             e to o in plural
+  a4 o4         Umlaut phonemes, changing to e
+
+
+## Symbols that need to be escaped on the lower side (towards twolc):
+ * **»7**:  Literal »
+ * **«7**:  Literal «
+```
+  %[%>%]  - Literal >
+  %[%<%]  - Literal <
+```
+
+
+## Flag diacritics
+We have manually optimised the structure of our lexicon using following
+flag diacritics to restrict morhpological combinatorics - only allow compounds
+with verbs if the verb is further derived into a noun again:
+
+| Flag | Explanation
+| --- | --- 
+ |  @P.NeedNoun.ON@ | (Dis)allow compounds with verbs unless nominalised
+ |  @D.NeedNoun.ON@ | (Dis)allow compounds with verbs unless nominalised
+ |  @C.NeedNoun@ | (Dis)allow compounds with verbs unless nominalised
+
+For languages that allow compounding, the following flag diacritics are needed
+to control position-based compounding restrictions for nominals. Their use is
+handled automatically if combined with +CmpN/xxx tags. If not used, they will
+do no harm.
+
+| Flag | Explanation
+| --- | --- 
+ |  @P.CmpFrst.FALSE@ | Require that words tagged as such only appear first
+ |  @D.CmpPref.TRUE@ | Block such words from entering ENDLEX
+ |  @P.CmpPref.FALSE@ | Block these words from making further compounds
+ |  @D.CmpLast.TRUE@ | Block such words from entering R
+ |  @D.CmpNone.TRUE@ | Combines with the next tag to prohibit compounding
+ |  @U.CmpNone.FALSE@ | Combines with the prev tag to prohibit compounding
+ |  @P.CmpOnly.TRUE@ | Sets a flag to indicate that the word has passed R
+ |  @D.CmpOnly.FALSE@ | Disallow words coming directly from root.
+
+Use the following flag diacritics to control downcasing of derived proper
+nouns (e.g. Finnish Pariisi -> pariisilainen). See e.g. North Sámi for how to use
+these flags. There exists a ready-made regex that will do the actual down-casing
+given the proper use of these flags.
+
+| Flag | Explanation
+| --- | --- 
+ |  @U.Cap.Obl@ | Allowing downcasing of derived names: deatnulasj.
+ |  @U.Cap.Opt@ | Allowing downcasing of derived names: deatnulasj.
+ |  @P.Pmatch.Backtrack@ | For preprocessing
+ |  @R.ErrOrth.ON@ | resetting ErrOrth flag
+ |  @C.ErrOrth@ | clearing ErrOrth Flag.
+
+
+
+# Key lexicon
+
+ * LEXICON Root        
+     - Adverb ;	           
+     - Noun ;		           
+     - Propernoun ;           
+     - Preposition ;          
+     - Conjunction ;          
+     - Subjunction ;          
+     - Verb ;		           
+     - Adjective ;	           
+     - Interjection ;         
+     - Numeral ;	           
+     - Pronoun ;	           
+     - Punctuation ;          
+     - Symbols     ;          
+
+
+Adhoc lexica, to be fixed
+
+
+ * LEXICON ENDLEX       
+ * LEXICON RNum       
+ * LEXICON ARABICCOMPOUNDS        
+
+* * *
+<small>This (part of) documentation was generated from [../src/fst/root.lexc](http://github.com/giellalt/lang-cor/blob/main/../src/fst/root.lexc)</small>
+
+
+We describe here how abbreviations are in Cornish are read out, e.g.
+for text-to-speech systems.
+
+For example:
+
+ * s.:syntynyt # ;  
+ * os.:omaa% sukua # ;  
+ * v.:vuosi # ;  
+ * v.:vuonna # ;  
+ * esim.:esimerkki # ; 
+ * esim.:esimerkiksi # ; 
+
+
+* * *
+<small>This (part of) documentation was generated from [../src/transcriptions/transcriptor-abbrevs2text.lexc](http://github.com/giellalt/lang-cor/blob/main/../src/transcriptions/transcriptor-abbrevs2text.lexc)</small>
 
 
 
@@ -1476,23 +1493,6 @@ This file lists pronouns fullforms.
 
 * * *
 <small>This (part of) documentation was generated from [../src/transcriptions/transcriptor-numbers-digit2text.lexc](http://github.com/giellalt/lang-cor/blob/main/../src/transcriptions/transcriptor-numbers-digit2text.lexc)</small>
-
-
-We describe here how abbreviations are in Cornish are read out, e.g.
-for text-to-speech systems.
-
-For example:
-
- * s.:syntynyt # ;  
- * os.:omaa% sukua # ;  
- * v.:vuosi # ;  
- * v.:vuonna # ;  
- * esim.:esimerkki # ; 
- * esim.:esimerkiksi # ; 
-
-
-* * *
-<small>This (part of) documentation was generated from [../src/transcriptions/transcriptor-abbrevs2text.lexc](http://github.com/giellalt/lang-cor/blob/main/../src/transcriptions/transcriptor-abbrevs2text.lexc)</small>
 [ L A N G U A G E ]  G R A M M A R   C H E C K E R
 
 
