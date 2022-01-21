@@ -59,19 +59,19 @@ It is fortunately easier than that:
 ## The verb lexicon
 
 **LEXICON Verb** lists all the verbs
- * AUX ; = this one entry points to the AUX lexicon in the affixes catalogue
+* AUX ; = this one entry points to the AUX lexicon in the affixes catalogue
 
 
- * erhi:arha ERHI "command, order, require, bid" ; = some example entries
- * tava:tav TAVA "touch, stroke " ; = 
- * anomdhiskwedhes:anomdhiskwedh vb "disappear" ; = 
- * aras:ar vb "plough" ; = 
- * argeles:argel vb "sequester" ; = 
- * arvedh:arvedh vb "affront, harass, browbeat" ; = 
- * batalyas:bataly vb "fight" ; = 
- * bryjon:bryjon vb "boil" ; = 
- * gortos:gortos vb "await, wait for, remain, stay" ; = 
- * gwrias:gwri vb "sew, stitch" ; = 
+* erhi:arha ERHI "command, order, require, bid" ; = some example entries
+* tava:tav TAVA "touch, stroke " ; = 
+* anomdhiskwedhes:anomdhiskwedh vb "disappear" ; = 
+* aras:ar vb "plough" ; = 
+* argeles:argel vb "sequester" ; = 
+* arvedh:arvedh vb "affront, harass, browbeat" ; = 
+* batalyas:bataly vb "fight" ; = 
+* bryjon:bryjon vb "boil" ; = 
+* gortos:gortos vb "await, wait for, remain, stay" ; = 
+* gwrias:gwri vb "sew, stitch" ; = 
 
 
 Verbs from the 2020 dictionary

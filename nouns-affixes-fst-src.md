@@ -4,39 +4,39 @@
 The nouns get tags (to the left of :, i.e. in the upper representation
 and the suffixes are found to the left of the colon
 
- * **LEXICON m** 
+* **LEXICON m** 
 
- * **LEXICON m-yow** 
+* **LEXICON m-yow** 
 
- * **LEXICON m-ow** 
-
-
- * **LEXICON m-ys** 
-
- * **LEXICON m-es** 
-
- * **LEXICON m-s** 
+* **LEXICON m-ow** 
 
 
+* **LEXICON m-ys** 
 
- * **LEXICON m-yon** 
+* **LEXICON m-es** 
+
+* **LEXICON m-s** 
 
 
- * **LEXICON m-aff-i** 
 
- * **LEXICON m-ag** 
+* **LEXICON m-yon** 
 
- * **LEXICON m-sgtantum** 
 
- * **LEXICON m-pltantum** 
+* **LEXICON m-aff-i** 
+
+* **LEXICON m-ag** 
+
+* **LEXICON m-sgtantum** 
+
+* **LEXICON m-pltantum** 
 
 ## Feminine stem classes
 
- * **LEXICON f** 
+* **LEXICON f** 
 
- * **LEXICON f-yow** 
+* **LEXICON f-yow** 
 
- * **LEXICON f-edh** 
+* **LEXICON f-edh** 
 
 
 
@@ -48,43 +48,43 @@ and are therefore pointed to in a different layer (this one)
 
 ## Number lexica
 
- * **LEXICON sg** 
+* **LEXICON sg** 
 
- * **LEXICON yonpl** 
+* **LEXICON yonpl** 
 
- * **LEXICON owpl** 
+* **LEXICON owpl** 
 
- * **LEXICON yowpl** 
+* **LEXICON yowpl** 
 
- * **LEXICON ipl** 
+* **LEXICON ipl** 
 
- * **LEXICON yspl** 
+* **LEXICON yspl** 
 
 
 
- * **LEXICON espl** 
+* **LEXICON espl** 
 
- * **LEXICON edhpl** 
+* **LEXICON edhpl** 
 
- * **LEXICON spl** 
+* **LEXICON spl** 
 
- * **LEXICON adjd** 
+* **LEXICON adjd** 
 
 ### Irregular plurals
 
- * **LEXICON KI** 
+* **LEXICON KI** 
 
- * **LEXICON DEN** 
+* **LEXICON DEN** 
 
- * **LEXICON OJYON** 
+* **LEXICON OJYON** 
 
- * **LEXICON GARLONT** 
+* **LEXICON GARLONT** 
 
 # Mutation lexicon
 
 
 
- * **LEXICON mutation** 
+* **LEXICON mutation** 
 
 * * *
 <small>This (part of) documentation was generated from [../src/fst/affixes/nouns.lexc](http://github.com/giellalt/lang-cor/blob/main/../src/fst/affixes/nouns.lexc)</small>

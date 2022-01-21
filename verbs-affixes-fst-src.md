@@ -6,10 +6,10 @@
 
 ### Auxiliaries
 
- * bos+V:     COPULA     "to be" ;   
- * mos+V:     MOS        "go" ;      
- * dos+V:     DOS        "come" ;    
- * gul+V:     GUL        "do" ;      
+* bos+V:     COPULA     "to be" ;   
+* mos+V:     MOS        "go" ;      
+* dos+V:     DOS        "come" ;    
+* gul+V:     GUL        "do" ;      
 
 
 

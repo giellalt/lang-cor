@@ -51,44 +51,44 @@ Here the noun types begin:
 
 ### ow plural
 All -(y)ans nouns are here even though the dictionary lists no plurals for them (Brown, p. 30)
- * abatti m "abbey" ; 
- * abes m "abbot" ; 
+* abatti m "abbey" ; 
+* abes m "abbot" ; 
 ...
 
 yow plural
- * aber m-yow "river mouth" ; 
- * grogys m-yow "belt" ; 
+* aber m-yow "river mouth" ; 
+* grogys m-yow "belt" ; 
 ...
 
 ys plural
- * acheson m-ys "reason" ; 
- * adamant m-ys "diamond" ; 
+* acheson m-ys "reason" ; 
+* adamant m-ys "diamond" ; 
 ...
 
 yon plural
- * akontydh m-yon "accountant" ; 
+* akontydh m-yon "accountant" ; 
 
 -(y)er agent nouns
- * aghskrifer:aghskrifor m-ag "genealogist" ; 
- * bleujenner:bleujennor m-ag "florist" ; 
- * begyer+N+Msc:begyor yonpl "beggar" ;  also m-s
+* aghskrifer:aghskrifor m-ag "genealogist" ; 
+* bleujenner:bleujennor m-ag "florist" ; 
+* begyer+N+Msc:begyor yonpl "beggar" ;  also m-s
 
 
 -es plural
 
- * baban m-es "baby" ; 
- * badh m-es "boar" ; 
+* baban m-es "baby" ; 
+* badh m-es "boar" ; 
 
 -s plural
 
- * bacheler m-s "bachelor" ; 
- * balyer m-s "balyers" ; 
+* bacheler m-s "bachelor" ; 
+* balyer m-s "balyers" ; 
 ...
 
 
 balek-wörter
 
- * balek:bale3k m ; 
+* balek:bale3k m ; 
 
 
 Duals
@@ -97,22 +97,22 @@ Root vowel change
 
 yon plural
 
- * mab:ma4b m-yon "son" ; 
+* mab:ma4b m-yon "son" ; 
 
 i plural
 
- * abostol:abo4sto4l m-aff-i "apostle" ; not working yet
+* abostol:abo4sto4l m-aff-i "apostle" ; not working yet
 
 
 
 Singularia tantum
- * adhvetter m-sgtantum "ripeness" ; 
- * Afrikan m-sgtantum "African" ; 
+* adhvetter m-sgtantum "ripeness" ; 
+* Afrikan m-sgtantum "African" ; 
 ...
 
 Pluralia tantum
- * arghans m-pltantum "money" ; MF
- * mona m-pltantum "money" ;  NW
+* arghans m-pltantum "money" ; MF
+* mona m-pltantum "money" ;  NW
 mona is here as illustration, should get a new continuation lex
 
 
@@ -127,21 +127,21 @@ mona is here as illustration, should get a new continuation lex
 
 m-ow 
 
- * lavrok:lavrog m-ow ; 
- * lavrok:lavreg m-ow ; UC
+* lavrok:lavrog m-ow ; 
+* lavrok:lavreg m-ow ; UC
 
 m-yow 
 
- * aber m-yow "river mouth" ; 
- * anken m-yow "misery" ; 
- * ankor m-yow "anchor" ; 
+* aber m-yow "river mouth" ; 
+* anken m-yow "misery" ; 
+* ankor m-yow "anchor" ; 
 ...
 
 
 m-ys 
 
- * kanel m-ys "tap" ; 
- * mason m-ys "mason" ; 
+* kanel m-ys "tap" ; 
+* mason m-ys "mason" ; 
 ...
 
 ### Feminines
@@ -149,45 +149,45 @@ m-ys
 
 #### Irregular feminines
 
- * modrep:modreb f-edh ; 
+* modrep:modreb f-edh ; 
 
 
 
 #### f with ow plural 
 
- * abases f "abbess" ; 
- * tagel f "constriction, choker" ; 
+* abases f "abbess" ; 
+* tagel f "constriction, choker" ; 
 ...
 
 
 #### f-yow 
 
- * aden f-yow "binding board of a book" ; 
- * als f-yow "cliff" ; 
+* aden f-yow "binding board of a book" ; 
+* als f-yow "cliff" ; 
 ...
 
 Masculine nouns from 2020 dictionary. TODO: Check for inflection class
 
- * 'Edhow m-yow "Jew" ; 
- * 'eghes m-yow "health" ; 
- * Albanian m-yow "Albanian" ; 
- * Albaniek m-yow "Albanian language" ; 
- * Alman m-yow "German" ; 
- * alarm m-yow "alarm" ; 
- * albom m-yow "album" ; 
- * alejyans m-yow "allegation" ; 
+* 'Edhow m-yow "Jew" ; 
+* 'eghes m-yow "health" ; 
+* Albanian m-yow "Albanian" ; 
+* Albaniek m-yow "Albanian language" ; 
+* Alman m-yow "German" ; 
+* alarm m-yow "alarm" ; 
+* albom m-yow "album" ; 
+* alejyans m-yow "allegation" ; 
 ...
 
 
 Feminine nouns from 2020 dictionary. TODO: Check for inflection class
 
 
- * 'Edhowes f "Jew" ; 
- * 'eth f "language" ; 
- * Afrikanes f "African" ; 
- * banadhlek f "broom-brake" ; 
- * banken f "bank" ; 
- * banow f "sow" ; 
+* 'Edhowes f "Jew" ; 
+* 'eth f "language" ; 
+* Afrikanes f "African" ; 
+* banadhlek f "broom-brake" ; 
+* banken f "bank" ; 
+* banow f "sow" ; 
 ...
 * * *
 <small>This (part of) documentation was generated from [../src/fst/stems/nouns.lexc](http://github.com/giellalt/lang-cor/blob/main/../src/fst/stems/nouns.lexc)</small>

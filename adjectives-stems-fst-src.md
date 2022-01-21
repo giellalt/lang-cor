@@ -3,13 +3,13 @@
 Some 1300 adjectives, only one continuation lexicon. (**adj**).
 
 **LEXICON Adjective** 
- Albanek adj "Scottish. Scots" ; 
- Almaynek adj "German" ; 
- a-berthek adj "intrinsic" ; 
- a-dhevis adj "exact" ; 
- ardhek adj "lofty" ; 
- arhansek adj "financial" ; 
- arnowydh adj "modern" ; 
+Albanek adj "Scottish. Scots" ; 
+Almaynek adj "German" ; 
+a-berthek adj "intrinsic" ; 
+a-dhevis adj "exact" ; 
+ardhek adj "lofty" ; 
+arhansek adj "financial" ; 
+arnowydh adj "modern" ; 
 ...
 * * *
 <small>This (part of) documentation was generated from [../src/fst/stems/adjectives.lexc](http://github.com/giellalt/lang-cor/blob/main/../src/fst/stems/adjectives.lexc)</small>

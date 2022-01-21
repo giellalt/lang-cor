@@ -8,33 +8,33 @@ Four classes:
 * Class 4 
 
 **LEXICON pp**   tag only
- * +Pr: # ;
+* +Pr: # ;
 
 
 
 **LEXICON pp-prono** tag and person forms, -o-
- * +Pr:0 # ; =  bare form
- * +Pr+1Sg:ov # ; 
- * +Pr+2Sg:os # ;
+* +Pr:0 # ; =  bare form
+* +Pr+1Sg:ov # ; 
+* +Pr+2Sg:os # ;
 ...
 
 **LEXICON pp-proni** tag and person -i-
- * +Pr: # ; bare form
- * +Pr+1Sg:iv # ;
- * +Pr+2Sg:is # ;
+* +Pr: # ; bare form
+* +Pr+1Sg:iv # ;
+* +Pr+2Sg:is # ;
 ...
 
 **LEXICON pp-a** tag and person form -a-
- * +Pr: # ; bare form
- * +Pr+1Sg:hanav # ;
- * +Pr+2Sg:hanas # ;
+* +Pr: # ; bare form
+* +Pr+1Sg:hanav # ;
+* +Pr+2Sg:hanas # ;
 ---
 
 
 **LEXICON Preposition** the list (some 20-30)
- * a pp-a "of, from" ;
- * avel pp-prono "like" ;
- * a-barth pp "for the sake of, beside, in the name of, along with" ;
+* a pp-a "of, from" ;
+* avel pp-prono "like" ;
+* a-barth pp "for the sake of, beside, in the name of, along with" ;
 ...
 
 * * *

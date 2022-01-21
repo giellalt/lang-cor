@@ -1,7 +1,7 @@
 # Propernoun affix
 
- * **LEXICON prop** 
- * **+N+Prop: mutation ;** 
+* **LEXICON prop** 
+* **+N+Prop: mutation ;** 
 
 
 
