@@ -1,225 +1,24 @@
+# Cornish description 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+All documents in one file
 
 
 
 * Sets for POS sub-categories
 
-
-
-
-
 * Sets for Semantic tags
-
-
-
-
 
 * Sets for Morphosyntactic properties
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 * Sets for verbs
-
 
 - V is all readings with a V tag in them, REAL-V should
 be the ones without an N tag following the V.  
 The REAL-V set thus awaits a fix to the preprocess V ... N bug.
 
-
-
 * The set COPULAS is for predicative constructions
 
-
-
-
-
-
-
 * NP sets defined according to their morphosyntactic features
-
-
-
-
-
-
 
 * The PRE-NP-HEAD family of sets
 
@@ -227,90 +26,30 @@ These sets model noun phrases (NPs). The idea is to first define whatever can
 occur in front of the head of the NP, and thereafter negate that with the
 expression **WORD - premodifiers**.
 
-
-
-
-
-
-
-
-
-
-
-
 The set **NOT-NPMOD** is used to find barriers between NPs.
 Typical usage: ... (*1 N BARRIER NPT-NPMOD) ...
 meaning: Scan to the first noun, ignoring anything that can be
 part of the noun phrase of that noun (i.e., "scan to the next NP head")
 
-
-
-
-
-
 * Miscellaneous sets
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 * Border sets and their complements
 
-
-
-
-
-
-
-
-
-
-
-
-
 * Syntactic sets
-
-
-
 
 These were the set types.
 
-
-
 ## HABITIVE MAPPING
 
-
 * **hab1** 
-
 
 * **hab2** 
 
 * **hab3** (<hab> @ADVL>) for hab-actor and hab-case; if leat to the right, and Nom to the right of leat. Lots of restrictions.
 
-
-
 * **habNomLeft** 
 
-
 * **hab4** 	
-
-
 
 * **hab6** 
 
@@ -319,90 +58,11 @@ These were the set types.
 * **hab8** This is not HAB
 * **hab5**  This is not HAB
 
-
-
 * **habDain** (<hab> @ADVL>) for (Pron Dem Pl Loc) if leat followed by Nom to the right
-
-
-
 
 * **habGen** (<hab> @<ADVL) hab for Gen; if Gen is located in the end of the sentence and Nom is sentence initial
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 * **spred<obj** (@SPRED<OBJ) for Acc; the object of an SPRPED. Not to be mistaken with OPRED. If SPRED is to the left, and copulas is to the left of it. Nom or Hab are found sentence initially.
-
 
 * **Hab<spred** (@<SPRED) for Nom; if copulas, goallut or jápmit is FMAINV and habitive or human Loc is found to the left. OR: if Ill or @Pron< followed by HAB are found to the left.
 
@@ -414,14 +74,11 @@ These were the set types.
 
 * **<spred** (<ext> @<SUBJ) for Nom, but not for Pers. To the left boahtit or heaŋgát as MAINV, and futher to the left is some kind of place related word, or time related word
 
-
 * **<spredQst1** (<ext> @<SUBJ) for Nom in a typically question sentence; if A) Hab, some kind of place word, Po or Nom to the left, and Qst followed by copulas to the left. B) same as a, only the Qst-pcle is attached to copulas. C) Qst to the left, with copulas to its left, but not if two Nom:s are found somewhere to the right. D) copulas to the left, and BOS to the left. E) Loc or Ill to the left, and Loc or Hab to the left of this, Qst and copulas to the left. F) Num @>N to the left, Hab, some kind of place word, Po or Nom to the left, and Qst followed by copulas to the left. NOTE) for all these rules; human, Loc or Sem/Plc not allowed to the right.
 
 * **<spredQst2** (@<SPRED) for Nom; in a typically question sentence; differs from <spredQst1 by not beeing as restricted to the right. Though you are not allowed to be Pers or human.
 
 * **Nom<spredQst** (@<SPRED) for Nom; in a typically question sentence. Differs from <spredQst2 by letting Nom be found between SPRED and copulas
-
-
 
 * **<spred** (@<SPRED) for A Nom or N Nom if; the subject Nom is on the same side of copulas as you: on the right side of copulas
 
@@ -430,7 +87,6 @@ These were the set types.
 * **leftCop<spred** (@<SPRED) for Nom; if copulas is the main verb to the left, and there is no Ess found to the left of cop (note that Loc is allowed between target and cop). OR: if you are Coll or Sem/Group with copulas to your left. 
 
 * **<spredLocEXPERIMENT** (@<SPRED) for material Loc; if you are to the right of copulas, and the Nom to the left of copulas is not a hab-actor
-
 
 * **NumTime** (@<SPRED) for A Nom
 
@@ -452,22 +108,13 @@ These were the set types.
 
 * **r492>** (@SPRED>) for Interr Gen; consisting only of negations. You are not allowed to be MII. You are not allowed to have an adjective or noun to yor right. You are not allowed to have a verb to your right; the exception beeing an aux.
 
-
-
 * **AdjSpredSg>** (@SPRED>) for A Sg Nom; if copulas to the right, but not if A or @<SPRED are found to the right of copulas
 
 * **SpredSg>Hab** (@SPRED>) for Nom; if you are sentence initial, copulas is located to the right, and there is a habitive to the right of copulas
 
-
-
 * **Spred>SubjInf** (@SPRED>) for Nom; if copulas to the right, and the subject of copulas is an Inf to the right
 
 * **spredCoord** (@<SPRED) coordination for Nom; only if there already is a SPRED to the left of CNP. Not if there is some kind of comparison involved.
-
-
-
-
-
 
 * **subj>Sgnr1** (@SUBJ>) for Nom Sg, including Indef Nom if; VFIN + Sg3 or Pl3 to the right (VFIN not allowed to the left) 
 
@@ -476,138 +123,59 @@ These were the set types.
 
 * **subj>Pl** (@SUBJ>) for plural nominatives
 
-
 * **subj>Sgnr2** (@SUBJ>) for Nom Sg; if VFIN + Sg3 to the right.
 
 * **<subjSg** (@<SUBJ) for Nom Sg; if VFIN Sg3 or Du2 to the left (no HAB allowed to the left).
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 * **f<advl** (@-F<ADVL) for infinite adverbials
 
 * **f<advl** (@-F<ADVL) for infinite adverbials
-
-
 
 * **s-boundary=advl>** (@ADVL>) for ADVL that resemble s-booundaries. Mainverb to the right.
-
-
-
 
 * **-fobj>** (@-FOBJ>) for Acc 
 
 * **-fobj>** (@-FOBJ>) for Acc
 
-
-
-
 * **advl>mainV** (@ADVL>) if; finite mainverb not found to the left, but the finite mainverb is found to the right.
 
-
 * **<advl** (@<ADVL) if; finite mainverb found to the left. Not if a comma is found immediately to the left and a finite mainverb is located somewhere to the right of this comma.
-
-
-
 
 * **<advlPoPr** (@<ADVL) if mainverb to the left.
 * **advlPoPr>** (@<ADVL) if mainverb to the right.
 
-
-
 * **advlEss>** (@<ADVL) for weather and time Ess, if FMAINV to the left.
-
-
-
-
-
 
 * **advl>inbetween** (@ADVL>) for Adv; if inbetween two sentenceboundaries where no mainverb is present.
 
 * **comma<advlEOS** (@<ADVL) if; comma found to the left and the finite mainverb to the left of comma. To the right is the end of the sentence.
 
-
-
 * **advlBOS>** (@ADVL>) if; you are N Ill and found sentnece initially. First one to your right is a clause.
-
 
 * **<advlPoEOS** (@<ADVL) for Po; if you are found at the very end of a sentence. A mainverb is needed to the right though.
 
-
-
 * **cleanupILL<advl** (@<ADVL) for N Ill if; there are no boundarysymbols to your left, if you arent already @N< OR @APP-N<, and no mainverb is to yor left.
-
-
-
-
-
-
-
-
-
-
 
 * **<opredAAcc** (@<OPRED) for A Acc; if an other accusative to the left, and a transtive verb to the left of it. OR: if a transitive verb to the left, and an accusative to the left of it.
 
-
 ### sma object
-
-
-
-
-
-
-
-
 
 * **<advlEss** (@<ADVL) for ESS-ADVL if; FMAINV to the left
 * **<spredEss** (@<SPRED) for N Ess if; FMAINV to the left is intransitive or bargat
-
-
-
-
 
 ## SUBJ MAPPING - leftovers
 
 ## OBJ MAPPING - leftovers
 
-
 ## HNOUN MAPPING
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 * * *
-<small>This (part of) documentation was generated from [../src/cg3/functions.cg3](http://github.com/giellalt/lang-cor/blob/main/../src/cg3/functions.cg3)</small>Cornish morph-phon grammar file
 
+<small>This (part of) documentation was generated from [src/cg3/functions.cg3](https://github.com/giellalt/lang-cor/blob/main/src/cg3/functions.cg3)</small>
+
+---
+
+Cornish morph-phon grammar file
 
 # Cornish morphphonology
 
@@ -617,7 +185,6 @@ We keep a verbose style, at each point we tell what we will do.
 That is the echo commands.
 
 ## Definitions
-
 
 Here, we have left some documentation for curious readers:
 
@@ -645,8 +212,6 @@ they have done their job.
 
 * Yy 
 
-
-
 * Symbols 
 
 * Sgm 
@@ -654,7 +219,6 @@ they have done their job.
 ## Rules
 
 Here the action begins.
-
 
 ### Mutations
 
@@ -680,7 +244,6 @@ Devoicing b -> p etc. in front of %^P
 
 Voiced plosive to fric with mixed in front of %^M
 
-
 Nonmutation as identity when we do not have triggers.
 Hmm, why is this needed?
 
@@ -694,14 +257,6 @@ Devoicing b -> p
 
 Deleting light stem vowel with LightStemVow
 
-
-
-
-
-
-
-
-
 AuslautHerdung
 
 Umlaut of e3, a4, ... in %^UML contexts
@@ -712,14 +267,11 @@ The order of rules here is not crucial, crucial is the order below:
 But it is a good idea to have the same rule here as well.
 Dummydeletion comes last:
 
-
 ArchiPhonemes should not be on the surface
-
 
 ## Compilation
 
 Then we compile, one rule after another.
-
 
 * read regex [ Nonmutation
 * .o. identity
@@ -745,10 +297,14 @@ Then we compile, one rule after another.
 * .o. ArchiPhonemes
 * .o. DummyDeletion
 * ] ;
+
 * * *
-<small>This (part of) documentation was generated from [../src/fst/phonology.xfscript](http://github.com/giellalt/lang-cor/blob/main/../src/fst/phonology.xfscript)</small># Lexicon over Cornish nouns
 
+<small>This (part of) documentation was generated from [src/fst/phonology.xfscript](https://github.com/giellalt/lang-cor/blob/main/src/fst/phonology.xfscript)</small>
 
+---
+
+# Lexicon over Cornish nouns
 
 ## Short overview of the types
 
@@ -775,7 +331,6 @@ Feminines
 * **f-yow** = yow plural
 * **f-yon** = yon plural
 
-
 ## The stems
 
 * **LEXICON Noun** contains all the nouns 
@@ -783,8 +338,6 @@ Feminines
 ## Exceptions
 
 ki, den, ojyon, ...
-
-
 
 ## Regular nouns
 
@@ -821,7 +374,6 @@ yon plural
 * bleujenner:bleujennor m-ag "florist" ; 
 * begyer+N+Msc:begyor yonpl "beggar" ;  also m-s
 
-
 -es plural
 
 * baban m-es "baby" ; 
@@ -833,11 +385,9 @@ yon plural
 * balyer m-s "balyers" ; 
 ...
 
-
 balek-wörter
 
 * balek:bale3k m ; 
-
 
 Duals
 
@@ -851,8 +401,6 @@ i plural
 
 * abostol:abo4sto4l m-aff-i "apostle" ; not working yet
 
-
-
 Singularia tantum
 * adhvetter m-sgtantum "ripeness" ; 
 * Afrikan m-sgtantum "African" ; 
@@ -863,15 +411,9 @@ Pluralia tantum
 * mona m-pltantum "money" ;  NW
 mona is here as illustration, should get a new continuation lex
 
-
-
-
-
 ## Longer lists
 
-
 ### Masculines
-
 
 m-ow 
 
@@ -885,7 +427,6 @@ m-yow
 * ankor m-yow "anchor" ; 
 ...
 
-
 m-ys 
 
 * kanel m-ys "tap" ; 
@@ -894,19 +435,15 @@ m-ys
 
 ### Feminines
 
-
 #### Irregular feminines
 
 * modrep:modreb f-edh ; 
-
-
 
 #### f with ow plural 
 
 * abases f "abbess" ; 
 * tagel f "constriction, choker" ; 
 ...
-
 
 #### f-yow 
 
@@ -926,9 +463,7 @@ Masculine nouns from 2020 dictionary. TODO: Check for inflection class
 * alejyans m-yow "allegation" ; 
 ...
 
-
 Feminine nouns from 2020 dictionary. TODO: Check for inflection class
-
 
 * 'Edhowes f "Jew" ; 
 * 'eth f "language" ; 
@@ -937,8 +472,14 @@ Feminine nouns from 2020 dictionary. TODO: Check for inflection class
 * banken f "bank" ; 
 * banow f "sow" ; 
 ...
+
 * * *
-<small>This (part of) documentation was generated from [../src/fst/stems/nouns.lexc](http://github.com/giellalt/lang-cor/blob/main/../src/fst/stems/nouns.lexc)</small># Cornish Adverbs
+
+<small>This (part of) documentation was generated from [src/fst/stems/nouns.lexc](https://github.com/giellalt/lang-cor/blob/main/src/fst/stems/nouns.lexc)</small>
+
+---
+
+# Cornish Adverbs
 
 Documenting `stems/adverbs.lexc`
 
@@ -962,8 +503,12 @@ jammes adv "never." ;
 Then comes the list with adverbs from the 2020 dictionary
 
 * * *
-<small>This (part of) documentation was generated from [../src/fst/stems/adverbs.lexc](http://github.com/giellalt/lang-cor/blob/main/../src/fst/stems/adverbs.lexc)</small># Cornish prepositions 
 
+<small>This (part of) documentation was generated from [src/fst/stems/adverbs.lexc](https://github.com/giellalt/lang-cor/blob/main/src/fst/stems/adverbs.lexc)</small>
+
+---
+
+# Cornish prepositions 
 
 Four classes:
 * Class 1  
@@ -973,8 +518,6 @@ Four classes:
 
 **LEXICON pp**   tag only
 * +Pr: # ;
-
-
 
 **LEXICON pp-prono** tag and person forms, -o-
 * +Pr:0 # ; =  bare form
@@ -994,7 +537,6 @@ Four classes:
 * +Pr+2Sg:hanas # ;
 ---
 
-
 **LEXICON Preposition** the list (some 20-30)
 * a pp-a "of, from" ;
 * avel pp-prono "like" ;
@@ -1002,7 +544,12 @@ Four classes:
 ...
 
 * * *
-<small>This (part of) documentation was generated from [../src/fst/stems/prepositions.lexc](http://github.com/giellalt/lang-cor/blob/main/../src/fst/stems/prepositions.lexc)</small># Interjections
+
+<small>This (part of) documentation was generated from [src/fst/stems/prepositions.lexc](https://github.com/giellalt/lang-cor/blob/main/src/fst/stems/prepositions.lexc)</small>
+
+---
+
+# Interjections
 
 **LEXICON aj** adds tag 
 * +Interj: # ; 
@@ -1016,7 +563,12 @@ Four classes:
 Words from 2020 dictionary
 
 * * *
-<small>This (part of) documentation was generated from [../src/fst/stems/interjections.lexc](http://github.com/giellalt/lang-cor/blob/main/../src/fst/stems/interjections.lexc)</small># Cornish Pronoun stems and morphology
+
+<small>This (part of) documentation was generated from [src/fst/stems/interjections.lexc](https://github.com/giellalt/lang-cor/blob/main/src/fst/stems/interjections.lexc)</small>
+
+---
+
+# Cornish Pronoun stems and morphology
 
 This file lists pronouns fullforms.
 
@@ -1037,13 +589,11 @@ This file lists pronouns fullforms.
 * my+Pron+Pers+Suff+1Sg:vy # ;
 * my+Pron+Pers+Suff+Emph+1Sg:evy # ;
 
-
 **LEXICON Demonstrative** 
 * ma+Dem:ma # "this" ;
 * na+Dem:na # "that" ;
 * hemm+Dem+Sem/Msc+Sg:hemm # "this one (masc.)" ;
 ...
-
 
 **LEXICON Determinative** 
 * an+Det+Def:an # ;
@@ -1055,14 +605,19 @@ This file lists pronouns fullforms.
 
 **LEXICON Indefinite** 
 * huni+Pron+Indef+Sg:huni # ;
+
 * * *
-<small>This (part of) documentation was generated from [../src/fst/stems/pronouns.lexc](http://github.com/giellalt/lang-cor/blob/main/../src/fst/stems/pronouns.lexc)</small>
+
+<small>This (part of) documentation was generated from [src/fst/stems/pronouns.lexc](https://github.com/giellalt/lang-cor/blob/main/src/fst/stems/pronouns.lexc)</small>
+
+---
+
+
 # Cornish Subjunctions
 
 This file lists the subjunctions and assign them the **+CS** tag.
 
 **LEXICON CS** Adds tag +CS
-
 
 **LEXICON Subjunction** contains the 20 or so subjunctions
 ages CS "than" ;
@@ -1070,8 +625,14 @@ awos CS "because, though, for the sake of, in spite of" ;
 drefenn CS "because, on account of" ;
 erna CS "till, until" ;
 ...
+
 * * *
-<small>This (part of) documentation was generated from [../src/fst/stems/subjunctions.lexc](http://github.com/giellalt/lang-cor/blob/main/../src/fst/stems/subjunctions.lexc)</small># Cornish numeral stems
+
+<small>This (part of) documentation was generated from [src/fst/stems/subjunctions.lexc](https://github.com/giellalt/lang-cor/blob/main/src/fst/stems/subjunctions.lexc)</small>
+
+---
+
+# Cornish numeral stems
 
 * **LEXICON Numeral** 
 
@@ -1079,12 +640,17 @@ erna CS "till, until" ;
 * **onan card-yow "one" ;** 
 * **onen card-yow "one" ;** 
 
-
 * **LEXICON Ordinals** 
 * **pajwora ord-yow "fourth" ;** 
 * **pempes ord-yow "fifth" ;** 
+
 * * *
-<small>This (part of) documentation was generated from [../src/fst/stems/numerals.lexc](http://github.com/giellalt/lang-cor/blob/main/../src/fst/stems/numerals.lexc)</small># Cornish proper nouns 
+
+<small>This (part of) documentation was generated from [src/fst/stems/numerals.lexc](https://github.com/giellalt/lang-cor/blob/main/src/fst/stems/numerals.lexc)</small>
+
+---
+
+# Cornish proper nouns 
 
 This file lists cornish proper nouns. They are directed to the same continuation lexicon.
 
@@ -1093,13 +659,13 @@ This file lists cornish proper nouns. They are directed to the same continuation
 * **Adam prop ;** 
 ... and some 1000 more.
 
-
-
-
-
-
 * * *
-<small>This (part of) documentation was generated from [../src/fst/stems/propernouns.lexc](http://github.com/giellalt/lang-cor/blob/main/../src/fst/stems/propernouns.lexc)</small># The Cornish Adjective root lexicon
+
+<small>This (part of) documentation was generated from [src/fst/stems/propernouns.lexc](https://github.com/giellalt/lang-cor/blob/main/src/fst/stems/propernouns.lexc)</small>
+
+---
+
+# The Cornish Adjective root lexicon
 
 Some 1300 adjectives, only one continuation lexicon. (**adj**).
 
@@ -1112,10 +678,15 @@ ardhek adj "lofty" ;
 arhansek adj "financial" ; 
 arnowydh adj "modern" ; 
 ...
-* * *
-<small>This (part of) documentation was generated from [../src/fst/stems/adjectives.lexc](http://github.com/giellalt/lang-cor/blob/main/../src/fst/stems/adjectives.lexc)</small>
-# Cornish Verb stems
 
+* * *
+
+<small>This (part of) documentation was generated from [src/fst/stems/adjectives.lexc](https://github.com/giellalt/lang-cor/blob/main/src/fst/stems/adjectives.lexc)</small>
+
+---
+
+
+# Cornish Verb stems
 
 ## The regular verb system -- an overview:
 
@@ -1155,7 +726,6 @@ TODO: Go through the new verbs (at the end of this file)
 * u2 This means VA before everything in Umlaut = 1, + the following: 3s and 3p present indicative, 3s and 3p imperative
 * u3
 
-
 Todo:
 * for each stem class, split in umlaut type and make sub-contlexes.
 * In theory, this gives us 6x4 = 24 verbal continuation lexica.
@@ -1166,16 +736,10 @@ It is fortunately easier than that:
 * and the rest are type 2: v3-u2
 * he-verbs are all type 2: v4-u2
 
-
-
-
-
-
 ## The verb lexicon
 
 **LEXICON Verb** lists all the verbs
 * AUX ; = this one entry points to the AUX lexicon in the affixes catalogue
-
 
 * erhi:arha ERHI "command, order, require, bid" ; = some example entries
 * tava:tav TAVA "touch, stroke " ; = 
@@ -1188,11 +752,15 @@ It is fortunately easier than that:
 * gortos:gortos vb "await, wait for, remain, stay" ; = 
 * gwrias:gwri vb "sew, stitch" ; = 
 
-
 Verbs from the 2020 dictionary
 
 * * *
-<small>This (part of) documentation was generated from [../src/fst/stems/verbs.lexc](http://github.com/giellalt/lang-cor/blob/main/../src/fst/stems/verbs.lexc)</small># Cornish Conjunctions
+
+<small>This (part of) documentation was generated from [src/fst/stems/verbs.lexc](https://github.com/giellalt/lang-cor/blob/main/src/fst/stems/verbs.lexc)</small>
+
+---
+
+# Cornish Conjunctions
 
 This documents the file `stems/conjunctions.lexc`. Note that based on the English 
 translations it seems there are some subjunctions here, and it also seems the Cornish
@@ -1210,8 +778,14 @@ py CC "or" ;
 rag CC "for" ;
 
 2020 dictionary CC entries not known to fst
+
 * * *
-<small>This (part of) documentation was generated from [../src/fst/stems/conjunctions.lexc](http://github.com/giellalt/lang-cor/blob/main/../src/fst/stems/conjunctions.lexc)</small># Cornish noun morphology
+
+<small>This (part of) documentation was generated from [src/fst/stems/conjunctions.lexc](https://github.com/giellalt/lang-cor/blob/main/src/fst/stems/conjunctions.lexc)</small>
+
+---
+
+# Cornish noun morphology
 
 ## Masculine stem classes
 The nouns get tags (to the left of :, i.e. in the upper representation
@@ -1223,17 +797,13 @@ and the suffixes are found to the left of the colon
 
 * **LEXICON m-ow** 
 
-
 * **LEXICON m-ys** 
 
 * **LEXICON m-es** 
 
 * **LEXICON m-s** 
 
-
-
 * **LEXICON m-yon** 
-
 
 * **LEXICON m-aff-i** 
 
@@ -1251,13 +821,10 @@ and the suffixes are found to the left of the colon
 
 * **LEXICON f-edh** 
 
-
-
 Nest step:
 
 Here we add suffixes. These may be common to several stem classes
 and are therefore pointed to in a different layer (this one)
-
 
 ## Number lexica
 
@@ -1272,8 +839,6 @@ and are therefore pointed to in a different layer (this one)
 * **LEXICON ipl** 
 
 * **LEXICON yspl** 
-
-
 
 * **LEXICON espl** 
 
@@ -1295,13 +860,13 @@ and are therefore pointed to in a different layer (this one)
 
 # Mutation lexicon
 
-
-
 * **LEXICON mutation** 
 
 * * *
-<small>This (part of) documentation was generated from [../src/fst/affixes/nouns.lexc](http://github.com/giellalt/lang-cor/blob/main/../src/fst/affixes/nouns.lexc)</small>
 
+<small>This (part of) documentation was generated from [src/fst/affixes/nouns.lexc](https://github.com/giellalt/lang-cor/blob/main/src/fst/affixes/nouns.lexc)</small>
+
+---
 
 
 
@@ -1311,45 +876,45 @@ and are therefore pointed to in a different layer (this one)
 Numeral inflection is like nominal, except that numerals compound in all
 forms which requires great amount of care in the inflection patterns.
 
-
-
 * **LEXICON ARABICCASES**  adds +Arab
 
 * **LEXICON ARABICCASE**  adds +Arab
 
 * **LEXICON ARABICCASE0**  adds +Arab
 
-
-
-
-
-
-
-
-
-
 * * *
-<small>This (part of) documentation was generated from [../src/fst/affixes/numerals.lexc](http://github.com/giellalt/lang-cor/blob/main/../src/fst/affixes/numerals.lexc)</small># Propernoun affix
+
+<small>This (part of) documentation was generated from [src/fst/affixes/numerals.lexc](https://github.com/giellalt/lang-cor/blob/main/src/fst/affixes/numerals.lexc)</small>
+
+---
+
+# Propernoun affix
 
 * **LEXICON prop** 
 * **+N+Prop: mutation ;** 
 
-
-
-
 * * *
-<small>This (part of) documentation was generated from [../src/fst/affixes/propernouns.lexc](http://github.com/giellalt/lang-cor/blob/main/../src/fst/affixes/propernouns.lexc)</small># Adjectve morphology
+
+<small>This (part of) documentation was generated from [src/fst/affixes/propernouns.lexc](https://github.com/giellalt/lang-cor/blob/main/src/fst/affixes/propernouns.lexc)</small>
+
+---
+
+# Adjectve morphology
 
 Only add tag so far.
 
 * **LEXICON adj** 
 * **+Adj: # ;** 
-* * *
-<small>This (part of) documentation was generated from [../src/fst/affixes/adjectives.lexc](http://github.com/giellalt/lang-cor/blob/main/../src/fst/affixes/adjectives.lexc)</small># Verbal morphology
 
+* * *
+
+<small>This (part of) documentation was generated from [src/fst/affixes/adjectives.lexc](https://github.com/giellalt/lang-cor/blob/main/src/fst/affixes/adjectives.lexc)</small>
+
+---
+
+# Verbal morphology
 
 ## The declension classes
-
 
 ### Auxiliaries
 
@@ -1358,89 +923,22 @@ Only add tag so far.
 * dos+V:     DOS        "come" ;    
 * gul+V:     GUL        "do" ;      
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 * * *
-<small>This (part of) documentation was generated from [../src/fst/affixes/verbs.lexc](http://github.com/giellalt/lang-cor/blob/main/../src/fst/affixes/verbs.lexc)</small>
+
+<small>This (part of) documentation was generated from [src/fst/affixes/verbs.lexc](https://github.com/giellalt/lang-cor/blob/main/src/fst/affixes/verbs.lexc)</small>
+
+---
+
+
 # Symbol affixes
 
-
-
-
-
 * * *
-<small>This (part of) documentation was generated from [../src/fst/affixes/symbols.lexc](http://github.com/giellalt/lang-cor/blob/main/../src/fst/affixes/symbols.lexc)</small># Cornish morphology
+
+<small>This (part of) documentation was generated from [src/fst/affixes/symbols.lexc](https://github.com/giellalt/lang-cor/blob/main/src/fst/affixes/symbols.lexc)</small>
+
+---
+
+# Cornish morphology
 
 First, we declare multicharacter symbols
 
@@ -1449,7 +947,6 @@ First, we declare multicharacter symbols
 * +Adv +CC +CS +Interj +Pron +Num +Pr         
 * +Smut +Mmut +Pmut +Amut                for mutation
 * +Symbol = independent symbols in the text stream, like £, €, ©
-
 
 ## Verbal MSP
 +Prs +Fut +Prt +Prf +Ipf +Plf       
@@ -1482,7 +979,6 @@ The "%" symbol literalises the next symbol
  e3             e to o in plural
  a4 o4         Umlaut phonemes, changing to e
 
-
 ## Symbols that need to be escaped on the lower side (towards twolc):
 * **»7**:  Literal »
 * **«7**:  Literal «
@@ -1490,7 +986,6 @@ The "%" symbol literalises the next symbol
  %[%>%]  - Literal >
  %[%<%]  - Literal <
 ```
-
 
 ## Flag diacritics
 We have manually optimised the structure of our lexicon using following
@@ -1532,8 +1027,6 @@ given the proper use of these flags.
 |  @R.ErrOrth.ON@ | resetting ErrOrth flag
 |  @C.ErrOrth@ | clearing ErrOrth Flag.
 
-
-
 # Key lexicon
 
 * LEXICON Root        
@@ -1551,79 +1044,17 @@ given the proper use of these flags.
     - Punctuation ;          
     - Symbols     ;          
 
-
 Adhoc lexica, to be fixed
-
 
 * LEXICON ENDLEX       
 * LEXICON RNum       
 * LEXICON ARABICCOMPOUNDS        
 
 * * *
-<small>This (part of) documentation was generated from [../src/fst/root.lexc](http://github.com/giellalt/lang-cor/blob/main/../src/fst/root.lexc)</small>
 
+<small>This (part of) documentation was generated from [src/fst/root.lexc](https://github.com/giellalt/lang-cor/blob/main/src/fst/root.lexc)</small>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+---
 
 
 
@@ -1785,52 +1216,12 @@ raised							_r
 lowered							_o 
 advanced tongue root				_A 
 retracted tongue root			_q
+
 * * *
-<small>This (part of) documentation was generated from [../src/phonetics/txt2ipa.xfscript](http://github.com/giellalt/lang-cor/blob/main/../src/phonetics/txt2ipa.xfscript)</small>
 
+<small>This (part of) documentation was generated from [src/phonetics/txt2ipa.xfscript](https://github.com/giellalt/lang-cor/blob/main/src/phonetics/txt2ipa.xfscript)</small>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+---
 
 
 
@@ -1841,7 +1232,11 @@ retracted tongue root			_q
 % násti% :%*     Root ; 
 
 * * *
-<small>This (part of) documentation was generated from [../src/transcriptions/transcriptor-numbers-digit2text.lexc](http://github.com/giellalt/lang-cor/blob/main/../src/transcriptions/transcriptor-numbers-digit2text.lexc)</small>
+
+<small>This (part of) documentation was generated from [src/transcriptions/transcriptor-numbers-digit2text.lexc](https://github.com/giellalt/lang-cor/blob/main/src/transcriptions/transcriptor-numbers-digit2text.lexc)</small>
+
+---
+
 
 
 We describe here how abbreviations are in Cornish are read out, e.g.
@@ -1856,41 +1251,28 @@ For example:
 * esim.:esimerkki # ; 
 * esim.:esimerkiksi # ; 
 
-
 * * *
-<small>This (part of) documentation was generated from [../src/transcriptions/transcriptor-abbrevs2text.lexc](http://github.com/giellalt/lang-cor/blob/main/../src/transcriptions/transcriptor-abbrevs2text.lexc)</small>
+
+<small>This (part of) documentation was generated from [src/transcriptions/transcriptor-abbrevs2text.lexc](https://github.com/giellalt/lang-cor/blob/main/src/transcriptions/transcriptor-abbrevs2text.lexc)</small>
+
+---
+
+
 [ L A N G U A G E ]  G R A M M A R   C H E C K E R
-
-
-
-
-
-
-
-
 
 # DELIMITERS
 
-
 # TAGS AND SETS
 
-
-
 ## Tags
-
 
 This section lists all the tags inherited from the fst, and used as tags
 in the syntactic analysis. The next section, **Sets**, contains sets defined
 on the basis of the tags listed here, those set names are not visible in the output.
 
-
-
-
 ### Beginning and end of sentence
 BOS
 EOS
-
-
 
 ### Parts of speech tags
 
@@ -1920,8 +1302,6 @@ PUNCT
 COMMA
 ¶
 
-
-
 ### Tags for POS sub-categories
 
 Pers
@@ -1937,7 +1317,6 @@ Prop
 Allegro
 Arab
 Romertall
-
 
 ### Tags for morphosyntactic properties
 
@@ -2000,11 +1379,7 @@ Sup
 Actio
 VAbess
 
-
-
 Err/Orth
-
-
 
 ### Semantic tags
 
@@ -2037,14 +1412,10 @@ HUMAN
 HAB-ACTOR
 HAB-ACTOR-NOT-HUMAN
 
-
 PROP-ATTR
 PROP-SUR
 
-
-
 TIME-N-SET
-
 
 ###  Syntactic tags
 
@@ -2116,22 +1487,15 @@ OBJ>-OTHERS
 SYN-V
 @X
 
-
-
-
-
 ## Sets containing sets of lists and tags
 
 This part of the file lists a large number of sets based partly upon the tags defined above, and
 partly upon lexemes drawn from the lexicon.
 See the sourcefile itself to inspect the sets, what follows here is an overview of the set types.
 
-
-
 ### Sets for Single-word sets
 
 INITIAL
-
 
 ### Sets for word or not
 
@@ -2139,7 +1503,6 @@ WORD
 REAL-WORD
 REAL-WORD-NOT-ABBR
 NOT-COMMA
-
 
 ### Case sets
 
@@ -2154,7 +1517,6 @@ NOT-ACC
 
 ### Verb sets
 
-
 NOT-V
 
 ### Sets for finiteness and mood
@@ -2164,7 +1526,6 @@ REAL-NEG
 MOOD-V
 
 NOT-PRFPRC
-
 
 ### Sets for person
 
@@ -2178,49 +1539,15 @@ PL1-V
 PL2-V
 PL3-V
 
-
-
-
-
 ### Pronoun sets
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 ### Adjectival sets and their complements
 
-
-
-
 ### Adverbial sets and their complements
-
-
-
 
 ### Sets of elements with common syntactic behaviour
 
-
 ### NP sets defined according to their morphosyntactic features
-
-
-
-
-
-
-
 
 ### The PRE-NP-HEAD family of sets
 
@@ -2228,86 +1555,34 @@ These sets model noun phrases (NPs). The idea is to first define whatever can
 occur in front of the head of the NP, and thereafter negate that with the
 expression **WORD - premodifiers**.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ### Border sets and their complements
-
-
-
-
-
-
-
-
-
-
 
 ### Grammarchecker sets
 
-
-
-
-
-
-
-
 * * *
-<small>This (part of) documentation was generated from [../tools/grammarcheckers/grammarchecker.cg3](http://github.com/giellalt/lang-cor/blob/main/../tools/grammarcheckers/grammarchecker.cg3)</small>Requires a recent version of HFST (3.10.0 / git revision>=3aecdbc)
+
+<small>This (part of) documentation was generated from [tools/grammarcheckers/grammarchecker.cg3](https://github.com/giellalt/lang-cor/blob/main/tools/grammarcheckers/grammarchecker.cg3)</small>
+
+---
+
+# Grammar checker tokenisation for cor
+
+Requires a recent version of HFST (3.10.0 / git revision>=3aecdbc)
 Then just:
+```
 $ make
 $ echo "ja, ja" | hfst-tokenise --giella-cg tokeniser-disamb-gt-desc.pmhfst
-
-Issues:
-- [X] Ambiguous input
-- Seems to work fine
-- [X] Ambiguous multiword expessions with ambiguous tokenisation
-- Seems to work – represented within lexc now; hfst-tokenise also
-supports forms on the analyses now
-- [X] Ambiguous multiword expessions need reorganising after CG
-- The module cg-mwesplit takes wordforms from readings and turns them into
-new cohorts
-- [X] Unknown words
-- The set-difference method only works for words without
-flag diacritics (even though we should be working only on the form-side?)
-and leads to binary blow-up: With only lower unknowns, we get 45M;
-lower+upper gives 67M, while no unknowns gives 27M
-- Fixed instead by treating empty analyses as unknown-tokens in
-hfst-tokenise, and outputting unmatched strings with a prefix
-- [ ] Treat input that's within superblanks as unmatched
-- probably requires a change in hfst-tokenise itself
-- [X] Try >1 space for ambiguous MWE's? – represented within lexc now
-- [ ] Try set-difference-unknowns method with regular hfst commands?
+```
 
 More usage examples:
+```
 $ echo "Juos gorreválggain lea (dárbbašlaš) deavdit gáibádusa boasttu olmmoš, man mielde lahtuid." | hfst-tokenise --giella-cg tokeniser-disamb-gt-desc.pmhfst
 $ echo "(gáfe) 'ja' ja 3. ja? ц jaja ukjend \"ukjend\"" | hfst-tokenise --giella-cg tokeniser-disamb-gt-desc.pmhfst
 $ echo "márffibiillagáffe" | hfst-tokenise --giella-cg tokeniser-disamb-gt-desc.pmhfst
+```
 
 Pmatch documentation:
-https://kitwiki.csc.fi/twiki/bin/view/KitWiki/HfstPmatch
-
-
-
-
-
+<https://kitwiki.csc.fi/twiki/bin/view/KitWiki/HfstPmatch>
 
 Characters which have analyses in the lexicon, but can appear without spaces
 before/after, that is, with no context conditions, and adjacent to words:
@@ -2322,9 +1597,6 @@ the List contains some unicode white space characters
 * Narrow No-Break Space U+202F
 * Medium Mathematical Space U+205F
 * Word joiner U+2060
-
-
-
 
 Apart from what's in our morphology, there are
 1) unknown word-like forms, and
@@ -2338,14 +1610,11 @@ so far:
 
 TODO: Could use something like this, but built-in's don't include šžđčŋ:
 
-
 Simply give an empty reading when something is unknown:
 hfst-tokenise --giella-cg will treat such empty analyses as unknowns, and
 remove empty analyses from other readings. Empty readings are also
 legal in CG, they get a default baseform equal to the wordform, but
 no tag to check, so it's safer to let hfst-tokenise handle them.
-
-
 
 Finally we mark as a token any sequence making up a:
 * known word in context
@@ -2354,7 +1623,12 @@ Finally we mark as a token any sequence making up a:
 * URL in context
 
 * * *
-<small>This (part of) documentation was generated from [../tools/tokenisers/tokeniser-gramcheck-gt-desc.pmscript](http://github.com/giellalt/lang-cor/blob/main/../tools/tokenisers/tokeniser-gramcheck-gt-desc.pmscript)</small># Tokeniser for cor
+
+<small>This (part of) documentation was generated from [tools/tokenisers/tokeniser-gramcheck-gt-desc.pmscript](https://github.com/giellalt/lang-cor/blob/main/tools/tokenisers/tokeniser-gramcheck-gt-desc.pmscript)</small>
+
+---
+
+# Tokeniser for cor
 
 Usage:
 ```
@@ -2366,12 +1640,7 @@ $ echo "márffibiillagáffe" | hfst-tokenise --giella-cg tokeniser-disamb-gt-des
 ```
 
 Pmatch documentation:
-https://kitwiki.csc.fi/twiki/bin/view/KitWiki/HfstPmatch
-
-
-
-
-
+<https://kitwiki.csc.fi/twiki/bin/view/KitWiki/HfstPmatch>
 
 Characters which have analyses in the lexicon, but can appear without spaces
 before/after, that is, with no context conditions, and adjacent to words:
@@ -2386,9 +1655,6 @@ the List contains some unicode white space characters
 * Narrow No-Break Space U+202F
 * Medium Mathematical Space U+205F
 * Word joiner U+2060
-
-
-
 
 Apart from what's in our morphology, there are
 1. unknown word-like forms, and
@@ -2406,16 +1672,12 @@ ASCII digits
 so far:
 * U+F0B7 for "x in box"
 
-
-
 ## Unknown handling
 Unknowns are tagged ?? and treated specially with `hfst-tokenise`
 hfst-tokenise --giella-cg will treat such empty analyses as unknowns, and
 remove empty analyses from other readings. Empty readings are also
 legal in CG, they get a default baseform equal to the wordform, but
 no tag to check, so it's safer to let hfst-tokenise handle them.
-
-
 
 Finally we mark as a token any sequence making up a:
 * known word in context
@@ -2424,4 +1686,8 @@ Finally we mark as a token any sequence making up a:
 * URL in context
 
 * * *
-<small>This (part of) documentation was generated from [../tools/tokenisers/tokeniser-disamb-gt-desc.pmscript](http://github.com/giellalt/lang-cor/blob/main/../tools/tokenisers/tokeniser-disamb-gt-desc.pmscript)</small>
+
+<small>This (part of) documentation was generated from [tools/tokenisers/tokeniser-disamb-gt-desc.pmscript](https://github.com/giellalt/lang-cor/blob/main/tools/tokenisers/tokeniser-disamb-gt-desc.pmscript)</small>
+
+---
+

@@ -8,7 +8,6 @@ First, we declare multicharacter symbols
 * +Smut +Mmut +Pmut +Amut                for mutation
 * +Symbol = independent symbols in the text stream, like £, €, ©
 
-
 ## Verbal MSP
 +Prs +Fut +Prt +Prf +Ipf +Plf       
 +Ind +Imp +Sbj       
@@ -40,7 +39,6 @@ The "%" symbol literalises the next symbol
  e3             e to o in plural
  a4 o4         Umlaut phonemes, changing to e
 
-
 ## Symbols that need to be escaped on the lower side (towards twolc):
 * **»7**:  Literal »
 * **«7**:  Literal «
@@ -48,7 +46,6 @@ The "%" symbol literalises the next symbol
  %[%>%]  - Literal >
  %[%<%]  - Literal <
 ```
-
 
 ## Flag diacritics
 We have manually optimised the structure of our lexicon using following
@@ -90,8 +87,6 @@ given the proper use of these flags.
 |  @R.ErrOrth.ON@ | resetting ErrOrth flag
 |  @C.ErrOrth@ | clearing ErrOrth Flag.
 
-
-
 # Key lexicon
 
 * LEXICON Root        
@@ -109,13 +104,15 @@ given the proper use of these flags.
     - Punctuation ;          
     - Symbols     ;          
 
-
 Adhoc lexica, to be fixed
-
 
 * LEXICON ENDLEX       
 * LEXICON RNum       
 * LEXICON ARABICCOMPOUNDS        
 
 * * *
-<small>This (part of) documentation was generated from [../src/fst/root.lexc](http://github.com/giellalt/lang-cor/blob/main/../src/fst/root.lexc)</small>
+
+<small>This (part of) documentation was generated from [src/fst/root.lexc](https://github.com/giellalt/lang-cor/blob/main/src/fst/root.lexc)</small>
+
+---
+

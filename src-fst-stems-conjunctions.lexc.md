@@ -16,5 +16,10 @@ py CC "or" ;
 rag CC "for" ;
 
 2020 dictionary CC entries not known to fst
+
 * * *
-<small>This (part of) documentation was generated from [../src/fst/stems/conjunctions.lexc](http://github.com/giellalt/lang-cor/blob/main/../src/fst/stems/conjunctions.lexc)</small>
+
+<small>This (part of) documentation was generated from [src/fst/stems/conjunctions.lexc](https://github.com/giellalt/lang-cor/blob/main/src/fst/stems/conjunctions.lexc)</small>
+
+---
+

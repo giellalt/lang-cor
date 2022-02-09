@@ -1,6 +1,5 @@
 # Cornish prepositions 
 
-
 Four classes:
 * Class 1  
 * Class 2 
@@ -9,8 +8,6 @@ Four classes:
 
 **LEXICON pp**   tag only
 * +Pr: # ;
-
-
 
 **LEXICON pp-prono** tag and person forms, -o-
 * +Pr:0 # ; =  bare form
@@ -30,7 +27,6 @@ Four classes:
 * +Pr+2Sg:hanas # ;
 ---
 
-
 **LEXICON Preposition** the list (some 20-30)
 * a pp-a "of, from" ;
 * avel pp-prono "like" ;
@@ -38,4 +34,8 @@ Four classes:
 ...
 
 * * *
-<small>This (part of) documentation was generated from [../src/fst/stems/prepositions.lexc](http://github.com/giellalt/lang-cor/blob/main/../src/fst/stems/prepositions.lexc)</small>
+
+<small>This (part of) documentation was generated from [src/fst/stems/prepositions.lexc](https://github.com/giellalt/lang-cor/blob/main/src/fst/stems/prepositions.lexc)</small>
+
+---
+

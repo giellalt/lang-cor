@@ -1,6 +1,5 @@
 Cornish morph-phon grammar file
 
-
 # Cornish morphphonology
 
 This is the file for the morphophonological rules.
@@ -9,7 +8,6 @@ We keep a verbose style, at each point we tell what we will do.
 That is the echo commands.
 
 ## Definitions
-
 
 Here, we have left some documentation for curious readers:
 
@@ -37,8 +35,6 @@ they have done their job.
 
 * Yy 
 
-
-
 * Symbols 
 
 * Sgm 
@@ -46,7 +42,6 @@ they have done their job.
 ## Rules
 
 Here the action begins.
-
 
 ### Mutations
 
@@ -72,7 +67,6 @@ Devoicing b -> p etc. in front of %^P
 
 Voiced plosive to fric with mixed in front of %^M
 
-
 Nonmutation as identity when we do not have triggers.
 Hmm, why is this needed?
 
@@ -86,14 +80,6 @@ Devoicing b -> p
 
 Deleting light stem vowel with LightStemVow
 
-
-
-
-
-
-
-
-
 AuslautHerdung
 
 Umlaut of e3, a4, ... in %^UML contexts
@@ -104,14 +90,11 @@ The order of rules here is not crucial, crucial is the order below:
 But it is a good idea to have the same rule here as well.
 Dummydeletion comes last:
 
-
 ArchiPhonemes should not be on the surface
-
 
 ## Compilation
 
 Then we compile, one rule after another.
-
 
 * read regex [ Nonmutation
 * .o. identity
@@ -137,5 +120,10 @@ Then we compile, one rule after another.
 * .o. ArchiPhonemes
 * .o. DummyDeletion
 * ] ;
+
 * * *
-<small>This (part of) documentation was generated from [../src/fst/phonology.xfscript](http://github.com/giellalt/lang-cor/blob/main/../src/fst/phonology.xfscript)</small>
+
+<small>This (part of) documentation was generated from [src/fst/phonology.xfscript](https://github.com/giellalt/lang-cor/blob/main/src/fst/phonology.xfscript)</small>
+
+---
+

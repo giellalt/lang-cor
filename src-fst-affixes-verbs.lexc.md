@@ -1,8 +1,6 @@
 # Verbal morphology
 
-
 ## The declension classes
-
 
 ### Auxiliaries
 
@@ -11,78 +9,9 @@
 * dos+V:     DOS        "come" ;    
 * gul+V:     GUL        "do" ;      
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 * * *
-<small>This (part of) documentation was generated from [../src/fst/affixes/verbs.lexc](http://github.com/giellalt/lang-cor/blob/main/../src/fst/affixes/verbs.lexc)</small>
+
+<small>This (part of) documentation was generated from [src/fst/affixes/verbs.lexc](https://github.com/giellalt/lang-cor/blob/main/src/fst/affixes/verbs.lexc)</small>
+
+---
+

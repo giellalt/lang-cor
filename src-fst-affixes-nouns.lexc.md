@@ -10,17 +10,13 @@ and the suffixes are found to the left of the colon
 
 * **LEXICON m-ow** 
 
-
 * **LEXICON m-ys** 
 
 * **LEXICON m-es** 
 
 * **LEXICON m-s** 
 
-
-
 * **LEXICON m-yon** 
-
 
 * **LEXICON m-aff-i** 
 
@@ -38,13 +34,10 @@ and the suffixes are found to the left of the colon
 
 * **LEXICON f-edh** 
 
-
-
 Nest step:
 
 Here we add suffixes. These may be common to several stem classes
 and are therefore pointed to in a different layer (this one)
-
 
 ## Number lexica
 
@@ -59,8 +52,6 @@ and are therefore pointed to in a different layer (this one)
 * **LEXICON ipl** 
 
 * **LEXICON yspl** 
-
-
 
 * **LEXICON espl** 
 
@@ -82,9 +73,11 @@ and are therefore pointed to in a different layer (this one)
 
 # Mutation lexicon
 
-
-
 * **LEXICON mutation** 
 
 * * *
-<small>This (part of) documentation was generated from [../src/fst/affixes/nouns.lexc](http://github.com/giellalt/lang-cor/blob/main/../src/fst/affixes/nouns.lexc)</small>
+
+<small>This (part of) documentation was generated from [src/fst/affixes/nouns.lexc](https://github.com/giellalt/lang-cor/blob/main/src/fst/affixes/nouns.lexc)</small>
+
+---
+

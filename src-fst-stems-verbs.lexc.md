@@ -1,7 +1,6 @@
 
 # Cornish Verb stems
 
-
 ## The regular verb system -- an overview:
 
 This shows two version of the analysis, one from 2009 (for reference) and
@@ -40,7 +39,6 @@ TODO: Go through the new verbs (at the end of this file)
 * u2 This means VA before everything in Umlaut = 1, + the following: 3s and 3p present indicative, 3s and 3p imperative
 * u3
 
-
 Todo:
 * for each stem class, split in umlaut type and make sub-contlexes.
 * In theory, this gives us 6x4 = 24 verbal continuation lexica.
@@ -51,16 +49,10 @@ It is fortunately easier than that:
 * and the rest are type 2: v3-u2
 * he-verbs are all type 2: v4-u2
 
-
-
-
-
-
 ## The verb lexicon
 
 **LEXICON Verb** lists all the verbs
 * AUX ; = this one entry points to the AUX lexicon in the affixes catalogue
-
 
 * erhi:arha ERHI "command, order, require, bid" ; = some example entries
 * tava:tav TAVA "touch, stroke " ; = 
@@ -73,8 +65,11 @@ It is fortunately easier than that:
 * gortos:gortos vb "await, wait for, remain, stay" ; = 
 * gwrias:gwri vb "sew, stitch" ; = 
 
-
 Verbs from the 2020 dictionary
 
 * * *
-<small>This (part of) documentation was generated from [../src/fst/stems/verbs.lexc](http://github.com/giellalt/lang-cor/blob/main/../src/fst/stems/verbs.lexc)</small>
+
+<small>This (part of) documentation was generated from [src/fst/stems/verbs.lexc](https://github.com/giellalt/lang-cor/blob/main/src/fst/stems/verbs.lexc)</small>
+
+---
+

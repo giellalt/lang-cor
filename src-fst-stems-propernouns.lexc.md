@@ -7,10 +7,9 @@ This file lists cornish proper nouns. They are directed to the same continuation
 * **Adam prop ;** 
 ... and some 1000 more.
 
-
-
-
-
-
 * * *
-<small>This (part of) documentation was generated from [../src/fst/stems/propernouns.lexc](http://github.com/giellalt/lang-cor/blob/main/../src/fst/stems/propernouns.lexc)</small>
+
+<small>This (part of) documentation was generated from [src/fst/stems/propernouns.lexc](https://github.com/giellalt/lang-cor/blob/main/src/fst/stems/propernouns.lexc)</small>
+
+---
+

@@ -1,7 +1,5 @@
 # Lexicon over Cornish nouns
 
-
-
 ## Short overview of the types
 
 Masculines
@@ -27,7 +25,6 @@ Feminines
 * **f-yow** = yow plural
 * **f-yon** = yon plural
 
-
 ## The stems
 
 * **LEXICON Noun** contains all the nouns 
@@ -35,8 +32,6 @@ Feminines
 ## Exceptions
 
 ki, den, ojyon, ...
-
-
 
 ## Regular nouns
 
@@ -73,7 +68,6 @@ yon plural
 * bleujenner:bleujennor m-ag "florist" ; 
 * begyer+N+Msc:begyor yonpl "beggar" ;  also m-s
 
-
 -es plural
 
 * baban m-es "baby" ; 
@@ -85,11 +79,9 @@ yon plural
 * balyer m-s "balyers" ; 
 ...
 
-
 balek-wörter
 
 * balek:bale3k m ; 
-
 
 Duals
 
@@ -103,8 +95,6 @@ i plural
 
 * abostol:abo4sto4l m-aff-i "apostle" ; not working yet
 
-
-
 Singularia tantum
 * adhvetter m-sgtantum "ripeness" ; 
 * Afrikan m-sgtantum "African" ; 
@@ -115,15 +105,9 @@ Pluralia tantum
 * mona m-pltantum "money" ;  NW
 mona is here as illustration, should get a new continuation lex
 
-
-
-
-
 ## Longer lists
 
-
 ### Masculines
-
 
 m-ow 
 
@@ -137,7 +121,6 @@ m-yow
 * ankor m-yow "anchor" ; 
 ...
 
-
 m-ys 
 
 * kanel m-ys "tap" ; 
@@ -146,19 +129,15 @@ m-ys
 
 ### Feminines
 
-
 #### Irregular feminines
 
 * modrep:modreb f-edh ; 
-
-
 
 #### f with ow plural 
 
 * abases f "abbess" ; 
 * tagel f "constriction, choker" ; 
 ...
-
 
 #### f-yow 
 
@@ -178,9 +157,7 @@ Masculine nouns from 2020 dictionary. TODO: Check for inflection class
 * alejyans m-yow "allegation" ; 
 ...
 
-
 Feminine nouns from 2020 dictionary. TODO: Check for inflection class
-
 
 * 'Edhowes f "Jew" ; 
 * 'eth f "language" ; 
@@ -189,5 +166,10 @@ Feminine nouns from 2020 dictionary. TODO: Check for inflection class
 * banken f "bank" ; 
 * banow f "sow" ; 
 ...
+
 * * *
-<small>This (part of) documentation was generated from [../src/fst/stems/nouns.lexc](http://github.com/giellalt/lang-cor/blob/main/../src/fst/stems/nouns.lexc)</small>
+
+<small>This (part of) documentation was generated from [src/fst/stems/nouns.lexc](https://github.com/giellalt/lang-cor/blob/main/src/fst/stems/nouns.lexc)</small>
+
+---
+
