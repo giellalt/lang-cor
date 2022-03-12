@@ -2,7 +2,7 @@ The Cornish morphology and tools
 ==========================================
 
 [![GitHub issues](https://img.shields.io/github/issues-raw/giellalt/lang-cor)](https://github.com/giellalt/lang-cor/issues)
-[![Build Status](https://github.com/giellalt/lang-cor/workflows/Speller%20CI+CD/badge.svg)](https://github.com/giellalt/lang-cor/actions)
+[![Build Status](https://divvun-tc.thetc.se/api/github/v1/repository/giellalt/lang-cor/main/badge.svg)](https://github.com/giellalt/lang-cor/actions)
 [![License](https://img.shields.io/github/license/giellalt/lang-cor)](https://github.com/giellalt/lang-cor/blob/main/LICENSE)
 
 This repository contains finite state source files for the Cornish language,
