@@ -1,9 +1,10 @@
 # Cornish documentation
 
 [![Maturity: Experiment](https://img.shields.io/badge/Maturity-Experiment-black.svg)](https://giellalt.github.io/MaturityClassification.html)
+![Endpoint Badge](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fgiellalt%2Flang-cor%2Fgh-pages%2Flemmacount.json)
 [![License](https://img.shields.io/github/license/giellalt/lang-cor)](https://github.com/giellalt/lang-cor/blob/main/LICENSE)
 [![Issues](https://img.shields.io/github/issues/giellalt/lang-cor)](https://github.com/giellalt/lang-cor/issues)
-[![Build Status](https://divvun-tc.thetc.se/api/github/v1/repository/giellalt/lang-cor/main/badge.svg)](https://github.com/giellalt/lang-cor/actions)
+[![Build Status](https://divvun-tc.giellalt.org/api/github/v1/repository/giellalt/lang-cor/main/badge.svg)](https://github.com/giellalt/lang-cor/actions)
 
 This page documents the work on the [Cornish language model](https://github.com/giellalt/lang-cor). The model uses the [Standard Written Form](https://en.wikipedia.org/wiki/Standard_Written_Form) of Cornish, and its lexicon in the one of the dictionary made by the [Cornish Language Partnership](https://en.wikipedia.org/wiki/Cornish_Language_Partnership).
 
