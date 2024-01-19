@@ -2,7 +2,7 @@
 <hfstspeller dtdversion="1.0" hfstversion="3">
   <info>
     <locale>kw</locale>
-    <title>Giellatekno/Divvun/UiT fst-based speller for Cornish</title>
+    <title>Cornish</title>
     <description>This is an fst-based speller for Cornish. It is based
     on the normative subset of the morphological analyser for Cornish.
     The source code can be found at:
