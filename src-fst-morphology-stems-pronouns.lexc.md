@@ -38,7 +38,7 @@ This file lists pronouns fullforms.
 
 * * *
 
-<small>This (part of) documentation was generated from [src/fst/stems/pronouns.lexc](https://github.com/giellalt/lang-cor/blob/main/src/fst/stems/pronouns.lexc)</small>
+<small>This (part of) documentation was generated from [src/fst/morphology/stems/pronouns.lexc](https://github.com/giellalt/lang-cor/blob/main/src/fst/morphology/stems/pronouns.lexc)</small>
 
 ---
 

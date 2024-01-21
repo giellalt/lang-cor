@@ -23,7 +23,7 @@ Then comes the list with adverbs from the 2020 dictionary
 
 * * *
 
-<small>This (part of) documentation was generated from [src/fst/stems/adverbs.lexc](https://github.com/giellalt/lang-cor/blob/main/src/fst/stems/adverbs.lexc)</small>
+<small>This (part of) documentation was generated from [src/fst/morphology/stems/adverbs.lexc](https://github.com/giellalt/lang-cor/blob/main/src/fst/morphology/stems/adverbs.lexc)</small>
 
 ---
 

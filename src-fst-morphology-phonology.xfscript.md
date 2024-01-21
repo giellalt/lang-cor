@@ -123,7 +123,7 @@ Then we compile, one rule after another.
 
 * * *
 
-<small>This (part of) documentation was generated from [src/fst/phonology.xfscript](https://github.com/giellalt/lang-cor/blob/main/src/fst/phonology.xfscript)</small>
+<small>This (part of) documentation was generated from [src/fst/morphology/phonology.xfscript](https://github.com/giellalt/lang-cor/blob/main/src/fst/morphology/phonology.xfscript)</small>
 
 ---
 

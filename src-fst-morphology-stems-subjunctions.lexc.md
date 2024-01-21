@@ -14,7 +14,7 @@ erna CS "till, until" ;
 
 * * *
 
-<small>This (part of) documentation was generated from [src/fst/stems/subjunctions.lexc](https://github.com/giellalt/lang-cor/blob/main/src/fst/stems/subjunctions.lexc)</small>
+<small>This (part of) documentation was generated from [src/fst/morphology/stems/subjunctions.lexc](https://github.com/giellalt/lang-cor/blob/main/src/fst/morphology/stems/subjunctions.lexc)</small>
 
 ---
 

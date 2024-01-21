@@ -179,7 +179,7 @@ Only add tag so far.
 
 * * *
 
-<small>This (part of) documentation was generated from [src/fst/affixes/adjectives.lexc](https://github.com/giellalt/lang-cor/blob/main/src/fst/affixes/adjectives.lexc)</small>
+<small>This (part of) documentation was generated from [src/fst/morphology/affixes/adjectives.lexc](https://github.com/giellalt/lang-cor/blob/main/src/fst/morphology/affixes/adjectives.lexc)</small>
 
 ---
 
@@ -262,7 +262,7 @@ and are therefore pointed to in a different layer (this one)
 
 * * *
 
-<small>This (part of) documentation was generated from [src/fst/affixes/nouns.lexc](https://github.com/giellalt/lang-cor/blob/main/src/fst/affixes/nouns.lexc)</small>
+<small>This (part of) documentation was generated from [src/fst/morphology/affixes/nouns.lexc](https://github.com/giellalt/lang-cor/blob/main/src/fst/morphology/affixes/nouns.lexc)</small>
 
 ---
 
@@ -282,7 +282,7 @@ forms which requires great amount of care in the inflection patterns.
 
 * * *
 
-<small>This (part of) documentation was generated from [src/fst/affixes/numerals.lexc](https://github.com/giellalt/lang-cor/blob/main/src/fst/affixes/numerals.lexc)</small>
+<small>This (part of) documentation was generated from [src/fst/morphology/affixes/numerals.lexc](https://github.com/giellalt/lang-cor/blob/main/src/fst/morphology/affixes/numerals.lexc)</small>
 
 ---
 
@@ -293,7 +293,7 @@ forms which requires great amount of care in the inflection patterns.
 
 * * *
 
-<small>This (part of) documentation was generated from [src/fst/affixes/propernouns.lexc](https://github.com/giellalt/lang-cor/blob/main/src/fst/affixes/propernouns.lexc)</small>
+<small>This (part of) documentation was generated from [src/fst/morphology/affixes/propernouns.lexc](https://github.com/giellalt/lang-cor/blob/main/src/fst/morphology/affixes/propernouns.lexc)</small>
 
 ---
 
@@ -302,7 +302,7 @@ forms which requires great amount of care in the inflection patterns.
 
 * * *
 
-<small>This (part of) documentation was generated from [src/fst/affixes/symbols.lexc](https://github.com/giellalt/lang-cor/blob/main/src/fst/affixes/symbols.lexc)</small>
+<small>This (part of) documentation was generated from [src/fst/morphology/affixes/symbols.lexc](https://github.com/giellalt/lang-cor/blob/main/src/fst/morphology/affixes/symbols.lexc)</small>
 
 ---
 
@@ -319,7 +319,7 @@ forms which requires great amount of care in the inflection patterns.
 
 * * *
 
-<small>This (part of) documentation was generated from [src/fst/affixes/verbs.lexc](https://github.com/giellalt/lang-cor/blob/main/src/fst/affixes/verbs.lexc)</small>
+<small>This (part of) documentation was generated from [src/fst/morphology/affixes/verbs.lexc](https://github.com/giellalt/lang-cor/blob/main/src/fst/morphology/affixes/verbs.lexc)</small>
 
 ---
 
@@ -448,7 +448,7 @@ Then we compile, one rule after another.
 
 * * *
 
-<small>This (part of) documentation was generated from [src/fst/phonology.xfscript](https://github.com/giellalt/lang-cor/blob/main/src/fst/phonology.xfscript)</small>
+<small>This (part of) documentation was generated from [src/fst/morphology/phonology.xfscript](https://github.com/giellalt/lang-cor/blob/main/src/fst/morphology/phonology.xfscript)</small>
 
 ---
 
@@ -569,7 +569,7 @@ Adhoc lexica, to be fixed
 
 * * *
 
-<small>This (part of) documentation was generated from [src/fst/root.lexc](https://github.com/giellalt/lang-cor/blob/main/src/fst/root.lexc)</small>
+<small>This (part of) documentation was generated from [src/fst/morphology/root.lexc](https://github.com/giellalt/lang-cor/blob/main/src/fst/morphology/root.lexc)</small>
 
 ---
 
@@ -589,7 +589,7 @@ arnowydh adj "modern" ;
 
 * * *
 
-<small>This (part of) documentation was generated from [src/fst/stems/adjectives.lexc](https://github.com/giellalt/lang-cor/blob/main/src/fst/stems/adjectives.lexc)</small>
+<small>This (part of) documentation was generated from [src/fst/morphology/stems/adjectives.lexc](https://github.com/giellalt/lang-cor/blob/main/src/fst/morphology/stems/adjectives.lexc)</small>
 
 ---
 
@@ -618,7 +618,7 @@ Then comes the list with adverbs from the 2020 dictionary
 
 * * *
 
-<small>This (part of) documentation was generated from [src/fst/stems/adverbs.lexc](https://github.com/giellalt/lang-cor/blob/main/src/fst/stems/adverbs.lexc)</small>
+<small>This (part of) documentation was generated from [src/fst/morphology/stems/adverbs.lexc](https://github.com/giellalt/lang-cor/blob/main/src/fst/morphology/stems/adverbs.lexc)</small>
 
 ---
 
@@ -643,7 +643,7 @@ rag CC "for" ;
 
 * * *
 
-<small>This (part of) documentation was generated from [src/fst/stems/conjunctions.lexc](https://github.com/giellalt/lang-cor/blob/main/src/fst/stems/conjunctions.lexc)</small>
+<small>This (part of) documentation was generated from [src/fst/morphology/stems/conjunctions.lexc](https://github.com/giellalt/lang-cor/blob/main/src/fst/morphology/stems/conjunctions.lexc)</small>
 
 ---
 
@@ -662,7 +662,7 @@ Words from 2020 dictionary
 
 * * *
 
-<small>This (part of) documentation was generated from [src/fst/stems/interjections.lexc](https://github.com/giellalt/lang-cor/blob/main/src/fst/stems/interjections.lexc)</small>
+<small>This (part of) documentation was generated from [src/fst/morphology/stems/interjections.lexc](https://github.com/giellalt/lang-cor/blob/main/src/fst/morphology/stems/interjections.lexc)</small>
 
 ---
 
@@ -837,7 +837,7 @@ Feminine nouns from 2020 dictionary. TODO: Check for inflection class
 
 * * *
 
-<small>This (part of) documentation was generated from [src/fst/stems/nouns.lexc](https://github.com/giellalt/lang-cor/blob/main/src/fst/stems/nouns.lexc)</small>
+<small>This (part of) documentation was generated from [src/fst/morphology/stems/nouns.lexc](https://github.com/giellalt/lang-cor/blob/main/src/fst/morphology/stems/nouns.lexc)</small>
 
 ---
 
@@ -855,7 +855,7 @@ Feminine nouns from 2020 dictionary. TODO: Check for inflection class
 
 * * *
 
-<small>This (part of) documentation was generated from [src/fst/stems/numerals.lexc](https://github.com/giellalt/lang-cor/blob/main/src/fst/stems/numerals.lexc)</small>
+<small>This (part of) documentation was generated from [src/fst/morphology/stems/numerals.lexc](https://github.com/giellalt/lang-cor/blob/main/src/fst/morphology/stems/numerals.lexc)</small>
 
 ---
 
@@ -896,7 +896,7 @@ Four classes:
 
 * * *
 
-<small>This (part of) documentation was generated from [src/fst/stems/prepositions.lexc](https://github.com/giellalt/lang-cor/blob/main/src/fst/stems/prepositions.lexc)</small>
+<small>This (part of) documentation was generated from [src/fst/morphology/stems/prepositions.lexc](https://github.com/giellalt/lang-cor/blob/main/src/fst/morphology/stems/prepositions.lexc)</small>
 
 ---
 
@@ -940,7 +940,7 @@ This file lists pronouns fullforms.
 
 * * *
 
-<small>This (part of) documentation was generated from [src/fst/stems/pronouns.lexc](https://github.com/giellalt/lang-cor/blob/main/src/fst/stems/pronouns.lexc)</small>
+<small>This (part of) documentation was generated from [src/fst/morphology/stems/pronouns.lexc](https://github.com/giellalt/lang-cor/blob/main/src/fst/morphology/stems/pronouns.lexc)</small>
 
 ---
 
@@ -955,7 +955,7 @@ This file lists cornish proper nouns. They are directed to the same continuation
 
 * * *
 
-<small>This (part of) documentation was generated from [src/fst/stems/propernouns.lexc](https://github.com/giellalt/lang-cor/blob/main/src/fst/stems/propernouns.lexc)</small>
+<small>This (part of) documentation was generated from [src/fst/morphology/stems/propernouns.lexc](https://github.com/giellalt/lang-cor/blob/main/src/fst/morphology/stems/propernouns.lexc)</small>
 
 ---
 
@@ -975,7 +975,7 @@ erna CS "till, until" ;
 
 * * *
 
-<small>This (part of) documentation was generated from [src/fst/stems/subjunctions.lexc](https://github.com/giellalt/lang-cor/blob/main/src/fst/stems/subjunctions.lexc)</small>
+<small>This (part of) documentation was generated from [src/fst/morphology/stems/subjunctions.lexc](https://github.com/giellalt/lang-cor/blob/main/src/fst/morphology/stems/subjunctions.lexc)</small>
 
 ---
 
@@ -1050,7 +1050,7 @@ Verbs from the 2020 dictionary
 
 * * *
 
-<small>This (part of) documentation was generated from [src/fst/stems/verbs.lexc](https://github.com/giellalt/lang-cor/blob/main/src/fst/stems/verbs.lexc)</small>
+<small>This (part of) documentation was generated from [src/fst/morphology/stems/verbs.lexc](https://github.com/giellalt/lang-cor/blob/main/src/fst/morphology/stems/verbs.lexc)</small>
 
 ---
 
@@ -1217,7 +1217,7 @@ retracted tongue root			_q
 
 * * *
 
-<small>This (part of) documentation was generated from [src/phonetics/txt2ipa.xfscript](https://github.com/giellalt/lang-cor/blob/main/src/phonetics/txt2ipa.xfscript)</small>
+<small>This (part of) documentation was generated from [src/fst/phonetics/txt2ipa.xfscript](https://github.com/giellalt/lang-cor/blob/main/src/fst/phonetics/txt2ipa.xfscript)</small>
 
 ---
 
@@ -1237,7 +1237,7 @@ For example:
 
 * * *
 
-<small>This (part of) documentation was generated from [src/transcriptions/transcriptor-abbrevs2text.lexc](https://github.com/giellalt/lang-cor/blob/main/src/transcriptions/transcriptor-abbrevs2text.lexc)</small>
+<small>This (part of) documentation was generated from [src/fst/transcriptions/transcriptor-abbrevs2text.lexc](https://github.com/giellalt/lang-cor/blob/main/src/fst/transcriptions/transcriptor-abbrevs2text.lexc)</small>
 
 ---
 
@@ -1251,7 +1251,7 @@ For example:
 
 * * *
 
-<small>This (part of) documentation was generated from [src/transcriptions/transcriptor-numbers-digit2text.lexc](https://github.com/giellalt/lang-cor/blob/main/src/transcriptions/transcriptor-numbers-digit2text.lexc)</small>
+<small>This (part of) documentation was generated from [src/fst/transcriptions/transcriptor-numbers-digit2text.lexc](https://github.com/giellalt/lang-cor/blob/main/src/fst/transcriptions/transcriptor-numbers-digit2text.lexc)</small>
 
 ---
 

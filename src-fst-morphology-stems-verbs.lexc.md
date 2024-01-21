@@ -69,7 +69,7 @@ Verbs from the 2020 dictionary
 
 * * *
 
-<small>This (part of) documentation was generated from [src/fst/stems/verbs.lexc](https://github.com/giellalt/lang-cor/blob/main/src/fst/stems/verbs.lexc)</small>
+<small>This (part of) documentation was generated from [src/fst/morphology/stems/verbs.lexc](https://github.com/giellalt/lang-cor/blob/main/src/fst/morphology/stems/verbs.lexc)</small>
 
 ---
 
