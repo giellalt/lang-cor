@@ -90,6 +90,19 @@ given the proper use of these flags.
 * **+Use/TTS** – **only** retained in the HFST Text-To-Speech disambiguation tokeniser
 * **+Use/-TTS** – **never** retained in the HFST Text-To-Speech disambiguation tokeniser
 
+| Flag diacritic | Explanation
+| :------------- |:-----------
+| @U.number.one@ | Flag used to give arabic numerals in smj different cases ;
+| @U.number.two@ | Flag used to give arabic numerals in smj different cases ;
+| @U.number.three@ | Flag used to give arabic numerals in smj different cases ;
+| @U.number.four@ | Flag used to give arabic numerals in smj different cases ;
+| @U.number.five@ | Flag used to give arabic numerals in smj different cases ;
+| @U.number.six@ | Flag used to give arabic numerals in smj different cases ;
+| @U.number.seven@ | Flag used to give arabic numerals in smj different cases ;
+| @U.number.eight@ | Flag used to give arabic numerals in smj different cases ;
+| @U.number.nine@ | Flag used to give arabic numerals in smj different cases ;
+| @U.number.zero@ | Flag used to give arabic numerals in smj different cases ;
+
 # Key lexicon
 
 * LEXICON Root        
