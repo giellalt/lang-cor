@@ -5,6 +5,7 @@
 [![License](https://img.shields.io/github/license/giellalt/lang-cor)](https://github.com/giellalt/lang-cor/blob/main/LICENSE)
 [![Issues](https://img.shields.io/github/issues/giellalt/lang-cor)](https://github.com/giellalt/lang-cor/issues)
 [![Build Status](https://builds.giellalt.org/api/badge/lang-cor?label=CI)](https://builds.giellalt.org/pipelines/lang-cor/builds/latest)
+[![Glottolog](https://img.shields.io/badge/Glottolog-green)](https://glottolog.org/resource/languoid/id/corn1251)
 
 This page documents the work on the [Cornish language model](https://github.com/giellalt/lang-cor). The model uses the [Standard Written Form](https://en.wikipedia.org/wiki/Standard_Written_Form) of Cornish, and its lexicon in the one of the dictionary made by the [Cornish Language Partnership](https://en.wikipedia.org/wiki/Cornish_Language_Partnership).
 
