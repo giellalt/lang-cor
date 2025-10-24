@@ -4,7 +4,7 @@ All doc-comment documentation in one large file.
 
 ---
 
-# src-cg3-functions.cg3.md 
+## src-cg3-functions.cg3.md 
 
 
 
@@ -43,7 +43,7 @@ part of the noun phrase of that noun (i.e., "scan to the next NP head")
 
 These were the set types.
 
-## HABITIVE MAPPING
+### HABITIVE MAPPING
 
 * **hab1** 
 
@@ -162,16 +162,16 @@ These were the set types.
 
 * **<opredAAcc** (@<OPRED) for A Acc; if an other accusative to the left, and a transtive verb to the left of it. OR: if a transitive verb to the left, and an accusative to the left of it.
 
-### sma object
+#### sma object
 
 * **<advlEss** (@<ADVL) for ESS-ADVL if; FMAINV to the left
 * **<spredEss** (@<SPRED) for N Ess if; FMAINV to the left is intransitive or bargat
 
-## SUBJ MAPPING - leftovers
+### SUBJ MAPPING - leftovers
 
-## OBJ MAPPING - leftovers
+### OBJ MAPPING - leftovers
 
-## HNOUN MAPPING
+### HNOUN MAPPING
 
 * * *
 
@@ -179,9 +179,9 @@ These were the set types.
 
 ---
 
-# src-fst-morphology-affixes-adjectives.lexc.md 
+## src-fst-morphology-affixes-adjectives.lexc.md 
 
-# Adjectve morphology
+## Adjectve morphology
 
 Only add tag so far.
 
@@ -194,11 +194,11 @@ Only add tag so far.
 
 ---
 
-# src-fst-morphology-affixes-nouns.lexc.md 
+## src-fst-morphology-affixes-nouns.lexc.md 
 
-# Cornish noun morphology
+## Cornish noun morphology
 
-## Masculine stem classes
+### Masculine stem classes
 The nouns get tags (to the left of :, i.e. in the upper representation
 and the suffixes are found to the left of the colon
 
@@ -224,7 +224,7 @@ and the suffixes are found to the left of the colon
 
 * **LEXICON m-pltantum** 
 
-## Feminine stem classes
+### Feminine stem classes
 
 * **LEXICON f** 
 
@@ -237,7 +237,7 @@ Nest step:
 Here we add suffixes. These may be common to several stem classes
 and are therefore pointed to in a different layer (this one)
 
-## Number lexica
+### Number lexica
 
 * **LEXICON sg** 
 
@@ -259,7 +259,7 @@ and are therefore pointed to in a different layer (this one)
 
 * **LEXICON adjd** 
 
-### Irregular plurals
+#### Irregular plurals
 
 * **LEXICON KI** 
 
@@ -269,7 +269,7 @@ and are therefore pointed to in a different layer (this one)
 
 * **LEXICON GARLONT** 
 
-# Mutation lexicon
+## Mutation lexicon
 
 * **LEXICON mutation** 
 
@@ -279,13 +279,13 @@ and are therefore pointed to in a different layer (this one)
 
 ---
 
-# src-fst-morphology-affixes-numerals.lexc.md 
+## src-fst-morphology-affixes-numerals.lexc.md 
 
 
 
-# Kven numerals 
+## Kven numerals 
 
-# Numeral inflection
+## Numeral inflection
 Numeral inflection is like nominal, except that numerals compound in all
 forms which requires great amount of care in the inflection patterns.
 
@@ -301,9 +301,9 @@ forms which requires great amount of care in the inflection patterns.
 
 ---
 
-# src-fst-morphology-affixes-propernouns.lexc.md 
+## src-fst-morphology-affixes-propernouns.lexc.md 
 
-# Propernoun affix
+## Propernoun affix
 
 * **LEXICON prop** 
 * **+N+Prop: mutation ;** 
@@ -314,10 +314,10 @@ forms which requires great amount of care in the inflection patterns.
 
 ---
 
-# src-fst-morphology-affixes-symbols.lexc.md 
+## src-fst-morphology-affixes-symbols.lexc.md 
 
 
-# Symbol affixes
+## Symbol affixes
 
 * * *
 
@@ -325,13 +325,13 @@ forms which requires great amount of care in the inflection patterns.
 
 ---
 
-# src-fst-morphology-affixes-verbs.lexc.md 
+## src-fst-morphology-affixes-verbs.lexc.md 
 
-# Verbal morphology
+## Verbal morphology
 
-## The declension classes
+### The declension classes
 
-### Auxiliaries
+#### Auxiliaries
 
 * bos+V:     COPULA     "to be" ;   
 * mos+V:     MOS        "go" ;      
@@ -344,18 +344,18 @@ forms which requires great amount of care in the inflection patterns.
 
 ---
 
-# src-fst-morphology-phonology.xfscript.md 
+## src-fst-morphology-phonology.xfscript.md 
 
 Cornish morph-phon grammar file
 
-# Cornish morphphonology
+## Cornish morphphonology
 
 This is the file for the morphophonological rules.
 
 We keep a verbose style, at each point we tell what we will do.
 That is the echo commands.
 
-## Definitions
+### Definitions
 
 Here, we have left some documentation for curious readers:
 
@@ -387,11 +387,11 @@ they have done their job.
 
 * Sgm 
 
-## Rules
+### Rules
 
 Here the action begins.
 
-### Mutations
+#### Mutations
 
 !identity
 
@@ -440,7 +440,7 @@ Dummydeletion comes last:
 
 ArchiPhonemes should not be on the surface
 
-## Compilation
+### Compilation
 
 Then we compile, one rule after another.
 
@@ -475,19 +475,19 @@ Then we compile, one rule after another.
 
 ---
 
-# src-fst-morphology-root.lexc.md 
+## src-fst-morphology-root.lexc.md 
 
-# Cornish morphology
+## Cornish morphology
 
 First, we declare multicharacter symbols
 
-## POS
+### POS
 * +N +V +A           
 * +Adv +CC +CS +Interj +Pron +Num +Pr         
 * +Smut +Mmut +Pmut +Amut                for mutation
 * +Symbol = independent symbols in the text stream, like £, €, ©
 
-## Verbal MSP
+### Verbal MSP
 +Prs +Fut +Prt +Prf +Ipf +Plf       
 +Ind +Imp +Sbj       
 +Inf +Sit ! what is +Sit?       
@@ -497,12 +497,12 @@ First, we declare multicharacter symbols
 +Ptc       
 +VN       
 
-## Nominal MSP
+### Nominal MSP
 +Sg +Pl +P            
 +Nom +Acc +Gen        
 +Ord       
 
-## Pronominal MSP
+### Pronominal MSP
 +Suff +Emph +Indef         
 +Msc +Fem                  
 
@@ -514,11 +514,11 @@ The "%" symbol literalises the next symbol
 %> %^D                         
 %^UML %^CD %^TRUNC %^STDEL     
 
-## Archiphonemes
+### Archiphonemes
  e3             e to o in plural
  a4 o4         Umlaut phonemes, changing to e
 
-## Symbols that need to be escaped on the lower side (towards twolc):
+### Symbols that need to be escaped on the lower side (towards twolc):
 * **»7**:  Literal »
 * **«7**:  Literal «
 ```
@@ -526,7 +526,7 @@ The "%" symbol literalises the next symbol
  %[%<%]  - Literal <
 ```
 
-## Flag diacritics
+### Flag diacritics
 We have manually optimised the structure of our lexicon using following
 flag diacritics to restrict morhpological combinatorics - only allow compounds
 with verbs if the verb is further derived into a noun again:
@@ -582,7 +582,7 @@ given the proper use of these flags.
 | @U.number.nine@ | Flag used to give arabic numerals in smj different cases ;
 | @U.number.zero@ | Flag used to give arabic numerals in smj different cases ;
 
-# Key lexicon
+## Key lexicon
 
 * LEXICON Root        
     - Adverb ;	           
@@ -611,9 +611,9 @@ Adhoc lexica, to be fixed
 
 ---
 
-# src-fst-morphology-stems-adjectives.lexc.md 
+## src-fst-morphology-stems-adjectives.lexc.md 
 
-# The Cornish Adjective root lexicon
+## The Cornish Adjective root lexicon
 
 Some 1300 adjectives, only one continuation lexicon. (**adj**).
 
@@ -633,9 +633,9 @@ arnowydh adj "modern" ;
 
 ---
 
-# src-fst-morphology-stems-adverbs.lexc.md 
+## src-fst-morphology-stems-adverbs.lexc.md 
 
-# Cornish Adverbs
+## Cornish Adverbs
 
 Documenting `stems/adverbs.lexc`
 
@@ -664,9 +664,9 @@ Then comes the list with adverbs from the 2020 dictionary
 
 ---
 
-# src-fst-morphology-stems-conjunctions.lexc.md 
+## src-fst-morphology-stems-conjunctions.lexc.md 
 
-# Cornish Conjunctions
+## Cornish Conjunctions
 
 This documents the file `stems/conjunctions.lexc`. Note that based on the English 
 translations it seems there are some subjunctions here, and it also seems the Cornish
@@ -691,9 +691,9 @@ rag CC "for" ;
 
 ---
 
-# src-fst-morphology-stems-interjections.lexc.md 
+## src-fst-morphology-stems-interjections.lexc.md 
 
-# Interjections
+## Interjections
 
 **LEXICON aj** adds tag 
 * +Interj: # ; 
@@ -712,11 +712,11 @@ Words from 2020 dictionary
 
 ---
 
-# src-fst-morphology-stems-nouns.lexc.md 
+## src-fst-morphology-stems-nouns.lexc.md 
 
-# Lexicon over Cornish nouns
+## Lexicon over Cornish nouns
 
-## Short overview of the types
+### Short overview of the types
 
 Masculines
 * **m** = ow plural
@@ -741,26 +741,26 @@ Feminines
 * **f-yow** = yow plural
 * **f-yon** = yon plural
 
-## The stems
+### The stems
 
 * **LEXICON Noun** contains all the nouns 
 
-## Exceptions
+### Exceptions
 
 ki, den, ojyon, ...
 
-## Regular nouns
+### Regular nouns
 
-## Masculine
+### Masculine
 
-### lexc syntax:
+#### lexc syntax:
 lemmaform:stem continuationlexicon "facultative translation" ;
 without the colon, lemmaform and stem are identical.
 The morphology is then handeled in noun-kor-morph.txt
 
 Here the noun types begin:
 
-### ow plural
+#### ow plural
 All -(y)ans nouns are here even though the dictionary lists no plurals for them (Brown, p. 30)
 * abatti m "abbey" ; 
 * abes m "abbot" ; 
@@ -821,9 +821,9 @@ Pluralia tantum
 * mona m-pltantum "money" ;  NW
 mona is here as illustration, should get a new continuation lex
 
-## Longer lists
+### Longer lists
 
-### Masculines
+#### Masculines
 
 m-ow 
 
@@ -843,19 +843,19 @@ m-ys
 * mason m-ys "mason" ; 
 ...
 
-### Feminines
+#### Feminines
 
-#### Irregular feminines
+##### Irregular feminines
 
 * modrep:modreb f-edh ; 
 
-#### f with ow plural 
+##### f with ow plural 
 
 * abases f "abbess" ; 
 * tagel f "constriction, choker" ; 
 ...
 
-#### f-yow 
+##### f-yow 
 
 * aden f-yow "binding board of a book" ; 
 * als f-yow "cliff" ; 
@@ -889,9 +889,9 @@ Feminine nouns from 2020 dictionary. TODO: Check for inflection class
 
 ---
 
-# src-fst-morphology-stems-numerals.lexc.md 
+## src-fst-morphology-stems-numerals.lexc.md 
 
-# Cornish numeral stems
+## Cornish numeral stems
 
 * **LEXICON Numeral** 
 
@@ -909,9 +909,9 @@ Feminine nouns from 2020 dictionary. TODO: Check for inflection class
 
 ---
 
-# src-fst-morphology-stems-prepositions.lexc.md 
+## src-fst-morphology-stems-prepositions.lexc.md 
 
-# Cornish prepositions 
+## Cornish prepositions 
 
 Four classes:
 * Class 1  
@@ -952,9 +952,9 @@ Four classes:
 
 ---
 
-# src-fst-morphology-stems-pronouns.lexc.md 
+## src-fst-morphology-stems-pronouns.lexc.md 
 
-# Cornish Pronoun stems and morphology
+## Cornish Pronoun stems and morphology
 
 This file lists pronouns fullforms.
 
@@ -998,9 +998,9 @@ This file lists pronouns fullforms.
 
 ---
 
-# src-fst-morphology-stems-propernouns.lexc.md 
+## src-fst-morphology-stems-propernouns.lexc.md 
 
-# Cornish proper nouns 
+## Cornish proper nouns 
 
 This file lists cornish proper nouns. They are directed to the same continuation lexicon.
 
@@ -1015,10 +1015,10 @@ This file lists cornish proper nouns. They are directed to the same continuation
 
 ---
 
-# src-fst-morphology-stems-subjunctions.lexc.md 
+## src-fst-morphology-stems-subjunctions.lexc.md 
 
 
-# Cornish Subjunctions
+## Cornish Subjunctions
 
 This file lists the subjunctions and assign them the **+CS** tag.
 
@@ -1037,17 +1037,17 @@ erna CS "till, until" ;
 
 ---
 
-# src-fst-morphology-stems-verbs.lexc.md 
+## src-fst-morphology-stems-verbs.lexc.md 
 
 
-# Cornish Verb stems
+## Cornish Verb stems
 
-## The regular verb system -- an overview:
+### The regular verb system -- an overview:
 
 This shows two version of the analysis, one from 2009 (for reference) and
 one from 2020 (the current one).
 
-### For reference: This was the first version of the model (2009)
+#### For reference: This was the first version of the model (2009)
 vb1-vb5 are declension classes.
 * vb1) -a     no i-Umlaut im Paradima
 * vb2) -ya    ya-Verbs
@@ -1056,7 +1056,7 @@ vb1-vb5 are declension classes.
 * vb5) -el/-i -C[l|n|m](r)-Verben
 * And finally the irregulars: Suppletion im Paradigma
 
-### The 2020 version of the model:
+#### The 2020 version of the model:
 * vb1 -a     (= v1 above)
 * vbya -ya   (= v2 above)
 * vbi -i     (= v3 above)
@@ -1070,7 +1070,7 @@ verbs in -a other than -ya to vb1
 all other verbs to vb
 TODO: Go through the new verbs (at the end of this file)
 
-## Umlaut class verbs
+### Umlaut class verbs
 
 * u0. Verbs that never have Umlaut?
 * u1. Verbs that only have umlaut before an ending that contains <i>, <y>, <owgh> or imperative <ewgh>.
@@ -1090,7 +1090,7 @@ It is fortunately easier than that:
 * and the rest are type 2: v3-u2
 * he-verbs are all type 2: v4-u2
 
-## The verb lexicon
+### The verb lexicon
 
 **LEXICON Verb** lists all the verbs
 * AUX ; = this one entry points to the AUX lexicon in the affixes catalogue
@@ -1114,7 +1114,7 @@ Verbs from the 2020 dictionary
 
 ---
 
-# src-fst-phonetics-txt2ipa.xfscript.md 
+## src-fst-phonetics-txt2ipa.xfscript.md 
 
 
 
@@ -1283,7 +1283,7 @@ retracted tongue root			_q
 
 ---
 
-# src-fst-transcriptions-transcriptor-abbrevs2text.lexc.md 
+## src-fst-transcriptions-transcriptor-abbrevs2text.lexc.md 
 
 
 
@@ -1305,7 +1305,7 @@ For example:
 
 ---
 
-# src-fst-transcriptions-transcriptor-numbers-digit2text.lexc.md 
+## src-fst-transcriptions-transcriptor-numbers-digit2text.lexc.md 
 
 
 
@@ -1321,26 +1321,26 @@ For example:
 
 ---
 
-# tools-grammarcheckers-grammarchecker.cg3.md 
+## tools-grammarcheckers-grammarchecker.cg3.md 
 
 
 [ L A N G U A G E ]  G R A M M A R   C H E C K E R
 
-# DELIMITERS
+## DELIMITERS
 
-# TAGS AND SETS
+## TAGS AND SETS
 
-## Tags
+### Tags
 
 This section lists all the tags inherited from the fst, and used as tags
 in the syntactic analysis. The next section, **Sets**, contains sets defined
 on the basis of the tags listed here, those set names are not visible in the output.
 
-### Beginning and end of sentence
+#### Beginning and end of sentence
 BOS
 EOS
 
-### Parts of speech tags
+#### Parts of speech tags
 
 N
 A
@@ -1367,7 +1367,7 @@ PUNCT
 COMMA
 ¶
 
-### Tags for POS sub-categories
+#### Tags for POS sub-categories
 
 Pers
 Dem
@@ -1383,7 +1383,7 @@ Allegro
 Arab
 Romertall
 
-### Tags for morphosyntactic properties
+#### Tags for morphosyntactic properties
 
 Nom
 Acc
@@ -1446,7 +1446,7 @@ VAbess
 
 Err/Orth
 
-### Semantic tags
+#### Semantic tags
 
 Sem/Act
 Sem/Ani
@@ -1479,7 +1479,7 @@ PROP-SUR
 
 TIME-N-SET
 
-###  Syntactic tags
+####  Syntactic tags
 
 @+FAUXV
 @+FMAINV
@@ -1549,22 +1549,22 @@ OBJ>-OTHERS
 SYN-V
 @X
 
-## Sets containing sets of lists and tags
+### Sets containing sets of lists and tags
 
 This part of the file lists a large number of sets based partly upon the tags defined above, and
 partly upon lexemes drawn from the lexicon.
 See the sourcefile itself to inspect the sets, what follows here is an overview of the set types.
 
-### Sets for Single-word sets
+#### Sets for Single-word sets
 
 INITIAL
 
-### Sets for word or not
+#### Sets for word or not
 
 WORD
 NOT-COMMA
 
-### Case sets
+#### Case sets
 
 ADLVCASE
 
@@ -1575,11 +1575,11 @@ NOT-NOM
 NOT-GEN
 NOT-ACC
 
-### Verb sets
+#### Verb sets
 
 NOT-V
 
-### Sets for finiteness and mood
+#### Sets for finiteness and mood
 
 REAL-NEG
 
@@ -1587,7 +1587,7 @@ MOOD-V
 
 NOT-PRFPRC
 
-### Sets for person
+#### Sets for person
 
 SG1-V
 SG2-V
@@ -1599,25 +1599,25 @@ PL1-V
 PL2-V
 PL3-V
 
-### Pronoun sets
+#### Pronoun sets
 
-### Adjectival sets and their complements
+#### Adjectival sets and their complements
 
-### Adverbial sets and their complements
+#### Adverbial sets and their complements
 
-### Sets of elements with common syntactic behaviour
+#### Sets of elements with common syntactic behaviour
 
-### NP sets defined according to their morphosyntactic features
+#### NP sets defined according to their morphosyntactic features
 
-### The PRE-NP-HEAD family of sets
+#### The PRE-NP-HEAD family of sets
 
 These sets model noun phrases (NPs). The idea is to first define whatever can
 occur in front of the head of the NP, and thereafter negate that with the
 expression **WORD - premodifiers**.
 
-### Border sets and their complements
+#### Border sets and their complements
 
-### Grammarchecker sets
+#### Grammarchecker sets
 
 * * *
 
@@ -1625,9 +1625,9 @@ expression **WORD - premodifiers**.
 
 ---
 
-# tools-tokenisers-tokeniser-disamb-gt-desc.pmscript.md 
+## tools-tokenisers-tokeniser-disamb-gt-desc.pmscript.md 
 
-# Tokeniser for cor
+## Tokeniser for cor
 
 Usage:
 ```
@@ -1671,7 +1671,7 @@ ASCII digits
 so far:
 * U+F0B7 for "x in box"
 
-## Unknown handling
+### Unknown handling
 Unknowns are tagged ?? and treated specially with `hfst-tokenise`
 hfst-tokenise --giella-cg will treat such empty analyses as unknowns, and
 remove empty analyses from other readings. Empty readings are also
@@ -1690,9 +1690,9 @@ Finally we mark as a token any sequence making up a:
 
 ---
 
-# tools-tokenisers-tokeniser-gramcheck-gt-desc.pmscript.md 
+## tools-tokenisers-tokeniser-gramcheck-gt-desc.pmscript.md 
 
-# Grammar checker tokenisation for cor
+## Grammar checker tokenisation for cor
 
 Requires a recent version of HFST (3.10.0 / git revision>=3aecdbc)
 Then just:
@@ -1755,9 +1755,9 @@ Finally we mark as a token any sequence making up a:
 
 ---
 
-# tools-tokenisers-tokeniser-tts-cggt-desc.pmscript.md 
+## tools-tokenisers-tokeniser-tts-cggt-desc.pmscript.md 
 
-# TTS tokenisation for smj
+## TTS tokenisation for smj
 
 Requires a recent version of HFST (3.10.0 / git revision>=3aecdbc)
 Then just:
