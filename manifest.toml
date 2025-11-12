@@ -1,6 +1,3 @@
-spellername = "Cornish"
-spellerversion = "0.1.1"
-
 # Name of the speller package in various languages.
 # The default is English + autonym:
 [speller.name]
@@ -22,3 +19,15 @@ legacy_product_codes = [
     { value = "4545B4D7-E474-47CD-81D1-99A7703ECEA1", kind = "nsis" },
     { value = "5A2E2DCA-5769-42FB-8D21-C005E4A32D0A", kind = "nsis" }
 ]
+
+[package.speller]
+name = "Cornish"
+version = "0.1.1"
+
+[package.grammar]
+name = "Cornish"
+version = "0.1.0"
+
+[package.tts-text-proc]
+name = "Cornish"
+version = "0.1.0"
