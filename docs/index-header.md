@@ -7,6 +7,7 @@
 <div class="badges" markdown="1">
 [![Maturity](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fgiellalt%2Flang-cor%2Fgh-pages%2Fmaturity.json)](https://giellalt.github.io/MaturityClassification.html) <br/>
 ![Lemma count](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fgiellalt%2Flang-cor%2Fgh-pages%2Flemmacount.json) <br/>
+[![Speller suggestion quality](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fgiellalt%2Flang-cor%2Fgh-pages%2Fspellersuggs.json)](typosreport/) <br/>
 [![License](https://img.shields.io/github/license/giellalt/lang-cor)](https://github.com/giellalt/lang-cor/blob/main/LICENSE) <br/>
 [![Issues](https://img.shields.io/github/issues/giellalt/lang-cor)](https://github.com/giellalt/lang-cor/issues) <br/>
 [![Build Status](https://builds.giellalt.org/api/badge/lang-cor?label=CI)](https://builds.giellalt.org/pipelines/lang-cor/builds/latest) <br/>
